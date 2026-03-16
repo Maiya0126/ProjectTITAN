@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_MatriarchCrash</defName>
+		<label>泰坦传说：繁盛之母</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ProjectTITAN.IncidentWorker_MatriarchCrash</workerClass>
+		<baseChance>0.8</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<minDifficulty>1</minDifficulty>
+		<letterLabel>繁盛之母坠落</letterLabel>
+		<letterText>巨大的生命能量反应坠落在了附近。那是传说中的“繁盛之母”。\n\n它看起来极其虚弱，正处于基因崩溃的边缘。利用0号原型体治愈它，或许能得到生命的馈赠。\n\n警告：如果你不能及时治愈它，它将回归虚空。</letterText>
+		<letterDef>NeutralEvent</letterDef>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_WarlordRaid</defName>
+		<label>泰坦传说：战争之痕</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ProjectTITAN.IncidentWorker_WarlordRaid</workerClass>
+		<baseChance>0.6</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<letterLabel>战争之痕入侵</letterLabel>
+		<letterText>空气中弥漫着血腥味。传说中的暴君“战争之痕”带领着它的狂暴兽群出现了！\n\n它处于极度愤怒状态。你可以选择击败它，或者利用0号原型体安抚它的怒火。\n\n无论哪种方式，只要能证明你的力量，它都会留下认可的信物。</letterText>
+		<letterDef>ThreatBig</letterDef>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_VoidWalkerRescue</defName>
+		<label>泰坦传说：虚空行者</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>ProjectTITAN.IncidentWorker_VoidWalkerRescue</workerClass>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<letterLabel>虚空行者求救</letterLabel>
+		<letterText>...</letterText>
+		<letterDef>ThreatBig</letterDef>
+	</IncidentDef>
+
+</Defs>

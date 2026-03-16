@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_Kibble_From_TitanTuber</defName>
+		<label>用泰坦块茎制作粗饲料 (x200)</label>
+		<description>将高密度的泰坦块茎粉碎，混合干草，批量制作大量普通粗饲料。\n\n适合喂养胃口较小的家禽家畜。</description>
+		<jobString>正在制作粗饲料。</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TITAN_RawTitanTuber</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+
+		<products>
+			<Kibble>200</Kibble>
+		</products>
+
+		<recipeUsers>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

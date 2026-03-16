@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_Hunter</defName>
+		<label>帝国猎杀者</label>
+		<description>帝国为了回收“泰坦计划”实验体而专门培育的生物兵器。\n\n它们由座狼的基因强行修改而来，去除了痛觉和恐惧，肌肉长期处于充血的狂暴状态。它们的脑中只有一个指令：猎杀0号。</description>
+
+		<statBases>
+			<MoveSpeed>6.5</MoveSpeed>
+			<MarketValue>500</MarketValue>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<Wildness>1.0</Wildness>
+		</statBases>
+
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<predator>true</predator>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHealthScale>1.5</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<useMeatFrom>Warg</useMeatFrom>
+
+			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Warg_Wounded</soundWounded>
+					<soundDeath>Pawn_Warg_Death</soundDeath>
+					<soundCall>Pawn_Warg_Call</soundCall>
+					<soundAngry>Pawn_Warg_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+
+		<butcherProducts>
+			<TITAN_HunterGland>1</TITAN_HunterGland>
+		</butcherProducts>
+
+		<tools>
+			<li>
+				<label>razor fangs</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_Hunter</defName>
+		<label>帝国猎杀者</label>
+		<race>TITAN_Hunter</race>
+		<combatPower>150</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+					<drawSize>1.8</drawSize>
+					<color>(90, 20, 20)</color>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

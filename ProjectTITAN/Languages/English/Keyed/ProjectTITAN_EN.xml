@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ==================== CREATURES ==================== -->
+  
+  <!-- Titans (PawnKindDef) -->
+  <TITAN_Warlord>War Trace</TITAN_Warlord>
+  <TITAN_VoidWalker>Void Walker</TITAN_VoidWalker>
+  <TITAN_Matriarch>Matriarch of Life</TITAN_Matriarch>
+  <TITAN_Spark>Spark</TITAN_Spark>
+  <TITAN_Hunter>Imperial Hunter</TITAN_Hunter>
+  <TITAN_ThrumboPrototype>Prototype #0</TITAN_ThrumboPrototype>
+
+  <!-- Titans (ThingDef) -->
+  <TITAN_Warlord_label>War Trace</TITAN_Warlord_label>
+  <TITAN_Warlord_desc>One of the three legendary beasts. Age: Unknown (Ancient).
+
+Features:
+- Immortal
+- Aura: Blood Rage</TITAN_Warlord_desc>
+  <TITAN_VoidWalker_label>Void Walker</TITAN_VoidWalker_label>
+  <TITAN_VoidWalker_desc>One of the three legendary beasts. Age: Unknown (Ancient).
+
+Features:
+- Immortal
+- Extreme dodge and shield
+- Aura: Void Veil</TITAN_VoidWalker_desc>
+  <TITAN_Matriarch_label>Matriarch of Life</TITAN_Matriarch_label>
+  <TITAN_Matriarch_desc>One of the three legendary beasts. Age: Unknown (Ancient).
+
+Features:
+- Immortal
+- Aura: Life Bloom</TITAN_Matriarch_desc>
+  <TITAN_Spark_label>Spark</TITAN_Spark_label>
+  <TITAN_Spark_desc>A strangely mutated boomrat. It is the only friend of "Prototype #0" in the lab.
+
+Features:
+[Phoenix Protocol] Upon receiving a fatal blow, it will not die but trigger a massive explosion and enter forced hibernation reboot.
+[Bond] Gains combat boost when near Prototype #0.</TITAN_Spark_desc>
+  <TITAN_Hunter_label>Imperial Hunter</TITAN_Hunter_label>
+  <TITAN_Hunter_desc>Biological weapons bred by the Empire to retrieve "Project TITAN" test subjects.
+
+They were modified from warg genes with pain and fear removed, muscles permanently engorged in a berserk state. Their only directive: hunt #0.</TITAN_Hunter_desc>
+  <TITAN_ThrumboPrototype_label>Prototype #0</TITAN_ThrumboPrototype_label>
+  <TITAN_ThrumboPrototype_desc>The final product of the Empire's "Project TITAN". Its fur glows a faint gold, a symbol of royal genes.
+
+It possesses powerful self-repair abilities and cannot be truly killed (only knocked down).
+
+Features:
+- Periodically sheds [Golden Scale]
+- Attracts wild Thrumbo when adult
+- Active Ability: Titan Resonance</TITAN_ThrumboPrototype_desc>
+
+  <!-- Tools -->
+  <shattering_horn>Shattering Horn</shattering_horn>
+  <void_horn>Void Horn</void_horn>
+  <life_horn>Life Horn</life_horn>
+
+  <!-- ==================== ITEMS ==================== -->
+
+  <TITAN_MutatedGland_label>Mutated Gland</TITAN_MutatedGland_label>
+  <TITAN_MutatedGland_desc>An unstable biological gland extracted from Hunters. Though useless for normal synthesis, its bio-energy is highly valuable on the black market.</TITAN_MutatedGland_desc>
+
+  <TITAN_Incense_label>Gene Incense</TITAN_Incense_label>
+  <TITAN_Incense_desc>A bundle of special herbs and chemicals. When lit, it releases pheromones invisible to humans but detectable by specific royal beasts.
+
+This is the starting point of "Project TITAN".
+
+Usage:
+Select a colonist -> Right-click incense -> Choose "Light Incense".</TITAN_Incense_desc>
+
+  <TITAN_PrototypeScale_label>Prototype's Shed Scale</TITAN_PrototypeScale_label>
+  <TITAN_PrototypeScale_desc>A scale shed from Prototype #0, still glowing faintly golden with special pheromones.
+
+This pheromone has no effect on normal creatures, but seems to attract its eternal companion.
+
+Usage:
+Select a colonist -> Right-click scale -> Choose "Activate Signal".</TITAN_PrototypeScale_desc>
+
+  <TITAN_CrimsonKeratin_label>Crimson Keratin (Data Core)</TITAN_CrimsonKeratin_label>
+  <TITAN_CrimsonKeratin_desc>Keratin left behind by War Trace when it departs. Its molecular arrangement holds the ultimate secrets of biological weapons.
+
+Analyze at Research Table to unlock [Destroyer Module] schematic.</TITAN_CrimsonKeratin_desc>
+
+  <TITAN_VoidDust_label>Void Dust (Phase Data)</TITAN_VoidDust_label>
+  <TITAN_VoidDust_desc>Crystalline powder left by Void Walker, containing phase shield frequency data.
+
+Analyze at Research Table to unlock [Fortress Module] schematic.</TITAN_VoidDust_desc>
+
+  <TITAN_LifeResin_label>Life Resin (Living Sample)</TITAN_LifeResin_label>
+  <TITAN_LifeResin_desc>Active resin left by Matriarch of Life, containing secrets of rapid cell regeneration.
+
+Analyze at Research Table to unlock [Walker Module] schematic.</TITAN_LifeResin_desc>
+
+  <TITAN_Tuber_label>Titan Tuber</TITAN_Tuber_label>
+  <TITAN_Tuber_desc>Never-rotting super ration.</TITAN_Tuber_desc>
+
+  <TITAN_Tree_label>Titan Tree</TITAN_Tree_label>
+  <TITAN_Tree_desc>A Titan tree.</TITAN_Tree_desc>
+
+  <!-- Implant Items -->
+  <TITAN_Implant_CrimsonHeart_label>Crimson Mutagen</TITAN_Implant_CrimsonHeart_label>
+  <TITAN_Implant_CrimsonHeart_desc>Crimson potion made using War Trace genes.
+
+[Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Crimson Mutagen"
+
+Effect: Painless, massive melee damage boost.</TITAN_Implant_CrimsonHeart_desc>
+
+  <TITAN_Implant_VoidMembrane_label>Void Mutagen</TITAN_Implant_VoidMembrane_label>
+  <TITAN_Implant_VoidMembrane_desc>Azure potion made using Void Walker genes.
+
+[Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Void Mutagen"
+
+Effect: High armor, high dodge.</TITAN_Implant_VoidMembrane_desc>
+
+  <TITAN_Implant_VerdantSpine_label>Verdant Mutagen</TITAN_Implant_VerdantSpine_label>
+  <TITAN_Implant_VerdantSpine_desc>Emerald potion made using Matriarch of Life genes.
+
+[Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Verdant Mutagen"
+
+Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_desc>
+
+  <!-- ==================== RESEARCH ==================== -->
+
+  <ResearchProject_TITAN_GeneEngineering_label>Titan Genetic Engineering</ResearchProject_TITAN_GeneEngineering_label>
+  <ResearchProject_TITAN_GeneEngineering_desc>Understand the basic structure of Titan creatures, laying foundation for further research.</ResearchProject_TITAN_GeneEngineering_desc>
+
+  <ResearchProject_TITAN_Crimson_label>Crimson Mutagen</ResearchProject_TITAN_Crimson_label>
+  <ResearchProject_TITAN_Crimson_desc>Analyze War Trace genetic data to develop mutagen that greatly enhances muscles and pain nerves.</ResearchProject_TITAN_Crimson_desc>
+
+  <ResearchProject_TITAN_Void_label>Void Mutagen</ResearchProject_TITAN_Void_label>
+  <ResearchProject_TITAN_Void_desc>Analyze Void Walker phase data to develop mutagen that generates micro phase deflection fields under the skin.</ResearchProject_TITAN_Void_desc>
+
+  <ResearchProject_TITAN_Verdant_label>Verdant Mutagen</ResearchProject_TITAN_Verdant_label>
+  <ResearchProject_TITAN_Verdant_desc>Analyze Matriarch of Life biological data to develop mutagen that greatly enhances metabolism and regeneration.</ResearchProject_TITAN_Verdant_desc>
+
+  <!-- ==================== INCIDENTS ==================== -->
+
+  <Incident_Titan_Matriarch>Titan Legend: Matriarch of Life</Incident_Titan_Matriarch>
+  <Incident_Titan_Warlord>Titan Legend: War Trace</Incident_Titan_Warlord>
+  <Incident_Titan_VoidWalker>Titan Legend: Void Walker</Incident_Titan_VoidWalker>
+  <Incident_TitanHunterAttack>Imperial Hunter Attack</Incident_TitanHunterAttack>
+
+  <!-- ==================== HEDIFFS (Health Conditions) ==================== -->
+
+  <!-- Implants -->
+  <Hediff_TITAN_Implant_CrimsonHeart_label>Crimson Heart (Mutation)</Hediff_TITAN_Implant_CrimsonHeart_label>
+  <Hediff_TITAN_Implant_CrimsonHeart_desc>Enhanced heart function from genetic mutation.</Hediff_TITAN_Implant_CrimsonHeart_desc>
+
+  <Hediff_TITAN_Implant_VoidMembrane_label>Void Membrane (Mutation)</Hediff_TITAN_Implant_VoidMembrane_label>
+  <Hediff_TITAN_Implant_VoidMembrane_desc>Subcutaneous phase field from genetic mutation.</Hediff_TITAN_Implant_VoidMembrane_desc>
+
+  <Hediff_TITAN_Implant_VerdantSpine_label>Verdant Spine (Mutation)</Hediff_TITAN_Implant_VerdantSpine_label>
+  <Hediff_TITAN_Implant_VerdantSpine_desc>Enhanced spinal nerves from genetic mutation.</Hediff_TITAN_Implant_VerdantSpine_desc>
+
+  <!-- Kings Blood -->
+  <Hediff_TITAN_KingsBloodline_label>King's Bloodline</Hediff_TITAN_KingsBloodline_label>
+  <Hediff_TITAN_KingsBloodline_desc>Prototype #0's complete awakening state.</Hediff_TITAN_KingsBloodline_desc>
+
+  <!-- Buffs -->
+  <Hediff_TITAN_Buff_KingsGrace_label>King's Blessing</Hediff_TITAN_Buff_KingsGrace_label>
+  <Hediff_TITAN_Buff_KingsGrace_desc>Inspired by Prototype #0's awakening aura.</Hediff_TITAN_Buff_KingsGrace_desc>
+
+  <!-- Bond -->
+  <Hediff_TITAN_Bond_Spark_label>Spark Resonance</Hediff_TITAN_Bond_Spark_label>
+  <Hediff_TITAN_Bond_Spark_desc>Feeling beloved friend "Spark" nearby. The raging genes calm down from that warm core radiation.</Hediff_TITAN_Bond_Spark_desc>
+
+  <Hediff_TITAN_Bond_Thrumbo_label>Guardian Resonance</Hediff_TITAN_Bond_Thrumbo_label>
+  <Hediff_TITAN_Bond_Thrumbo_desc>Soul link with Prototype #0. As long as #0 is nearby, Spark gains supernatural reaction speed and regeneration.</Hediff_TITAN_Bond_Thrumbo_desc>
+
+  <!-- Auras -->
+  <Hediff_TITAN_Aura_Warlord_label>Blood Rage</Hediff_TITAN_Aura_Warlord_label>
+  <Hediff_TITAN_Aura_Warlord_desc>Affected by War Trace's berserk aura.</Hediff_TITAN_Aura_Warlord_desc>
+
+  <Hediff_TITAN_Aura_Warlord_Source_label>War Trace Aura</Hediff_TITAN_Aura_Warlord_Source_label>
+  <Hediff_TITAN_Aura_Warlord_Source_desc>Emitting berserk psionic waves.</Hediff_TITAN_Aura_Warlord_Source_desc>
+
+  <Hediff_TITAN_Aura_VoidWalker_label>Void Veil</Hediff_TITAN_Aura_VoidWalker_label>
+  <Hediff_TITAN_Aura_VoidWalker_desc>Protected by Void Walker's phase shield.</Hediff_TITAN_Aura_VoidWalker_desc>
+
+  <Hediff_TITAN_Aura_VoidWalker_Source_label>Void Walker Aura</Hediff_TITAN_Aura_VoidWalker_Source_label>
+  <Hediff_TITAN_Aura_VoidWalker_Source_desc>Emitting phase-distorting psionic energy.</Hediff_TITAN_Aura_VoidWalker_Source_desc>
+
+  <Hediff_TITAN_Aura_Matriarch_label>Life Bloom</Hediff_TITAN_Aura_Matriarch_label>
+  <Hediff_TITAN_Aura_Matriarch_desc>Bathing in radiant life energy.</Hediff_TITAN_Aura_Matriarch_desc>
+
+  <Hediff_TITAN_Aura_Matriarch_Source_label>Matriarch Aura</Hediff_TITAN_Aura_Matriarch_Source_label>
+  <Hediff_TITAN_Aura_Matriarch_Source_desc>Emitting life energy.</Hediff_TITAN_Aura_Matriarch_Source_desc>
+
+  <!-- Special Conditions -->
+  <Hediff_TITAN_GeneticCollapse_label>Genetic Collapse</Hediff_TITAN_GeneticCollapse_label>
+  <Hediff_TITAN_GeneticCollapse_desc>Genome is disintegrating.</Hediff_TITAN_GeneticCollapse_desc>
+  <Hediff_TITAN_GeneticCollapse_stage1_label>Early Stage</Hediff_TITAN_GeneticCollapse_stage1_label>
+  <Hediff_TITAN_GeneticCollapse_stage2_label>Critical</Hediff_TITAN_GeneticCollapse_stage2_label>
+
+  <Hediff_TITAN_VoidAnchor_label>Phase Anchor</Hediff_TITAN_VoidAnchor_label>
+
+  <Hediff_TITAN_WarlordSoothing_label>Titan Resonance (Soothing)</Hediff_TITAN_WarlordSoothing_label>
+  <Hediff_TITAN_WarlordSoothing_desc>Prototype #0's psionics are trying to calm its rage. When resonance reaches 3 layers, it will stop attacking.</Hediff_TITAN_WarlordSoothing_desc>
+  <Hediff_TITAN_WarlordSoothing_stage1_label>Resonance I</Hediff_TITAN_WarlordSoothing_stage1_label>
+  <Hediff_TITAN_WarlordSoothing_stage2_label>Resonance II</Hediff_TITAN_WarlordSoothing_stage2_label>
+  <Hediff_TITAN_WarlordSoothing_stage3_label>Resonance Complete</Hediff_TITAN_WarlordSoothing_stage3_label>
+
+  <!-- Spark Reboot -->
+  <Hediff_TITAN_SparkReboot_label>Phoenix Reboot</Hediff_TITAN_SparkReboot_label>
+  <Hediff_TITAN_SparkReboot_desc>Phoenix Protocol activated. Initiating emergency重组 sequence.</Hediff_TITAN_SparkReboot_desc>
+
+  <!-- ==================== C# CODE MESSAGES ==================== -->
+
+  <Message_TITAN_CannotHandleGenes>{0} cannot withstand Titan genes and spits out the potion.</Message_TITAN_CannotHandleGenes>
+  <Message_TITAN_AlreadyHasAbility>{0} already possesses this ability.</Message_TITAN_AlreadyHasAbility>
+  <Message_TITAN_GenomeSaturated>{0} genome is saturated, fusion rejected.</Message_TITAN_GenomeSaturated>
+  <Message_TITAN_FusionSuccess>{0} successfully fused with {1}!</Message_TITAN_FusionSuccess>
+  <Message_TITAN_KingsAwakening>[King's Awakening] Prototype #0 has fully awakened!</Message_TITAN_KingsAwakening>
+
+  <!-- Ability Button -->
+  <Command_TitanResonance_label>Titan Resonance</Command_TitanResonance_label>
+  <Command_TitanResonance_desc>Use Prototype #0's royal genes to release a resonance wave.
+
+[Cooldown: 1 hour]
+- Task Beasts: Perform specific healing/soothing actions, then receive reward and leave.
+- Ally Support: Thank support and guide them away.
+- Normal Allies: Heal wounds.</Command_TitanResonance_desc>
+
+  <Message_TITAN_TargetTooFar>Target is too far!</Message_TITAN_TargetTooFar>
+  <Message_TITAN_MatriarchHealed>Matriarch of Life fully recovered!</Message_TITAN_MatriarchHealed>
+  <Message_TITAN_MatriarchHealing>Healing... Remaining: {0}</Message_TITAN_MatriarchHealing>
+  <Message_TITAN_WarlordCalmed>War Trace's rage has subsided!</Message_TITAN_WarlordCalmed>
+  <Message_TITAN_WarlordSoothing>Soothing...</Message_TITAN_WarlordSoothing>
+  <Message_TITAN_VoidWalkerThreat>Threats nearby, cannot teleport!</Message_TITAN_VoidWalkerThreat>
+  <Message_TITAN_VoidWalkerSafe>Void Walker confirms safety, returning to the Void.</Message_TITAN_VoidWalkerSafe>
+  <Message_TITAN_Healed>Healed {0}</Message_TITAN_Healed>
+  <Message_TITAN_Leaving>{0} is departing.</Message_TITAN_Leaving>
+
+  <!-- Spark Immortality -->
+  <Message_Spark_LethalStrikeDetected>Spark's core detected lethal blow! Emergency重组 protocol initiated.</Message_Spark_LethalStrikeDetected>
+  <Message_Spark_CoreDamaged>Prototype #0 core damaged, forced hibernation!</Message_Spark_CoreDamaged>
+  <Message_Warlord_LeftData>War Trace has acknowledged you and left data.</Message_Warlord_LeftData>
+  <Message_Hunter_EntityCollapsed>{0}'s entity has collapsed and returned.</Message_Hunter_EntityCollapsed>
+
+  <!-- Thrumbo Magnet -->
+  <Message_ThrumboMagnet_Attracted>Prototype #0's juvenile resonance attracted a distant herd.</Message_ThrumboMagnet_Attracted>
+
+  <!-- Spawn Effects -->
+  <Message_SpawnSpark_AlreadyHas>Signal invalid: That creature already seems to have one beside you.</Message_SpawnSpark_AlreadyHas>
+  <Message_SpawnPrototype_AlreadyExists>Signal interference: Prototype #0 detected. As the only bio-weapon, only one can resonate at a time.</Message_SpawnPrototype_AlreadyExists>
+
+  <!-- Gene Fusion -->
+  <Message_GeneFusion>Gene Fusion</Message_GeneFusion>
+  <Message_KingsAwakeningMote>King's Awakening!!!</Message_KingsAwakeningMote>
+  <Message_LifeDrain>Life Drain</Message_LifeDrain>
+
+  <!-- Letter -->
+  <Letter_TitanReinforcement>Titan Reinforcement</Letter_TitanReinforcement>
+  <Letter_TitanReinforcement_Body>Sensing your crisis, {0} has come to aid you!</Letter_TitanReinforcement_Body>
+
+  <!-- Motes (short floating text) -->
+  <Mote_GeneFusion>Gene Fusion</Mote_GeneFusion>
+  <Mote_KingsAwakening>King's Awakening!!!</Mote_KingsAwakening>
+  <Mote_LifeDrain>Life Drain</Mote_LifeDrain>
+
+  <!-- UI -->
+  <Cooldown>Cooldown ({0} h)</Cooldown>
+  <ReturnToVoid>Return to Void</ReturnToVoid>
+
+  <!-- Letters -->
+  <Letter_SparkSpawn_Title>Undying Spark</Letter_SparkSpawn_Title>
+  <Letter_SparkSpawn_Body>As the scale releases special pheromone signals, a mutated boomrat with intense heat radiates into the map.
+
+It is "Spark", the closest friend of Prototype #0. It caught the familiar scent only it could recognize and came without hesitation.
+
+(Obtained: Spark - The immortal explosion expert)</Letter_SparkSpawn_Body>
+
+  <Letter_PrototypeSpawn_Title>Answer from the Mist</Letter_PrototypeSpawn_Title>
+  <Letter_PrototypeSpawn_Body>The incense burns down, and a tranquil scent that can calm berserk genes drifts into the wilderness.
+
+Soon, a golden figure appears at the map's edge—the Empire's lost test subject "#0".
+
+She looks exhausted, enduring constant pain from genetic modification. But now, your incense gives her first taste of peace in a long time.
+
+She tentatively approaches the colony, not as a weapon, but as a wanderer seeking shelter.
+
+(Obtained: [Prototype #0] - She trusts you and joins the colony)</Letter_PrototypeSpawn_Body>
+
+</LanguageData>

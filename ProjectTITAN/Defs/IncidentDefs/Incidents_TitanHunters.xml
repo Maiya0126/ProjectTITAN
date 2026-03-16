@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_HunterAttack</defName>
+		<label>猎杀者突袭</label>
+		<category>ThreatBig</category>
+		<workerClass>ProjectTITAN.IncidentWorker_TitanHunterAttack</workerClass>
+
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+
+		<baseChance>3.0</baseChance>
+		<minRefireDays>15</minRefireDays>
+		<minThreatPoints>200</minThreatPoints>
+
+		<tale>Raid</tale>
+	</IncidentDef>
+
+</Defs>

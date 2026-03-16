@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>TITAN_TitanTechBase</defName>
+		<label>泰坦基因工程</label>
+		<description>理解泰坦生物的基本构造，为后续研究打下基础。</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+<ResearchProjectDef>
+		<defName>TITAN_Tech_Destroyer</defName>
+		<label>猩红诱变剂</label>
+		<description>解析战争之痕的基因数据，研发出能极大强化肌肉与痛觉神经的诱变剂。</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>TITAN_TitanTechBase</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>TITAN_Tech_Bastion</defName>
+		<label>虚空诱变剂</label>
+		<description>解析虚空行者的相位数据，研发出能在皮下生成微型相位偏折场的诱变剂。</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>TITAN_TitanTechBase</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>TITAN_Tech_Strider</defName>
+		<label>繁盛诱变剂</label>
+		<description>解析繁盛之母的生命数据，研发出能极大强化代谢与再生能力的诱变剂。</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>TITAN_TitanTechBase</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+</Defs>

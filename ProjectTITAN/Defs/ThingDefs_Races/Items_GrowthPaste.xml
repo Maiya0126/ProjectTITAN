@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_GrowthPaste</defName>
+		<label>基因代偿合剂</label>
+		<description>基因代偿合剂。</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/NutrientPaste</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(0, 255, 200)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.3</Mass>
+			<WorkToMake>600</WorkToMake>
+			<Nutrition>3.0</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>Kibble, AnimalProduct</foodType>
+			<preferability>DesperateOnly</preferability>
+			<optimalityOffsetHumanlikes>-9999</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>1000</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>TITAN_RapidGrowth</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Medicine>2</Medicine>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<TITAN_RawTitanTuber>1</TITAN_RawTitanTuber>
+			<MedicineHerbal>1</MedicineHerbal>
+		</costList>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>TITAN_RapidGrowth</defName>
+		<label>代谢过载</label>
+		<description>新陈代谢被剧烈加速。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0, 255, 200)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<RestFallRateFactor>1.2</RestFallRateFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

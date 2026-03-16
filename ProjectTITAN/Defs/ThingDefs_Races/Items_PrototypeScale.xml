@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_PrototypeScale</defName>
+		<label>0号的脱落鳞片</label>
+		<description>一枚从0号原型体身上脱落的鳞片，依然散发着微弱的金色光芒和特殊的信息素。\n\n这种信息素对普通生物无效，但似乎能吸引那个一直守护着她的朋友。\n\n使用方法：\n选中一名殖民者 -> 右键点击鳞片 -> 选择“激活信号”。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_PrototypeScale</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>释放信息素 (召唤花火)</useLabel>
+				<useDuration>100</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>ProjectTITAN.CompUseEffect_SpawnSpark</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

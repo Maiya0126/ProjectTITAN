@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_Incense</defName>
+		<label>基因香薰</label>
+		<description>一捆由特殊草药和化学物质混合而成的香薰棒。点燃时会散发出一种人类无法察觉，但能吸引特定皇室生物的费洛蒙烟雾。\n\n这是“泰坦计划”的起点。\n\n使用方法：\n选中一名殖民者 -> 右键点击香薰 -> 选择“点燃香薰”。</description>
+
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_Incense</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Mass>0.5</Mass>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+
+		<recipeMaker>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Medicine>4</Medicine>
+			</skillRequirements>
+<researchPrerequisites>
+				<li>TITAN_TitanTechBase</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<costList>
+			<MedicineHerbal>5</MedicineHerbal>
+			<WoodLog>20</WoodLog>
+			<PsychoidLeaves>10</PsychoidLeaves>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>点燃香薰 (召唤0号)</useLabel>
+				<useDuration>300</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>ProjectTITAN.CompUseEffect_SpawnPrototype</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

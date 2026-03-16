@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_Spark</defName>
+		<label>花火</label>
+		<description>一只发生了奇异突变的爆炸鼠。它是“0号原型体”在实验室里唯一的朋友。\n\n特性：\n【不死鸟协议】受到致命伤时不会死亡，而是会引发一次剧烈爆炸并进入强制休眠重启状态。\n【羁绊】当它在0号原型体附近时，会获得战斗力加成。</description>
+
+		<statBases>
+			<MoveSpeed>6.0</MoveSpeed>
+			<MarketValue>800</MarketValue>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>80</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<Wildness>0.1</Wildness>
+		</statBases>
+
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<lifeExpectancy>15</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<useMeatFrom>Boomrat</useMeatFrom>
+
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+					<soundDeath>Pawn_Boomrat_Death</soundDeath>
+					<soundCall>Pawn_Boomrat_Call</soundCall>
+					<soundAngry>Pawn_Boomrat_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+
+		<comps>
+			<li Class="ProjectTITAN.CompProperties_TitanBond">
+				<targetPawnKind>TITAN_ThrumboPrototype</targetPawnKind>
+				<bondHediff>TITAN_Bond_Spark</bondHediff>
+				<range>15</range>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>10</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>bite</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_Spark</defName>
+		<label>花火</label>
+		<race>TITAN_Spark</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Boomrat/Boomrat</texPath>
+					<drawSize>1.1</drawSize>
+					<color>(255, 120, 0)</color>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>TITAN_Bond_Thrumbo</defName>
+		<label>花火共鸣</label>
+		<description>感受到了挚友“花火”就在身边。狂暴的基因因那温暖的核心辐射而平静下来。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 200, 0)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0.8</painFactor>
+				<statOffsets>
+					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_Spark</defName>
+		<label>守护者共鸣</label>
+		<description>与0号原型体的灵魂链接。只要0号在附近，花火就会获得超凡的反应速度和再生能力。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 215, 0)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>20</MeleeDodgeChance>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+
+					<InjuryHealingFactor>3.0</InjuryHealingFactor>
+					<ImmunityGainSpeed>2.0</ImmunityGainSpeed>
+				</statOffsets>
+
+				<naturalHealingFactor>5.0</naturalHealingFactor>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>300</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

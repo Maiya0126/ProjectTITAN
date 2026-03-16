@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_HunterGland</defName>
+		<label>突变腺体</label>
+		<description>从猎杀者体内提取的不稳定生物腺体。虽然无法用于常规合成，但其蕴含的生物能量在黑市上极具价值，许多收藏家愿意高价收购。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_HunterGland</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

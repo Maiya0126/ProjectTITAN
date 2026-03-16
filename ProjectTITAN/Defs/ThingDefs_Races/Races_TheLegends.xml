@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_Warlord</defName>
+		<label>战争之痕</label>
+		<description>传说中的三大神兽之一。年龄：未知(远古)。\n\n特性：\n- 不死之身\n- 光环：血之狂怒</description>
+		<statBases>
+			<MoveSpeed>6.0</MoveSpeed>
+			<MarketValue>6000</MarketValue>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<FilthRate>20</FilthRate>
+			<Wildness>2.0</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
+			<baseBodySize>6.0</baseBodySize>
+			<baseHealthScale>10.0</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<useMeatFrom>Thrumbo</useMeatFrom>
+			<lifeExpectancy>150</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(255, 20, 20, 0)</glowColor>
+			</li>
+
+			<li Class="CompProperties">
+				<compClass>ProjectTITAN.CompMobileLight</compClass>
+			</li>
+			<li Class="ProjectTITAN.CompProperties_TitanAura">
+				<radius>12</radius>
+				<buffDef>TITAN_Aura_Warlord</buffDef>
+				<selfBuffDef>TITAN_Aura_Warlord_Source</selfBuffDef>
+				<selfDamage>false</selfDamage>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>shattering horn</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>3.0</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_Warlord</defName>
+		<label>战争之痕</label>
+		<race>TITAN_Warlord</race>
+		<combatPower>2000</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<drawSize>6.0</drawSize>
+					<shaderType>Transparent</shaderType>
+					<color>(160, 20, 20, 230)</color>
+					<shadowData>
+						<volume>(1.0, 0.8, 0.8)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_VoidWalker</defName>
+		<label>虚空行者</label>
+		<description>传说中的三大神兽之一。年龄：未知(远古)。\n\n特性：\n- 不死之身\n- 极高闪避与护盾\n- 光环：虚空帷幕</description>
+		<statBases>
+			<MoveSpeed>15.0</MoveSpeed>
+			<MarketValue>6000</MarketValue>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+
+			<PsychicSensitivity>3.0</PsychicSensitivity>
+			<Wildness>2.0</Wildness>
+
+			<MeleeDodgeChance>80.0</MeleeDodgeChance>
+			<PawnTrapSpringChance>0.0</PawnTrapSpringChance>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
+			<baseBodySize>4.5</baseBodySize>
+			<baseHealthScale>5.0</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<useMeatFrom>Thrumbo</useMeatFrom>
+<lifeExpectancy>150</lifeExpectancy>
+
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(150, 240, 255, 0)</glowColor>
+			</li>
+			<li Class="CompProperties">
+				<compClass>ProjectTITAN.CompMobileLight</compClass>
+			</li>
+			<li Class="ProjectTITAN.CompProperties_TitanAura">
+				<radius>12</radius>
+				<buffDef>TITAN_Aura_VoidWalker</buffDef>
+				<selfBuffDef>TITAN_Aura_VoidWalker_Source</selfBuffDef>
+				<selfDamage>false</selfDamage>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>void horn</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_VoidWalker</defName>
+		<label>虚空行者</label>
+		<race>TITAN_VoidWalker</race>
+		<combatPower>1500</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<drawSize>5.5</drawSize>
+					<shaderType>Transparent</shaderType>
+					<color>(100, 230, 255, 90)</color>
+					<shadowData>
+						<volume>(0, 0, 0)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_Matriarch</defName>
+		<label>繁盛之母</label>
+		<description>传说中的三大神兽之一。年龄：未知(远古)。\n\n特性：\n- 不死之身\n- 光环：生命绽放</description>
+		<statBases>
+			<MoveSpeed>3.5</MoveSpeed>
+			<MarketValue>10000</MarketValue>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ImmunityGainSpeed>3.0</ImmunityGainSpeed>
+			<Wildness>2.0</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
+			<baseBodySize>8.0</baseBodySize>
+			<baseHealthScale>15.0</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<useMeatFrom>Thrumbo</useMeatFrom>
+			<lifeExpectancy>150</lifeExpectancy>
+			<lifeStageAges>
+<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(100, 255, 100, 0)</glowColor>
+			</li>
+			<li Class="CompProperties">
+				<compClass>ProjectTITAN.CompMobileLight</compClass>
+			</li>
+			<li Class="ProjectTITAN.CompProperties_TitanAura">
+				<radius>15</radius>
+				<buffDef>TITAN_Aura_Matriarch</buffDef>
+				<selfBuffDef>TITAN_Aura_Matriarch_Source</selfBuffDef>
+				<selfDamage>true</selfDamage>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>life horn</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>5.0</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_Matriarch</defName>
+		<label>繁盛之母</label>
+		<race>TITAN_Matriarch</race>
+		<combatPower>800</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<drawSize>7.5</drawSize>
+					<shaderType>Transparent</shaderType>
+					<color>(120, 255, 120, 230)</color>
+					<shadowData>
+						<volume>(1.5, 1.0, 1.0)</volume>
+						<offset>(0,0,-0.8)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

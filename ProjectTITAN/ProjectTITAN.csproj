@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9937253A-3D13-4748-BCF7-FC01856081E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectTITAN</RootNamespace>
+    <AssemblyName>ProjectTITAN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\Games\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\CompThrumboMagnet.cs" />
+    <Compile Include="Source\CompTitanBond.cs" />
+    <Compile Include="Source\CompUseEffect_SpawnPrototype.cs" />
+    <Compile Include="Source\CompUseEffect_SpawnSpark.cs" />
+    <Compile Include="Source\IncidentWorkers_TheLegends.cs" />
+    <Compile Include="Source\IncidentWorker_TitanHunterAttack.cs" />
+    <Compile Include="Source\Patch_SparkImmortality.cs" />
+    <Compile Include="Source\TitanCore.cs" />
+    <Compile Include="Source\TitanModInit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About\About.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_Dragonblood.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_SparkReboot.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_TitanAbility.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_TitanAuras.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_TitanBond.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_TitanImplants.xml" />
+    <Content Include="Defs\IncidentDefs\Incidents_TheLegends.xml" />
+    <Content Include="Defs\IncidentDefs\Incidents_TitanHunters.xml" />
+    <Content Include="Defs\Recipes_TitanKibble.xml" />
+    <Content Include="Defs\ResearchProjectDefs\Research_Titan.xml" />
+    <Content Include="Defs\ThingDefs_Items\Items_TitanArtifacts.xml" />
+    <Content Include="Defs\ThingDefs_Items\Items_TitanImplants.xml" />
+    <Content Include="Defs\ThingDefs_Races\Items_GrowthPaste.xml" />
+    <Content Include="Defs\ThingDefs_Races\Items_Incense.xml" />
+    <Content Include="Defs\ThingDefs_Plants\Plants_TitanTuber.xml" />
+    <Content Include="Defs\ThingDefs_Races\Items_MutatedGland.xml" />
+    <Content Include="Defs\ThingDefs_Races\Items_PrototypeScale.xml" />
+    <Content Include="Defs\ThingDefs_Races\Races_Animal_Hunter.xml" />
+    <Content Include="Defs\ThingDefs_Races\Races_Animal_Spark.xml" />
+    <Content Include="Defs\ThingDefs_Races\Races_Animal_ThrumboPrototype.xml" />
+    <Content Include="Defs\ThingDefs_Races\Races_TheLegends.xml" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_LifeResin.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_VoidDust.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_CrimsonKeratin.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_HunterGland.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_PrototypeScale.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_Tuber.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_Incense.png" />
+    <Content Include="Textures\Things\Plant\TITAN_Tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Languages\" />
+    <Folder Include="Languages\English\" />
+    <Folder Include="Languages\English\Keyed\" />
+    <Folder Include="Languages\SimpChinese\" />
+    <Folder Include="Languages\SimpChinese\Keyed\" />
+    <Folder Include="Patches\" />
+    <Content Include="Languages\English\Keyed\ProjectTITAN_EN.xml" />
+    <Content Include="Languages\SimpChinese\Keyed\ProjectTITAN_CN.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM ================================================================
+REM  【泰坦计划 - 终极同步脚本】
+REM  1. 同步 XML/图片/关于信息
+REM  2. 自动提取并复制 DLL
+REM ================================================================
+
+REM --- 设置游戏 Mod 目录 (请确保路径无误) ---
+set "DestDir=D:\games\steamapps\common\Rimworld\Mods\MaiyaMod06 Project T.I.T.A.N. 泰坦计划"
+
+REM --- 1. 同步静态资源 (XML, About, Textures) ---
+REM 直接使用 VS 宏 $(ProjectDir)，不需要 cd 跳来跳去
+REM /MIR: 镜像同步 (会自动删除目标文件夹里多余的旧垃圾)
+echo 正在同步静态资源...
+robocopy "$(ProjectDir)." "%25DestDir%25" /MIR ^
+  /XD .git .vs obj bin Properties Source .idea ^
+  /XF *.csproj *.sln *.user *.suo PublishedFileId.txt *.cs
+
+REM --- 2. 这里的 Robocopy 返回值处理 (这很重要，否则 VS 会以为出错了) ---
+if %25ERRORLEVEL%25 LEQ 8 set ERRORLEVEL=0
+
+REM --- 3. 关键：手动复制 DLL ---
+REM 如果没有 Assemblies 文件夹，先创建一个
+if not exist "%25DestDir%25\Assemblies" mkdir "%25DestDir%25\Assemblies"
+
+REM 从生成目录 (TargetDir) 把 DLL 拷过去
+echo 正在部署 DLL 核心...
+copy /Y "$(TargetDir)$(TargetName).dll" "%25DestDir%25\Assemblies\"
+copy /Y "$(TargetDir)$(TargetName).pdb" "%25DestDir%25\Assemblies\"
+
+REM --- 4. 结束 ---
+echo [泰坦计划] 部署完成！
+exit 0</PostBuildEvent>
+  </PropertyGroup>
+</Project>

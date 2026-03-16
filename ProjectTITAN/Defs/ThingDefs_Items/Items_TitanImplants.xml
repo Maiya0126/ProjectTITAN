@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="TitanMutagenBase" ParentName="ResourceBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<tradeTags>
+			<li>TitanImplant</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Medicine</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.5</Mass>
+			<MarketValue>2000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<foodType>Processed</foodType>
+			<drugCategory>Medical</drugCategory>
+			<baseIngestTicks>120</baseIngestTicks>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestCommandString>融合 {0}</ingestCommandString>
+			<ingestReportString>正在融合 {0}...</ingestReportString>
+		</ingestible>
+
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>10</Intellectual>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="TitanMutagenBase">
+		<defName>TITAN_Implant_CrimsonHeart</defName>
+		<label>猩红诱变剂</label>
+		<description>利用战争之痕基因制造的猩红药剂。\n\n【用法】：\n请在敲击兽的“健康 -> 手术”面板中选择“喂食 猩红诱变剂”。\n\n效果：无痛觉、大幅提升近战伤害。</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<TITAN_PrototypeScale>1</TITAN_PrototypeScale>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>TITAN_Tech_Destroyer</researchPrerequisite>
+		</recipeMaker>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ProjectTITAN.IngestionOutcomeDoer_TitanMutation">
+					<hediffDef>TITAN_Implant_CrimsonHeart</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="TitanMutagenBase">
+		<defName>TITAN_Implant_VoidMembrane</defName>
+		<label>虚空诱变剂</label>
+		<description>利用虚空行者基因制造的幽蓝药剂。\n\n【用法】：\n请在敲击兽的“健康 -> 手术”面板中选择“喂食 虚空诱变剂”。\n\n效果：高护甲、高闪避。</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<TITAN_PrototypeScale>1</TITAN_PrototypeScale>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>TITAN_Tech_Bastion</researchPrerequisite>
+		</recipeMaker>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ProjectTITAN.IngestionOutcomeDoer_TitanMutation">
+					<hediffDef>TITAN_Implant_VoidMembrane</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="TitanMutagenBase">
+		<defName>TITAN_Implant_VerdantSpine</defName>
+		<label>繁盛诱变剂</label>
+		<description>利用繁盛之母基因制造的翠绿药剂。\n\n【用法】：\n请在敲击兽的“健康 -> 手术”面板中选择“喂食 繁盛诱变剂”。\n\n效果：超高负重、快速再生。</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<TITAN_PrototypeScale>1</TITAN_PrototypeScale>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>TITAN_Tech_Strider</researchPrerequisite>
+		</recipeMaker>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="ProjectTITAN.IngestionOutcomeDoer_TitanMutation">
+					<hediffDef>TITAN_Implant_VerdantSpine</hediffDef>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Project T.I.T.A.N. (Thrumbo Expansion)</name>
+	<author>Maiya0126</author>
+	<packageId>maiya.projecttitan</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<description>
+		Project T.I.T.A.N. (泰坦计划：敲击兽扩展)
+		📖 简介
+		因为我个人实在是太喜欢敲击兽这个环世界的“吉祥物”了，但是他正常情况下遇见概率低，捕获难度高，喂养成本大，让很多玩家只把他当吉祥物了。
+		本模组是对边缘世界最强生物“敲击兽”的深度扩展。引入了全新的基因改造系统、独一无二的原型体宠物、史诗级的三神兽事件以及动态的阵营互动（想做帝国秘密派系，可惜我技术不够没做出来）。
+		克服重重苦难，将你的敲击兽培养成横扫战场的“泰坦之王”吧！
+
+		📜 背景故事：泰坦计划的逃亡者
+		在帝国最高机密的深空实验室里，曾进行着一项疯狂的基因工程——“泰坦计划（Project T.I.T.A.N.）”。他们妄图提取敲击兽的基因，融合各种极端的生物诱变剂，打造出绝对服从的终极战争兵器。
+
+		实验引发了无数惨剧，造就了许多失控的畸形巨兽（三神兽的前身）。但在经历了无数次失败后，帝国终于成功培育出了完美的结晶：拥有皇室纯净血脉的【0号原型体】。
+
+		然而，帝国低估了 0 号的智慧。它不仅拒绝被奴役，还利用自身强大的基因共鸣摧毁了束缚它的轨道空间站，在漫天的爆炸火光中迫降到了你所在的这颗边缘星球。
+
+		如今，重伤且核心能力陷入休眠的 0 号原型体，正流浪在你的殖民地附近。但危机才刚刚开始：
+		不甘心失败的帝国，派出了由座狼强行改造、毫无痛觉的【猎杀者】大军，誓要将 0 号回收或抹杀；
+		同时，0 号散发的微弱共鸣，也悄然惊醒了这颗星球上潜伏的另外三只远古实验体……
+
+		接纳它，就意味着你将直面帝国的怒火；但若你能用诱变剂助它重登王座，你将拥有一只足以碾压一切的泰坦之王！
+
+		✨ 核心特性与玩法
+		1. 核心伙伴：0号原型体 (Prototype Zero)
+		唯一性：整个世界仅存在一只 0 号原型体，它是解开泰坦秘密的钥匙。
+
+		锁血保护：作为核心资产，0号在受到致命伤害时不会死亡，而是强制进入“休眠保护状态”。
+
+		专属主动技能【泰坦共鸣】：
+
+		日常：释放共鸣波，治疗周围友军的伤口。
+
+		剧情互动：对特定的“神兽”使用时，可触发专属的剧情分支（安抚、指引或治疗）。
+
+		2. 🧬 基因诱变系统 (Mutagen System)
+		抛弃了繁琐的手术台，玩家可通过科技解锁并制作三种强大的基因诱变剂。在“健康”面板中直接给敲击兽喂食即可完成进化：
+
+		🔴 猩红诱变剂 (Crimson Mutagen)：赋予无痛觉、大幅提升近战伤害（副作用：极易饥饿）。
+
+		🔵 虚空诱变剂 (Void Mutagen)：赋予高护甲、高闪避与极速（副作用：容易疲劳）。
+
+		🟢 繁盛诱变剂 (Verdant Mutagen)：赋予超高负重与极速再生。
+
+		⚠️ 排异限制：普通敲击兽基因脆弱，只能承受一种诱变剂。
+
+		3. 👑 终极形态：王者觉醒 (King's Awakening)
+		作为完美的实验体，0号原型体可以同时融合全部三种诱变剂！
+
+		当集齐三种基因后，0号将彻底觉醒，体型重塑，并获得【王者血脉】。
+
+		王者光环：觉醒后的0号将持续为周围友军施加“王者恩赐”Buff，极大提升整个殖民地的战斗力与恢复力。
+
+		4. 🐉 三大神兽降临 (The Three Titans)
+		地图上会随机触发三大泰坦神兽的专属事件。你可以选择暴力击杀获取掉落物，也可以用0号的【泰坦共鸣】完成特殊挑战：
+
+		⚔️ 战争之痕 (Warlord)：狂暴的近战霸主。用共鸣“安抚”其怒火，获得认可。
+
+		🌌 虚空行者 (VoidWalker)：被追杀的隐匿大师。清理周围敌人后用共鸣“指引”其安全撤离。
+
+		🌿 繁盛之母 (Matriarch)：身患基因崩溃的巨兽。用共鸣多次为其“治疗”直至痊愈。
+
+		完成互动后，神兽会留下专属的科技蓝图/数据，并和平离开地图。
+
+		5. ⚔️ 全新危机与动态增援
+		帝国猎杀者袭击 (Hunter Raid)：帝国为了夺回泰坦技术，会派出由座狼基因强行改造的生物兵器“猎杀者”袭击你的殖民地。它们无视痛苦，且击杀后可收获珍贵的“突变腺体”。
+
+		泰坦支援 (Titan Reinforcement)：善意终有回报！如果你之前通过和平方式帮助了三大神兽，在殖民地遭遇敌袭时，它们有 50% 的概率空降战场，协助你击退强敌后再离去。
+
+		6. 🧨 特殊彩蛋
+		包含专属的“花火”特性，为殖民地带来一丝独特的混乱与乐趣！
+		原型体还有特殊体质，会吸引更多的野生敲击兽来访，甚至可能引发“敲击兽大迁徙”事件！
+
+		大叔碎碎念：这个模组其实很早就想做了，但一直因为技术问题搁置着。最近终于有了突破，虽然功能还不完善，但总算是能放出来了。希望大家喜欢这个模组！如果有任何建议或者bug，欢迎随时联系我！
+		扣扣群 1568455
+
+		如果你觉得不错的话，可以去 爱发电 支持大叔，随缘随缘~ https://afdian.com/a/maiya0126
+		If you enjoy what I do, consider supporting me on Ko-fi! Every little bit means the world! https://ko-fi.com/maiya0126
+
+	</description>
+
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+		</li>
+	</modDependencies>
+
+<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+</ModMetaData>

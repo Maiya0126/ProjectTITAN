@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_RawTitanTuber</defName>
+		<label>泰坦块茎</label>
+		<description>永不腐烂的超级口粮。</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_Tuber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.0</MarketValue>
+			<Mass>0.2</Mass>
+			<Nutrition>1.5</Nutrition>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>AnimalProduct, Kibble</foodType>
+			<preferability>DesperateOnly</preferability>
+			<optimalityOffsetHumanlikes>-30</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>100</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>TITAN_Plant_TitanTuber</defName>
+		<label>泰坦树</label>
+		<description>泰坦树。</description>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Nutrition>2.0</Nutrition>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<pathCost>30</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Plant</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<graphicData>
+			<texPath>Things/Plant/TITAN_Tree</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5, 0.5, 0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>TITAN_RawTitanTuber</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<growDays>5</growDays>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestWork>500</harvestWork>
+			<visualSizeRange>2.0~3.5</visualSizeRange>
+		</plant>
+	</ThingDef>
+</Defs>

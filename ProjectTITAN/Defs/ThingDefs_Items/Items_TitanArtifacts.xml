@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_Techprint_Warlord</defName>
+		<label>猩红角质 (数据核心)</label>
+		<description>战争之痕离开时留下的角质碎片，其内部的分子排列记录了生物武器的终极秘密。\n\n在研究台解析此物品，可解锁【毁灭者模块】的制作图纸。</description>
+
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_CrimsonKeratin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>1.0</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_Techprint_VoidWalker</defName>
+		<label>虚空尘埃 (相位数据)</label>
+		<description>虚空行者留下的结晶粉末，蕴含着相位护盾的频率数据。\n\n在研究台解析此物品，可解锁【堡垒模块】的制作图纸。</description>
+
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_VoidDust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>TITAN_Techprint_Matriarch</defName>
+		<label>生命树脂 (活体样本)</label>
+		<description>繁盛之母留下的活性树脂，记录了细胞极速再生的秘密。\n\n在研究台解析此物品，可解锁【行者模块】的制作图纸。</description>
+
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+
+		<graphicData>
+			<texPath>Things/Item/Resource/TITAN_LifeResin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>
