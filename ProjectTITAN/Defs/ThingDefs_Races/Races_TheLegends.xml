@@ -32,13 +32,13 @@
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 				</li>
-			</lifeStageAges>
+</lifeStageAges>
 		</race>
 		<comps>
-			<li Class="CompProperties_Glower">
+			<!--<li Class="CompProperties_Glower">
 				<glowRadius>8</glowRadius>
 				<glowColor>(255, 20, 20, 0)</glowColor>
-			</li>
+			</li>-->
 
 			<li Class="CompProperties">
 				<compClass>ProjectTITAN.CompMobileLight</compClass>
@@ -74,10 +74,10 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<texPath>Things/Animal/TITAN_Warlord</texPath>
 					<drawSize>6.0</drawSize>
 					<shaderType>Transparent</shaderType>
-					<color>(160, 20, 20, 230)</color>
+					<!--<color>(180, 180, 180, 255)</color>-->
 					<shadowData>
 						<volume>(1.0, 0.8, 0.8)</volume>
 						<offset>(0,0,-0.5)</offset>
@@ -121,13 +121,13 @@
 					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 				</li>
-			</lifeStageAges>
+</lifeStageAges>
 		</race>
 		<comps>
-			<li Class="CompProperties_Glower">
+			<!--<li Class="CompProperties_Glower">
 				<glowRadius>7</glowRadius>
 				<glowColor>(150, 240, 255, 0)</glowColor>
-			</li>
+			</li>-->
 			<li Class="CompProperties">
 				<compClass>ProjectTITAN.CompMobileLight</compClass>
 			</li>
@@ -202,13 +202,13 @@
 					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 				</li>
-			</lifeStageAges>
+</lifeStageAges>
 		</race>
 		<comps>
-			<li Class="CompProperties_Glower">
+			<!--<li Class="CompProperties_Glower">
 				<glowRadius>10</glowRadius>
 				<glowColor>(100, 255, 100, 0)</glowColor>
-			</li>
+			</li>-->
 			<li Class="CompProperties">
 				<compClass>ProjectTITAN.CompMobileLight</compClass>
 			</li>

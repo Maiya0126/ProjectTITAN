@@ -67,6 +67,7 @@
     <Compile Include="Source\Patch_SparkImmortality.cs" />
     <Compile Include="Source\TitanCore.cs" />
     <Compile Include="Source\TitanModInit.cs" />
+    <Compile Include="Source\TITAN_ResearchUnlocker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
@@ -107,8 +108,8 @@
     <Folder Include="Languages\SimpChinese\" />
     <Folder Include="Languages\SimpChinese\Keyed\" />
     <Folder Include="Patches\" />
-    <Content Include="Languages\English\Keyed\ProjectTITAN_EN.xml" />
-    <Content Include="Languages\SimpChinese\Keyed\ProjectTITAN_CN.xml" />
+    <Content Include="Languages\English\Keyed\maiya.projecttitan_EN.xml" />
+    <Content Include="Languages\SimpChinese\Keyed\maiya.projecttitan_CN.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

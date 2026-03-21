@@ -1,51 +1,85 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- 泰坦基因工程 -->
 	<ResearchProjectDef>
 		<defName>TITAN_TitanTechBase</defName>
 		<label>泰坦基因工程</label>
 		<description>理解泰坦生物的基本构造，为后续研究打下基础。</description>
-		<baseCost>1000</baseCost>
+		<baseCost>300</baseCost>
 		<techLevel>Ultra</techLevel>
+		<tab>ResearchTab_ProjectTITAN</tab>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
-<ResearchProjectDef>
-		<defName>TITAN_Tech_Destroyer</defName>
-		<label>猩红诱变剂</label>
-		<description>解析战争之痕的基因数据，研发出能极大强化肌肉与痛觉神经的诱变剂。</description>
-		<baseCost>2000</baseCost>
+	<ResearchProjectDef>
+		<defName>TITAN_PlantTech</defName>
+		<label>泰坦植物</label>
+		<description>通过研究0号原型体毛发上所带来的种子，获得种植泰坦树技术并收获了超级口粮泰坦块茎。</description>
+		<baseCost>500</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
 			<li>TITAN_TitanTechBase</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
+		<tab>ResearchTab_ProjectTITAN</tab>
+		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
+<!-- 猩红诱变剂 -->
 	<ResearchProjectDef>
-		<defName>TITAN_Tech_Bastion</defName>
-		<label>虚空诱变剂</label>
-		<description>解析虚空行者的相位数据，研发出能在皮下生成微型相位偏折场的诱变剂。</description>
-		<baseCost>2000</baseCost>
+		<defName>TITAN_Tech_Destroyer</defName>
+		<label>猩红诱变剂</label>
+		<description>解析战争之痕的基因数据，研发出能极大强化肌肉与痛觉神经的诱变剂。</description>
+		<baseCost>1000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
 			<li>TITAN_TitanTechBase</li>
 		</prerequisites>
+		<heldByFactionCategoryTags>
+			<li>Tribe</li>
+		</heldByFactionCategoryTags>
+		<techprintCount>1</techprintCount>
+		<tab>ResearchTab_ProjectTITAN</tab>
 		<researchViewX>1</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
+	<!-- 虚空诱变剂 -->
 	<ResearchProjectDef>
-		<defName>TITAN_Tech_Strider</defName>
-		<label>繁盛诱变剂</label>
-		<description>解析繁盛之母的生命数据，研发出能极大强化代谢与再生能力的诱变剂。</description>
-		<baseCost>2000</baseCost>
+		<defName>TITAN_Tech_Bastion</defName>
+		<label>虚空诱变剂</label>
+		<description>解析虚空行者的相位数据，研发出能在皮下生成微型相位偏折场的诱变剂。</description>
+		<baseCost>1000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
 			<li>TITAN_TitanTechBase</li>
 		</prerequisites>
+		<heldByFactionCategoryTags>
+			<li>Tribe</li>
+		</heldByFactionCategoryTags>
+		<techprintCount>1</techprintCount>
+		<tab>ResearchTab_ProjectTITAN</tab>
 		<researchViewX>1</researchViewX>
 		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 繁盛诱变剂 -->
+	<ResearchProjectDef>
+		<defName>TITAN_Tech_Strider</defName>
+		<label>繁盛诱变剂</label>
+		<description>解析繁盛之母的生命数据，研发出能极大强化代谢与再生能力的诱变剂。</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>TITAN_TitanTechBase</li>
+		</prerequisites>
+		<heldByFactionCategoryTags>
+			<li>Tribe</li>
+		</heldByFactionCategoryTags>
+		<techprintCount>1</techprintCount>
+		<tab>ResearchTab_ProjectTITAN</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 </Defs>

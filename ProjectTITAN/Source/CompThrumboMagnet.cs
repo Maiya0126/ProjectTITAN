@@ -19,9 +19,8 @@ namespace ProjectTITAN
             // IsHashIntervalTick 可以大大减少性能消耗，且频率稳定
             if (p.IsHashIntervalTick(60000))
             {
-                // 3. 每天有 5% 的概率触发 (期望值：20天触发一次)
-                // 你觉得太少可以改成 0.1f (10天)
-                if (Rand.Chance(0.05f))
+                // 3. 每天有 20% 的概率触发 (期望值：5天触发一次)
+                if (Rand.Chance(0.2f))
                 {
                     TriggerThrumboEvent(p);
                 }

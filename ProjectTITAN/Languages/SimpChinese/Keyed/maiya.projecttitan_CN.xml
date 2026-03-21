@@ -13,43 +13,17 @@
 
   <!-- 生物描述 (ThingDef) -->
   <TITAN_Warlord_label>战争之痕</TITAN_Warlord_label>
-  <TITAN_Warlord_desc>传说中的三大神兽之一。年龄：未知(远古)。
-
-特性：
-- 不死之身
-- 光环：血之狂怒</TITAN_Warlord_desc>
+  <TITAN_Warlord_desc>传说中的三大神兽之一。年龄：未知(远古)。特性：- 不死之身 - 光环：血之狂怒</TITAN_Warlord_desc>
   <TITAN_VoidWalker_label>虚空行者</TITAN_VoidWalker_label>
-  <TITAN_VoidWalker_desc>传说中的三大神兽之一。年龄：未知(远古)。
-
-特性：
-- 不死之身
-- 极高闪避与护盾
-- 光环：虚空帷幕</TITAN_VoidWalker_desc>
+  <TITAN_VoidWalker_desc>传说中的三大神兽之一。年龄：未知(远古)。特性：- 不死之身 - 极高闪避与护盾 - 光环：虚空帷幕</TITAN_VoidWalker_desc>
   <TITAN_Matriarch_label>繁盛之母</TITAN_Matriarch_label>
-  <TITAN_Matriarch_desc>传说中的三大神兽之一。年龄：未知(远古)。
-
-特性：
-- 不死之身
-- 光环：生命绽放</TITAN_Matriarch_desc>
+  <TITAN_Matriarch_desc>传说中的三大神兽之一。年龄：未知(远古)。特性：- 不死之身 - 光环：生命绽放</TITAN_Matriarch_desc>
   <TITAN_Spark_label>花火</TITAN_Spark_label>
-  <TITAN_Spark_desc>一只发生了奇异突变的爆炸鼠。它是"0号原型体"在实验室里唯一的朋友。
-
-特性：
-【不死鸟协议】受到致命伤时不会死亡，而是会引发一次剧烈爆炸并进入强制休眠重启状态。
-【羁绊】当它在0号原型体附近时，会获得战斗力加成。</TITAN_Spark_desc>
+  <TITAN_Spark_desc>一只发生了奇异突变的爆炸鼠。它是"0号原型体"在实验室里唯一的朋友。特性：【不死鸟协议】受到致命伤时不会死亡，而是会引发一次剧烈爆炸并进入强制休眠重启状态。【羁绊】当它在0号原型体附近时，会获得战斗力加成。</TITAN_Spark_desc>
   <TITAN_Hunter_label>帝国猎杀者</TITAN_Hunter_label>
-  <TITAN_Hunter_desc>帝国为了回收"泰坦计划"实验体而专门培育的生物兵器。
-
-它们由座狼的基因强行修改而来，去除了痛觉和恐惧，肌肉长期处于充血的狂暴状态。它们的脑中只有一个指令：猎杀0号。</TITAN_Hunter_desc>
+  <TITAN_Hunter_desc>帝国为了回收"泰坦计划"实验体而专门培育的生物兵器。它们由座狼的基因强行修改而来，去除了痛觉和恐惧，肌肉长期处于充血的狂暴状态。它们的脑中只有一个指令：猎杀0号。</TITAN_Hunter_desc>
   <TITAN_ThrumboPrototype_label>0号原型体</TITAN_ThrumboPrototype_label>
-  <TITAN_ThrumboPrototype_desc>帝国异种生物研究部"泰坦计划"的最终产物。它的皮毛呈现出淡淡的金色，那是皇室基因的象征。
-
-它拥有强大的自我修复能力，无法被彻底杀死（只会倒地）。
-
-特性：
-- 定期脱落【金色鳞片】
-- 成年后会吸引野生敲击兽
-- 主动技能：泰坦共鸣</TITAN_ThrumboPrototype_desc>
+  <TITAN_ThrumboPrototype_desc>帝国异种生物研究部"泰坦计划"的最终产物。它的皮毛呈现出淡淡的金色，那是皇室基因的象征。它拥有强大的自我修复能力，无法被彻底杀死（只会倒地）。特性：- 定期脱落【金色鳞片】 - 成年后会吸引野生敲击兽 - 主动技能：泰坦共鸣</TITAN_ThrumboPrototype_desc>
 
   <!-- 工具标签 -->
   <shattering_horn>碎裂之角</shattering_horn>
@@ -69,35 +43,19 @@
   <TITAN_MutatedGland_desc>从猎杀者体内提取的不稳定生物腺体。虽然无法用于常规合成，但其蕴含的生物能量在黑市上极具价值。</TITAN_MutatedGland_desc>
 
   <TITAN_Incense_label>基因香薰</TITAN_Incense_label>
-  <TITAN_Incense_desc>一捆由特殊草药和化学物质混合而成的香薰棒。点燃时会散发出一种人类无法察觉，但能吸引特定皇室生物的费洛蒙烟雾。
-
-这是"泰坦计划"的起点。
-
-使用方法：
-选中一名殖民者 -> 右键点击香薰 -> 选择"点燃香薰"。</TITAN_Incense_desc>
+  <TITAN_Incense_desc>一捆由特殊草药和化学物质混合而成的香薰棒。点燃时会散发出一种人类无法察觉，但能吸引特定皇室生物的费洛蒙烟雾。这是"泰坦计划"的起点。使用方法：选中一名殖民者 -> 右键点击香薰 -> 选择"点燃香薰"。</TITAN_Incense_desc>
 
   <TITAN_PrototypeScale_label>0号的脱落鳞片</TITAN_PrototypeScale_label>
-  <TITAN_PrototypeScale_desc>一枚从0号原型体身上脱落的鳞片，依然散发着微弱的金色光芒和特殊的信息素。
-
-这种信息素对普通生物无效，但似乎能吸引那个一直守护着她的朋友。
-
-使用方法：
-选中一名殖民者 -> 右键点击鳞片 -> 选择"激活信号"。</TITAN_PrototypeScale_desc>
+  <TITAN_PrototypeScale_desc>一枚从0号原型体身上脱落的鳞片，依然散发着微弱的金色光芒和特殊的信息素。这种信息素对普通生物无效，但似乎能吸引那个一直守护着她的朋友。使用方法：选中一名殖民者 -> 右键点击鳞片 -> 选择"激活信号"。</TITAN_PrototypeScale_desc>
 
   <TITAN_CrimsonKeratin_label>猩红角质 (数据核心)</TITAN_CrimsonKeratin_label>
-  <TITAN_CrimsonKeratin_desc>战争之痕离开时留下的角质碎片，其内部的分子排列记录了生物武器的终极秘密。
-
-在研究台解析此物品，可解锁【毁灭者模块】的制作图纸。</TITAN_CrimsonKeratin_desc>
+  <TITAN_CrimsonKeratin_desc>战争之痕离开时留下的角质碎片，其内部的分子排列记录了生物武器的终极秘密。在研究台解析此物品，可解锁【毁灭者模块】的制作图纸。</TITAN_CrimsonKeratin_desc>
 
   <TITAN_VoidDust_label>虚空尘埃 (相位数据)</TITAN_VoidDust_label>
-  <TITAN_VoidDust_desc>虚空行者留下的结晶粉末，蕴含着相位护盾的频率数据。
-
-在研究台解析此物品，可解锁【堡垒模块】的制作图纸。</TITAN_VoidDust_desc>
+  <TITAN_VoidDust_desc>虚空行者留下的结晶粉末，蕴含着相位护盾的频率数据。在研究台解析此物品，可解锁【堡垒模块】的制作图纸。</TITAN_VoidDust_desc>
 
   <TITAN_LifeResin_label>生命树脂 (活体样本)</TITAN_LifeResin_label>
-  <TITAN_LifeResin_desc>繁盛之母留下的活性树脂，记录了细胞极速再生的秘密。
-
-在研究台解析此物品，可解锁【行者模块】的制作图纸。</TITAN_LifeResin_desc>
+  <TITAN_LifeResin_desc>繁盛之母留下的活性树脂，记录了细胞极速再生的秘密。在研究台解析此物品，可解锁【行者模块】的制作图纸。</TITAN_LifeResin_desc>
 
   <TITAN_Tuber_label>泰坦块茎</TITAN_Tuber_label>
   <TITAN_Tuber_desc>永不腐烂的超级口粮。</TITAN_Tuber_desc>
@@ -107,33 +65,21 @@
 
   <!-- 植入物物品 -->
   <TITAN_Implant_CrimsonHeart_label>猩红诱变剂</TITAN_Implant_CrimsonHeart_label>
-  <TITAN_Implant_CrimsonHeart_desc>利用战争之痕基因制造的猩红药剂。
-
-【用法】：
-请在敲击兽的"健康 -> 手术"面板中选择"喂食 猩红诱变剂"。
-
-效果：无痛觉、大幅提升近战伤害。</TITAN_Implant_CrimsonHeart_desc>
+  <TITAN_Implant_CrimsonHeart_desc>利用战争之痕基因制造的猩红药剂。【用法】：请在敲击兽的"健康 -> 手术"面板中选择"喂食 猩红诱变剂"。效果：无痛觉、大幅提升近战伤害。</TITAN_Implant_CrimsonHeart_desc>
 
   <TITAN_Implant_VoidMembrane_label>虚空诱变剂</TITAN_Implant_VoidMembrane_label>
-  <TITAN_Implant_VoidMembrane_desc>利用虚空行者基因制造的幽蓝药剂。
-
-【用法】：
-请在敲击兽的"健康 -> 手术"面板中选择"喂食 虚空诱变剂"。
-
-效果：高护甲、高闪避。</TITAN_Implant_VoidMembrane_desc>
+  <TITAN_Implant_VoidMembrane_desc>利用虚空行者基因制造的幽蓝药剂。【用法】：请在敲击兽的"健康 -> 手术"面板中选择"喂食 虚空诱变剂"。效果：高护甲、高闪避。</TITAN_Implant_VoidMembrane_desc>
 
   <TITAN_Implant_VerdantSpine_label>繁盛诱变剂</TITAN_Implant_VerdantSpine_label>
-  <TITAN_Implant_VerdantSpine_desc>利用繁盛之母基因制造的翠绿药剂。
-
-【用法】：
-请在敲击兽的"健康 -> 手术"面板中选择"喂食 繁盛诱变剂"。
-
-效果：超高负重、快速再生。</TITAN_Implant_VerdantSpine_desc>
+  <TITAN_Implant_VerdantSpine_desc>利用繁盛之母基因制造的翠绿药剂。【用法】：请在敲击兽的"健康 -> 手术"面板中选择"喂食 繁盛诱变剂"。效果：超高负重、快速再生。</TITAN_Implant_VerdantSpine_desc>
 
   <!-- ==================== 研究项目 ==================== -->
 
   <ResearchProject_TITAN_GeneEngineering_label>泰坦基因工程</ResearchProject_TITAN_GeneEngineering_label>
   <ResearchProject_TITAN_GeneEngineering_desc>理解泰坦生物的基本构造，为后续研究打下基础。</ResearchProject_TITAN_GeneEngineering_desc>
+
+  <ResearchProject_TITAN_PlantTech_label>泰坦植物</ResearchProject_TITAN_PlantTech_label>
+  <ResearchProject_TITAN_PlantTech_desc>通过研究0号原型体毛发上所带来的种子，获得种植泰坦树技术并收获了超级口粮泰坦块茎。</ResearchProject_TITAN_PlantTech_desc>
 
   <ResearchProject_TITAN_Crimson_label>猩红诱变剂</ResearchProject_TITAN_Crimson_label>
   <ResearchProject_TITAN_Crimson_desc>解析战争之痕的基因数据，研发出能极大强化肌肉与痛觉神经的诱变剂。</ResearchProject_TITAN_Crimson_desc>
@@ -225,12 +171,7 @@
 
   <!-- 技能按钮 -->
   <Command_TitanResonance_label>泰坦共鸣</Command_TitanResonance_label>
-  <Command_TitanResonance_desc>利用0号的皇室基因释放共鸣波。
-
-【冷却：1小时】
-- 任务神兽：执行特定的治疗/安抚操作，完成后给予奖励并离开。
-- 支援友军：感谢支援并指引离开。
-- 普通友军：治疗伤口。</Command_TitanResonance_desc>
+  <Command_TitanResonance_desc>利用0号的皇室基因释放共鸣波。【冷却：1小时】- 任务神兽：执行特定的治疗/安抚操作，完成后给予奖励并离开。- 支援友军：感谢支援并指引离开。- 普通友军：治疗伤口。</Command_TitanResonance_desc>
 
   <Message_TITAN_TargetTooFar>目标太远！</Message_TITAN_TargetTooFar>
   <Message_TITAN_MatriarchHealed>繁盛之母已完全康复！</Message_TITAN_MatriarchHealed>
@@ -275,21 +216,12 @@
 
   <!-- Letters -->
   <Letter_SparkSpawn_Title>不灭的火种</Letter_SparkSpawn_Title>
-  <Letter_SparkSpawn_Body>随着鳞片散发出特殊的费洛蒙信号，一只浑身散发着高热的变异爆炸鼠冲进了地图。
-
-它就是"花火"，0号原型体的挚友。它闻到了那熟悉的、只有它能识别的气味，义无反顾地追随而来。
-
-(已获得：花火 - 能够无限重生的爆炸专家)</Letter_SparkSpawn_Body>
+  <Letter_SparkSpawn_Body>随着鳞片散发出特殊的费洛蒙信号，一只浑身散发着高热的变异爆炸鼠冲进了地图。它就是"花火"，0号原型体的挚友。它闻到了那熟悉的、只有它能识别的气味，义无反顾地追随而来。(已获得：花火 - 能够无限重生的爆炸专家)</Letter_SparkSpawn_Body>
 
   <Letter_PrototypeSpawn_Title>迷雾中的回应</Letter_PrototypeSpawn_Title>
-  <Letter_PrototypeSpawn_Body>香薰燃尽，一股能够安抚狂暴基因的宁静气息飘向了荒野深处。
+  <Letter_PrototypeSpawn_Body>香薰燃尽，一股能够安抚狂暴基因的宁静气息飘向了荒野深处。不久后，地图边缘出现了一个金色的身影——那是帝国丢失的实验体"0号"。她看起来疲惫不堪，长期忍受着基因改造带来的剧痛。但此刻，你的香薰让她第一次感受到了久违的安宁。她怯生生地向殖民地走来，不是作为兵器，而是作为一个寻求庇护的流浪者。(已获得：【0号原型体】 - 她信任你，并加入了殖民地)</Letter_PrototypeSpawn_Body>
 
-不久后，地图边缘出现了一个金色的身影——那是帝国丢失的实验体"0号"。
-
-她看起来疲惫不堪，长期忍受着基因改造带来的剧痛。但此刻，你的香薰让她第一次感受到了久违的安宁。
-
-她怯生生地向殖民地走来，不是作为兵器，而是作为一个寻求庇护的流浪者。
-
-(已获得：【0号原型体】 - 她信任你，并加入了殖民地)</Letter_PrototypeSpawn_Body>
+  <!-- 研究标签 -->
+  <ResearchTab_ProjectTITAN>Project T.I.T.A.N. 泰坦计划</ResearchTab_ProjectTITAN>
 
 </LanguageData>

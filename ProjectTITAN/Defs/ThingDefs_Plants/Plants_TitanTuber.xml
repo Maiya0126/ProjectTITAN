@@ -57,6 +57,9 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<sowResearchPrerequisites>
+				<li>TITAN_PlantTech</li>
+			</sowResearchPrerequisites>
 			<growDays>5</growDays>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<dieIfLeafless>false</dieIfLeafless>

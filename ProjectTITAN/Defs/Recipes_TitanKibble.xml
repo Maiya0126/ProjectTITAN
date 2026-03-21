@@ -38,6 +38,7 @@
 			<li>ButcherSpot</li>
 			<li>TableButcher</li>
 		</recipeUsers>
+		<researchPrerequisite>TITAN_PlantTech</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

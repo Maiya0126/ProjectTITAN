@@ -13,7 +13,7 @@
 				<painFactor>0.0</painFactor>
 				<hungerRateFactor>2.0</hungerRateFactor>
 				<statOffsets>
-					<MeleeDPS>10</MeleeDPS>
+					<MeleeDPS>50</MeleeDPS>
 					<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
 				</statOffsets>
 				<capMods>
@@ -76,9 +76,12 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDPS>10</MeleeDPS>
-					<MoveSpeed>1.0</MoveSpeed>
+					<MeleeDPS>20</MeleeDPS>
+					<MoveSpeed>3.0</MoveSpeed>
 				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.2</IncomingDamageFactor>
+				</statFactors>
 			</li>
 		</stages>
 		<comps>

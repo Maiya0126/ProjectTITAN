@@ -57,10 +57,10 @@
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>true</showMessageIfOwned>
 			</li>
-			<li Class="CompProperties_Glower">
+			<!--<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(255, 220, 100, 0)</glowColor>
-			</li>
+			</li>-->
 			<li Class="CompProperties">
 				<compClass>ProjectTITAN.CompMobileLight</compClass>
 			</li>

@@ -48,10 +48,21 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="TitanMutagenBase">
+<ThingDef ParentName="TitanMutagenBase">
 		<defName>TITAN_Implant_CrimsonHeart</defName>
 		<label>猩红诱变剂</label>
-		<description>利用战争之痕基因制造的猩红药剂。\n\n【用法】：\n请在敲击兽的“健康 -> 手术”面板中选择“喂食 猩红诱变剂”。\n\n效果：无痛觉、大幅提升近战伤害。</description>
+		<description>利用战争之痕基因制造的猩红药剂。
+
+【用法】：
+请在敲击兽的"健康 -> 手术"面板中选择"喂食 猩红诱变剂"。
+
+效果：无痛觉、大幅提升近战伤害。</description>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+			<color>255, 50, 50</color>
+		</graphicData>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -69,10 +80,21 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="TitanMutagenBase">
+<ThingDef ParentName="TitanMutagenBase">
 		<defName>TITAN_Implant_VoidMembrane</defName>
 		<label>虚空诱变剂</label>
-		<description>利用虚空行者基因制造的幽蓝药剂。\n\n【用法】：\n请在敲击兽的“健康 -> 手术”面板中选择“喂食 虚空诱变剂”。\n\n效果：高护甲、高闪避。</description>
+		<description>利用虚空行者基因制造的幽蓝药剂。
+
+【用法】：
+请在敲击兽的"健康 -> 手术"面板中选择"喂食 虚空诱变剂"。
+
+效果：高护甲、高闪避。</description>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+			<color>50, 150, 255</color>
+		</graphicData>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -90,10 +112,21 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="TitanMutagenBase">
+<ThingDef ParentName="TitanMutagenBase">
 		<defName>TITAN_Implant_VerdantSpine</defName>
 		<label>繁盛诱变剂</label>
-		<description>利用繁盛之母基因制造的翠绿药剂。\n\n【用法】：\n请在敲击兽的“健康 -> 手术”面板中选择“喂食 繁盛诱变剂”。\n\n效果：超高负重、快速再生。</description>
+		<description>利用繁盛之母基因制造的翠绿药剂。
+
+【用法】：
+请在敲击兽的"健康 -> 手术"面板中选择"喂食 繁盛诱变剂"。
+
+效果：超高负重、快速再生。</description>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+			<color>50, 200, 50</color>
+		</graphicData>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>

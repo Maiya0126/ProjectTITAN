@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchTabDef>
+		<defName>ResearchTab_ProjectTITAN</defName>
+		<label>Project T.I.T.A.N. 泰坦计划</label>
+		<generalDescription>泰坦计划的专属研究标签页</generalDescription>
+	</ResearchTabDef>
+</Defs>

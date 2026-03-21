@@ -13,43 +13,17 @@
 
   <!-- Titans (ThingDef) -->
   <TITAN_Warlord_label>War Trace</TITAN_Warlord_label>
-  <TITAN_Warlord_desc>One of the three legendary beasts. Age: Unknown (Ancient).
-
-Features:
-- Immortal
-- Aura: Blood Rage</TITAN_Warlord_desc>
+  <TITAN_Warlord_desc>One of the three legendary beasts. Age: Unknown (Ancient). Features: - Immortal - Aura: Blood Rage</TITAN_Warlord_desc>
   <TITAN_VoidWalker_label>Void Walker</TITAN_VoidWalker_label>
-  <TITAN_VoidWalker_desc>One of the three legendary beasts. Age: Unknown (Ancient).
-
-Features:
-- Immortal
-- Extreme dodge and shield
-- Aura: Void Veil</TITAN_VoidWalker_desc>
+  <TITAN_VoidWalker_desc>One of the three legendary beasts. Age: Unknown (Ancient). Features: - Immortal - Extreme dodge and shield - Aura: Void Veil</TITAN_VoidWalker_desc>
   <TITAN_Matriarch_label>Matriarch of Life</TITAN_Matriarch_label>
-  <TITAN_Matriarch_desc>One of the three legendary beasts. Age: Unknown (Ancient).
-
-Features:
-- Immortal
-- Aura: Life Bloom</TITAN_Matriarch_desc>
+  <TITAN_Matriarch_desc>One of the three legendary beasts. Age: Unknown (Ancient). Features: - Immortal - Aura: Life Bloom</TITAN_Matriarch_desc>
   <TITAN_Spark_label>Spark</TITAN_Spark_label>
-  <TITAN_Spark_desc>A strangely mutated boomrat. It is the only friend of "Prototype #0" in the lab.
-
-Features:
-[Phoenix Protocol] Upon receiving a fatal blow, it will not die but trigger a massive explosion and enter forced hibernation reboot.
-[Bond] Gains combat boost when near Prototype #0.</TITAN_Spark_desc>
+  <TITAN_Spark_desc>A strangely mutated boomrat. It is the only friend of "Prototype #0" in the lab. Features: [Phoenix Protocol] Upon receiving a fatal blow, it will not die but trigger a massive explosion and enter forced hibernation reboot. [Bond] Gains combat boost when near Prototype #0.</TITAN_Spark_desc>
   <TITAN_Hunter_label>Imperial Hunter</TITAN_Hunter_label>
-  <TITAN_Hunter_desc>Biological weapons bred by the Empire to retrieve "Project TITAN" test subjects.
-
-They were modified from warg genes with pain and fear removed, muscles permanently engorged in a berserk state. Their only directive: hunt #0.</TITAN_Hunter_desc>
+  <TITAN_Hunter_desc>Biological weapons bred by the Empire to retrieve "Project TITAN" test subjects. They were modified from warg genes with pain and fear removed, muscles permanently engorged in a berserk state. Their only directive: hunt #0.</TITAN_Hunter_desc>
   <TITAN_ThrumboPrototype_label>Prototype #0</TITAN_ThrumboPrototype_label>
-  <TITAN_ThrumboPrototype_desc>The final product of the Empire's "Project TITAN". Its fur glows a faint gold, a symbol of royal genes.
-
-It possesses powerful self-repair abilities and cannot be truly killed (only knocked down).
-
-Features:
-- Periodically sheds [Golden Scale]
-- Attracts wild Thrumbo when adult
-- Active Ability: Titan Resonance</TITAN_ThrumboPrototype_desc>
+  <TITAN_ThrumboPrototype_desc>The final product of the Empire's "Project TITAN". Its fur glows a faint gold, a symbol of royal genes. It possesses powerful self-repair abilities and cannot be truly killed (only knocked down). Features: - Periodically sheds [Golden Scale] - Attracts wild Thrumbo when adult - Active Ability: Titan Resonance</TITAN_ThrumboPrototype_desc>
 
   <!-- Tools -->
   <shattering_horn>Shattering Horn</shattering_horn>
@@ -62,35 +36,19 @@ Features:
   <TITAN_MutatedGland_desc>An unstable biological gland extracted from Hunters. Though useless for normal synthesis, its bio-energy is highly valuable on the black market.</TITAN_MutatedGland_desc>
 
   <TITAN_Incense_label>Gene Incense</TITAN_Incense_label>
-  <TITAN_Incense_desc>A bundle of special herbs and chemicals. When lit, it releases pheromones invisible to humans but detectable by specific royal beasts.
-
-This is the starting point of "Project TITAN".
-
-Usage:
-Select a colonist -> Right-click incense -> Choose "Light Incense".</TITAN_Incense_desc>
+  <TITAN_Incense_desc>A bundle of special herbs and chemicals. When lit, it releases pheromones invisible to humans but detectable by specific royal beasts. This is the starting point of "Project TITAN". Usage: Select a colonist -> Right-click incense -> Choose "Light Incense".</TITAN_Incense_desc>
 
   <TITAN_PrototypeScale_label>Prototype's Shed Scale</TITAN_PrototypeScale_label>
-  <TITAN_PrototypeScale_desc>A scale shed from Prototype #0, still glowing faintly golden with special pheromones.
-
-This pheromone has no effect on normal creatures, but seems to attract its eternal companion.
-
-Usage:
-Select a colonist -> Right-click scale -> Choose "Activate Signal".</TITAN_PrototypeScale_desc>
+  <TITAN_PrototypeScale_desc>A scale shed from Prototype #0, still glowing faintly golden with special pheromones. This pheromone has no effect on normal creatures, but seems to attract its eternal companion. Usage: Select a colonist -> Right-click scale -> Choose "Activate Signal".</TITAN_PrototypeScale_desc>
 
   <TITAN_CrimsonKeratin_label>Crimson Keratin (Data Core)</TITAN_CrimsonKeratin_label>
-  <TITAN_CrimsonKeratin_desc>Keratin left behind by War Trace when it departs. Its molecular arrangement holds the ultimate secrets of biological weapons.
-
-Analyze at Research Table to unlock [Destroyer Module] schematic.</TITAN_CrimsonKeratin_desc>
+  <TITAN_CrimsonKeratin_desc>Keratin left behind by War Trace when it departs. Its molecular arrangement holds the ultimate secrets of biological weapons. Analyze at Research Table to unlock [Destroyer Module] schematic.</TITAN_CrimsonKeratin_desc>
 
   <TITAN_VoidDust_label>Void Dust (Phase Data)</TITAN_VoidDust_label>
-  <TITAN_VoidDust_desc>Crystalline powder left by Void Walker, containing phase shield frequency data.
-
-Analyze at Research Table to unlock [Fortress Module] schematic.</TITAN_VoidDust_desc>
+  <TITAN_VoidDust_desc>Crystalline powder left by Void Walker, containing phase shield frequency data. Analyze at Research Table to unlock [Fortress Module] schematic.</TITAN_VoidDust_desc>
 
   <TITAN_LifeResin_label>Life Resin (Living Sample)</TITAN_LifeResin_label>
-  <TITAN_LifeResin_desc>Active resin left by Matriarch of Life, containing secrets of rapid cell regeneration.
-
-Analyze at Research Table to unlock [Walker Module] schematic.</TITAN_LifeResin_desc>
+  <TITAN_LifeResin_desc>Active resin left by Matriarch of Life, containing secrets of rapid cell regeneration. Analyze at Research Table to unlock [Walker Module] schematic.</TITAN_LifeResin_desc>
 
   <TITAN_Tuber_label>Titan Tuber</TITAN_Tuber_label>
   <TITAN_Tuber_desc>Never-rotting super ration.</TITAN_Tuber_desc>
@@ -100,30 +58,21 @@ Analyze at Research Table to unlock [Walker Module] schematic.</TITAN_LifeResin_
 
   <!-- Implant Items -->
   <TITAN_Implant_CrimsonHeart_label>Crimson Mutagen</TITAN_Implant_CrimsonHeart_label>
-  <TITAN_Implant_CrimsonHeart_desc>Crimson potion made using War Trace genes.
-
-[Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Crimson Mutagen"
-
-Effect: Painless, massive melee damage boost.</TITAN_Implant_CrimsonHeart_desc>
+  <TITAN_Implant_CrimsonHeart_desc>Crimson potion made using War Trace genes. [Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Crimson Mutagen". Effect: Painless, massive melee damage boost.</TITAN_Implant_CrimsonHeart_desc>
 
   <TITAN_Implant_VoidMembrane_label>Void Mutagen</TITAN_Implant_VoidMembrane_label>
-  <TITAN_Implant_VoidMembrane_desc>Azure potion made using Void Walker genes.
-
-[Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Void Mutagen"
-
-Effect: High armor, high dodge.</TITAN_Implant_VoidMembrane_desc>
+  <TITAN_Implant_VoidMembrane_desc>Azure potion made using Void Walker genes. [Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Void Mutagen". Effect: High armor, high dodge.</TITAN_Implant_VoidMembrane_desc>
 
   <TITAN_Implant_VerdantSpine_label>Verdant Mutagen</TITAN_Implant_VerdantSpine_label>
-  <TITAN_Implant_VerdantSpine_desc>Emerald potion made using Matriarch of Life genes.
-
-[Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Verdant Mutagen"
-
-Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_desc>
+  <TITAN_Implant_VerdantSpine_desc>Emerald potion made using Matriarch of Life genes. [Usage]: Select Thrumbo -> Health -> Surgery -> Feed "Verdant Mutagen". Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_desc>
 
   <!-- ==================== RESEARCH ==================== -->
 
   <ResearchProject_TITAN_GeneEngineering_label>Titan Genetic Engineering</ResearchProject_TITAN_GeneEngineering_label>
   <ResearchProject_TITAN_GeneEngineering_desc>Understand the basic structure of Titan creatures, laying foundation for further research.</ResearchProject_TITAN_GeneEngineering_desc>
+
+  <ResearchProject_TITAN_PlantTech_label>Titan Plants</ResearchProject_TITAN_PlantTech_label>
+  <ResearchProject_TITAN_PlantTech_desc>By studying the seeds carried on Prototype #0's fur, gain the technology to plant Titan Trees and harvest the super ration Titan Tubers.</ResearchProject_TITAN_PlantTech_desc>
 
   <ResearchProject_TITAN_Crimson_label>Crimson Mutagen</ResearchProject_TITAN_Crimson_label>
   <ResearchProject_TITAN_Crimson_desc>Analyze War Trace genetic data to develop mutagen that greatly enhances muscles and pain nerves.</ResearchProject_TITAN_Crimson_desc>
@@ -203,7 +152,7 @@ Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_
 
   <!-- Spark Reboot -->
   <Hediff_TITAN_SparkReboot_label>Phoenix Reboot</Hediff_TITAN_SparkReboot_label>
-  <Hediff_TITAN_SparkReboot_desc>Phoenix Protocol activated. Initiating emergency重组 sequence.</Hediff_TITAN_SparkReboot_desc>
+  <Hediff_TITAN_SparkReboot_desc>Phoenix Protocol activated. Initiating emergency reorganization sequence.</Hediff_TITAN_SparkReboot_desc>
 
   <!-- ==================== C# CODE MESSAGES ==================== -->
 
@@ -215,12 +164,7 @@ Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_
 
   <!-- Ability Button -->
   <Command_TitanResonance_label>Titan Resonance</Command_TitanResonance_label>
-  <Command_TitanResonance_desc>Use Prototype #0's royal genes to release a resonance wave.
-
-[Cooldown: 1 hour]
-- Task Beasts: Perform specific healing/soothing actions, then receive reward and leave.
-- Ally Support: Thank support and guide them away.
-- Normal Allies: Heal wounds.</Command_TitanResonance_desc>
+  <Command_TitanResonance_desc>Use Prototype #0's royal genes to release a resonance wave. [Cooldown: 1 hour] - Task Beasts: Perform specific healing/soothing actions, then receive reward and leave. - Ally Support: Thank support and guide them away. - Normal Allies: Heal wounds.</Command_TitanResonance_desc>
 
   <Message_TITAN_TargetTooFar>Target is too far!</Message_TITAN_TargetTooFar>
   <Message_TITAN_MatriarchHealed>Matriarch of Life fully recovered!</Message_TITAN_MatriarchHealed>
@@ -233,7 +177,7 @@ Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_
   <Message_TITAN_Leaving>{0} is departing.</Message_TITAN_Leaving>
 
   <!-- Spark Immortality -->
-  <Message_Spark_LethalStrikeDetected>Spark's core detected lethal blow! Emergency重组 protocol initiated.</Message_Spark_LethalStrikeDetected>
+  <Message_Spark_LethalStrikeDetected>Spark's core detected lethal blow! Emergency reorganization protocol initiated.</Message_Spark_LethalStrikeDetected>
   <Message_Spark_CoreDamaged>Prototype #0 core damaged, forced hibernation!</Message_Spark_CoreDamaged>
   <Message_Warlord_LeftData>War Trace has acknowledged you and left data.</Message_Warlord_LeftData>
   <Message_Hunter_EntityCollapsed>{0}'s entity has collapsed and returned.</Message_Hunter_EntityCollapsed>
@@ -265,21 +209,12 @@ Effect: Very high carry weight, rapid regeneration.</TITAN_Implant_VerdantSpine_
 
   <!-- Letters -->
   <Letter_SparkSpawn_Title>Undying Spark</Letter_SparkSpawn_Title>
-  <Letter_SparkSpawn_Body>As the scale releases special pheromone signals, a mutated boomrat with intense heat radiates into the map.
-
-It is "Spark", the closest friend of Prototype #0. It caught the familiar scent only it could recognize and came without hesitation.
-
-(Obtained: Spark - The immortal explosion expert)</Letter_SparkSpawn_Body>
+  <Letter_SparkSpawn_Body>As the scale releases special pheromone signals, a mutated boomrat with intense heat radiates into the map. It is "Spark", the closest friend of Prototype #0. It caught the familiar scent only it could recognize and came without hesitation. (Obtained: Spark - The immortal explosion expert)</Letter_SparkSpawn_Body>
 
   <Letter_PrototypeSpawn_Title>Answer from the Mist</Letter_PrototypeSpawn_Title>
-  <Letter_PrototypeSpawn_Body>The incense burns down, and a tranquil scent that can calm berserk genes drifts into the wilderness.
+  <Letter_PrototypeSpawn_Body>The incense burns down, and a tranquil scent that can calm berserk genes drifts into the wilderness. Soon, a golden figure appears at the map's edge—the Empire's lost test subject "#0". She looks exhausted, enduring constant pain from genetic modification. But now, your incense gives her first taste of peace in a long time. She tentatively approaches the colony, not as a weapon, but as a wanderer seeking shelter. (Obtained: [Prototype #0] - She trusts you and joins the colony)</Letter_PrototypeSpawn_Body>
 
-Soon, a golden figure appears at the map's edge—the Empire's lost test subject "#0".
-
-She looks exhausted, enduring constant pain from genetic modification. But now, your incense gives her first taste of peace in a long time.
-
-She tentatively approaches the colony, not as a weapon, but as a wanderer seeking shelter.
-
-(Obtained: [Prototype #0] - She trusts you and joins the colony)</Letter_PrototypeSpawn_Body>
+  <!-- Research Tab -->
+  <ResearchTab_ProjectTITAN>Project T.I.T.A.N.</ResearchTab_ProjectTITAN>
 
 </LanguageData>

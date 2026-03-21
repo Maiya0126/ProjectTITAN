@@ -129,8 +129,8 @@ namespace ProjectTITAN
 
             Command_Target cmd = new Command_Target
             {
-                defaultLabel = "Command_TitanResonance_label".Translate().ToString(),
-                defaultDesc = "Command_TitanResonance_desc".Translate().ToString(),
+                defaultLabel = "泰坦共鸣",
+                defaultDesc = "利用0号的皇室基因释放共鸣波。【冷却：1小时】- 任务神兽：执行特定的治疗/安抚操作，完成后给予奖励并离开。- 支援友军：感谢支援并指引离开。- 普通友军：治疗伤口。",
                 icon = GetIcon(),
                 targetingParams = new TargetingParameters { canTargetPawns = true, validator = (TargetInfo x) => x.Thing is Pawn },
                 action = (LocalTargetInfo target) => UseAbility(target.Pawn)
@@ -274,23 +274,50 @@ namespace ProjectTITAN
 
             if (candidates.Count == 0) return;
 
-            PawnKindDef leaderKind = candidates.RandomElement();
-            IntVec3 spawnLoc;
-            if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnLoc, map, CellFinder.EdgeRoadChance_Friendly)) return;
-
-            Pawn ally = PawnGenerator.GeneratePawn(leaderKind, null);
+            int spawnCount = Rand.Range(1, 4);
+            List<Pawn> spawnedAllies = new List<Pawn>();
             Faction allyFaction = Find.FactionManager.FirstFactionOfDef(FactionDefOf.Ancients);
-            if (allyFaction != null) ally.SetFaction(allyFaction); else ally.SetFaction(null);
 
-            GenSpawn.Spawn(ally, spawnLoc, map, Rot4.Random);
-
-            List<Thing> enemies = map.mapPawns.AllPawnsSpawned.Where(p => p.HostileTo(Faction.OfPlayer) && !p.Downed).Cast<Thing>().ToList();
-            if (enemies.Count > 0 && ally.Faction != null)
+            for (int i = 0; i < spawnCount; i++)
             {
-                LordMaker.MakeNewLord(ally.Faction, new LordJob_AssaultThings(Faction.OfPlayer, enemies), map, new List<Pawn> { ally });
+                PawnKindDef leaderKind = candidates.RandomElement();
+                IntVec3 spawnLoc;
+                if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnLoc, map, CellFinder.EdgeRoadChance_Friendly)) continue;
+
+                Pawn ally = PawnGenerator.GeneratePawn(leaderKind, null);
+                if (allyFaction != null) ally.SetFaction(allyFaction); else ally.SetFaction(null);
+
+                // 3倍血量和攻击力
+                if (ally.def.race != null)
+                {
+                    ally.def.race.baseHealthScale *= 3f;
+                    ally.def.race.baseBodySize *= 3f;
+                }
+                // 增强工具攻击力
+                var tools = ally.def.tools;
+                if (tools != null)
+                {
+                    for (int t = 0; t < tools.Count; t++)
+                    {
+                        tools[t].power *= 3f;
+                    }
+                }
+
+                GenSpawn.Spawn(ally, spawnLoc, map, Rot4.Random);
+                spawnedAllies.Add(ally);
             }
 
-            Find.LetterStack.ReceiveLetter("Letter_TitanReinforcement".Translate(), string.Format("Letter_TitanReinforcement_Body".Translate(), ally.LabelShort), LetterDefOf.PositiveEvent, ally);
+            if (spawnedAllies.Count == 0) return;
+
+            List<Thing> enemies = map.mapPawns.AllPawnsSpawned.Where(p => p.HostileTo(Faction.OfPlayer) && !p.Downed).Cast<Thing>().ToList();
+            if (enemies.Count > 0 && spawnedAllies[0].Faction != null)
+            {
+                LordMaker.MakeNewLord(spawnedAllies[0].Faction, new LordJob_AssaultThings(Faction.OfPlayer, enemies), map, spawnedAllies);
+            }
+
+            Pawn mainAlly = spawnedAllies[0];
+            string beastNames = string.Join("、", spawnedAllies.Select(p => p.LabelShort));
+            Find.LetterStack.ReceiveLetter("Letter_TitanReinforcement".Translate(), string.Format("Letter_TitanReinforcement_Body".Translate(), beastNames), LetterDefOf.PositiveEvent, mainAlly);
         }
     }
 
