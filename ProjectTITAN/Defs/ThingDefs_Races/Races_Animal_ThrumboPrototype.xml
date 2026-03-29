@@ -117,26 +117,26 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<texPath>Things/Animal/TITAN_Prototype</texPath>
 					<drawSize>1.5</drawSize>
-					<shaderType>Transparent</shaderType>
-					<color>(250, 240, 190, 240)</color>
+					<shaderType>Cutout</shaderType>
+					<!--<color>(250, 240, 190, 240)</color>-->
 				</bodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<texPath>Things/Animal/TITAN_Prototype</texPath>
 					<drawSize>2.5</drawSize>
-					<shaderType>Transparent</shaderType>
-					<color>(250, 240, 190, 240)</color>
+					<shaderType>Cutout</shaderType>
+					<!--<color>(250, 240, 190, 240)</color>-->
 				</bodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<texPath>Things/Animal/TITAN_Prototype</texPath>
 					<drawSize>3.5</drawSize>
-					<shaderType>Transparent</shaderType>
-					<color>(250, 240, 190, 240)</color>
+					<shaderType>Cutout</shaderType>
+					<!--<color>(250, 240, 190, 240)</color>-->
 				</bodyGraphicData>
 			</li>
 		</lifeStages>

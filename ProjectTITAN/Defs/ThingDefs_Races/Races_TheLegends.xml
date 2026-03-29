@@ -162,10 +162,10 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<texPath>Things/Animal/TITAN_VoidWalker</texPath>
 					<drawSize>5.5</drawSize>
 					<shaderType>Transparent</shaderType>
-					<color>(100, 230, 255, 90)</color>
+					<color>(255, 255, 255, 90)</color>
 					<shadowData>
 						<volume>(0, 0, 0)</volume>
 					</shadowData>
@@ -243,10 +243,10 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbo/Thrumbo</texPath>
+					<texPath>Things/Animal/TITAN_Matriarch</texPath>
 					<drawSize>7.5</drawSize>
 					<shaderType>Transparent</shaderType>
-					<color>(120, 255, 120, 230)</color>
+					<!--<color>(120, 255, 120, 230)</color>-->
 					<shadowData>
 						<volume>(1.5, 1.0, 1.0)</volume>
 						<offset>(0,0,-0.8)</offset>

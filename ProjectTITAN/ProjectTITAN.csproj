@@ -92,6 +92,15 @@
     <Content Include="Defs\ThingDefs_Races\Races_Animal_Spark.xml" />
     <Content Include="Defs\ThingDefs_Races\Races_Animal_ThrumboPrototype.xml" />
     <Content Include="Defs\ThingDefs_Races\Races_TheLegends.xml" />
+    <Content Include="Textures\Things\Animal\TITAN_Matriarch_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_Matriarch_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_Matriarch_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_Prototype_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_Prototype_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_Prototype_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_VoidWalker_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_VoidWalker_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_VoidWalker_south.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_LifeResin.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_VoidDust.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_CrimsonKeratin.png" />
@@ -102,14 +111,11 @@
     <Content Include="Textures\Things\Plant\TITAN_Tree.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Languages\" />
-    <Folder Include="Languages\English\" />
-    <Folder Include="Languages\English\Keyed\" />
-    <Folder Include="Languages\SimpChinese\" />
-    <Folder Include="Languages\SimpChinese\Keyed\" />
-    <Folder Include="Patches\" />
     <Content Include="Languages\English\Keyed\maiya.projecttitan_EN.xml" />
     <Content Include="Languages\SimpChinese\Keyed\maiya.projecttitan_CN.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patches\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
