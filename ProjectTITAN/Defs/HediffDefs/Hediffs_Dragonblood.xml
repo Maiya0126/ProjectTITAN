@@ -3,7 +3,7 @@
 	<HediffDef>
 		<defName>TITAN_LatentDragonblood</defName>
 		<label>潜龙之血 (不稳定)</label>
-		<description>该生物体内流淌着被强行激活的远古血脉。这种基因赋予了她近乎不死的生命力，但代价是永无止境的基因排异剧痛。\n\n效果：\n- 极强再生 (x200%)\n- 伤害减免 (30%)\n- 免疫力极强\n- 副作用：长期慢性疼痛</description>
+		<description>该生物体内流淌着被强行激活的远古血脉。这种基因赋予了她近乎不死的生命力，但代价是永无止境的基因排异剧痛。\n\n效果：\n- 极强再生 (x200%)\n- 伤害减免 (70%)\n- 免疫力极强\n- 副作用：长期慢性疼痛</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(180, 0, 0)</defaultLabelColor>
 		<isBad>false</isBad>
@@ -15,10 +15,12 @@
 				<naturalHealingFactor>2.0</naturalHealingFactor>
 				<statOffsets>
 					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
-					<IncomingDamageFactor>0.7</IncomingDamageFactor>
 					<ToxicResistance>0.5</ToxicResistance>
 					<MentalBreakThreshold>0.10</MentalBreakThreshold>
 				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.7</IncomingDamageFactor>
+				</statFactors>
 			</li>
 		</stages>
 

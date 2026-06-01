@@ -9,7 +9,7 @@
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<stackLimit>1</stackLimit>
-		<tradeability>PlayerCanSell</tradeability>
+		<tradeability>Sellable</tradeability>
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>
@@ -41,7 +41,7 @@
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<stackLimit>1</stackLimit>
-		<tradeability>PlayerCanSell</tradeability>
+		<tradeability>Sellable</tradeability>
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>
@@ -73,7 +73,7 @@
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<stackLimit>1</stackLimit>
-		<tradeability>PlayerCanSell</tradeability>
+		<tradeability>Sellable</tradeability>
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>

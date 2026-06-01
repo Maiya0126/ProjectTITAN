@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 
@@ -33,6 +33,9 @@
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 				</li>
 </lifeStageAges>
+			<abilities>
+				<li>ThrumboRoar</li>
+			</abilities>
 		</race>
 		<comps>
 			<!--<li Class="CompProperties_Glower">
