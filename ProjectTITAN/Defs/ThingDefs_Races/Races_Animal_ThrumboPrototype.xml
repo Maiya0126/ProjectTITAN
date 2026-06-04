@@ -23,6 +23,7 @@
 			<baseHungerRate>1.5</baseHungerRate>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<useMeatFrom>Thrumbo</useMeatFrom>
+			<petness>1</petness><nameOnTameChance>1</nameOnTameChance>
 
 			<lifeStageAges>
 				<li>
@@ -42,15 +43,20 @@
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<abilities>
-				<li>ThrumboRoar</li>
-			</abilities>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">ThrumboRoar</li>
+			</specialTrainables>
 		</race>
 
 		<comps>
 			<li Class="ProjectTITAN.CompProperties_TitanBond">
 				<targetPawnKind>TITAN_Spark</targetPawnKind>
 				<bondHediff>TITAN_Bond_Thrumbo</bondHediff>
+				<range>15</range>
+			</li>
+			<li Class="ProjectTITAN.CompProperties_TitanBond">
+				<targetPawnKind>TITAN_No26_ToyThrumbo</targetPawnKind>
+				<bondHediff>TITAN_Bond_No26_Protected</bondHediff>
 				<range>50</range>
 			</li>
 			<li Class="CompProperties_Spawner">

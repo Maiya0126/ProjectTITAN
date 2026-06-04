@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <NT_ToyThrumbo.label>toy thrumbo</NT_ToyThrumbo.label>
+  <NT_ToyThrumbo.labelPlural>toy thrumbos</NT_ToyThrumbo.labelPlural>
+  <NT_AcidThrumbo.label>acid thrumbo</NT_AcidThrumbo.label>
+  <NT_AcidThrumbo.labelPlural>acid thrumbos</NT_AcidThrumbo.labelPlural>
+  <NT_SwampThrumbo.label>swamp thrumbo</NT_SwampThrumbo.label>
+  <NT_SwampThrumbo.labelPlural>swamp thrumbos</NT_SwampThrumbo.labelPlural>
+  <NT_AuroraThrumbo.label>aurora thrumbo</NT_AuroraThrumbo.label>
+  <NT_AuroraThrumbo.labelPlural>aurora thrumbos</NT_AuroraThrumbo.labelPlural>
+  <NT_FireThrumbo.label>fire thrumbo</NT_FireThrumbo.label>
+  <NT_FireThrumbo.labelPlural>fire thrumbos</NT_FireThrumbo.labelPlural>
+  <NT_DesertThrumbo.label>desert thrumbo</NT_DesertThrumbo.label>
+  <NT_DesertThrumbo.labelPlural>desert thrumbos</NT_DesertThrumbo.labelPlural>
+  <NT_PrairieThrumbo.label>prairie thrumbo</NT_PrairieThrumbo.label>
+  <NT_PrairieThrumbo.labelPlural>prairie thrumbos</NT_PrairieThrumbo.labelPlural>
+  <NT_JungleThrumbo.label>jungle thrumbo</NT_JungleThrumbo.label>
+  <NT_JungleThrumbo.labelPlural>jungle thrumbos</NT_JungleThrumbo.labelPlural>
+</LanguageData>

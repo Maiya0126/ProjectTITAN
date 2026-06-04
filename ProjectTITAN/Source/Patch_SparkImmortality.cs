@@ -85,11 +85,34 @@ namespace ProjectTITAN
 
         private static bool HandlePrototypeDeath(Pawn pawn)
         {
-            if (!pawn.Downed)
+            if (pawn.health.hediffSet.HasHediff(HediffDef.Named("TITAN_PrototypeHibernation"))) return false;
+
+            try
             {
-                HealthUtility.DamageUntilDowned(pawn, false);
-                Messages.Message("Message_Spark_CoreDamaged".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
+                if (!pawn.Downed)
+                {
+                    HealthUtility.DamageUntilDowned(pawn, false);
+                }
+
+                List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
+                for (int i = hediffs.Count - 1; i >= 0; i--)
+                {
+                    if (hediffs[i] is Hediff_Injury)
+                    {
+                        pawn.health.RemoveHediff(hediffs[i]);
+                    }
+                }
+
+                Hediff hibernation = HediffMaker.MakeHediff(HediffDef.Named("TITAN_PrototypeHibernation"), pawn);
+                pawn.health.AddHediff(hibernation);
+
+                Messages.Message("Message_Prototype_HibernationStarted".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
             }
+            catch (Exception ex)
+            {
+                Log.Error("[ProjectTITAN] Prototype death handler error: " + ex.ToString());
+            }
+
             return false;
         }
 

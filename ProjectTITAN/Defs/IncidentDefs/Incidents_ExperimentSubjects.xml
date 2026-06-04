@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No26_FirstEncounter</defName>
+		<label>26号追踪0号</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No26FirstEncounter</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>1.0</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No7</defName>
+		<label>7号·腐蚀来袭</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No7Manhunter</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No13</defName>
+		<label>13号·猎杀余波</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No13ColdHunter</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No42</defName>
+		<label>42号·基因漂移</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No42GeneticDefect</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No45</defName>
+		<label>45号·火中行</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No45FireRescue</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No50</defName>
+		<label>50号·不速之客</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No50StubbornWanderer</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No64</defName>
+		<label>64号·海盗猎杀</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No64PirateHunt</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>TITAN_Incident_No88</defName>
+		<label>88号·火海逃难</label>
+		<workerClass>ProjectTITAN.IncidentWorker_No88FireFlee</workerClass>
+		<category>Misc</category>
+		<targetTags><li>Map_PlayerHome</li></targetTags>
+		<baseChance>0.30</baseChance>
+	</IncidentDef>
+
+</Defs>

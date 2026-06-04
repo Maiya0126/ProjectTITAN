@@ -69,6 +69,7 @@ namespace ProjectTITAN
             string text = "帝国的侦测器锁定了0号原型体的能量信号。\n\n一群基因改造的“猎杀者”已经抵达该地区。它们的脑中被植入了绝对指令，会撕碎阻挡在它们和目标之间的一切生物。\n\n保护0号！";
 
             Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.ThreatBig, hunters, null, null);
+            TitanEvents.FireTitanEventTriggered(def.defName);
 
             return true;
         }

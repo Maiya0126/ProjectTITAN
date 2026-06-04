@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_GeneticDrift.label>基因偏移</TITAN_GeneticDrift.label>
+  <TITAN_GeneticDrift.description>基因架构出现偏移不适，需要0号的共鸣来修正。</TITAN_GeneticDrift.description>
+  <TITAN_No88_BurnTrauma.label>烧伤创伤</TITAN_No88_BurnTrauma.label>
+  <TITAN_No88_BurnTrauma.description>火场逃生的烧伤记忆，会随时间逐渐消退。</TITAN_No88_BurnTrauma.description>
+</LanguageData>

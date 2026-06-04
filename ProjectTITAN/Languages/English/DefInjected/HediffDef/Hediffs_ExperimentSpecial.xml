@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_GeneticDrift.label>Genetic Drift</TITAN_GeneticDrift.label>
+  <TITAN_GeneticDrift.description>Gene architecture drift causing discomfort; requires #0's resonance to correct.</TITAN_GeneticDrift.description>
+  <TITAN_No88_BurnTrauma.label>Burn Trauma</TITAN_No88_BurnTrauma.label>
+  <TITAN_No88_BurnTrauma.description>Burn memory from escaping a fire. Will gradually fade over time.</TITAN_No88_BurnTrauma.description>
+</LanguageData>

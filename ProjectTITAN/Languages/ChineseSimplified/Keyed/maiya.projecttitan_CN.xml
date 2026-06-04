@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ==================== 生物 ==================== -->
+
+  <!-- 传说神兽 (PawnKindDef) -->
+  <TITAN_Warlord>战争之痕</TITAN_Warlord>
+  <TITAN_VoidWalker>虚空行者</TITAN_VoidWalker>
+  <TITAN_Matriarch>繁盛之母</TITAN_Matriarch>
+  <TITAN_Spark>花火</TITAN_Spark>
+  <TITAN_Hunter>帝国猎杀者</TITAN_Hunter>
+  <TITAN_ThrumboPrototype>0号原型体</TITAN_ThrumboPrototype>
+
+  <!-- 生物描述 (ThingDef) -->
+  <TITAN_Warlord_label>战争之痕</TITAN_Warlord_label>
+  <TITAN_Warlord_desc>传说中的三大神兽之一。年龄：未知(远古)。特性：- 不死之身 - 光环：血之狂怒</TITAN_Warlord_desc>
+  <TITAN_VoidWalker_label>虚空行者</TITAN_VoidWalker_label>
+  <TITAN_VoidWalker_desc>传说中的三大神兽之一。年龄：未知(远古)。特性：- 不死之身 - 极高闪避与护盾 - 光环：虚空帷幕</TITAN_VoidWalker_desc>
+  <TITAN_Matriarch_label>繁盛之母</TITAN_Matriarch_label>
+  <TITAN_Matriarch_desc>传说中的三大神兽之一。年龄：未知(远古)。特性：- 不死之身 - 光环：生命绽放</TITAN_Matriarch_desc>
+  <TITAN_Spark_label>花火</TITAN_Spark_label>
+  <TITAN_Spark_desc>一只发生了奇异突变的爆炸鼠。它是"0号原型体"在实验室里唯一的朋友。特性：【不死鸟协议】受到致命伤时不会死亡，而是会引发一次剧烈爆炸并进入强制休眠重启状态。【羁绊】当它在0号原型体附近时，会获得战斗力加成。</TITAN_Spark_desc>
+  <TITAN_Hunter_label>帝国猎杀者</TITAN_Hunter_label>
+  <TITAN_Hunter_desc>帝国为了回收"泰坦计划"实验体而专门培育的生物兵器。它们由座狼的基因强行修改而来，去除了痛觉和恐惧，肌肉长期处于充血的狂暴状态。它们的脑中只有一个指令：猎杀0号。</TITAN_Hunter_desc>
+  <TITAN_ThrumboPrototype_label>0号原型体</TITAN_ThrumboPrototype_label>
+  <TITAN_ThrumboPrototype_desc>帝国异种生物研究部"泰坦计划"的最终产物。它的皮毛呈现出淡淡的金色，那是皇室基因的象征。它拥有强大的自我修复能力，无法被彻底杀死（只会倒地）。特性：- 定期脱落【金色鳞片】 - 成年后会吸引野生敲击兽 - 主动技能：泰坦共鸣</TITAN_ThrumboPrototype_desc>
+
+  <!-- 工具标签 -->
+  <shattering_horn>碎裂之角</shattering_horn>
+  <void_horn>虚空之角</void_horn>
+  <life_horn>生命之角</life_horn>
+  <claw>爪子</claw>
+  <bite>撕咬</bite>
+  <head>头部</head>
+  <horn>尖角</horn>
+  <teeth>牙齿</teeth>
+  <razor_fangs>剃刀般的长牙</razor_fangs>
+  <claws>利爪</claws>
+
+  <!-- ==================== 物品 ==================== -->
+
+  <TITAN_MutatedGland_label>突变腺体</TITAN_MutatedGland_label>
+  <TITAN_MutatedGland_desc>从猎杀者体内提取的不稳定生物腺体。虽然无法用于常规合成，但其蕴含的生物能量在黑市上极具价值。</TITAN_MutatedGland_desc>
+
+  <TITAN_Incense_label>基因香薰</TITAN_Incense_label>
+  <TITAN_Incense_desc>一捆由特殊草药和化学物质混合而成的香薰棒。点燃时会散发出一种人类无法察觉，但能吸引特定皇室生物的费洛蒙烟雾。这是"泰坦计划"的起点。使用方法：选中一名殖民者 -> 右键点击香薰 -> 选择"点燃香薰"。</TITAN_Incense_desc>
+
+  <TITAN_PrototypeScale_label>0号的脱落鳞片</TITAN_PrototypeScale_label>
+  <TITAN_PrototypeScale_desc>一枚从0号原型体身上脱落的鳞片，依然散发着微弱的金色光芒和特殊的信息素。这种信息素对普通生物无效，但似乎能吸引那个一直守护着她的朋友。使用方法：选中一名殖民者 -> 右键点击鳞片 -> 选择"激活信号"。</TITAN_PrototypeScale_desc>
+
+  <TITAN_CrimsonKeratin_label>猩红角质 (数据核心)</TITAN_CrimsonKeratin_label>
+  <TITAN_CrimsonKeratin_desc>战争之痕离开时留下的角质碎片，其内部的分子排列记录了生物武器的终极秘密。在研究台解析此物品，可解锁【毁灭者模块】的制作图纸。</TITAN_CrimsonKeratin_desc>
+
+  <TITAN_VoidDust_label>虚空尘埃 (相位数据)</TITAN_VoidDust_label>
+  <TITAN_VoidDust_desc>虚空行者留下的结晶粉末，蕴含着相位护盾的频率数据。在研究台解析此物品，可解锁【堡垒模块】的制作图纸。</TITAN_VoidDust_desc>
+
+  <TITAN_LifeResin_label>生命树脂 (活体样本)</TITAN_LifeResin_label>
+  <TITAN_LifeResin_desc>繁盛之母留下的活性树脂，记录了细胞极速再生的秘密。在研究台解析此物品，可解锁【行者模块】的制作图纸。</TITAN_LifeResin_desc>
+
+  <TITAN_Tuber_label>泰坦块茎</TITAN_Tuber_label>
+  <TITAN_Tuber_desc>永不腐烂的超级口粮。</TITAN_Tuber_desc>
+
+  <TITAN_Tree_label>泰坦树</TITAN_Tree_label>
+  <TITAN_Tree_desc>泰坦树。</TITAN_Tree_desc>
+
+  <!-- 植入物物品 -->
+  <TITAN_Implant_CrimsonHeart_label>猩红诱变剂</TITAN_Implant_CrimsonHeart_label>
+  <TITAN_Implant_CrimsonHeart_desc>利用战争之痕基因制造的猩红药剂。【用法】：请在敲击兽的"健康 -> 手术"面板中选择"喂食 猩红诱变剂"。效果：无痛觉、大幅提升近战伤害。</TITAN_Implant_CrimsonHeart_desc>
+
+  <TITAN_Implant_VoidMembrane_label>虚空诱变剂</TITAN_Implant_VoidMembrane_label>
+  <TITAN_Implant_VoidMembrane_desc>利用虚空行者基因制造的幽蓝药剂。【用法】：请在敲击兽的"健康 -> 手术"面板中选择"喂食 虚空诱变剂"。效果：高护甲、高闪避。</TITAN_Implant_VoidMembrane_desc>
+
+  <TITAN_Implant_VerdantSpine_label>繁盛诱变剂</TITAN_Implant_VerdantSpine_label>
+  <TITAN_Implant_VerdantSpine_desc>利用繁盛之母基因制造的翠绿药剂。【用法】：请在敲击兽的"健康 -> 手术"面板中选择"喂食 繁盛诱变剂"。效果：超高负重、快速再生。</TITAN_Implant_VerdantSpine_desc>
+
+  <!-- ==================== 研究项目 ==================== -->
+
+  <ResearchProject_TITAN_GeneEngineering_label>泰坦基因工程</ResearchProject_TITAN_GeneEngineering_label>
+  <ResearchProject_TITAN_GeneEngineering_desc>理解泰坦生物的基本构造，为后续研究打下基础。</ResearchProject_TITAN_GeneEngineering_desc>
+
+  <ResearchProject_TITAN_PlantTech_label>泰坦植物</ResearchProject_TITAN_PlantTech_label>
+  <ResearchProject_TITAN_PlantTech_desc>通过研究0号原型体毛发上所带来的种子，获得种植泰坦树技术并收获了超级口粮泰坦块茎。</ResearchProject_TITAN_PlantTech_desc>
+
+  <ResearchProject_TITAN_Crimson_label>猩红诱变剂</ResearchProject_TITAN_Crimson_label>
+  <ResearchProject_TITAN_Crimson_desc>解析战争之痕的基因数据，研发出能极大强化肌肉与痛觉神经的诱变剂。</ResearchProject_TITAN_Crimson_desc>
+
+  <ResearchProject_TITAN_Void_label>虚空诱变剂</ResearchProject_TITAN_Void_label>
+  <ResearchProject_TITAN_Void_desc>解析虚空行者的相位数据，研发出能在皮下生成微型相位偏折场的诱变剂。</ResearchProject_TITAN_Void_desc>
+
+  <ResearchProject_TITAN_Verdant_label>繁盛诱变剂</ResearchProject_TITAN_Verdant_label>
+  <ResearchProject_TITAN_Verdant_desc>解析繁盛之母的生命数据，研发出能极大强化代谢与再生能力的诱变剂。</ResearchProject_TITAN_Verdant_desc>
+
+  <!-- ==================== 事件 ==================== -->
+
+  <Incident_Titan_Matriarch>泰坦传说：繁盛之母</Incident_Titan_Matriarch>
+  <Incident_Titan_Warlord>泰坦传说：战争之痕</Incident_Titan_Warlord>
+  <Incident_Titan_VoidWalker>泰坦传说：虚空行者</Incident_Titan_VoidWalker>
+  <Incident_TitanHunterAttack>帝国猎杀者袭击</Incident_TitanHunterAttack>
+
+  <!-- ==================== 症状 (Hediffs) ==================== -->
+
+  <!-- 植入物 -->
+  <Hediff_TITAN_Implant_CrimsonHeart_label>猩红之心(突变)</Hediff_TITAN_Implant_CrimsonHeart_label>
+  <Hediff_TITAN_Implant_CrimsonHeart_desc>基因突变赋予的强化心脏功能。</Hediff_TITAN_Implant_CrimsonHeart_desc>
+
+  <Hediff_TITAN_Implant_VoidMembrane_label>虚空薄膜(突变)</Hediff_TITAN_Implant_VoidMembrane_label>
+  <Hediff_TITAN_Implant_VoidMembrane_desc>基因突变赋予的皮下相位场。</Hediff_TITAN_Implant_VoidMembrane_desc>
+
+  <Hediff_TITAN_Implant_VerdantSpine_label>繁盛脊索(突变)</Hediff_TITAN_Implant_VerdantSpine_label>
+  <Hediff_TITAN_Implant_VerdantSpine_desc>基因突变赋予的强化脊椎神经。</Hediff_TITAN_Implant_VerdantSpine_desc>
+
+  <!-- 王者血脉 -->
+  <Hediff_TITAN_KingsBloodline_label>王者血脉</Hediff_TITAN_KingsBloodline_label>
+  <Hediff_TITAN_KingsBloodline_desc>0号原型体的完全觉醒状态。</Hediff_TITAN_KingsBloodline_desc>
+
+  <!-- 增益 -->
+  <Hediff_TITAN_Buff_KingsGrace_label>王者恩赐</Hediff_TITAN_Buff_KingsGrace_label>
+  <Hediff_TITAN_Buff_KingsGrace_desc>受到0号觉醒光环的鼓舞。</Hediff_TITAN_Buff_KingsGrace_desc>
+
+  <!-- 羁绊 -->
+  <Hediff_TITAN_Bond_Spark_label>花火共鸣</Hediff_TITAN_Bond_Spark_label>
+  <Hediff_TITAN_Bond_Spark_desc>感受到了挚友"花火"就在身边。狂暴的基因因那温暖的核心辐射而平静下来。</Hediff_TITAN_Bond_Spark_desc>
+
+  <Hediff_TITAN_Bond_Thrumbo_label>守护者共鸣</Hediff_TITAN_Bond_Thrumbo_label>
+  <Hediff_TITAN_Bond_Thrumbo_desc>与0号原型体的灵魂链接。只要0号在附近，花火就会获得超凡的反应速度和再生能力。</Hediff_TITAN_Bond_Thrumbo_desc>
+
+  <!-- 光环 -->
+  <Hediff_TITAN_Aura_Warlord_label>血之狂怒</Hediff_TITAN_Aura_Warlord_label>
+  <Hediff_TITAN_Aura_Warlord_desc>受到战争之痕的狂暴影响。</Hediff_TITAN_Aura_Warlord_desc>
+
+  <Hediff_TITAN_Aura_Warlord_Source_label>战争之痕光环</Hediff_TITAN_Aura_Warlord_Source_label>
+  <Hediff_TITAN_Aura_Warlord_Source_desc>正在散发狂暴的灵能波动。</Hediff_TITAN_Aura_Warlord_Source_desc>
+
+  <Hediff_TITAN_Aura_VoidWalker_label>虚空帷幕</Hediff_TITAN_Aura_VoidWalker_label>
+  <Hediff_TITAN_Aura_VoidWalker_desc>受到虚空行者的相位保护。</Hediff_TITAN_Aura_VoidWalker_desc>
+
+  <Hediff_TITAN_Aura_VoidWalker_Source_label>虚空行者光环</Hediff_TITAN_Aura_VoidWalker_Source_label>
+  <Hediff_TITAN_Aura_VoidWalker_Source_desc>正在散发扭曲相位的灵能。</Hediff_TITAN_Aura_VoidWalker_Source_desc>
+
+  <Hediff_TITAN_Aura_Matriarch_label>生命绽放</Hediff_TITAN_Aura_Matriarch_label>
+  <Hediff_TITAN_Aura_Matriarch_desc>沐浴在生命光辉中。</Hediff_TITAN_Aura_Matriarch_desc>
+
+  <Hediff_TITAN_Aura_Matriarch_Source_label>繁盛之母光环</Hediff_TITAN_Aura_Matriarch_Source_label>
+  <Hediff_TITAN_Aura_Matriarch_Source_desc>正在散发生命能量。</Hediff_TITAN_Aura_Matriarch_Source_desc>
+
+  <!-- 特殊状态 -->
+  <Hediff_TITAN_GeneticCollapse_label>基因崩溃</Hediff_TITAN_GeneticCollapse_label>
+  <Hediff_TITAN_GeneticCollapse_desc>基因组正在解离。</Hediff_TITAN_GeneticCollapse_desc>
+  <Hediff_TITAN_GeneticCollapse_stage1_label>初期</Hediff_TITAN_GeneticCollapse_stage1_label>
+  <Hediff_TITAN_GeneticCollapse_stage2_label>危急</Hediff_TITAN_GeneticCollapse_stage2_label>
+
+  <Hediff_TITAN_VoidAnchor_label>相位锚定</Hediff_TITAN_VoidAnchor_label>
+
+  <Hediff_TITAN_WarlordSoothing_label>泰坦共鸣(安抚中)</Hediff_TITAN_WarlordSoothing_label>
+  <Hediff_TITAN_WarlordSoothing_desc>0号原型体的灵能正在尝试平息它的怒火。当共鸣层数达到 3 层时，它将停止攻击。</Hediff_TITAN_WarlordSoothing_desc>
+  <Hediff_TITAN_WarlordSoothing_stage1_label>共鸣 I</Hediff_TITAN_WarlordSoothing_stage1_label>
+  <Hediff_TITAN_WarlordSoothing_stage2_label>共鸣 II</Hediff_TITAN_WarlordSoothing_stage2_label>
+  <Hediff_TITAN_WarlordSoothing_stage3_label>共鸣完成</Hediff_TITAN_WarlordSoothing_stage3_label>
+
+  <!-- 花火重生 -->
+  <Hediff_TITAN_SparkReboot_label>不死鸟重启</Hediff_TITAN_SparkReboot_label>
+  <Hediff_TITAN_SparkReboot_desc>不死鸟协议已激活。正在启动紧急重组序列。</Hediff_TITAN_SparkReboot_desc>
+
+  <!-- ==================== C# 代码消息 ==================== -->
+
+  <Message_TITAN_CannotHandleGenes>{0} 无法承受泰坦基因，已吐出药剂。</Message_TITAN_CannotHandleGenes>
+  <Message_TITAN_AlreadyHasAbility>{0} 已拥有此能力。</Message_TITAN_AlreadyHasAbility>
+  <Message_TITAN_GenomeSaturated>{0} 基因组已饱和，拒绝融合。</Message_TITAN_GenomeSaturated>
+  <Message_TITAN_FusionSuccess>{0} 成功融合了 {1}！</Message_TITAN_FusionSuccess>
+  <Message_TITAN_KingsAwakening>【王者觉醒】0号原型体彻底觉醒！</Message_TITAN_KingsAwakening>
+
+  <!-- 技能按钮 -->
+  <Command_TitanResonance_label>泰坦共鸣</Command_TitanResonance_label>
+  <Command_TitanResonance_desc>利用0号的皇室基因释放共鸣波。【冷却：1小时】- 任务神兽：执行特定的治疗/安抚操作，完成后给予奖励并离开。- 支援友军：感谢支援并指引离开。- 普通友军：治疗伤口。</Command_TitanResonance_desc>
+
+  <Message_TITAN_TargetTooFar>目标太远！</Message_TITAN_TargetTooFar>
+  <Message_TITAN_MatriarchHealed>繁盛之母已完全康复！</Message_TITAN_MatriarchHealed>
+  <Message_TITAN_MatriarchHealing>治疗中... 剩余: {0}</Message_TITAN_MatriarchHealing>
+  <Message_TITAN_WarlordCalmed>战争之痕怒火已平息！</Message_TITAN_WarlordCalmed>
+  <Message_TITAN_WarlordSoothing>安抚中...</Message_TITAN_WarlordSoothing>
+  <Message_TITAN_VoidWalkerThreat>周围有威胁，无法传送！</Message_TITAN_VoidWalkerThreat>
+  <Message_TITAN_VoidWalkerSafe>虚空行者确认安全，回归虚空。</Message_TITAN_VoidWalkerSafe>
+  <Message_TITAN_Healed>治愈了 {0}</Message_TITAN_Healed>
+  <Message_TITAN_SubjectRecruited>{0} 感受到了0号的共鸣，自愿加入了殖民地！</Message_TITAN_SubjectRecruited>
+  <Message_TITAN_Leaving>{0} 正在离开。</Message_TITAN_Leaving>
+
+  <!-- 花火不死 -->
+  <Message_Spark_LethalStrikeDetected>花火的核心侦测到致命打击！已启动紧急重组协议。</Message_Spark_LethalStrikeDetected>
+  <Message_Spark_CoreDamaged>0号原型体核心受损，强制休眠！</Message_Spark_CoreDamaged>
+  <Message_Prototype_HibernationStarted>0号原型体受到致命伤害！自我保护协议已启动强制休眠……</Message_Prototype_HibernationStarted>
+  <Message_Warlord_LeftData>战争之痕认可了你，留下了数据。</Message_Warlord_LeftData>
+  <Message_Hunter_EntityCollapsed>{0} 实体崩溃回归。</Message_Hunter_EntityCollapsed>
+
+  <!-- 敲击兽吸引 -->
+  <Message_ThrumboMagnet_Attracted>0号原型体发出的幼年期共鸣吸引了远方的族群。</Message_ThrumboMagnet_Attracted>
+  <Message_ThrumboMagnet_AlphaAttracted>0号原型体的血脉共鸣惊动了一头Alpha敲击兽，它正朝殖民地走来。</Message_ThrumboMagnet_AlphaAttracted>
+
+  <!-- 生成物品 -->
+  <Message_SpawnSpark_AlreadyHas>信号无效：那种生物似乎已经有一只在你身边了。</Message_SpawnSpark_AlreadyHas>
+  <Message_SpawnPrototype_AlreadyExists>信号干扰：感应到0号原型体已存在。作为唯一的生物兵器，同一时间只能共鸣一只。</Message_SpawnPrototype_AlreadyExists>
+
+  <!-- 基因融合 -->
+  <Message_GeneFusion>基因融合</Message_GeneFusion>
+  <Message_KingsAwakeningMote>王者觉醒!!!</Message_KingsAwakeningMote>
+  <Message_LifeDrain>生命流逝</Message_LifeDrain>
+
+  <!-- 信件 -->
+  <Letter_TitanReinforcement>泰坦支援</Letter_TitanReinforcement>
+  <Letter_TitanReinforcement_Body>感应到你的危机，{0} 前来助战！</Letter_TitanReinforcement_Body>
+
+  <!-- 浮动文字 (Mote) -->
+  <Mote_GeneFusion>基因融合</Mote_GeneFusion>
+  <Mote_KingsAwakening>王者觉醒!!!</Mote_KingsAwakening>
+  <Mote_LifeDrain>生命流逝</Mote_LifeDrain>
+
+  <!-- UI -->
+  <Cooldown>冷却中 ({0} h)</Cooldown>
+  <ReturnToVoid>回归虚空</ReturnToVoid>
+
+  <!-- Letters -->
+  <Letter_SparkSpawn_Title>不灭的火种</Letter_SparkSpawn_Title>
+  <Letter_SparkSpawn_Body>随着鳞片散发出特殊的费洛蒙信号，一只浑身散发着高热的变异爆炸鼠冲进了地图。它就是"花火"，0号原型体的挚友。它闻到了那熟悉的、只有它能识别的气味，义无反顾地追随而来。(已获得：花火 - 能够无限重生的爆炸专家)</Letter_SparkSpawn_Body>
+
+  <Letter_PrototypeSpawn_Title>迷雾中的回应</Letter_PrototypeSpawn_Title>
+  <Letter_PrototypeSpawn_Body>香薰燃尽，一股能够安抚狂暴基因的宁静气息飘向了荒野深处。不久后，地图边缘出现了一个金色的身影——那是帝国丢失的实验体"0号"。她看起来疲惫不堪，长期忍受着基因改造带来的剧痛。但此刻，你的香薰让她第一次感受到了久违的安宁。她怯生生地向殖民地走来，不是作为兵器，而是作为一个寻求庇护的流浪者。(已获得：【0号原型体】 - 她信任你，并加入了殖民地)</Letter_PrototypeSpawn_Body>
+
+  <!-- 研究标签 -->
+  <ResearchTab_ProjectTITAN>Project T.I.T.A.N. 泰坦计划</ResearchTab_ProjectTITAN>
+
+  <!-- Codex UI -->
+  <TITAN_Codex_Title>泰坦计划 · 实验体档案</TITAN_Codex_Title>
+  <TITAN_Codex_Undiscovered>数据未解密</TITAN_Codex_Undiscovered>
+  <TITAN_Codex_EventHint>探测到微弱的共鸣信号……等待首次接触事件。</TITAN_Codex_EventHint>
+  <TITAN_Codex_DataUndecrypted>数据未解密</TITAN_Codex_DataUndecrypted>
+  <TITAN_Codex_Status_Alive>状态：存活</TITAN_Codex_Status_Alive>
+  <TITAN_Codex_Status_Deceased>状态：死亡</TITAN_Codex_Status_Deceased>
+  <TITAN_Codex_Status_Classified>状态：机密</TITAN_Codex_Status_Classified>
+
+  <!-- Codex Entry Labels & Descriptions -->
+  <TITAN_Codex_No0_label>0号原型体</TITAN_Codex_No0_label>
+  <TITAN_Codex_No0_desc>0号是泰坦计划的起点，也是终点。它是唯一一个没有"偏移模块"的实验体——它的基因架构是原始设计的完整呈现。后来所有衍生体的改造，都是以0号为模板进行的偏移。\n\n帝国异种生物研究部最初的设想是创造一种可量产的生物兵器。0号的成功证明了技术可行性，但后续的每一次"改进"尝试都走向了失败——1号拆解了0号的稳定锚，9号移除了0号金色皮毛中的神经绝缘蛋白，19号绕过了0号的终止信号，37号在0号的架构上叠装了未验证的模块。每一条失败记录都在说同一件事：0号不是一个可以拆解拼装的工具组，它是一个有机整体。\n\n0号在实验室里表现出温和而聪慧的天性。它会记住每天来喂食的研究员的脸，会用鼻尖轻触那些看起来心情不好的人的手。有研究员说0号身上有一种"让人想变更好的气场"——这种说法在严谨的科学报告中当然不会被记录，但它是真的。\n\n0号唯一的"朋友"是花火——一只发生了奇异突变的爆炸鼠。花火不是编号实验体，它是0号在实验室里自发"收养"的。没有人安排它们在一起，也没有人能解释为什么一只高等级的基因改造敲击兽会和一只变异啮齿类形影不离。但0号会为花火清理皮毛，花火会在0号身边安静地蜷缩入睡。这是泰坦计划中唯一一段没有被任何实验协议定义的关系。\n\n实验室爆炸当晚，0号在混乱中失踪。花火追踪着0号的气味也被冲散。此后的故事，要从殖民地的一缕香薰说起……\n\n特性：定期脱落金色鳞片 | 成年后吸引野生敲击兽（20%概率）| 主动技能：泰坦共鸣 | 不死（只会倒地）| 皮毛呈淡淡金色——皇室基因的象征\n\n【加入方式】制作并使用基因香薰，吸引0号原型体来到殖民地。</TITAN_Codex_No0_desc>
+
+  <TITAN_Codex_Spark_label>花火</TITAN_Codex_Spark_label>
+  <TITAN_Codex_Spark_desc>花火不是泰坦计划的正式编号实验体。它原本只是实验室常规饲养的实验动物——一只用于毒性测试的普通爆炸鼠。但它在0号的隔离舱附近生活了太长时间。\n\n没有人能确切解释花火的突变是如何发生的。最有可能的解释是0号在觉醒过程中释放的灵能脉冲意外地改写了花火的基因表达——这种"辐射式觉醒"在理论模型中有过推导，但从未被实证观察。结果是花火获得了一种不可思议的能力：不死。每当它受到致命伤害时，体内的化合燃料腺体会发生一次可控引爆，摧毁一切近距离威胁，然后花火会进入一段约6小时的休眠，在此期间全身细胞会以极高的速度重组。醒来后，它又是一只好好的爆炸鼠。\n\n花火对0号的依恋达到了生物学解释的极限。它会不顾一切地靠近0号，即使中间隔着火墙、电网和封闭的钢门。研究者在0号的脱落鳞片上发现了一种特殊的费洛蒙——只有花火的嗅觉系统能识别的频率。0号似乎也在主动释放这种信号，如同为花火点亮的灯塔。\n\n实验室爆炸后，花火是第一个被确认逃离的个体——它的突围方式很简单：引爆自己，炸开废墟，休眠6小时，再引爆一次，直到找到通往外面的路。它在废墟中引爆了四次才脱困，身上的焦痕至今没有完全褪去。\n\n花火现在在哪里，没有人知道。但如果0号还活着，花火就一定会找到她。它只需要一枚鳞片的信号。\n\n特性：【不死鸟协议】受到致命伤时触发剧烈爆炸并进入强制休眠重启 | 与0号原型体灵魂羁绊 | 产化合燃料\n\n【加入方式】获得0号原型体的脱落鳞片后激活信号，花火会追踪而来。</TITAN_Codex_Spark_desc>
+
+  <TITAN_Codex_No7_label>7号实验体·腐蚀</TITAN_Codex_No7_label>
+  <TITAN_Codex_No7_desc>7号是"递进式单模块偏移"规程下的第二批产物。它的偏移方向来自一个军事需求——帝国希望在热带毒雾星球上部署能无视环境毒素的生物兵器。研究者从0号模板中替换了标准代谢路径，改为一条基于蝾螈毒素中和蛋白的替代路线。这条路线能让7号将环境中的毒素直接转化为代谢能量，代价是消化系统变得极具攻击性——它的体液、唾液乃至角的表面都覆盖着致命的混合毒素。\n\n7号是第一个完成觉醒且存活的毒系实验体。它的精神状态稳定——相对而言。与0号温和的天性不同，7号表现出明显的领地意识和攻击性，对任何闯入其感知范围的生物都会发出低沉的警告震动。研究者将其归类为"防御型攻击性"，认为这是毒素代谢路径对神经系统的副作用——体内持续循环的毒素让7号始终处于一种"生理级别的警惕"中。\n\n值得注意的是，7号对0号的态度截然不同。每次0号被带到相邻观察区时，7号都会安静下来，那些平时紧绷的肌肉会逐渐松弛。研究人员推测这可能是0号的"稳定锚效应"——0号的基因架构中可能存在某种能够安抚变异体的旁路信号，而7号对这种信号尤其敏感。\n\n实验室爆炸时，7号是第三个被确认逃离的个体。它从破碎的隔离舱中直接冲穿了三道钢化玻璃墙——毒素腐蚀了玻璃的硅氧键。监控最后拍到的画面是7号消失在森林深处，沿途的草木在它的足印中枯萎发黑。\n\n特性：血量12.0 | 角力35（毒咬）| 毒咬42 | 脚力29 | 完全毒免疫 | 免疫增益速度1.05\n\n【加入方式】0号原型体的共鸣吸引了7号——它以狂暴的猎杀者姿态闯入殖民地地图，但当血量降至50%以下或靠近0号时会自动平静并加入玩家阵营。</TITAN_Codex_No7_desc>
+
+  <TITAN_Codex_No13_label>13号实验体·深渊</TITAN_Codex_No13_label>
+  <TITAN_Codex_No13_desc>13号是整个泰坦计划中最危险的衍生体——这不是评估，这是事实。\n\n它的偏移模块是37号那场灾难中唯一幸存的数据遗产。37号的"战斗本能强化"模块在叠装崩溃中被撕成了碎片，但研究者从残存的基因片段中提取出了核心强化序列，然后做了37号实验团队没有做的事——他们只装了这一个模块，并且严格遵守了0号的终止信号保护协议。\n\n结果令人既振奋又恐惧。13号的攻击性远超任何预期——它的角变异为带有锯齿的穿刺结构，尾部演化出了类似斧头的骨刃，攻击速度是0号的2.4倍。它的免疫系统也因战斗需求被极度强化，几乎没有任何已知病原体能在它体内存活超过12小时。代价是13号的护甲远低于0号——机体将所有资源都倾斜向了进攻端，仿佛在一具敲击兽的身体里装进了一台纯粹的杀戮引擎。\n\n但最让研究者不安的是13号的"眼神"。其他实验体的行为都可以用基因改造的副作用来解释——7号的警惕、50号的迟钝、26号的依恋——但13号不一样。它在攻击时会观察对手的弱点，它会利用地形，它会假装撤退然后伏击。这不是本能，这是战术。\n\n研究主管在新主管亲笔在13号的档案上批注："我不确定我们造的是一只野兽还是一名战士。如果是后者，我建议我们永远不要知道当它认定我们也是'对手'的那一天会发生什么。"\n\n实验室爆炸当晚，13号的监控录像记录了一段令所有审阅者脊背发凉的画面——在爆炸发生前的23分钟，13号停止了它持续数月的原地踱步，转向了观察窗的方向，静静地盯着摄像头，仿佛它知道有人正在看。然后它闭上了眼睛。爆炸发生后，13号的隔离舱是唯一一扇从内侧被打开的。\n\n特性：血量13.0 | 角力34（穿刺）| 尾击76 | 免疫速度3.5x | 低护甲（锐0.40，钝0.25）——玻璃大炮\n\n【加入方式】13号带着战斗伤疤走向0号的位置，确认0号的存在后立即加入玩家阵营。它目标明确——它来找0号，不是来打架的。</TITAN_Codex_No13_desc>
+
+  <TITAN_Codex_No26_label>26号实验体·亲卫</TITAN_Codex_No26_label>
+  <TITAN_Codex_No26_desc>26号的诞生源于一个非军事项目——帝国研究员中的心理健康顾问提交了一份报告，指出长期与0号接触的研究人员情绪状态显著改善，她推测0号身上可能存在某种"心理安抚机制"。高层对此嗤之以鼻，但同意了资源请求——不是出于关怀，而是因为"情绪稳定的研究员效率更高"。\n\n26号的偏移方向是0号基因库中最不起眼的一串——与社会化行为和亲子依恋相关的片段。研究者原以为这只是一个微不足道的改动，但结果是26号成为了整个泰坦计划中最出乎意料的产物。\n\n它在发育过程中停止了生长，成体体型仅有大型犬大小——这是社交行为基因与0号生长调控序列的意外交互，导致生长激素在早期就被抑制了。它的战斗力约等于一条哈士奇，护甲几乎不存在，角也只有一截小小的突起。在军事评估中，26号被归类为"无战场价值"。\n\n但26号有一个任何其他实验体都不具备的能力——它让所有接触它的生物放松下来。不只是人类，连7号在26号附近都会停止警戒姿态，连13号都不会对26号发动攻击。它的脏污率为零——身体似乎天然地排斥任何污物附着，仿佛连泥土都不忍心弄脏它。它的野性指数也是零——它绝不会主动攻击任何生物，即使被打也不会反击。\n\n然后，研究员们注意到了26号对0号的态度。不是7号那种"在0号身边会放松"，也不是42号那种"对0号保持敬意"。26号对0号是一种纯粹的、毫无保留的依恋——它会跟着0号到处走，贴着0号睡觉，在0号离开视线时发出焦急的呜咽。这种感情是如此强烈和纯粹，以至于有研究员私下说："如果把0号比作太阳，26号就是那颗永远朝向太阳的向日葵。"\n\n0号对26号的态度也不同于其他实验体。0号会主动为26号清理皮毛，在休息时将26号圈在自己的身体内侧。研究员们第一次看到0号展现出明确的"保护"行为，就是对着26号。\n\n实验室爆炸时，26号和0号被冲散了。监控显示26号在一片废墟中疯狂地奔跑，嘶声呼喊着什么——声学分析证实，那是0号的叫声的模仿，26号在用0号的声音呼唤0号。此后26号失踪了。但如果0号还活着，26号一定会找到她——这是所有了解26号的人唯一确信的事。它体内那组被放大的社交基因，赋予了一种近乎超自然的嗅觉和追踪能力。对26号来说，找到0号不是任务，是本能，是呼吸，是存在的全部理由。\n\n特性：血量2.85 | 角力18 | 零脏污 | 零野性 | 绝不反击 | 高频亲昵\n\n【加入方式】26号是0号原型体最忠实的守护者——它会径直走向0号并在0号身边躺下，立即加入玩家阵营。它是第一个找到0号的实验体。</TITAN_Codex_No26_desc>
+
+  <TITAN_Codex_No42_label>42号实验体·星辉</TITAN_Codex_No42_label>
+  <TITAN_Codex_No42_desc>42号的偏移方向来自帝国的另一项战略需求——冰封行星的先遣侦察。0号原型体虽然适应力极强，但其耐寒上限在-65°C左右，无法在深冻星球上长时间活动。研究者从0号的皮毛基因中提取了基础保温序列，并叠加了来自极地微生物的抗冻蛋白编码。\n\n效果远超预期。42号的皮毛重构为一种多层结构——外层是致密的防风防水层，内层是纳米级的气凝胶隔热层，中间填充着极地抗冻蛋白。它能在-150°C的环境中安然入睡，这是0号原型体都无法企及的耐寒极限。更令人意外的是，它的皮毛在黑暗中会发出幽幽的极光彩光——研究者最初以为是基因副产物，后来发现这竟是42号的主动行为。它能控制发光的频率和颜色，似乎用于某种未知的通讯。\n\n42号是实验体中最"安静"的存在——不是沉默，而是一种深层的、几乎哲学性的沉静。它不攻击研究人员，也不讨好他们。它只是站在那里，看着，听着，仿佛在理解某种远超实验宱乐谱的东西。有研究员说在42号身边会不由自主地思考宇宙的边界和时间的本质，然后被这种念头吓到而赶紧离开。\n\n值得注意的是，42号是唯一一个拒绝吃树的实验体。0号偶尔会啃树皮——这是敲击兽的天性。但42号会小心翼翼地绕过每一棵树，甚至会在不小心碰到树干后用鼻尖轻轻触碰，仿佛在道歉。研究者至今无法解释这种行为——极地适应模块没有包含任何相关指令。\n\n42号在实验室爆炸当晚的表现也与众不同。其他实验体都是逃离——用跑的、用撞的、用腐蚀的。42号只是轻轻地抬起头，看了一眼破裂的天花板上方露出的一片星空，然后缓步走出了隔离舱。监控拍到它在爆炸的火光中仰望星空的画面，被研究者私下称为"泰坦计划最美的三秒钟"。\n\n它走入了最近的雪原，至今没有任何再被目击的记录。但如果0号的信号够强，也许极光会再次出现。\n\n特性：血量12.0 | 角力53 | 极寒抗性（-150°C）| 低脏污率 | 不吃树 | 可跨种繁殖（需Odyssey DLC）\n\n【加入方式】42号带着基因偏移不适症（TITAN_GeneticDrift）走向0号——它需要0号的共鸣来治愈基因缺陷。使用泰坦共鸣治疗它，每次降低35%严重度直到完全治愈。</TITAN_Codex_No42_desc>
+
+  <TITAN_Codex_No45_label>45号实验体·熔炉</TITAN_Codex_No45_label>
+  <TITAN_Codex_No45_desc>45号的偏移方向源于一个意外的发现——在对0号进行例行热成像扫描时，研究者注意到0号的体温在睡眠时会短暂地飙升至正常值的3倍，持续约45秒后回落。这被证实是0号自我修复机制的一部分——局部高温加速了细胞分裂和蛋白质折叠。但如果能将这种热能代谢持续化而不仅限于修复期呢？\n\n45号的研究团队从0号的热脉冲序列中提取了调控基因，并将其与持续表达而非脉冲表达的主控启动子连接。结果是一个活的热能引擎——45号的体核温度恒定在230°C左右，体表温度也高达80°C。它的皮毛中含有类似石棉的矿化纤维，使其几乎不可燃。它的角在高温下会发出暗红色的微光，如同一根烧红的铁钎。\n\n但最意想不到的副产品是化合燃料。45号的高温代谢将其食物中的有机质不完全分解后，会以液态碳氢化合物的形式从乳腺排出——这就是化合燃料的来源。每3天约18单位的产量是同类实验体的两倍，考虑到45号同时具备战斗能力和燃料产出，它的"性价比"获得了军方的认可。\n\n19号的教训被严格遵守——45号的再生系统保留了0号的完整终止信号，同时增加了一个"过热断路"机制：如果体温超过安全阈值，代谢会自动降档进入冷却模式。这个设计证明是成功的——45号从未出现过19号那样的再生失控。\n\n45号的性格出人意料地温和——研究者称之为"灶火型人格"。它不好斗，不冷淡，只是静静地散发着稳定的热量。有研究员报告说在冬天靠近45号的隔离舱时会感到一种类似壁炉前的安心。45号也确实会主动靠近寒冷区域的其他实验体——不是为了攻击，而是纯粹为了让对方暖和一点。\n\n实验室爆炸时，45号的隔离舱是被熔断的——不是被炸开的，是45号将自己的体温拉到了极限，把钢壁烧穿了一个洞。监控显示它在走出废墟时，身上的皮毛闪烁着白炽光，宛如一座行走的熔炉。然后在夜色中，那团光芒渐渐远去，变小，最终消失在地平线上——像一颗坠入荒野的流星。\n\n特性：血量12.0 | 角力36 | 产化合燃料：18/3天 | 几乎不可燃 | 热甲1.00\n\n【加入方式】45号从火中走出，身上燃着烈焰却毫发无伤，径直走向殖民地并立即加入玩家阵营。</TITAN_Codex_No45_desc>
+
+  <TITAN_Codex_No50_label>50号实验体·荒魂</TITAN_Codex_No50_label>
+  <TITAN_Codex_No50_desc>50号的偏移方向来自一个看似简单的军事需求——后勤自持。帝国的生物兵器需要在无补给的战场上长期独立运作，而0号的进食量（1.75倍普通敲击兽）在资源匮乏地区是明显的劣势。研究者将0号的代谢调控序列替换为骆驼式的节流模式，将饥饿率压至0.25——不到0号的三分之一。\n\n这项改造在生理上是成功的，但在行为上产生了研究者没有预料的副作用。50号的"难驯"不是因为野性强——恰恰相反，它只是极其固执。普通敲击兽在驯化失败时有10%的概率反击，50号把这个数字提升到了17%——不是因为愤怒，而是因为它根本就不愿意改变自己正在做的事。它在吃草的时候你叫不动它，在行走的时候你拦不住它，在休息的时候你吵不醒它。它不是在对抗你，它只是不在乎你。\n\n这种固执延伸到了50号对生存的态度上。研究者曾做过一次极端饥饿实验——连续30天不给50号进食。0号在同条件下第8天就开始消瘦，而50号在第30天时体重仅下降了7%，各项生理指标仍然正常。当研究者终于投放食物时，50号慢悠悠地走过去，不紧不慢地吃了几口，然后找了个地方继续睡觉——仿佛刚才那30天不过是它日常的一个午后。\n\n研究者对50号的评价分歧很大。军方认为它"不可控"，不建议部署。后勤部门则认为它的自持能力是"战略级优势"。最后两边都没有得到他们想要的结果——50号只是继续做它一直做的事：站在那里，慢慢消化，等待下一个不需要它做出反应的时刻。\n\n实验室爆炸时，50号是最后一个离开的——不是因为逃不掉，而是因为它花了很长时间才决定这件事值得它从午睡中起身。监控显示，爆炸发生后27分钟，50号才不紧不慢地步入沙漠。它甚至没有回头看一眼燃烧的实验室。\n\n特性：血量12.0 | 角力35 | 饥饿率0.25 | 高温耐受（75°C）| 驯化失败反击17%\n\n【加入方式】50号会慢慢走向0号的位置，然后在0号身边躺下，立即加入玩家阵营。它不在意你，它只是选择待在0号身边。</TITAN_Codex_No50_desc>
+
+  <TITAN_Codex_No64_label>64号实验体·铁壁</TITAN_Codex_No64_label>
+  <TITAN_Codex_No64_desc>64号的偏移方向是对"如何让0号更难被杀死"这一命题的另一种回答。19号选择了再生强化——失败了，因为突破了0号的终止信号。64号团队选择了截然不同的路线：不要修复得更快，而是从一开始就不要受伤。\n\n他们从0号骨骼和角质层的矿化基因中提取了硬化序列，并将其表达量提升了4倍。结果是64号的整个骨骼系统和体表覆盖层发生了剧烈的矿化重塑——它的角变成了一块厚重的骨穹顶，皮下的骨板密度是0号的3.2倍，锐甲达到了惊人的0.95（接近纯钢板的防护水平）。它甚至在头骨前方形成了一个半球状的骨质圆顶——研究者最初以为是肿瘤，后来发现那是一个完美的吸能结构，能将钝器冲击分散到整个颅骨。\n\n代价是显而易见的。64号是所有存活的实验体中最慢的——移速4.6，仅比人类快一点点。它也是唯一一个健康系数低于0号的实验体（6.0 vs 0号的基准值），因为超矿化骨骼挤占了大量体重分配，身体只能削减脏器冗余来维持平衡。但64号几乎不需要脏器冗余——它根本就不会受伤到需要冗余的程度。它的痛觉阈值被校准到了0.87——这意味着它要承受接近致死量的伤害才会因疼痛丧失行动能力。对于一只几乎不可能被伤到的巨兽来说，这根本不算缺点。\n\n64号的性格沉稳得近乎呆滞——但这是误导性的。研究者一度认为64号是"最不聪明"的实验体，直到一次测试中，64号在受到攻击时做了一件令所有人震惊的事：它蹲了下来。超矿化的圆顶指向攻击来源，四肢收拢在身体下方，形成了一个几乎无懈可击的防御姿态。这不是本能反应——64号在3秒内评估了攻击角度、自身弱点分布和最优防御姿态，然后执行了一个经过计算的战术动作。\n\n13号是杀戮本能。64号是生存本能。它们是0号基因库中同一枚硬币的两面。\n\n实验室爆炸时，64号是唯一一个不需要逃跑的实验体。碎片和冲击波打在它身上如同雨点落在石板上。它站了很久，确认周围没有进一步威胁后，才迈着它一贯缓慢而坚定的步伐走入了草原。沿途没有任何掠食者敢于阻拦——不是因为恐惧，而是因为本能告诉它们，这堵移动的墙不值得尝试。\n\n特性：血量12.0 | 圆顶力39 | 锐甲0.95 | 钝甲0.75 | 热甲0.55 | 痛阈0.95 | 移速4.6\n\n【加入方式】64号在遭受海盗追击时出现在殖民地附近——使用泰坦共鸣或等待海盗离开，64号会在确认安全后加入玩家阵营。</TITAN_Codex_No64_desc>
+
+  <TITAN_Codex_No88_label>88号实验体·繁花</TITAN_Codex_No88_label>
+  <TITAN_Codex_No88_desc>88号的偏移方向是泰坦计划中最具争议的一项——将植物基因引入敲击兽的代谢系统。提案者在审批会上被当面质问："你是在造一只兽，还是一棵树？"他的回答是："我在造一只能养活殖民地的兽。"\n\n88号的改造基于0号皮毛中发现的一组共生微生物基因——0号定期脱落的金色鳞片上覆盖着一层特殊的微生态环境，这些微生物与0号形成了互利共生关系。88号团队将这一概念极端化：他们不是在皮毛上培养微生物，而是在88号的皮下组织中直接嵌入了经过基因编辑的共生真菌菌株。\n\n这些真菌与88号的循环系统相连，从血液中获取基础养分，同时将合成产物——药用植物的有效成分——通过淋巴系统输送到88号的体表。每隔约4天，88号身上的特定腺体会分泌出4单位的草药——研究者戏称88号为"行走的药圃"。88号本身也从中受益：共生真菌给它带来了一定程度的免疫强化，虽然远不如13号那种极端水平，但足以让88号在疾病横行的丛林环境中保持健康。\n\n代价是88号获得了植物的一个致命弱点——怕火。0号的Flammability接近正常值，而88号高达1.2——它比普通生物更容易燃烧。共生真菌的菌丝网络在高温下会迅速枯死，同时释放出促燃的挥发性物质，让火势在88号身上越烧越旺。这是88号团队在实验初期就发现的问题，但他们选择保留这个弱点——因为移除共生真菌将同时移除88号的所有产出能力。\n\n88号的性格出乎意料地温暖——比26号更加外向、主动。26号的依恋是针对0号一个人的，88号则对所有靠近它的生物表示友好。它会主动蹭来访者的手，发出轻柔的咕噜声。研究者认为这是共生真菌对神经系统的间接影响——88号就像一株向日葵，本能地朝向每一个可能"传播孢子"的方向展开自己。\n\n实验室爆炸对88号来说是噩梦——火焰无处不在，对它而言那是比死亡更可怕的东西。监控显示88号在爆炸瞬间发出了撕裂般的惨叫，它的皮毛在3秒内就从平静的绿色变成了焦灼的枯黄。它没有像其他实验体那样走向室外——它冲向了最近的水源，一头扎进了冷却池中，直到火势减弱才浑身冒着蒸汽地爬出来，从供水管道的破损处钻出了实验室。\n\n至今，88号身上的焦痕仍然依稀可见。那些地方再也长不出真菌了，也无法再产出草药。但88号依然会选择靠近火堆旁的殖民者——不是为了取暖，而是因为它还记得，在实验室里，火堆旁边总坐着对它说话的人。\n\n特性：血量12.0 | 角力35 | 产草药：4/4天 | Flammability 1.2（致命怕火弱点）| 低野性\n\n【加入方式】88号带着烧伤和火焰创伤从火灾中逃出，冲向最近的水源，治愈后加入玩家阵营。</TITAN_Codex_No88_desc>
+
+  <!-- Deceased subjects -->
+  <TITAN_Codex_No1_label>1号实验体（已死亡）</TITAN_Codex_No1_label>
+  <TITAN_Codex_No1_desc>0号原型体的成功让整个研究部陷入了一种危险的亢奋。帝国高层终于看到了希望——一个稳定的、可复现的基因改造敲击兽活体。但0号太特殊了，它身上叠加的基因模块太多，以至于研究者无法确定究竟是哪个模块对哪个模块起了关键作用。于是，"拆解重构"计划启动了。\n\n1号是第一份"精简版"蓝图。研究者从0号的基因架构中剥离出他们认为是核心的骨架，去掉了所有"冗余"模块。1号在培养液中完美发育至第72小时——它的细胞分裂曲线甚至比0号更平滑，因为没有了那些"干扰项"。\n\n第4天凌晨，1号的细胞开始失控分化。不是癌变，而是暴露了研究员们犯下的根本错误——那些被标为"冗余"的基因片段，实际上是0号基因架构中的稳定锚。0号身上叠加的每一个模块都互为羁绊，彼此钳制，共同构成了一座自稳态的精密天平。1号把这架天平的关键支点拆掉了。\n\n不同物种的基因在1号体内各自"唤醒"，试图各自构建独立的器官系统。它的身体在6小时内同时长出了不完整的蹄、爪和鳞片，骨骼在三个不同方向上断裂重组。最终溶解成了一滩混浊的组织液。\n\n研究主管在报告末尾写道："0号不是一个可以拆解拼装的工具组——它是一个有机整体。任何对0号基因架构的精简都必须重新评估其连锁效应。"此后，"递进式单模块偏移"取代了"拆解重构"成为新的研究方针。</TITAN_Codex_No1_desc>
+
+  <TITAN_Codex_No9_label>9号实验体（已死亡）</TITAN_Codex_No9_label>
+  <TITAN_Codex_No9_desc>基于对0号的长期观察，研究者们注意到了一个奇特现象——0号在觉醒后表现出远超预期的神经活跃度，但其皮层信号模式与任何已知生物都不匹配。研究团队将这种异常归类为"灵能门槛"：0号在发育过程中完成了某种全脑突触的同步重连，类似于蝴蝶破茧。\n\n9号是第一例尝试在非原型体上复现这种重连的实验。研究者选用了发育最接近0号的胚胎——基因扫描几乎与0号完全一致，唯一的区别是去掉了金色皮毛相关的表达基因。理论上，9号应该能够完美重演0号的觉醒路径。\n\n重连在第87%时中断了。\n\n监控记录显示，9号在重连中断的瞬间睁开了眼睛。它的瞳孔急剧扩张又收缩，口中发出低沉的、有节奏的震动——声学分析证实这是敲击兽的呼救频率，但被扭曲成了从未听过的变调。脑电波显示它的意识短暂地"亮"了一下——它知道了自己在哪，知道自己是什么，知道出了什么问题——然后永远地暗了下去。\n\n事后分析指出，0号的重连之所以成功，是因为它的金色皮毛基因——那串被9号移除的"冗余"——实际上编码了一种特殊的神经绝缘蛋白。没有这层绝缘，9号的灵能信号在重连过程中发生了灾难性的短路。\n\n9号的身体又活了11天，脏器功能一切正常。但再也没有任何信号从那双眼睛里传出来。诊断是"不可逆脑死亡"，但私下里有人承认那更像是某种"自愿关机"——仿佛有某种东西在最后一刻看透了这座实验室的本质，选择了不再回来。\n\n9号的眼睛被保存在低温样本库中。</TITAN_Codex_No9_desc>
+
+  <TITAN_Codex_No19_label>19号实验体（安乐死）</TITAN_Codex_No19_label>
+  <TITAN_Codex_No19_desc>0号原型体最大的军事价值在于其近乎不死的自我修复能力。帝国迫切希望将这种能力复制到其他实验体上，甚至进一步强化——一个能自愈的兵器是好兵器，但一个能瞬间自愈的兵器才是完美兵器。\n\n研究团队从0号的修复机制中提取了核心序列，并在此基础上叠加了改编自蝾螈再生基因的强化模块。理论上，19号应该比0号修复得更快、更彻底。基因架构审查通过了——所有模块都有先例验证，不存在1号那样的拆解风险。\n\n19号是第一个越过"灵能门槛"并完成觉醒的衍生实验体。初期效果惊人——一次常规取样造成的皮肤创口在4分钟内完全愈合，没有留下任何疤痕。0号的同类创口需要22分钟。数据令人振奋。\n\n但再生机制出现了"过度解读"。0号的自我修复系统有一个精确的"终止信号"——当组织恢复到原始状态时，修复过程自动停止。19号的强化模块绕过了这个终止信号。它的身体开始将一切"不够完美"的组织都视为需要修复的损伤——旧疤痕被溶解后重生，新生的组织又被判定为"不够成熟"再次溶解——永无止境的重建循环。\n\n第23天，19号身上再生热点已扩散到全身40%的面积。组织以肉眼可见的速度膨胀、溶解、再膨胀。骨骼在反复重塑中变得畸形而脆弱。但19号始终清醒——它感觉到自己体内发生了什么，眼中是纯粹的理解和无声的忍受。\n\n安乐死决定在第24天做出。执行时，19号没有挣扎，甚至主动将头靠向了注射器。\n\n此后，0号基因架构中的"终止信号"被列为最高优先级保护目标——任何再生类改造都不允许触碰或绕过这个机制。</TITAN_Codex_No19_desc>
+
+  <TITAN_Codex_No37_label>37号实验体（已死亡）</TITAN_Codex_No37_label>
+  <TITAN_Codex_No37_desc>37号出现在泰坦计划最焦虑的时期。帝国的耐心已经耗尽——他们得到了0号原型体这个完美范本，却迟迟无法量产任何可用的衍生体。每一个偏离0号模板的尝试都以失败告终。高层下达了最后通牒：要么在三个月内拿出一个可部署的变体，要么整个计划将被重组。\n\n研究团队承受着前所未有的压力。1号的前车之鉴犹在——拆解重构必死无疑。递进式单模块偏移太慢了，三个月根本来不及。最终有人提出了一个折中方案：不再拆解0号，也不单步偏移，而是在0号的完整架构上同时叠装多个已验证模块。\n\n37号身上同时叠加了三个模块：毒素中和、极端气候适应、以及从未在0号以外活体上测试过的"战斗本能强化"。前两个在单独测试中表现完美，第三个仅通过了培养皿验证。三者的交互作用从未被评估——没有时间了。\n\n37号在发育期间一切正常——太正常了。扫描显示它的基因链稳定得像教科书，三个模块和谐共处，没有任何排异信号。研究者们松了口气，开始起草战地部署方案。\n\n第301天，毫无预兆地，37号的第7号染色体在第4短臂处发生了断裂。基因链如同被无形之手从中间撕开的拉链，从断裂点向两端崩溃式解链。三个模块的基因片段混入其中，与0号模板原有的基因组发生了灾难性的乱序重组。\n\n从第一处断裂到37号的全部基因信息变成无序的碱基碎片，整个过程只用了47秒。\n\n37号的遗体看起来和活着时一模一样——皮毛光洁，体态优美，仿佛只是在安静地沉睡。但每一颗细胞都已经变成了毫无意义的有机质混合物。\n\n37号事件导致了研究团队的彻底重组。新任主管废止了所有叠装方案，严格要求遵循0号的单模块递进规程。同时，他做了一件前任从未做过的事——他亲自走进0号的圈舍，在它身边坐了一整个下午。那天晚上的日志中他只写了一句话："我们一直在拆解0号来造新的兵器。但也许0号本身就不该被拆解。"\n\n三个月后，泰坦计划实验室在一场原因不明的爆炸中被毁。0号原型体失踪。</TITAN_Codex_No37_desc>
+
+  <!-- Classified subjects -->
+  <TITAN_Codex_No3_label>3号</TITAN_Codex_No3_label>
+  <TITAN_Codex_No3_desc>数据未解密</TITAN_Codex_No3_desc>
+  <TITAN_Codex_No11_label>11号</TITAN_Codex_No11_label>
+  <TITAN_Codex_No11_desc>数据未解密</TITAN_Codex_No11_desc>
+  <TITAN_Codex_No15_label>15号</TITAN_Codex_No15_label>
+  <TITAN_Codex_No15_desc>数据未解密</TITAN_Codex_No15_desc>
+  <TITAN_Codex_No33_label>33号</TITAN_Codex_No33_label>
+  <TITAN_Codex_No33_desc>数据未解密</TITAN_Codex_No33_desc>
+  <TITAN_Codex_No55_label>55号</TITAN_Codex_No55_label>
+  <TITAN_Codex_No55_desc>数据未解密</TITAN_Codex_No55_desc>
+  <TITAN_Codex_No77_label>77号</TITAN_Codex_No77_label>
+  <TITAN_Codex_No77_desc>数据未解密</TITAN_Codex_No77_desc>
+  <TITAN_Codex_No99_label>99号</TITAN_Codex_No99_label>
+  <TITAN_Codex_No99_desc>数据未解密</TITAN_Codex_No99_desc>
+
+  <!-- Arrival event letters -->
+  <TITAN_Letter_No7_Title>狂暴的腐蚀者</TITAN_Letter_No7_Title>
+  <TITAN_Letter_No7_Desc>一只浑身散发着腐蚀性毒液的敲击兽以猎杀者姿态闯入了殖民地！但当它受到重创或接近0号原型体时，似乎会突然平静下来……</TITAN_Letter_No7_Desc>
+  <TITAN_Letter_No13_Title>深渊来客</TITAN_Letter_No13_Title>
+  <TITAN_Letter_No13_Desc>一只身带多处战斗伤痕的敲击兽径直走向0号原型体。它的眼中没有敌意——只有明确的目的地。当它确认0号的存在后，立刻加入了你的阵营。它不是来找麻烦的，它来找0号。</TITAN_Letter_No13_Desc>
+  <TITAN_Letter_No26_Title>忠诚的小小追随者</TITAN_Letter_No26_Title>
+  <TITAN_Letter_No26_Desc>一只体型仅有大型犬大小的敲击兽出现在了地图边缘。它完全无视了周围的一切，径直奔向0号原型体，然后在0号身边安静地躺了下来。它终于找到了它一直在寻找的。26号实验体·亲卫已加入殖民地。</TITAN_Letter_No26_Desc>
+  <TITAN_Letter_No42_Title>星辉降临</TITAN_Letter_No42_Title>
+  <TITAN_Letter_No42_Desc>一只散发着极光彩光的敲击兽缓缓走向0号原型体的位置。它的基因出现了严重的偏移不适——只有0号的共鸣才能治愈。使用【泰坦共鸣】每次可降低35%严重度，完全治愈后它将安心留下来。</TITAN_Letter_No42_Desc>
+  <TITAN_Letter_No45_Title>熔炉走出烈焰</TITAN_Letter_No45_Title>
+  <TITAN_Letter_No45_Desc>一场小型火灾在地图边缘突然燃起——然后一只浑身冒着火焰却毫发无伤的敲击兽从火中走了出来！它的体温让周围的空气都在颤抖，但它只是安静地走向0号。45号实验体·熔炉已加入殖民地。</TITAN_Letter_No45_Desc>
+  <TITAN_Letter_No50_Title>固执的访客</TITAN_Letter_No50_Title>
+  <TITAN_Letter_No50_Desc>一只敲击兽慢慢走进了殖民地，完全无视沿途的喧闹和呼唤。它径直走到0号原型体身边，然后躺下。你叫不动它，它也不在乎你叫它。它只想待在0号身边。50号实验体·荒魂已加入殖民地。</TITAN_Letter_No50_Desc>
+  <TITAN_Letter_No64_Title>铁壁与追兵</TITAN_Letter_No64_Title>
+  <TITAN_Letter_No64_Desc>一只巨型敲击兽正被一群海盗追击！它像一座移动的城墙般缓慢而坚定地向殖民地走来——追兵的攻击打在它身上如同雨点。海盗追兵将在不久后撤离，届时64号实验体·铁壁将确认安全并加入玩家阵营。</TITAN_Letter_No64_Desc>
+  <TITAN_Letter_No88_Title>繁花逃出火海</TITAN_Letter_No88_Title>
+  <TITAN_Letter_No88_Desc>一只浑身带着烧伤的敲击兽惊恐地奔入殖民地！它的皮毛上残留着共生真菌的痕迹，但多处已被烧焦。88号实验体·繁花正在寻找最近的水源——它对火焰有着极度的恐惧。安抚并治疗后它将加入殖民地。</TITAN_Letter_No88_Desc>
+
+  <!-- Mutagen restriction -->
+  <TITAN_Message_ExperimentIncompatibleMutagen>{0} 的基因架构无法接受此类型诱变剂。</TITAN_Message_ExperimentIncompatibleMutagen>
+  <TITAN_Message_No42_DriftHealed>42号基因偏移已完全治愈！</TITAN_Message_No42_DriftHealed>
+  <TITAN_Message_No42_DriftHealing>42号基因偏移治疗中…当前严重度：{0}</TITAN_Message_No42_DriftHealing>
+
+  <!-- No7 self-tame -->
+  <TITAN_Message_No7_SelfTamed>{0} 在0号的共鸣下恢复了平静，加入了殖民地！</TITAN_Message_No7_SelfTamed>
+
+  <!-- Settings -->
+  <TITAN_Settings_Category>Project T.I.T.A.N. 泰坦计划</TITAN_Settings_Category>
+  <TITAN_Settings_General>通用设置</TITAN_Settings_General>
+  <TITAN_Settings_ShowCodexButton>显示泰坦档案按钮</TITAN_Settings_ShowCodexButton>
+  <TITAN_Settings_CompanionChance>伴侣出现概率：{0}（需要New Thrumbos!模组）</TITAN_Settings_CompanionChance>
+  <TITAN_Settings_CompanionChance_NTRequired>伴侣出现概率：需要安装New Thrumbos!模组</TITAN_Settings_CompanionChance_NTRequired>
+  <TITAN_Settings_ThrumboAttractChance>0号吸引野生敲击兽概率：{0}</TITAN_Settings_ThrumboAttractChance>
+  <TITAN_Settings_AlphaReplaceChance>Alpha敲击兽替换概率：{0}（需要Odyssey DLC）</TITAN_Settings_AlphaReplaceChance>
+  <TITAN_Settings_AlphaReplaceChance_OdysseyRequired>Alpha敲击兽替换概率：需要安装Odyssey DLC</TITAN_Settings_AlphaReplaceChance_OdysseyRequired>
+  <TITAN_Settings_Events>事件设置</TITAN_Settings_Events>
+  <TITAN_Settings_EventChance>{0} 出现概率：{1}</TITAN_Settings_EventChance>
+  <TITAN_Settings_EventCooldown>{0} 冷却天数：{1}</TITAN_Settings_EventCooldown>
+  <TITAN_Settings_DevMode>开发者模式</TITAN_Settings_DevMode>
+  <TITAN_Settings_TriggerMatriarch>触发繁盛之母事件</TITAN_Settings_TriggerMatriarch>
+  <TITAN_Settings_TriggerWarlord>触发战争之痕事件</TITAN_Settings_TriggerWarlord>
+  <TITAN_Settings_TriggerVoidWalker>触发虚空行者事件</TITAN_Settings_TriggerVoidWalker>
+  <TITAN_Settings_TriggerExperiment>触发实验体事件</TITAN_Settings_TriggerExperiment>
+  <TITAN_Settings_TriggerHunter>触发猎杀者袭击</TITAN_Settings_TriggerHunter>
+  <TITAN_Settings_TriggerNo26>触发26号事件</TITAN_Settings_TriggerNo26>
+  <TITAN_Settings_CodexManagement>档案管理</TITAN_Settings_CodexManagement>
+  <TITAN_Settings_UnlockAllCodex>解锁所有档案</TITAN_Settings_UnlockAllCodex>
+  <TITAN_Settings_ResetAllCodex>重置所有档案</TITAN_Settings_ResetAllCodex>
+  <TITAN_Codex_AllUnlocked>已解锁所有实验体档案！</TITAN_Codex_AllUnlocked>
+  <TITAN_Codex_AllReset>已重置所有实验体档案。</TITAN_Codex_AllReset>
+
+  <!-- Event names for settings sliders -->
+  <Matriarch>繁盛之母</Matriarch>
+  <Warlord>战争之痕</Warlord>
+  <VoidWalker>虚空行者</VoidWalker>
+  <ExperimentSubject>编号实验体</ExperimentSubject>
+  <HunterAttack>猎杀者袭击</HunterAttack>
+
+  <!-- Settings table -->
+  <TITAN_Codex_ResetWarning>警告：重置将清除所有发现记录，不可撤销。</TITAN_Codex_ResetWarning>
+  <TITAN_Settings_EventName>事件名称</TITAN_Settings_EventName>
+  <TITAN_Settings_Probability>概率</TITAN_Settings_Probability>
+  <TITAN_Settings_CooldownDays>间隔(天)</TITAN_Settings_CooldownDays>
+  <TITAN_Settings_Trigger>触发</TITAN_Settings_Trigger>
+  <TITAN_Settings_No26Note>26号首遇（保底，不可调）</TITAN_Settings_No26Note>
+
+  <!-- Codex hints for undiscovered entries -->
+  <TITAN_Codex_No0_hint>帝国最深密的基因工程产物，拥有皇室纯净血脉。\n\n【加入方式】制作并使用基因香薰，吸引0号原型体来到殖民地。</TITAN_Codex_No0_hint>
+  <TITAN_Codex_Spark_hint>0号原型体唯一的"朋友"——一只获得不死能力的变异爆炸鼠。\n\n【加入方式】获得0号原型体的脱落鳞片后，激活信号，花火会追踪而来。</TITAN_Codex_Spark_hint>
+  <TITAN_Codex_Warlord_hint>传说中的远古神兽，狂暴的近战霸主。\n\n【加入方式】战争之痕事件触发后，使用0号的泰坦共鸣安抚其怒火。完成安抚后获得认可和猩红角质数据核心。</TITAN_Codex_Warlord_hint>
+  <TITAN_Codex_VoidWalker_hint>传说中的远古神兽，被追杀的隐匿大师。\n\n【加入方式】虚空行者事件触发后，清除周围敌人，使用泰坦共鸣指引其安全撤离。完成后获得虚空尘埃相位数据。</TITAN_Codex_VoidWalker_hint>
+  <TITAN_Codex_Matriarch_hint>传说中的远古神兽，身患基因崩溃的巨兽。\n\n【加入方式】繁盛之母事件触发后，使用泰坦共鸣多次为其治疗基因崩溃。完全治愈后获得生命树脂活体样本。</TITAN_Codex_Matriarch_hint>
+
+  <!-- Three Titans codex descriptions -->
+  <TITAN_Codex_Warlord_label>战争之痕</TITAN_Codex_Warlord_label>
+  <TITAN_Codex_Warlord_desc>三神兽之一。远古时期泰坦计划的半成品——不同于后来的编号实验体，战争之痕是在帝国严格控制之前的"原型纪元"产物，其基因架构中保留着0号诞生前的原始暴力序列。\n\n它体型巨大，移动虽不敏捷但每一次攻击都带有毁灭性的力量。它周身散发着"血之狂怒"灵能波动，能让附近所有生物陷入狂暴状态。其皮毛带有暗红色的纹路，如同永远无法洗净的血迹。\n\n战争之痕不会主动攻击0号——它似乎认出了0号身上某种更古老的权威。但其他一切，包括殖民者，都会被它的怒火波及。\n\n研究者推测战争之痕是在0号觉醒的同一批次中产生的"废品"——它的灵能回路过于粗暴，无法像0号那样精确调控，而是以持续辐射的方式向外倾泻。这让它成为一座战场上移动的增益塔，友军和敌军同时获得强化。\n\n【安抚方式】使用0号原型体的【泰坦共鸣】技能对其施放。每次安抚积累一层共鸣，达到3层后怒火平息。它会认可你，留下猩红角质数据核心后和平离开。\n\n【掉落物】猩红角质（数据核心）——解析后可解锁猩红诱变剂制作图纸。\n\n【特殊】曾在殖民地遭遇敌袭时，有概率空降战场支援。</TITAN_Codex_Warlord_desc>
+
+  <TITAN_Codex_VoidWalker_label>虚空行者</TITAN_Codex_VoidWalker_label>
+  <TITAN_Codex_VoidWalker_desc>三神兽之一。被某种未知势力追杀的隐匿大师——它的基因架构中包含着帝国解密了数十年的相位偏移技术，而追杀者显然不想让这种技术落入任何人之手。\n\n虚空行者的体表覆盖着一层半透明的相位场，让它的轮廓永远带着一种"不在现实中"的模糊感。它的闪避能力极高，几乎能预判并偏转绝大多数近战和远程攻击。它周身散发着"虚空帷幕"灵能波动，能让附近友军获得闪避加成。\n\n它不愿久留——每当周围出现威胁，它会尝试相位传送离开；只有确认绝对安全后，才会与0号进行交流。\n\n虚空行者是三神兽中最"理性"的存在。它不像战争之痕那样狂暴，也不像繁盛之母那样温和。它只是冷静地评估局势，做出最优选择。有人推测它的相位能力让它看到了某种"不应被看到的东西"，这才导致了它的被迫逃亡。\n\n【指引方式】清除地图上所有敌对单位后，使用0号的【泰坦共鸣】与其交流。确认安全后它会留下虚空尘埃后回归虚空。\n\n【掉落物】虚空尘埃（相位数据）——解析后可解锁虚空诱变剂制作图纸。\n\n【特殊】曾在殖民地遭遇敌袭时，有概率空降战场支援。</TITAN_Codex_VoidWalker_desc>
+
+  <TITAN_Codex_Matriarch_label>繁盛之母</TITAN_Codex_Matriarch_label>
+  <TITAN_Codex_Matriarch_desc>三神兽之一。身患基因崩溃的巨兽——它是三神兽中最年长的，也是受泰坦计划后遗症折磨最深的。它的自我修复系统虽然强大，却已经处于全面失控的边缘，身体随时在再生与崩溃之间反复。\n\n繁盛之母散发着的"生命绽放"灵能波动能让附近所有生物的伤口加速愈合——这是它体内失控的再生能量以辐射形式外泄的结果。它的体型是普通敲击兽的三倍，皮毛呈现出枯荣交替的奇异纹理——一半是翠绿的新生，一半是枯黄的衰败。\n\n它是三神兽中最温柔的存在。即使痛苦不堪，它也不会主动攻击任何生物。当它接近殖民地时，殖民者能感受到一种奇异的安心——那是它的灵能在无意中治愈着周围的一切，即使在崩溃中，它仍然在付出。\n\n0号对繁盛之母有着特殊的反应——比起对战争之痕的警惕和对虚空行者的好奇，0号对繁盛之母展现出明确的"关切"。研究者推测，繁盛之母是0号觉醒时最早的"同伴"，它的存在给了0号最初的温暖。\n\n【治疗方式】使用0号的【泰坦共鸣】多次为其治疗。每次共鸣可治愈一定量的基因崩溃，需要反复治疗直到完全康复。治愈后它会留下生命树脂后安然离去。\n\n【掉落物】生命树脂（活体样本）——解析后可解锁繁盛诱变剂制作图纸。\n\n【特殊】曾在殖民地遭遇敌袭时，有概率空降战场支援。</TITAN_Codex_Matriarch_desc>
+
+  <TITAN_Gizmo_ViewCodex>查看档案</TITAN_Gizmo_ViewCodex>
+  <TITAN_Gizmo_ViewCodexDesc>查看此个体的泰坦档案详细资料</TITAN_Gizmo_ViewCodexDesc>
+  <TITAN_Settings_ResetTrigger>重置+触发</TITAN_Settings_ResetTrigger>
+  <TITAN_Settings_CodexResetForReentry>已重置该档案发现状态，允许重新触发</TITAN_Settings_CodexResetForReentry>
+  <No7>7号·腐蚀</No7>
+  <No13>13号·深渊</No13>
+  <No26>26号·亲卫</No26>
+  <No42>42号·星辉</No42>
+  <No45>45号·熔炉</No45>
+  <No50>50号·荒魂</No50>
+  <No64>64号·铁壁</No64>
+  <No88>88号·繁花</No88>
+
+</LanguageData>

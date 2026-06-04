@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No7_Horn</defName>
+		<label>7号腐蚀角</label>
+		<description>7号实验体的毒角。毒液从刀刃渗出，划伤便是持续腐蚀。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No7_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>1200</MarketValue><Mass>3</Mass><MaxHitPoints>150</MaxHitPoints><Flammability>1.0</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>point</label><capacities><li>ToxicBite</li></capacities><power>35</power><cooldownTime>2.6</cooldownTime></li>
+			<li><label>base</label><capacities><li>Blunt</li></capacities><power>9</power><cooldownTime>2.0</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No13_Horn</defName>
+		<label>13号深渊角</label>
+		<description>13号实验体的尖角。比原版更长的穿刺式设计，极速连刺。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No13_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>1000</MarketValue><Mass>2.5</Mass><MaxHitPoints>150</MaxHitPoints><Flammability>1.0</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>sharp point</label><capacities><li>Stab</li></capacities><power>22</power><cooldownTime>1.4</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No26_Horn</defName>
+		<label>26号亲卫角</label>
+		<description>26号实验体的小角。弱化版，但承载着纯粹的依恋。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No26_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>200</MarketValue><Mass>0.8</Mass><MaxHitPoints>80</MaxHitPoints><Flammability>1.0</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>point</label><capacities><li>Scratch</li><li>Stab</li></capacities><power>12</power><cooldownTime>2.0</cooldownTime></li>
+			<li><label>base</label><capacities><li>Blunt</li></capacities><power>4</power><cooldownTime>2.0</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No42_Horn</defName>
+		<label>42号星辉角</label>
+		<description>42号实验体的极光角。附带劈砍攻击，价值最高的角之一。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No42_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>1500</MarketValue><Mass>3</Mass><MaxHitPoints>150</MaxHitPoints><Flammability>1.0</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>point</label><capacities><li>Scratch</li><li>Stab</li></capacities><power>30</power><cooldownTime>2.6</cooldownTime></li>
+			<li><label>cleave</label><capacities><li>Cut</li></capacities><power>55</power><cooldownTime>3.2</cooldownTime><chanceFactor>0.5</chanceFactor></li>
+			<li><label>base</label><capacities><li>Blunt</li></capacities><power>9</power><cooldownTime>2.0</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No45_Horn</defName>
+		<label>45号熔炉角</label>
+		<description>45号实验体的耐火角。装备者对火焰有极强的抵抗力。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No45_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>1200</MarketValue><Mass>3</Mass><MaxHitPoints>150</MaxHitPoints><Flammability>0.05</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<equippedStatOffsets><Flammability>-0.7</Flammability></equippedStatOffsets>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>point</label><capacities><li>Scratch</li><li>Stab</li></capacities><power>30</power><cooldownTime>2.0</cooldownTime></li>
+			<li><label>base</label><capacities><li>Blunt</li></capacities><power>9</power><cooldownTime>2.0</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No50_Horn</defName>
+		<label>50号荒魂角</label>
+		<description>50号实验体的标准角。坚韧耐用，像它的主人一样固执。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No50_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>900</MarketValue><Mass>3</Mass><MaxHitPoints>150</MaxHitPoints><Flammability>1.0</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>point</label><capacities><li>Scratch</li><li>Stab</li></capacities><power>30</power><cooldownTime>2.0</cooldownTime></li>
+			<li><label>base</label><capacities><li>Blunt</li></capacities><power>9</power><cooldownTime>2.0</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No64_Dome</defName>
+		<label>64号铁壁圆顶</label>
+		<description>64号实验体的厚重骨质圆顶。极重但提供顶级防护。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No64_Dome</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>1000</MarketValue><Mass>8</Mass><MaxHitPoints>300</MaxHitPoints><Flammability>0.22</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<equippedStatOffsets><ArmorRating_Sharp>0.25</ArmorRating_Sharp><ArmorRating_Blunt>0.25</ArmorRating_Blunt><Flammability>-0.33</Flammability><MoveSpeed>-0.3</MoveSpeed></equippedStatOffsets>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<weaponClasses><li>Melee</li><li>MeleeBlunt</li></weaponClasses>
+		<tools>
+			<li><label>smash</label><capacities><li>Blunt</li></capacities><power>24</power><cooldownTime>3.2</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>TITAN_No88_Horn</defName>
+		<label>88号繁花角</label>
+		<description>88号实验体的角。表面覆盖着活的共生真菌须根。</description>
+		<graphicData><texPath>Things/Item/Resource/TITAN_No88_Horn</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+		<statBases><MarketValue>900</MarketValue><Mass>3</Mass><MaxHitPoints>150</MaxHitPoints><Flammability>1.2</Flammability><MeleeWeapon_DamageMultiplier>1.0</MeleeWeapon_DamageMultiplier></statBases>
+		<tradeability>Sellable</tradeability>
+		<thingCategories><li>ItemsMisc</li></thingCategories>
+		<tradeTags><li>ExoticMisc</li><li>AnimalPart</li></tradeTags>
+		<tools>
+			<li><label>point</label><capacities><li>Scratch</li><li>Stab</li></capacities><power>30</power><cooldownTime>2.0</cooldownTime></li>
+			<li><label>base</label><capacities><li>Blunt</li></capacities><power>9</power><cooldownTime>2.0</cooldownTime></li>
+		</tools>
+		<comps><li Class="CompProperties_Styleable"/><li Class="CompProperties_Art"><nameMaker>NamerArtWeaponMelee</nameMaker><descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker></li></comps>
+	</ThingDef>
+
+</Defs>

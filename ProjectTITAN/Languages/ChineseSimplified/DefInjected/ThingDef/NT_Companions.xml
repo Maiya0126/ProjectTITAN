@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <NT_ToyThrumbo.label>瘦小敲击兽</NT_ToyThrumbo.label>
+  <NT_ToyThrumbo.description>这一敲击兽在长到大狗狗的体型的时候就停止生长了，即便到了成年时期。几百年的选择性育种使其比通常敲击兽要更为不堪一击，但作为回报，它变得异常惹人怜爱。最重要的是，它不会留下任何污物！</NT_ToyThrumbo.description>
+  <NT_AcidThrumboRace.label>酸性敲击兽</NT_AcidThrumboRace.label>
+  <NT_AcidThrumboRace.description>一种特别的敲击兽亚种，完全免疫毒素，撕咬与顶撞会注入致命毒素。</NT_AcidThrumboRace.description>
+  <NT_SwampThrumbo.label>沼泽敲击兽</NT_SwampThrumbo.label>
+  <NT_SwampThrumbo.description>居住在湿地与沼泽的敲击兽，极度好斗，会交替使用独角快速刺击和斧头般的尾巴强力打击。</NT_SwampThrumbo.description>
+  <NT_AuroraThrumboRace.label>极光敲击兽</NT_AuroraThrumboRace.label>
+  <NT_AuroraThrumboRace.description>适应了极度深寒的传奇敲击兽，毛皮发出有如极光的光泽，不毁树伐林，留下的污物极少。</NT_AuroraThrumboRace.description>
+  <NT_FireThrumboRace.label>火焰敲击兽</NT_FireThrumboRace.label>
+  <NT_FireThrumboRace.description>居住在熔岩荒原与极端沙漠的世所罕有的敲击兽，对高温与火焰有很高抗性，能产出稳定的化合燃料供给。</NT_FireThrumboRace.description>
+  <NT_DesertThrumbo.label>沙漠敲击兽</NT_DesertThrumbo.label>
+  <NT_DesertThrumbo.description>适应了严酷沙漠环境的敲击兽亚种，能够抵御长时间饥饿，但驯服时易于招致激烈报复。</NT_DesertThrumbo.description>
+  <NT_PrairieThrumbo.label>草原敲击兽</NT_PrairieThrumbo.label>
+  <NT_PrairieThrumbo.description>头上长着丰满骨穹的敲击兽，速度与人类相当，但防御力极强。屠宰后可获得骨穹。</NT_PrairieThrumbo.description>
+  <NT_JungleThrumbo.label>丛林敲击兽</NT_JungleThrumbo.label>
+  <NT_JungleThrumbo.description>适应了丛林环境的敲击兽，会定期产出草药，但由于类植物生理学，火焰是其致命弱点。</NT_JungleThrumbo.description>
+</LanguageData>

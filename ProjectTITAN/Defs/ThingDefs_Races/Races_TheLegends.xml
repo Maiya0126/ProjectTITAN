@@ -22,7 +22,7 @@
 			<baseHealthScale>10.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<useMeatFrom>Thrumbo</useMeatFrom>
-			<lifeExpectancy>150</lifeExpectancy>
+			<lifeExpectancy>9999</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
@@ -32,10 +32,10 @@
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 				</li>
-</lifeStageAges>
-			<abilities>
-				<li>ThrumboRoar</li>
-			</abilities>
+			</lifeStageAges>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">ThrumboRoar</li>
+			</specialTrainables>
 		</race>
 		<comps>
 			<!--<li Class="CompProperties_Glower">
@@ -71,8 +71,6 @@
 		<label>战争之痕</label>
 		<race>TITAN_Warlord</race>
 		<combatPower>2000</combatPower>
-		<minGenerationAge>50</minGenerationAge>
-		<maxGenerationAge>50</maxGenerationAge>
 		<fixedGender>Male</fixedGender>
 		<lifeStages>
 			<li>
@@ -114,17 +112,16 @@
 			<baseHealthScale>5.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<useMeatFrom>Thrumbo</useMeatFrom>
-<lifeExpectancy>150</lifeExpectancy>
-
+			<lifeExpectancy>9999</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
 					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 				</li>
-</lifeStageAges>
+			</lifeStageAges>
 		</race>
 		<comps>
 			<!--<li Class="CompProperties_Glower">
@@ -159,8 +156,6 @@
 		<label>虚空行者</label>
 		<race>TITAN_VoidWalker</race>
 		<combatPower>1500</combatPower>
-		<minGenerationAge>50</minGenerationAge>
-		<maxGenerationAge>50</maxGenerationAge>
 		<fixedGender>Male</fixedGender>
 		<lifeStages>
 			<li>
@@ -196,16 +191,16 @@
 			<baseHealthScale>15.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<useMeatFrom>Thrumbo</useMeatFrom>
-			<lifeExpectancy>150</lifeExpectancy>
+			<lifeExpectancy>9999</lifeExpectancy>
 			<lifeStageAges>
-<li>
+				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
 					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 				</li>
-</lifeStageAges>
+			</lifeStageAges>
 		</race>
 		<comps>
 			<!--<li Class="CompProperties_Glower">
@@ -240,8 +235,6 @@
 		<label>繁盛之母</label>
 		<race>TITAN_Matriarch</race>
 		<combatPower>800</combatPower>
-		<minGenerationAge>50</minGenerationAge>
-		<maxGenerationAge>50</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
 		<lifeStages>
 			<li>

@@ -44,8 +44,9 @@ namespace ProjectTITAN
             // 种族检查
             bool isPrototype = pawn.def.defName == "TITAN_ThrumboPrototype";
             bool isThrumbo = pawn.def.defName == "Thrumbo";
+            bool isExperimentSubject = pawn.def.defName.StartsWith("TITAN_No");
 
-            if (!isPrototype && !isThrumbo)
+            if (!isPrototype && !isThrumbo && !isExperimentSubject)
             {
                 Messages.Message(string.Format("Message_TITAN_CannotHandleGenes".Translate(), pawn.LabelShort), pawn, MessageTypeDefOf.RejectInput, false);
                 GenSpawn.Spawn(ingested.def, pawn.Position, pawn.Map);
@@ -62,6 +63,22 @@ namespace ProjectTITAN
                     else
                         Messages.Message(string.Format("Message_TITAN_GenomeSaturated".Translate(), pawn.LabelShort), pawn, MessageTypeDefOf.RejectInput, false);
 
+                    GenSpawn.Spawn(ingested.def, pawn.Position, pawn.Map);
+                    return;
+                }
+            }
+
+            if (isExperimentSubject)
+            {
+                if (!TitanImplantUtils.CanExperimentSubjectAcceptMutagen(pawn, hediffDef))
+                {
+                    Messages.Message(string.Format("TITAN_Message_ExperimentIncompatibleMutagen".Translate(), pawn.LabelShort), pawn, MessageTypeDefOf.RejectInput, false);
+                    GenSpawn.Spawn(ingested.def, pawn.Position, pawn.Map);
+                    return;
+                }
+                if (TitanImplantUtils.HasAnyTitanImplant(pawn))
+                {
+                    Messages.Message(string.Format("Message_TITAN_GenomeSaturated".Translate(), pawn.LabelShort), pawn, MessageTypeDefOf.RejectInput, false);
                     GenSpawn.Spawn(ingested.def, pawn.Position, pawn.Map);
                     return;
                 }
@@ -211,20 +228,61 @@ namespace ProjectTITAN
                     else SendTitanAway(target);
                 }
             }
+            else if (target.def.defName == "TITAN_No42_AuroraThrumbo")
+            {
+                Hediff drift = target.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("TITAN_GeneticDrift"));
+                if (drift != null)
+                {
+                    drift.Severity -= 0.35f;
+                    if (drift.Severity <= 0.01f)
+                    {
+                        target.health.RemoveHediff(drift);
+                        Messages.Message("TITAN_Message_No42_DriftHealed".Translate(), target, MessageTypeDefOf.PositiveEvent);
+                    }
+                    else Messages.Message(string.Format("TITAN_Message_No42_DriftHealing".Translate(), drift.Severity.ToString("P0")), target, MessageTypeDefOf.PositiveEvent);
+                }
+                else
+                {
+                    HealInjuries(target);
+                    TryRecruitExperimentSubject(target);
+                }
+            }
+            else if (target.def.defName.StartsWith("TITAN_No"))
+            {
+                HealInjuries(target);
+                TryRecruitExperimentSubject(target);
+            }
             else
             {
-                List<Hediff_Injury> injuries = new List<Hediff_Injury>();
-                target.health.hediffSet.GetHediffs(ref injuries);
-                int healLeft = Props.healAmount;
-                foreach (var injury in injuries)
-                {
-                    if (healLeft <= 0) break;
-                    int heal = Mathf.Min(healLeft, (int)injury.Severity);
-                    injury.Heal(heal);
-                    healLeft -= heal;
-                }
-                Messages.Message(string.Format("Message_TITAN_Healed".Translate(), target.LabelShort), target, MessageTypeDefOf.PositiveEvent);
+                HealInjuries(target);
             }
+        }
+
+        private void HealInjuries(Pawn target)
+        {
+            List<Hediff_Injury> injuries = new List<Hediff_Injury>();
+            target.health.hediffSet.GetHediffs(ref injuries);
+            int healLeft = Props.healAmount;
+            foreach (var injury in injuries)
+            {
+                if (healLeft <= 0) break;
+                int heal = Mathf.Min(healLeft, (int)injury.Severity);
+                injury.Heal(heal);
+                healLeft -= heal;
+            }
+            Messages.Message(string.Format("Message_TITAN_Healed".Translate(), target.LabelShort), target, MessageTypeDefOf.PositiveEvent);
+        }
+
+        private void TryRecruitExperimentSubject(Pawn target)
+        {
+            if (target.Faction == Faction.OfPlayer) return;
+            if (target.HostileTo(Faction.OfPlayer)) return;
+            target.SetFaction(Faction.OfPlayer);
+            if (target.kindDef != null)
+                target.Name = new NameSingle(target.kindDef.label);
+            Lord lord = target.GetLord();
+            if (lord != null) target.Map.lordManager.RemoveLord(lord);
+            Messages.Message(string.Format("Message_TITAN_SubjectRecruited".Translate(), target.LabelShort), target, MessageTypeDefOf.PositiveEvent);
         }
 
         private void UnlockAndReward(Pawn titan, string itemDefName, string flagName)
@@ -326,6 +384,25 @@ namespace ProjectTITAN
     // =============================================================
     public static class TitanImplantUtils
     {
+        private static readonly Dictionary<string, string> ExperimentMutagenMap = new Dictionary<string, string>
+        {
+            { "TITAN_No7_AcidThrumbo", "TITAN_Implant_CrimsonHeart" },
+            { "TITAN_No13_SwampThrumbo", "TITAN_Implant_VoidMembrane" },
+            { "TITAN_No26_ToyThrumbo", "TITAN_Implant_VerdantSpine" },
+            { "TITAN_No42_AuroraThrumbo", "TITAN_Implant_VoidMembrane" },
+            { "TITAN_No45_FireThrumbo", "TITAN_Implant_VerdantSpine" },
+            { "TITAN_No50_DesertThrumbo", "TITAN_Implant_CrimsonHeart" },
+            { "TITAN_No64_PrairieThrumbo", "TITAN_Implant_VoidMembrane" },
+            { "TITAN_No88_JungleThrumbo", "TITAN_Implant_VerdantSpine" },
+        };
+
+        public static bool CanExperimentSubjectAcceptMutagen(Pawn pawn, HediffDef mutagenHediff)
+        {
+            string race = pawn.def.defName;
+            if (!ExperimentMutagenMap.ContainsKey(race)) return false;
+            return ExperimentMutagenMap[race] == mutagenHediff.defName;
+        }
+
         public static bool HasAnyTitanImplant(Pawn p)
         {
             var set = p.health.hediffSet;

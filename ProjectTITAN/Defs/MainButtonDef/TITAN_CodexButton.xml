@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MainButtonDef>
+		<defName>TITAN_Codex</defName>
+		<label>泰坦档案</label>
+		<description>泰坦计划实验记录档案馆</description>
+		<tabWindowClass>ProjectTITAN.MainTabWindow_Codex</tabWindowClass>
+		<workerClass>ProjectTITAN.MainButtonWorker_Codex</workerClass>
+		<order>100</order>
+	</MainButtonDef>
+
+</Defs>

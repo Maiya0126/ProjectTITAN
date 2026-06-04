@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_No7_AcidThrumbo</defName>
+		<label>7号实验体·腐蚀</label>
+		<description>泰坦计划编号7号——毒素代谢替代路径偏移。体液、唾液乃至角的表面覆盖致命混合毒素，拥有完全毒免疫。</description>
+		<statBases>
+			<MoveSpeed>4.8</MoveSpeed><MarketValue>5500</MarketValue>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin><ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp><ArmorRating_Blunt>0.40</ArmorRating_Blunt><ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<ToxicResistance>1.0</ToxicResistance><ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+			<ImmunityGainSpeed>1.05</ImmunityGainSpeed><FilthRate>8</FilthRate><Wildness>0.98</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body><baseBodySize>4</baseBodySize><baseHealthScale>12.0</baseHealthScale><baseHungerRate>1.7</baseHungerRate>
+			<lifeExpectancy>200</lifeExpectancy><trainability>Advanced</trainability>
+			<foodType>OmnivoreAnimal, Corpse</foodType><useMeatFrom>Thrumbo</useMeatFrom>
+			<petness>1</petness><nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance><manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<specialTrainables><li MayRequire="Ludeon.RimWorld.Odyssey">ThrumboRoar</li></specialTrainables>
+			<lifeStageAges>
+				<li><def>AnimalBaby</def><minAge>0</minAge></li>
+				<li><def>AnimalJuvenile</def><minAge>0.5</minAge></li>
+				<li><def>AnimalAdult</def><minAge>2.0</minAge><soundWounded>Pawn_Thrumbo_Pain</soundWounded><soundDeath>Pawn_Thrumbo_Death</soundDeath><soundAngry>Pawn_Thrumbo_Angry</soundAngry><soundCall>Pawn_Thrumbo_Call</soundCall></li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="ProjectTITAN.CompProperties_SelfTameOnThreshold"><healthThreshold>0.5</healthThreshold><prototypeProximity>20</prototypeProximity></li>
+			<li Class="ProjectTITAN.CompProperties_TitanMultiBond">
+				<bondRules>
+					<li><targetPawnKind>TITAN_ThrumboPrototype</targetPawnKind><positiveHediff>TITAN_Bond_No7_Anchor</positiveHediff><range>20</range></li>
+					<li><targetPawnKind>TITAN_No26_ToyThrumbo</targetPawnKind><positiveHediff>TITAN_Bond_No7_Softened</positiveHediff><range>15</range></li>
+				</bondRules>
+			</li>
+		</comps>
+		<tools>
+			<li><label>toxic horn</label><capacities><li>Scratch</li><li>ToxicBite</li></capacities><power>35</power><cooldownTime>2.6</cooldownTime><linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup></li>
+			<li><label>toxic bite</label><capacities><li>ToxicBite</li></capacities><power>42</power><cooldownTime>2.6</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.7</chanceFactor></li>
+			<li><label>left foot</label><labelNoLocation>foot</labelNoLocation><capacities><li>Blunt</li></capacities><power>29</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor></li>
+			<li><label>head</label><capacities><li>Blunt</li></capacities><power>17</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_No7_AcidThrumbo</defName><label>7号实验体·腐蚀</label><race>TITAN_No7_AcidThrumbo</race><combatPower>650</combatPower><wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No7_AcidThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No7_AcidThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No7_AcidThrumbo</texPath><drawSize>4.8</drawSize><shaderType>Cutout</shaderType></bodyGraphicData><butcherBodyPart><bodyPartGroup>HornAttackTool</bodyPartGroup><thing>TITAN_No7_Horn</thing></butcherBodyPart></li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_No13_SwampThrumbo</defName>
+		<label>13号实验体·深渊</label>
+		<description>泰坦计划编号13号——战斗本能强化（限制版）。最危险的衍生体，护甲极低——纯粹的杀戮引擎。</description>
+		<statBases>
+			<MoveSpeed>5.5</MoveSpeed><MarketValue>5500</MarketValue>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin><ComfyTemperatureMax>65</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp><ArmorRating_Blunt>0.25</ArmorRating_Blunt><ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<ImmunityGainSpeed>3.5</ImmunityGainSpeed><FilthRate>8</FilthRate><Wildness>0.98</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body><baseBodySize>4</baseBodySize><baseHealthScale>13.0</baseHealthScale><baseHungerRate>1.5</baseHungerRate>
+			<lifeExpectancy>200</lifeExpectancy><trainability>Advanced</trainability>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType><useMeatFrom>Thrumbo</useMeatFrom>
+			<petness>1</petness><nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0.07</manhunterOnTameFailChance>
+			<specialTrainables><li MayRequire="Ludeon.RimWorld.Odyssey">ThrumboRoar</li></specialTrainables>
+			<lifeStageAges>
+				<li><def>AnimalBaby</def><minAge>0</minAge></li>
+				<li><def>AnimalJuvenile</def><minAge>0.5</minAge></li>
+				<li><def>AnimalAdult</def><minAge>2.0</minAge><soundWounded>Pawn_Thrumbo_Pain</soundWounded><soundDeath>Pawn_Thrumbo_Death</soundDeath><soundAngry>Pawn_Thrumbo_Angry</soundAngry><soundCall>Pawn_Thrumbo_Call</soundCall></li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="ProjectTITAN.CompProperties_TitanMultiBond">
+				<bondRules>
+					<li><targetPawnKind>TITAN_ThrumboPrototype</targetPawnKind><positiveHediff>TITAN_Bond_No13_Calculated</positiveHediff><range>20</range></li>
+					<li><targetPawnKind>TITAN_No64_PrairieThrumbo</targetPawnKind><positiveHediff>TITAN_Bond_CoinFaces</positiveHediff><range>15</range></li>
+					<li><targetPawnKind>TITAN_No26_ToyThrumbo</targetPawnKind><positiveHediff>TITAN_Bond_No13_Restraint</positiveHediff><range>15</range></li>
+				</bondRules>
+			</li>
+		</comps>
+		<tools>
+			<li><label>sharp horn</label><capacities><li>Stab</li></capacities><power>34</power><cooldownTime>1.2</cooldownTime><linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup></li>
+			<li><label>rear kick</label><capacities><li>Blunt</li></capacities><power>38</power><cooldownTime>2.4</cooldownTime><linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup><chanceFactor>0.42</chanceFactor></li>
+			<li><label>bite</label><capacities><li>Bite</li></capacities><power>28</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor></li>
+			<li><label>left foot</label><labelNoLocation>foot</labelNoLocation><capacities><li>Blunt</li></capacities><power>19</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup><chanceFactor>0.3</chanceFactor></li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_No13_SwampThrumbo</defName><label>13号实验体·深渊</label><race>TITAN_No13_SwampThrumbo</race><combatPower>600</combatPower><wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No13_SwampThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No13_SwampThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No13_SwampThrumbo</texPath><drawSize>4.8</drawSize><shaderType>Cutout</shaderType></bodyGraphicData><butcherBodyPart><bodyPartGroup>HornAttackTool</bodyPartGroup><thing>TITAN_No13_Horn</thing></butcherBodyPart></li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_No26_ToyThrumbo</defName>
+		<label>26号实验体·亲卫</label>
+		<description>泰坦计划编号26号——社交行为强化（非军事型）。体型仅大型犬大小，零脏污零野性绝不反击。</description>
+		<statBases>
+			<MoveSpeed>5.4</MoveSpeed><MarketValue>1800</MarketValue>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin><ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.185</ArmorRating_Sharp><ArmorRating_Blunt>0.15</ArmorRating_Blunt><ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<FilthRate>0</FilthRate><Wildness>0</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body><baseBodySize>1</baseBodySize><baseHealthScale>2.85</baseHealthScale><baseHungerRate>0.5</baseHungerRate>
+			<lifeExpectancy>200</lifeExpectancy><trainability>Advanced</trainability>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType><useMeatFrom>Thrumbo</useMeatFrom>
+			<petness>1</petness><nameOnTameChance>1</nameOnTameChance><nuzzleMtbHours>5</nuzzleMtbHours>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<specialTrainables><li>Comfort</li></specialTrainables>
+			<lifeStageAges>
+				<li><def>AnimalBaby</def><minAge>0</minAge></li>
+				<li><def>AnimalJuvenile</def><minAge>0.3</minAge></li>
+				<li><def>AnimalAdult</def><minAge>1.0</minAge><soundWounded>Pawn_Thrumbo_Pain</soundWounded><soundDeath>Pawn_Thrumbo_Death</soundDeath><soundAngry>Pawn_Thrumbo_Angry</soundAngry><soundCall>Pawn_Thrumbo_Call</soundCall></li>
+			</lifeStageAges>
+		</race>
+		<tools>
+			<li><label>horn</label><capacities><li>Scratch</li><li>Stab</li></capacities><power>18</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup></li>
+			<li><label>bite</label><capacities><li>Bite</li></capacities><power>14.2</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.7</chanceFactor></li>
+			<li><label>left foot</label><labelNoLocation>foot</labelNoLocation><capacities><li>Blunt</li></capacities><power>9.7</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor></li>
+			<li><label>head</label><capacities><li>Blunt</li></capacities><power>6</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+		</tools>
+		<tradeTags><li>AnimalPet</li><li>AnimalExotic</li></tradeTags>
+		<comps>
+			<li Class="ProjectTITAN.CompProperties_TitanBond"><targetPawnKind>TITAN_ThrumboPrototype</targetPawnKind><bondHediff>TITAN_Bond_No26_Guardian</bondHediff><range>50</range></li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_No26_ToyThrumbo</defName><label>26号实验体·亲卫</label><race>TITAN_No26_ToyThrumbo</race><combatPower>290</combatPower>
+		<lifeStages>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No26_ToyThrumbo</texPath><drawSize>0.8</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No26_ToyThrumbo</texPath><drawSize>1.1</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No26_ToyThrumbo</texPath><drawSize>1.3</drawSize><shaderType>Cutout</shaderType></bodyGraphicData><butcherBodyPart><bodyPartGroup>HornAttackTool</bodyPartGroup><thing>TITAN_No26_Horn</thing></butcherBodyPart></li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>TITAN_No42_AuroraThrumbo</defName>
+		<label>42号实验体·星辉</label>
+		<description>泰坦计划编号42号——极端低温适应+生物发光。-150°C安然入睡，唯一拒绝吃树的实验体。</description>
+		<statBases>
+			<MoveSpeed>5.5</MoveSpeed><MarketValue>5500</MarketValue>
+			<ComfyTemperatureMin>-150</ComfyTemperatureMin><ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp><ArmorRating_Blunt>0.40</ArmorRating_Blunt><ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<FilthRate>2</FilthRate><Wildness>0.98</Wildness>
+		</statBases>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body><baseBodySize>4</baseBodySize><baseHealthScale>12.0</baseHealthScale><baseHungerRate>1.75</baseHungerRate>
+			<lifeExpectancy>200</lifeExpectancy><trainability>Advanced</trainability>
+			<foodType>VegetarianRoughAnimal</foodType><useMeatFrom>Thrumbo</useMeatFrom>
+			<petness>1</petness><nameOnTameChance>1</nameOnTameChance>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeBonsai</li>
+			</willNeverEat>
+			<lifeStageAges>
+				<li><def>AnimalBaby</def><minAge>0</minAge></li>
+				<li><def>AnimalJuvenile</def><minAge>0.5</minAge></li>
+				<li><def>AnimalAdult</def><minAge>2.0</minAge><soundWounded>Pawn_Thrumbo_Pain</soundWounded><soundDeath>Pawn_Thrumbo_Death</soundDeath><soundAngry>Pawn_Thrumbo_Angry</soundAngry><soundCall>Pawn_Thrumbo_Call</soundCall></li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="ProjectTITAN.CompProperties_TitanMultiBond">
+				<bondRules>
+					<li><targetPawnKind>TITAN_ThrumboPrototype</targetPawnKind><positiveHediff>TITAN_Bond_No42_StarGuidance</positiveHediff><range>20</range></li>
+				</bondRules>
+			</li>
+		</comps>
+		<tools>
+			<li><label>horn</label><capacities><li>Scratch</li></capacities><power>53</power><cooldownTime>3.2</cooldownTime><linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup><chanceFactor>0.55</chanceFactor></li>
+			<li><label>bite</label><capacities><li>Bite</li></capacities><power>20</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor></li>
+			<li><label>left foot</label><labelNoLocation>foot</labelNoLocation><capacities><li>Blunt</li></capacities><power>19</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup><chanceFactor>0.4</chanceFactor></li>
+			<li><label>head</label><capacities><li>Blunt</li></capacities><power>17</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>TITAN_No42_AuroraThrumbo</defName><label>42号实验体·星辉</label><race>TITAN_No42_AuroraThrumbo</race><combatPower>550</combatPower><wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No42_AuroraThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No42_AuroraThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
+			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No42_AuroraThrumbo</texPath><drawSize>4.8</drawSize><shaderType>Cutout</shaderType></bodyGraphicData><butcherBodyPart><bodyPartGroup>HornAttackTool</bodyPartGroup><thing>TITAN_No42_Horn</thing></butcherBodyPart></li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>TITAN_HerdBuff_Tier1</defName>
+		<label>群体共鸣 I</label>
+		<description>领袖气场的共振使同族更加灵活。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(200, 180, 100)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_HerdBuff_Tier2</defName>
+		<label>群体共鸣 II</label>
+		<description>领袖气场的共振使同族更敏捷、更坚韧。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(220, 190, 80)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.5</MoveSpeed>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+				</statOffsets>
+				<statFactors>
+					<MeleeDPS>1.1</MeleeDPS>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_HerdBuff_Tier3</defName>
+		<label>群体共鸣 III</label>
+		<description>领袖气场的共振达到巅峰，同族获得全面提升。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 215, 0)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.8</MoveSpeed>
+					<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+				</statOffsets>
+				<statFactors>
+					<MeleeDPS>1.2</MeleeDPS>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>TITAN_HerdMood_Tier1</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>万兽来朝</label>
+				<description>我们的殖民地成为了传说中的生物庇护所。</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>TITAN_HerdMood_Tier2</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>泰坦之庭</label>
+				<description>这里是泰坦之庭，万兽之王们的领地。</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>TITAN_HerdMood_Tier3</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>黄金黎明</label>
+				<description>这里就是黄金黎明——泰坦计划真正的终局，不是兵器，是家园。</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

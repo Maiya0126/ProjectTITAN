@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No0</defName>
+		<subjectNumber>0</subjectNumber>
+		<displayNumber>0号</displayNumber>
+		<labelKey>TITAN_Codex_No0_label</labelKey>
+		<descKey>TITAN_Codex_No0_desc</descKey>
+		<hintKey>TITAN_Codex_No0_hint</hintKey>
+		<pawnKindDef>TITAN_ThrumboPrototype</pawnKindDef>
+		<status>Alive</status>
+		<order>0</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_Spark</defName>
+		<subjectNumber>-1</subjectNumber>
+		<displayNumber>花火</displayNumber>
+		<labelKey>TITAN_Codex_Spark_label</labelKey>
+		<descKey>TITAN_Codex_Spark_desc</descKey>
+		<hintKey>TITAN_Codex_Spark_hint</hintKey>
+		<pawnKindDef>TITAN_Spark</pawnKindDef>
+		<status>Alive</status>
+		<order>1</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No1</defName>
+		<subjectNumber>1</subjectNumber>
+		<displayNumber>1号</displayNumber>
+		<labelKey>TITAN_Codex_No1_label</labelKey>
+		<descKey>TITAN_Codex_No1_desc</descKey>
+		<status>Deceased</status>
+		<order>2</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No3</defName>
+		<subjectNumber>3</subjectNumber>
+		<displayNumber>3号</displayNumber>
+		<labelKey>TITAN_Codex_No3_label</labelKey>
+		<descKey>TITAN_Codex_No3_desc</descKey>
+		<status>Classified</status>
+		<order>3</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No9</defName>
+		<subjectNumber>9</subjectNumber>
+		<displayNumber>9号</displayNumber>
+		<labelKey>TITAN_Codex_No9_label</labelKey>
+		<descKey>TITAN_Codex_No9_desc</descKey>
+		<status>Deceased</status>
+		<order>4</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No11</defName>
+		<subjectNumber>11</subjectNumber>
+		<displayNumber>11号</displayNumber>
+		<labelKey>TITAN_Codex_No11_label</labelKey>
+		<descKey>TITAN_Codex_No11_desc</descKey>
+		<status>Classified</status>
+		<order>5</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No7</defName>
+		<subjectNumber>7</subjectNumber>
+		<displayNumber>7号</displayNumber>
+		<labelKey>TITAN_Codex_No7_label</labelKey>
+		<descKey>TITAN_Codex_No7_desc</descKey>
+		<pawnKindDef>TITAN_No7_AcidThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_AcidThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>6</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No13</defName>
+		<subjectNumber>13</subjectNumber>
+		<displayNumber>13号</displayNumber>
+		<labelKey>TITAN_Codex_No13_label</labelKey>
+		<descKey>TITAN_Codex_No13_desc</descKey>
+		<pawnKindDef>TITAN_No13_SwampThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_SwampThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>7</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No15</defName>
+		<subjectNumber>15</subjectNumber>
+		<displayNumber>15号</displayNumber>
+		<labelKey>TITAN_Codex_No15_label</labelKey>
+		<descKey>TITAN_Codex_No15_desc</descKey>
+		<status>Classified</status>
+		<order>8</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No19</defName>
+		<subjectNumber>19</subjectNumber>
+		<displayNumber>19号</displayNumber>
+		<labelKey>TITAN_Codex_No19_label</labelKey>
+		<descKey>TITAN_Codex_No19_desc</descKey>
+		<status>Deceased</status>
+		<order>9</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No26</defName>
+		<subjectNumber>26</subjectNumber>
+		<displayNumber>26号</displayNumber>
+		<labelKey>TITAN_Codex_No26_label</labelKey>
+		<descKey>TITAN_Codex_No26_desc</descKey>
+		<pawnKindDef>TITAN_No26_ToyThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_ToyThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>10</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No33</defName>
+		<subjectNumber>33</subjectNumber>
+		<displayNumber>33号</displayNumber>
+		<labelKey>TITAN_Codex_No33_label</labelKey>
+		<descKey>TITAN_Codex_No33_desc</descKey>
+		<status>Classified</status>
+		<order>11</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No37</defName>
+		<subjectNumber>37</subjectNumber>
+		<displayNumber>37号</displayNumber>
+		<labelKey>TITAN_Codex_No37_label</labelKey>
+		<descKey>TITAN_Codex_No37_desc</descKey>
+		<status>Deceased</status>
+		<order>12</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No42</defName>
+		<subjectNumber>42</subjectNumber>
+		<displayNumber>42号</displayNumber>
+		<labelKey>TITAN_Codex_No42_label</labelKey>
+		<descKey>TITAN_Codex_No42_desc</descKey>
+		<pawnKindDef>TITAN_No42_AuroraThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_AuroraThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>13</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No45</defName>
+		<subjectNumber>45</subjectNumber>
+		<displayNumber>45号</displayNumber>
+		<labelKey>TITAN_Codex_No45_label</labelKey>
+		<descKey>TITAN_Codex_No45_desc</descKey>
+		<pawnKindDef>TITAN_No45_FireThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_FireThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>14</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No50</defName>
+		<subjectNumber>50</subjectNumber>
+		<displayNumber>50号</displayNumber>
+		<labelKey>TITAN_Codex_No50_label</labelKey>
+		<descKey>TITAN_Codex_No50_desc</descKey>
+		<pawnKindDef>TITAN_No50_DesertThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_DesertThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>15</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No55</defName>
+		<subjectNumber>55</subjectNumber>
+		<displayNumber>55号</displayNumber>
+		<labelKey>TITAN_Codex_No55_label</labelKey>
+		<descKey>TITAN_Codex_No55_desc</descKey>
+		<status>Classified</status>
+		<order>16</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No64</defName>
+		<subjectNumber>64</subjectNumber>
+		<displayNumber>64号</displayNumber>
+		<labelKey>TITAN_Codex_No64_label</labelKey>
+		<descKey>TITAN_Codex_No64_desc</descKey>
+		<pawnKindDef>TITAN_No64_PrairieThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_PrairieThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>17</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No77</defName>
+		<subjectNumber>77</subjectNumber>
+		<displayNumber>77号</displayNumber>
+		<labelKey>TITAN_Codex_No77_label</labelKey>
+		<descKey>TITAN_Codex_No77_desc</descKey>
+		<status>Classified</status>
+		<order>18</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No88</defName>
+		<subjectNumber>88</subjectNumber>
+		<displayNumber>88号</displayNumber>
+		<labelKey>TITAN_Codex_No88_label</labelKey>
+		<descKey>TITAN_Codex_No88_desc</descKey>
+		<pawnKindDef>TITAN_No88_JungleThrumbo</pawnKindDef>
+		<companionPawnKindDef>NT_JungleThrumbo</companionPawnKindDef>
+		<status>Alive</status>
+		<order>19</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_No99</defName>
+		<subjectNumber>99</subjectNumber>
+		<displayNumber>99号</displayNumber>
+		<labelKey>TITAN_Codex_No99_label</labelKey>
+		<descKey>TITAN_Codex_No99_desc</descKey>
+		<status>Classified</status>
+		<order>20</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<!-- 三神兽 -->
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_Warlord</defName>
+		<subjectNumber>-10</subjectNumber>
+		<displayNumber>战争之痕</displayNumber>
+		<labelKey>TITAN_Codex_Warlord_label</labelKey>
+		<descKey>TITAN_Codex_Warlord_desc</descKey>
+		<hintKey>TITAN_Codex_Warlord_hint</hintKey>
+		<pawnKindDef>TITAN_Warlord</pawnKindDef>
+		<status>Alive</status>
+		<order>98</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_VoidWalker</defName>
+		<subjectNumber>-11</subjectNumber>
+		<displayNumber>虚空行者</displayNumber>
+		<labelKey>TITAN_Codex_VoidWalker_label</labelKey>
+		<descKey>TITAN_Codex_VoidWalker_desc</descKey>
+		<hintKey>TITAN_Codex_VoidWalker_hint</hintKey>
+		<pawnKindDef>TITAN_VoidWalker</pawnKindDef>
+		<status>Alive</status>
+		<order>99</order>
+	</ProjectTITAN.CodexEntryDef>
+
+	<ProjectTITAN.CodexEntryDef>
+		<defName>TITAN_Codex_Matriarch</defName>
+		<subjectNumber>-12</subjectNumber>
+		<displayNumber>繁盛之母</displayNumber>
+		<labelKey>TITAN_Codex_Matriarch_label</labelKey>
+		<descKey>TITAN_Codex_Matriarch_desc</descKey>
+		<hintKey>TITAN_Codex_Matriarch_hint</hintKey>
+		<pawnKindDef>TITAN_Matriarch</pawnKindDef>
+		<status>Alive</status>
+		<order>100</order>
+	</ProjectTITAN.CodexEntryDef>
+
+</Defs>

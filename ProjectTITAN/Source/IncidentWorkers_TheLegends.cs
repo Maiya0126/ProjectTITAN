@@ -26,7 +26,10 @@ namespace ProjectTITAN
             if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnLoc, map, CellFinder.EdgeRoadChance_Animal)) return false;
 
             PawnKindDef kind = PawnKindDef.Named("TITAN_Matriarch");
-            Pawn matriarch = PawnGenerator.GeneratePawn(kind, null);
+            PawnGenerationRequest req = new PawnGenerationRequest(kind, null,
+                fixedBiologicalAge: 50f, fixedChronologicalAge: 500f, allowDowned: true);
+            Pawn matriarch = PawnGenerator.GeneratePawn(req);
+            matriarch.Name = new Verse.NameSingle(kind.label);
             GenSpawn.Spawn(matriarch, spawnLoc, map, Rot4.Random);
 
             Hediff sickness = matriarch.health.AddHediff(HediffDef.Named("TITAN_GeneticCollapse"));
@@ -40,6 +43,7 @@ namespace ProjectTITAN
             LordMaker.MakeNewLord(matriarch.Faction, new LordJob_DefendPoint(colonyCenter), map, new List<Pawn> { matriarch });
 
             SendStandardLetter(parms, new LookTargets(matriarch));
+            TitanEvents.FireTitanEventTriggered(def.defName);
             return true;
         }
     }
@@ -61,7 +65,10 @@ namespace ProjectTITAN
             IntVec3 spawnCenter;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnCenter, map, CellFinder.EdgeRoadChance_Animal)) return false;
 
-            Pawn warlord = PawnGenerator.GeneratePawn(PawnKindDef.Named("TITAN_Warlord"), null);
+            Pawn warlord = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
+                PawnKindDef.Named("TITAN_Warlord"), null,
+                fixedBiologicalAge: 50f, fixedChronologicalAge: 500f, allowDowned: true));
+            warlord.Name = new Verse.NameSingle("战争之痕");
             GenSpawn.Spawn(warlord, spawnCenter, map, Rot4.Random);
 
             float points = parms.points;
@@ -88,6 +95,7 @@ namespace ProjectTITAN
             }
 
             SendStandardLetter(parms, new LookTargets(warlord));
+            TitanEvents.FireTitanEventTriggered(def.defName);
             return true;
         }
     }
@@ -112,7 +120,9 @@ namespace ProjectTITAN
             if (!RCellFinder.TryFindRandomPawnEntryCell(out walkerLoc, map, CellFinder.EdgeRoadChance_Friendly)) return false;
 
             PawnKindDef walkerKind = PawnKindDef.Named("TITAN_VoidWalker");
-            Pawn walker = PawnGenerator.GeneratePawn(walkerKind, null);
+            Pawn walker = PawnGenerator.GeneratePawn(new PawnGenerationRequest(walkerKind, null,
+                fixedBiologicalAge: 50f, fixedChronologicalAge: 500f, allowDowned: true));
+            walker.Name = new Verse.NameSingle("虚空行者");
             GenSpawn.Spawn(walker, walkerLoc, map, Rot4.Random);
 
             if (Find.FactionManager.FirstFactionOfDef(FactionDefOf.Ancients) != null)
@@ -169,6 +179,7 @@ namespace ProjectTITAN
             string text = "一只受伤的“虚空行者”逃入了该区域，它身上布满了帝国制式武器造成的伤痕。\n\n侦测到一支【伪装成帝国部队的非法佣兵】正在追杀它。\n\n虚空行者正在向你的基地寻求庇护！保护它！";
 
             Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.ThreatBig, new LookTargets(walker, enemies.FirstOrDefault()));
+            TitanEvents.FireTitanEventTriggered(def.defName);
             return true;
         }
     }

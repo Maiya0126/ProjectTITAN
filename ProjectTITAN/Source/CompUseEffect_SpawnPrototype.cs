@@ -60,6 +60,8 @@ namespace ProjectTITAN
 
                 // --- 生成并投放 ---
                 Pawn newPawn = PawnGenerator.GeneratePawn(request);
+                if (newPawn.Name is NameSingle ns && ns.Numerical)
+                    newPawn.Name = new NameSingle("0号原型体·曙光");
                 GenSpawn.Spawn(newPawn, spawnLoc, map, WipeMode.Vanish);
 
                 // --- 添加状态 ---

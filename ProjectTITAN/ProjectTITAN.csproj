@@ -55,23 +55,47 @@
       <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\CodexEntryDef.cs" />
+    <Compile Include="Source\CompSelfTameOnThreshold.cs" />
     <Compile Include="Source\CompThrumboMagnet.cs" />
     <Compile Include="Source\CompTitanBond.cs" />
+    <Compile Include="Source\CompTitanMultiBond.cs" />
+    <Compile Include="Source\CompHearthWarmth.cs" />
     <Compile Include="Source\CompUseEffect_SpawnPrototype.cs" />
     <Compile Include="Source\CompUseEffect_SpawnSpark.cs" />
+    <Compile Include="Source\GameComponent_CodexTracker.cs" />
+    <Compile Include="Source\GameComponent_ThrumboHerdTracker.cs" />
+    <Compile Include="Source\ProjectTITAN_API.cs" />
+    <Compile Include="Source\TitanEvents.cs" />
     <Compile Include="Source\IncidentWorkers_TheLegends.cs" />
     <Compile Include="Source\IncidentWorker_TitanHunterAttack.cs" />
+    <Compile Include="Source\IncidentWorker_No26_FirstEncounter.cs" />
+    <Compile Include="Source\IncidentWorker_ExperimentArrivals.cs" />
+    <Compile Include="Source\MainButtonWorker_Codex.cs" />
+    <Compile Include="Source\MainTabWindow_Codex.cs" />
     <Compile Include="Source\Patch_SparkImmortality.cs" />
+    <Compile Include="Source\Patch_TitanPawnInfo.cs" />
     <Compile Include="Source\TitanCore.cs" />
     <Compile Include="Source\TitanModInit.cs" />
+    <Compile Include="Source\TITAN_CodexMod.cs" />
+    <Compile Include="Source\TITAN_GameComponentRegistration.cs" />
     <Compile Include="Source\TITAN_ResearchUnlocker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="Defs\HediffDefs\Hediffs_Dragonblood.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_PrototypeHibernation.xml" />
     <Content Include="Defs\HediffDefs\Hediffs_SparkReboot.xml" />
     <Content Include="Defs\HediffDefs\Hediffs_TitanAbility.xml" />
     <Content Include="Defs\HediffDefs\Hediffs_TitanAuras.xml" />
@@ -91,6 +115,15 @@
     <Content Include="Defs\ThingDefs_Races\Races_Animal_Hunter.xml" />
     <Content Include="Defs\ThingDefs_Races\Races_Animal_Spark.xml" />
     <Content Include="Defs\ThingDefs_Races\Races_Animal_ThrumboPrototype.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_HerdAchievement.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_ExperimentBonds.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_ExperimentSpecial.xml" />
+    <Content Include="Defs\IncidentDefs\Incidents_ExperimentSubjects.xml" />
+    <Content Include="Defs\MainButtonDef\TITAN_CodexButton.xml" />
+    <Content Include="Defs\ThingDefs_Items\Items_ExperimentHorns.xml" />
+    <Content Include="Defs\TITAN_Codex\CodexEntries.xml" />
+    <Content Include="Defs\ThingDefs_Races\Races_ExperimentSubjects_A.xml" />
+    <Content Include="Defs\ThingDefs_Races\Races_ExperimentSubjects_B.xml" />
     <Content Include="Defs\ThingDefs_Races\Races_TheLegends.xml" />
     <Content Include="Textures\Things\Animal\TITAN_Matriarch_south.png" />
     <Content Include="Textures\Things\Animal\TITAN_Matriarch_north.png" />
@@ -101,6 +134,31 @@
     <Content Include="Textures\Things\Animal\TITAN_VoidWalker_east.png" />
     <Content Include="Textures\Things\Animal\TITAN_VoidWalker_north.png" />
     <Content Include="Textures\Things\Animal\TITAN_VoidWalker_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_VoidWalker_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No7_AcidThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No7_AcidThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No7_AcidThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No13_SwampThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No13_SwampThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No13_SwampThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No26_ToyThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No26_ToyThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No26_ToyThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No42_AuroraThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No42_AuroraThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No42_AuroraThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No45_FireThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No45_FireThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No45_FireThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No50_DesertThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No50_DesertThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No50_DesertThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No64_PrairieThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No64_PrairieThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No64_PrairieThrumbo_south.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No88_JungleThrumbo_east.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No88_JungleThrumbo_north.png" />
+    <Content Include="Textures\Things\Animal\TITAN_No88_JungleThrumbo_south.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_LifeResin.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_VoidDust.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_CrimsonKeratin.png" />
@@ -108,11 +166,33 @@
     <Content Include="Textures\Things\Item\Resource\TITAN_PrototypeScale.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_Tuber.png" />
     <Content Include="Textures\Things\Item\Resource\TITAN_Incense.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No7_Horn.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No13_Horn.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No26_Horn.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No42_Horn.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No45_Horn.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No50_Horn.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No64_Dome.png" />
+    <Content Include="Textures\Things\Item\Resource\TITAN_No88_Horn.png" />
     <Content Include="Textures\Things\Plant\TITAN_Tree.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Languages\English\Keyed\maiya.projecttitan_EN.xml" />
-    <Content Include="Languages\SimpChinese\Keyed\maiya.projecttitan_CN.xml" />
+    <Content Include="Languages\English\LanguageInfo.xml" />
+    <Content Include="Languages\ChineseSimplified\Keyed\maiya.projecttitan_CN.xml" />
+    <Content Include="Languages\ChineseSimplified\LanguageInfo.xml" />
+    <Content Include="Languages\English\DefInjected\MainButtonDef\TITAN_Codex.xml" />
+    <Content Include="Languages\English\DefInjected\ThingDef\Races_ExperimentSubjects.xml" />
+    <Content Include="Languages\English\DefInjected\ThingDef\Items_ExperimentHorns.xml" />
+    <Content Include="Languages\English\DefInjected\PawnKindDef\Races_ExperimentSubjects.xml" />
+    <Content Include="Languages\English\DefInjected\HediffDef\Hediffs_ExperimentBonds.xml" />
+    <Content Include="Languages\English\DefInjected\HediffDef\Hediffs_ExperimentSpecial.xml" />
+    <Content Include="Languages\ChineseSimplified\DefInjected\MainButtonDef\TITAN_Codex.xml" />
+    <Content Include="Languages\ChineseSimplified\DefInjected\ThingDef\Races_ExperimentSubjects.xml" />
+    <Content Include="Languages\ChineseSimplified\DefInjected\ThingDef\Items_ExperimentHorns.xml" />
+    <Content Include="Languages\ChineseSimplified\DefInjected\PawnKindDef\Races_ExperimentSubjects.xml" />
+    <Content Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_ExperimentBonds.xml" />
+    <Content Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_ExperimentSpecial.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Patches\" />

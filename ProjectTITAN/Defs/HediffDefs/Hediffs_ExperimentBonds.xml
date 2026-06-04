@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No7_Anchor</defName>
+		<label>稳定锚效应</label>
+		<description>0号的基因信号让7号体内持续循环的毒素不再那么灼人。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(100, 255, 100)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><painFactor>0.7</painFactor><statOffsets><MentalBreakThreshold>-0.15</MentalBreakThreshold></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No7_Softened</defName>
+		<label>柔软心</label>
+		<description>26号的安抚波动让7号不自觉地卸下防备。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(180, 255, 180)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><MentalBreakThreshold>-0.1</MentalBreakThreshold></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No13_Calculated</defName>
+		<label>战术克制</label>
+		<description>13号在0号面前收起了杀戮本能，转为精准的战术模式。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(100, 200, 255)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><ArmorRating_Sharp>0.10</ArmorRating_Sharp><ArmorRating_Blunt>0.05</ArmorRating_Blunt></statOffsets><statFactors><MeleeDPS>0.85</MeleeDPS></statFactors></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_CoinFaces</defName>
+		<label>一体两面</label>
+		<description>当13号与64号靠近时，攻击与防御形成完美互补。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(200, 200, 100)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><ArmorRating_Sharp>0.05</ArmorRating_Sharp><ArmorRating_Blunt>0.05</ArmorRating_Blunt></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No13_Restraint</defName>
+		<label>杀意抑制</label>
+		<description>26号的存在让13号不自觉地压制了自己的攻击冲动。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(150, 200, 150)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statFactors><MeleeDPS>0.80</MeleeDPS></statFactors></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No42_StarGuidance</defName>
+		<label>星辉引导</label>
+		<description>0号的信号为42号照亮了方向，精神感知力大幅提升。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(150, 200, 255)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><MoveSpeed>0.5</MoveSpeed><PsychicSensitivity>0.5</PsychicSensitivity></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No45_HearthWarmth</defName>
+		<label>灶火温暖</label>
+		<description>45号靠近友方时散发的稳定热量加速了伤口愈合。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 180, 80)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><InjuryHealingFactor>0.3</InjuryHealingFactor></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No88_SweetNuzzle</defName>
+		<label>温暖依恋</label>
+		<description>88号和26号靠在一起时格外安心。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(120, 255, 120)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><InjuryHealingFactor>0.2</InjuryHealingFactor></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No88_FirePhobia</defName>
+		<label>烈火恐惧</label>
+		<description>88号感知到45号的高温后陷入了本能的恐惧。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 80, 80)</defaultLabelColor>
+		<isBad>true</isBad>
+		<stages><li><statOffsets><MoveSpeed>-0.5</MoveSpeed></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No26_Guardian</defName>
+		<label>亲卫守护</label>
+		<description>26号以生命守护0号，防御本能被彻底激发。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(180, 220, 255)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><ArmorRating_Sharp>0.15</ArmorRating_Sharp><ArmorRating_Blunt>0.10</ArmorRating_Blunt><MoveSpeed>0.3</MoveSpeed></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_Bond_No26_Protected</defName>
+		<label>被守护者</label>
+		<description>0号感受到26号纯粹的守护意志，身心都获得了安宁。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 220, 150)</defaultLabelColor>
+		<isBad>false</isBad>
+		<stages><li><statOffsets><InjuryHealingFactor>0.15</InjuryHealingFactor><MentalBreakThreshold>-0.10</MentalBreakThreshold></statOffsets></li></stages>
+		<comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>300</disappearsAfterTicks><showRemainingTime>false</showRemainingTime></li></comps>
+	</HediffDef>
+
+</Defs>

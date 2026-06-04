@@ -57,15 +57,18 @@ namespace ProjectTITAN
 
             if (targetFound)
             {
-                // 如果找到了目标但还没Buff，加上
                 if (existing == null)
                 {
                     me.health.AddHediff(Props.bondHediff);
                 }
+                else
+                {
+                    var disappears = existing.TryGetComp<HediffComp_Disappears>();
+                    if (disappears != null) disappears.ResetElapsedTicks();
+                }
             }
             else
             {
-                // 如果没找到目标但有Buff，移除
                 if (existing != null)
                 {
                     me.health.RemoveHediff(existing);
