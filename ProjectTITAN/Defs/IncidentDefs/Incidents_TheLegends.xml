@@ -45,7 +45,7 @@
 		<minRefireDays>30</minRefireDays>
 		<pointsScaleable>true</pointsScaleable>
 		<letterLabel>虚空行者求救</letterLabel>
-		<letterText>...</letterText>
+		<letterText>空间出现了诡异的扭曲，一道半透明的身影从相位裂缝中跌落——那是传说中的"虚空行者"。它显然正在被某种东西追杀，身上的相位场多处破损。\n\n它目前处于高度警戒状态，不会轻易接近任何人。清除地图上的所有敌对单位后，使用0号原型体的泰坦共鸣与其交流，或许能获得它的信任。\n\n警告：如果周围存在威胁，它会尝试再次相位传送逃离。</letterText>
 		<letterDef>ThreatBig</letterDef>
 	</IncidentDef>
 

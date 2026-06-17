@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- ==================== 生物 ==================== -->
@@ -392,4 +392,69 @@
   <No64>64号·铁壁</No64>
   <No88>88号·繁花</No88>
 
+  <!-- Herd Achievement -->
+  <TITAN_Letter_HerdAchievement_Title>庇护所成就解锁</TITAN_Letter_HerdAchievement_Title>
+  <TITAN_HerdAchievement_Tier1>当第10只敲击兽踏入殖民地时，0号原型体发出了一声悠长的呼唤。所有同伴似乎变得更加警觉而自信了。\n\n【效果】所有敲击兽族类获得"群体共鸣·微光"：近战伤害+10%，移动速度+5%。全体殖民者获得心情加成"万物来朝·初"。</TITAN_HerdAchievement_Tier1>
+  <TITAN_HerdAchievement_Tier2>第20只敲击兽到来了。0号原型体的呼唤变得更加深沉而有力，同伴们之间似乎建立起了某种无形的联系网络。\n\n【效果】升级为"群体共鸣·星火"：近战伤害+20%，移动速度+10%，护甲+10%。全体殖民者获得心情加成"万物来朝·盛"。</TITAN_HerdAchievement_Tier2>
+  <TITAN_HerdAchievement_Tier3>第50只敲击兽——殖民地已经成为了真正的敲击兽庇护所。0号原型体发出了一声震撼天地的长鸣，整个殖民地都感受到了那份来自远古的威严。\n\n【效果】升级为"群体共鸣·黎明"：近战伤害+30%，移动速度+15%，护甲+20%，生命恢复+0.5/天。全体殖民者获得心情加成"万物来朝·极"。</TITAN_HerdAchievement_Tier3>
+
+  <!-- Hardcoded string fixes -->
+  <TITAN_Ability_Resonance>泰坦共鸣</TITAN_Ability_Resonance>
+  <TITAN_Ability_ResonanceDesc>利用0号的皇室基因释放共鸣波。\n- 任务神兽：执行特定的治疗/安抚操作，完成后给予奖励并离开。\n- 支援友军：感谢支援并指引离开。\n- 普通友军：治疗伤口。</TITAN_Ability_ResonanceDesc>
+  <TITAN_Ability_CurrentStats>【当前属性】范围：{0}格 | 治疗量：{1} | 冷却：{2}小时</TITAN_Ability_CurrentStats>
+  <TITAN_Ability_Tier1Bonus>【共鸣增幅】范围+50%，治疗量+50%，冷却-25%。被动：共鸣脉冲（8格内所有友方单位缓慢恢复伤势）</TITAN_Ability_Tier1Bonus>
+  <TITAN_Ability_Tier2Bonus>【同步脉搏】被动共鸣脉冲范围扩大至12格</TITAN_Ability_Tier2Bonus>
+  <TITAN_Ability_Tier3Bonus>【始祖回响】被动共鸣脉冲范围扩大至15格，主动共鸣额外治疗范围内所有友方</TITAN_Ability_Tier3Bonus>
+  <TITAN_Ability_Tier4Bonus>【王权觉醒】被动共鸣脉冲范围扩大至20格，解锁王权印记</TITAN_Ability_Tier4Bonus>
+  <TITAN_Ability_RoyalMark>王权印记</TITAN_Ability_RoyalMark>
+  <TITAN_Ability_RoyalMarkDesc>以0号的皇室血脉为目标烙下印记，永久+15%全属性。仅对敲击兽族类生效。</TITAN_Ability_RoyalMarkDesc>
+  <TITAN_Message_ProgenitorEcho>始祖回响：{0}个友方个体获得了共鸣治疗</TITAN_Message_ProgenitorEcho>
+  <TITAN_Message_RoyalMark_NotThrumboKind>目标不是敲击兽族类，无法施加王权印记</TITAN_Message_RoyalMark_NotThrumboKind>
+  <TITAN_Message_RoyalMark_AlreadyMarked>目标已拥有王权印记</TITAN_Message_RoyalMark_AlreadyMarked>
+  <TITAN_Message_RoyalMark_Applied>{0}被赋予了王权印记，全属性+15%</TITAN_Message_RoyalMark_Applied>
+
+  <!-- Resonance tier unlock notifications -->
+  <TITAN_Resonance_Tier1Unlocked>【共鸣增幅】0号原型体与5只敲击兽族类建立了共鸣连接！泰坦共鸣的范围、治疗量和冷却均获得强化。被动共鸣脉冲开始生效（8格内所有友方单位缓慢恢复伤势）。</TITAN_Resonance_Tier1Unlocked>
+  <TITAN_Resonance_Tier2Unlocked>【同步脉搏】0号原型体与15只敲击兽族类的共鸣进一步加深！被动共鸣脉冲范围扩大至12格。</TITAN_Resonance_Tier2Unlocked>
+  <TITAN_Resonance_Tier3Unlocked>【始祖回响】0号原型体与30只敲击兽族类的共鸣达到顶峰！被动共鸣脉冲范围扩大至15格，主动共鸣额外治疗范围内所有友方。</TITAN_Resonance_Tier3Unlocked>
+  <TITAN_Mote_ReturnToVoid>回归虚空</TITAN_Mote_ReturnToVoid>
+  <TITAN_Letter_HunterAttack_Title>泰坦计划：猎杀协议</TITAN_Letter_HunterAttack_Title>
+  <TITAN_Letter_HunterAttack_Desc>帝国的侦测器锁定了0号原型体的能量信号。\n\n一群基因改造的"猎杀者"已经抵达该地区。它们的脑中被植入了绝对指令，会撕碎阻挡在它们和目标之间的一切生物。\n\n保护0号！</TITAN_Letter_HunterAttack_Desc>
+
+  <!-- Hint keys for undiscovered codex entries -->
+  <TITAN_Codex_No7_hint>空气中弥漫着强烈的酸腐气味。0号原型体的共鸣系统探测到了一个不稳定的高酸代谢信号……</TITAN_Codex_No7_hint>
+  <TITAN_Codex_No13_hint>沼泽深处传来低沉的喘息。一个带着深创的生物正在向0号的方位靠近……</TITAN_Codex_No13_hint>
+  <TITAN_Codex_No26_hint>共鸣雷达捕捉到微弱但极近的信号——有什么小家伙正在追踪0号原型体的气息……</TITAN_Codex_No26_hint>
+  <TITAN_Codex_No42_hint>极光般的微光在远处闪烁。一个基因序列极度不稳定的个体正在某处漂移……</TITAN_Codex_No42_hint>
+  <TITAN_Codex_No45_hint>检测到异常热源反应。核心温度远超正常值……</TITAN_Codex_No45_hint>
+  <TITAN_Codex_No50_hint>沙漠方向的共鸣信号异常微弱但持久。一个似乎能长期不进食的个体正在游荡……</TITAN_Codex_No50_hint>
+  <TITAN_Codex_No64_hint>探测到超矿化生物甲壳信号。它的骨骼硬度接近纯钢板……</TITAN_Codex_No64_hint>
+  <TITAN_Codex_No88_hint>火场方向传来痛苦的呐喊。一个带着烧伤的个体正在寻找水源……</TITAN_Codex_No88_hint>
+  <TITAN_Codex_No1_hint>档案中残留着早期实验的碎片记录……已终止。</TITAN_Codex_No1_hint>
+  <TITAN_Codex_No9_hint>残存的脑波信号显示该个体的意识已完全消散……</TITAN_Codex_No9_hint>
+  <TITAN_Codex_No19_hint>冰冻样本管上刻着19号的编号……早已无法唤醒。</TITAN_Codex_No19_hint>
+  <TITAN_Codex_No37_hint>培养舱的日志最后一次记录时间已不可考……</TITAN_Codex_No37_hint>
+  <TITAN_Codex_No3_hint>部分数据被帝国安全协议加密。权限代号：深渊……</TITAN_Codex_No3_hint>
+  <TITAN_Codex_No11_hint>部分数据被帝国安全协议加密。权限代号：裂隙……</TITAN_Codex_No11_hint>
+  <TITAN_Codex_No15_hint>部分数据被帝国安全协议加密。权限代号：碎影……</TITAN_Codex_No15_hint>
+  <TITAN_Codex_No33_hint>部分数据被帝国安全协议加密。权限代号：回声……</TITAN_Codex_No33_hint>
+  <TITAN_Codex_No55_hint>部分数据被帝国安全协议加密。权限代号：遗迹……</TITAN_Codex_No55_hint>
+  <TITAN_Codex_No77_hint>部分数据被帝国安全协议加密。权限代号：余烬……</TITAN_Codex_No77_hint>
+  <TITAN_Codex_No99_hint>部分数据被帝国安全协议加密。权限代号：终焉……</TITAN_Codex_No99_hint>
+
+  <!-- === 名称翻译键 === -->
+  <TITAN_Name_Warlord>战争之痕</TITAN_Name_Warlord>
+  <TITAN_Name_VoidWalker>虚空行者</TITAN_Name_VoidWalker>
+  <TITAN_Name_Prototype>0号原型体·曙光</TITAN_Name_Prototype>
+
+  <!-- === 信件翻译键 === -->
+  <TITAN_Letter_VoidWalkerRescue_Title>虚空行者求救</TITAN_Letter_VoidWalkerRescue_Title>
+  <TITAN_Letter_VoidWalkerRescue_Desc>一只受伤的"虚空行者"逃入了该区域，它身上布满了帝国制式武器造成的伤痕。\n\n侦测到一支【伪装成帝国部队的非法佣兵】正在追杀它。\n\n虚空行者正在向你的基地寻求庇护！保护它！</TITAN_Letter_VoidWalkerRescue_Desc>
+  <TITAN_Letter_SpawnSpark_Title>不灭的火种</TITAN_Letter_SpawnSpark_Title>
+  <TITAN_Letter_SpawnSpark_Desc>随着鳞片散发出特殊的费洛蒙信号，一只浑身散发着高热的变异爆炸鼠冲进了地图。\n\n它就是"花火"，0号原型体的挚友。它闻到了那熟悉的、只有它能识别的气味，义无反顾地追随而来。\n\n(已获得：花火 - 能够无限重生的爆炸专家)</TITAN_Letter_SpawnSpark_Desc>
+  <TITAN_Letter_SpawnPrototype_Title>迷雾中的回应</TITAN_Letter_SpawnPrototype_Title>
+  <TITAN_Letter_SpawnPrototype_Desc>香薰燃尽，一股能够安抚狂暴基因的宁静气息飘向了荒野深处。\n\n不久后，地图边缘出现了一个金色的身影——那是帝国丢失的实验体"0号"。\n\n她看起来疲惫不堪，长期忍受着基因改造带来的剧痛。但此刻，你的香薰让她第一次感受到了久违的安宁。\n\n她怯生生地向殖民地走来，不是作为兵器，而是作为一个寻求庇护的流浪者。\n\n(已获得：【0号原型体】 - 她信任你，并加入了殖民地)</TITAN_Letter_SpawnPrototype_Desc>  <Message_Titan_Vanished>{0}的力量回归了虚空，只留下了一片残影。</Message_Titan_Vanished>
+  <TITAN_Gizmo_DismissTitan>返回虚空 (Return to Void)</TITAN_Gizmo_DismissTitan>
+  <TITAN_Gizmo_DismissTitanDesc>让这只神兽提前返回虚空。</TITAN_Gizmo_DismissTitanDesc>
+  <Message_Titan_Dismissed>{0}响应了你的意愿，化作残影回归虚空。</Message_Titan_Dismissed>
 </LanguageData>

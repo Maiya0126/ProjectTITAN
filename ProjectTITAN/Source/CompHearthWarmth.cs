@@ -96,6 +96,7 @@ namespace ProjectTITAN
         public override void PostExposeData()
         {
             base.PostExposeData();
+            Scribe_Collections.Look(ref warmedPawns, "warmedPawns", LookMode.Value);
             if (warmedPawns == null) warmedPawns = new HashSet<int>();
         }
     }

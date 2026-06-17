@@ -31,6 +31,7 @@
 		<displayNumber>1号</displayNumber>
 		<labelKey>TITAN_Codex_No1_label</labelKey>
 		<descKey>TITAN_Codex_No1_desc</descKey>
+		<hintKey>TITAN_Codex_No1_hint</hintKey>
 		<status>Deceased</status>
 		<order>2</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -41,6 +42,7 @@
 		<displayNumber>3号</displayNumber>
 		<labelKey>TITAN_Codex_No3_label</labelKey>
 		<descKey>TITAN_Codex_No3_desc</descKey>
+		<hintKey>TITAN_Codex_No3_hint</hintKey>
 		<status>Classified</status>
 		<order>3</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -51,6 +53,7 @@
 		<displayNumber>9号</displayNumber>
 		<labelKey>TITAN_Codex_No9_label</labelKey>
 		<descKey>TITAN_Codex_No9_desc</descKey>
+		<hintKey>TITAN_Codex_No9_hint</hintKey>
 		<status>Deceased</status>
 		<order>4</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -61,6 +64,7 @@
 		<displayNumber>11号</displayNumber>
 		<labelKey>TITAN_Codex_No11_label</labelKey>
 		<descKey>TITAN_Codex_No11_desc</descKey>
+		<hintKey>TITAN_Codex_No11_hint</hintKey>
 		<status>Classified</status>
 		<order>5</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -71,6 +75,7 @@
 		<displayNumber>7号</displayNumber>
 		<labelKey>TITAN_Codex_No7_label</labelKey>
 		<descKey>TITAN_Codex_No7_desc</descKey>
+		<hintKey>TITAN_Codex_No7_hint</hintKey>
 		<pawnKindDef>TITAN_No7_AcidThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_AcidThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -83,6 +88,7 @@
 		<displayNumber>13号</displayNumber>
 		<labelKey>TITAN_Codex_No13_label</labelKey>
 		<descKey>TITAN_Codex_No13_desc</descKey>
+		<hintKey>TITAN_Codex_No13_hint</hintKey>
 		<pawnKindDef>TITAN_No13_SwampThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_SwampThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -95,6 +101,7 @@
 		<displayNumber>15号</displayNumber>
 		<labelKey>TITAN_Codex_No15_label</labelKey>
 		<descKey>TITAN_Codex_No15_desc</descKey>
+		<hintKey>TITAN_Codex_No15_hint</hintKey>
 		<status>Classified</status>
 		<order>8</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -105,6 +112,7 @@
 		<displayNumber>19号</displayNumber>
 		<labelKey>TITAN_Codex_No19_label</labelKey>
 		<descKey>TITAN_Codex_No19_desc</descKey>
+		<hintKey>TITAN_Codex_No19_hint</hintKey>
 		<status>Deceased</status>
 		<order>9</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -115,6 +123,7 @@
 		<displayNumber>26号</displayNumber>
 		<labelKey>TITAN_Codex_No26_label</labelKey>
 		<descKey>TITAN_Codex_No26_desc</descKey>
+		<hintKey>TITAN_Codex_No26_hint</hintKey>
 		<pawnKindDef>TITAN_No26_ToyThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_ToyThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -127,6 +136,7 @@
 		<displayNumber>33号</displayNumber>
 		<labelKey>TITAN_Codex_No33_label</labelKey>
 		<descKey>TITAN_Codex_No33_desc</descKey>
+		<hintKey>TITAN_Codex_No33_hint</hintKey>
 		<status>Classified</status>
 		<order>11</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -137,6 +147,7 @@
 		<displayNumber>37号</displayNumber>
 		<labelKey>TITAN_Codex_No37_label</labelKey>
 		<descKey>TITAN_Codex_No37_desc</descKey>
+		<hintKey>TITAN_Codex_No37_hint</hintKey>
 		<status>Deceased</status>
 		<order>12</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -147,6 +158,7 @@
 		<displayNumber>42号</displayNumber>
 		<labelKey>TITAN_Codex_No42_label</labelKey>
 		<descKey>TITAN_Codex_No42_desc</descKey>
+		<hintKey>TITAN_Codex_No42_hint</hintKey>
 		<pawnKindDef>TITAN_No42_AuroraThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_AuroraThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -159,6 +171,7 @@
 		<displayNumber>45号</displayNumber>
 		<labelKey>TITAN_Codex_No45_label</labelKey>
 		<descKey>TITAN_Codex_No45_desc</descKey>
+		<hintKey>TITAN_Codex_No45_hint</hintKey>
 		<pawnKindDef>TITAN_No45_FireThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_FireThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -171,6 +184,7 @@
 		<displayNumber>50号</displayNumber>
 		<labelKey>TITAN_Codex_No50_label</labelKey>
 		<descKey>TITAN_Codex_No50_desc</descKey>
+		<hintKey>TITAN_Codex_No50_hint</hintKey>
 		<pawnKindDef>TITAN_No50_DesertThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_DesertThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -183,6 +197,7 @@
 		<displayNumber>55号</displayNumber>
 		<labelKey>TITAN_Codex_No55_label</labelKey>
 		<descKey>TITAN_Codex_No55_desc</descKey>
+		<hintKey>TITAN_Codex_No55_hint</hintKey>
 		<status>Classified</status>
 		<order>16</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -193,6 +208,7 @@
 		<displayNumber>64号</displayNumber>
 		<labelKey>TITAN_Codex_No64_label</labelKey>
 		<descKey>TITAN_Codex_No64_desc</descKey>
+		<hintKey>TITAN_Codex_No64_hint</hintKey>
 		<pawnKindDef>TITAN_No64_PrairieThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_PrairieThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -205,6 +221,7 @@
 		<displayNumber>77号</displayNumber>
 		<labelKey>TITAN_Codex_No77_label</labelKey>
 		<descKey>TITAN_Codex_No77_desc</descKey>
+		<hintKey>TITAN_Codex_No77_hint</hintKey>
 		<status>Classified</status>
 		<order>18</order>
 	</ProjectTITAN.CodexEntryDef>
@@ -215,6 +232,7 @@
 		<displayNumber>88号</displayNumber>
 		<labelKey>TITAN_Codex_No88_label</labelKey>
 		<descKey>TITAN_Codex_No88_desc</descKey>
+		<hintKey>TITAN_Codex_No88_hint</hintKey>
 		<pawnKindDef>TITAN_No88_JungleThrumbo</pawnKindDef>
 		<companionPawnKindDef>NT_JungleThrumbo</companionPawnKindDef>
 		<status>Alive</status>
@@ -227,11 +245,11 @@
 		<displayNumber>99号</displayNumber>
 		<labelKey>TITAN_Codex_No99_label</labelKey>
 		<descKey>TITAN_Codex_No99_desc</descKey>
+		<hintKey>TITAN_Codex_No99_hint</hintKey>
 		<status>Classified</status>
 		<order>20</order>
 	</ProjectTITAN.CodexEntryDef>
 
-	<!-- 三神兽 -->
 	<ProjectTITAN.CodexEntryDef>
 		<defName>TITAN_Codex_Warlord</defName>
 		<subjectNumber>-10</subjectNumber>

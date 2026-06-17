@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <NT_ToyThrumbo.label>ドワーフスラムボ</NT_ToyThrumbo.label>
+  <NT_ToyThrumbo.description>大型犬ほどの大きさで成長が止まったスラムボ。何世紀にもわたる選択育種により、通常のスラムボより打たれ弱くなったが、その代わりに愛らしさは群を抜く。何より、汚物を一切残さない！</NT_ToyThrumbo.description>
+  <NT_AcidThrumboRace.label>アシッドスラムボ</NT_AcidThrumboRace.label>
+  <NT_AcidThrumboRace.description>毒に対する完全な耐性を持つ特殊なスラムボ亜種。噛みつきと角の一撃で致命的な毒素を注入する。</NT_AcidThrumboRace.description>
+  <NT_SwampThrumbo.label>スワンプスラムボ</NT_SwampThrumbo.label>
+  <NT_SwampThrumbo.description>湿地と沼地に生息するスラムボ。極めて好戦的で、角の高速刺突と斧のような尾の強打を交互に繰り出す。</NT_SwampThrumbo.description>
+  <NT_AuroraThrumboRace.label>オーロラスラムボ</NT_AuroraThrumboRace.label>
+  <NT_AuroraThrumboRace.description>極寒に適応した伝説のスラムボ。毛皮はオーロラのような光沢を放ち、樹木を伐採せず、汚物も極めて少ない。</NT_AuroraThrumboRace.description>
+  <NT_FireThrumboRace.label>ファイアスラムボ</NT_FireThrumboRace.label>
+  <NT_FireThrumboRace.description>溶岩荒野と極限砂漠に生息する稀少なスラムボ。高温と炎に対する高い耐性を持ち、安定した化学燃料を供給する。</NT_FireThrumboRace.description>
+  <NT_DesertThrumbo.label>デザートスラムボ</NT_DesertThrumbo.label>
+  <NT_DesertThrumbo.description>過酷な砂漠環境に適応したスラムボ亜種。長期間の飢餓に耐えうるが、馴致時の反撃には要注意。</NT_DesertThrumbo.description>
+  <NT_PrairieThrumbo.label>プレーリースラムボ</NT_PrairieThrumbo.label>
+  <NT_PrairieThrumbo.description>頭に厚い骨穹を持つスラムボ。人間と同等の速度だが防御力は極めて高い。屠殺で骨穹を回収可能。</NT_PrairieThrumbo.description>
+  <NT_JungleThrumbo.label>ジャングルスラムボ</NT_JungleThrumbo.label>
+  <NT_JungleThrumbo.description>ジャングルに適応したスラムボ。定期的にハーブ薬を産出するが、植物状の生理学のため炎が致命的な弱点。</NT_JungleThrumbo.description>
+</LanguageData>

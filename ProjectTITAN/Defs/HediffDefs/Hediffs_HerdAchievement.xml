@@ -60,7 +60,7 @@
 
 	<ThoughtDef>
 		<defName>TITAN_HerdMood_Tier1</defName>
-		<validWhileDespawned>true</validWhileDespawned>
+		<durationDays>10</durationDays>
 		<stages>
 			<li>
 				<label>万兽来朝</label>
@@ -72,7 +72,7 @@
 
 	<ThoughtDef>
 		<defName>TITAN_HerdMood_Tier2</defName>
-		<validWhileDespawned>true</validWhileDespawned>
+		<durationDays>10</durationDays>
 		<stages>
 			<li>
 				<label>泰坦之庭</label>
@@ -84,7 +84,7 @@
 
 	<ThoughtDef>
 		<defName>TITAN_HerdMood_Tier3</defName>
-		<validWhileDespawned>true</validWhileDespawned>
+		<durationDays>10</durationDays>
 		<stages>
 			<li>
 				<label>黄金黎明</label>

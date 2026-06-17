@@ -5,6 +5,8 @@ using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
+using Verse.AI.Group;
 
 namespace ProjectTITAN
 {
@@ -49,6 +51,29 @@ namespace ProjectTITAN
 
             Pawn pawn = __instance;
             if (pawn.kindDef == null) yield break;
+
+            // 支援神兽：返回虚空按钮
+            HediffDef reinforcementBuff = DefDatabase<HediffDef>.GetNamedSilentFail("TITAN_TitanReinforcementBuff");
+            if (reinforcementBuff != null && pawn.health?.hediffSet?.HasHediff(reinforcementBuff) == true && pawn.Map != null && !pawn.Dead)
+            {
+                Command_Action dismissCmd = new Command_Action
+                {
+                    defaultLabel = "TITAN_Gizmo_DismissTitan".Translate(),
+                    defaultDesc = "TITAN_Gizmo_DismissTitanDesc".Translate(),
+                    icon = TexCommand.RemoveRoutePlannerWaypoint,
+                    action = () =>
+                    {
+                        if (pawn.Map == null || pawn.Dead) return;
+                        Lord lord = pawn.GetLord();
+                        if (lord != null) pawn.Map.lordManager.RemoveLord(lord);
+                        LordMaker.MakeNewLord(pawn.Faction, new LordJob_ExitMapBest(LocomotionUrgency.Jog, true, true), pawn.Map, new List<Pawn> { pawn });
+                        Messages.Message("Message_Titan_Dismissed".Translate(pawn.LabelShort), MessageTypeDefOf.NeutralEvent);
+                    }
+                };
+                yield return dismissCmd;
+            }
+
+            // 图鉴按钮：仅对玩家阵营的已发现实验体
             if (pawn.Faction != Faction.OfPlayer) yield break;
 
             CodexEntryDef codexDef = DefDatabase<CodexEntryDef>.AllDefs
@@ -178,12 +203,12 @@ namespace ProjectTITAN
                 float h = Text.CalcHeight(line, width);
                 Rect lineRect = new Rect(x, y, width, h);
 
-                string trimmed = line.TrimStart();
+                string trimmed = raw.TrimStart();
                 if (trimmed.StartsWith(">"))
                     GUI.color = ColorQuote;
-                else if (trimmed.Contains("特性：") || trimmed.Contains("特性:") || trimmed.Contains("Features:") || trimmed.Contains("特征："))
+                else if (trimmed.Contains("特性：") || trimmed.Contains("特性:") || trimmed.Contains("Features:") || trimmed.Contains("特徴：") || trimmed.Contains("特徴:") || trimmed.Contains("特殊："))
                     GUI.color = ColorFeature;
-                else if (trimmed.Contains("【加入方式】") || trimmed.Contains("[How to recruit]"))
+                else if (trimmed.Contains("【加入方式】") || trimmed.Contains("[How to recruit]") || trimmed.Contains("[勧誘方法]"))
                     GUI.color = ColorRecruit;
                 else
                     GUI.color = ColorBody;

@@ -10,29 +10,14 @@ namespace ProjectTITAN
     public class GameComponent_ThrumboHerdTracker : GameComponent
     {
         private int currentTier = 0;
+        public int CurrentTier => currentTier;
         private int lastThrumboCount = -1;
+        private bool needsReapply = true;
+        public bool NeedsReapply => needsReapply;
         private static readonly int[] TierThresholds = { 10, 20, 50 };
         private static readonly string[] TierHediffs = { "TITAN_HerdBuff_Tier1", "TITAN_HerdBuff_Tier2", "TITAN_HerdBuff_Tier3" };
         private static readonly string[] TierThoughts = { "TITAN_HerdMood_Tier1", "TITAN_HerdMood_Tier2", "TITAN_HerdMood_Tier3" };
         private static readonly string[] TierLetters = { "TITAN_HerdAchievement_Tier1", "TITAN_HerdAchievement_Tier2", "TITAN_HerdAchievement_Tier3" };
-
-        private static readonly HashSet<string> ThrumbokindRaces = new HashSet<string>
-        {
-            "Thrumbo",
-            "TITAN_ThrumboPrototype", "TITAN_Spark",
-            "TITAN_Warlord", "TITAN_VoidWalker", "TITAN_Matriarch",
-            "TITAN_No7_AcidThrumbo", "TITAN_No13_SwampThrumbo",
-            "TITAN_No26_ToyThrumbo", "TITAN_No42_AuroraThrumbo",
-            "TITAN_No45_FireThrumbo", "TITAN_No50_DesertThrumbo",
-            "TITAN_No64_PrairieThrumbo", "TITAN_No88_JungleThrumbo",
-        };
-
-        private static readonly HashSet<string> NTThrumbokindRaces = new HashSet<string>
-        {
-            "NT_ToyThrumbo", "NT_AcidThrumboRace", "NT_AuroraThrumboRace",
-            "NT_DesertThrumbo", "NT_FireThrumboRace", "NT_JungleThrumbo",
-            "NT_PrairieThrumbo", "NT_SwampThrumbo",
-        };
 
         public GameComponent_ThrumboHerdTracker(Game game) { }
 
@@ -41,26 +26,44 @@ namespace ProjectTITAN
             base.ExposeData();
             Scribe_Values.Look(ref currentTier, "currentTier", 0);
             Scribe_Values.Look(ref lastThrumboCount, "lastThrumboCount", -1);
+            Scribe_Values.Look(ref needsReapply, "needsReapply", true);
         }
 
-        public override void GameComponentTick()
+        public void TickHerd()
         {
-            if (Find.TickManager.TicksGame % 2500 != 0) return;
-
-            int count = CountColonyThrumbos();
-            if (count == lastThrumboCount) return;
-            lastThrumboCount = count;
-
-            int newTier = 0;
-            for (int i = TierThresholds.Length - 1; i >= 0; i--)
+            if (needsReapply && currentTier > 0)
             {
-                if (count >= TierThresholds[i]) { newTier = i + 1; break; }
+                needsReapply = false;
+                ApplyNewBuffs(currentTier);
             }
 
-            if (newTier > currentTier)
+            int count = CountColonyThrumbos();
+            if (count != lastThrumboCount)
             {
-                ApplyTierChange(currentTier, newTier);
-                currentTier = newTier;
+                lastThrumboCount = count;
+
+                int newTier = 0;
+                for (int i = TierThresholds.Length - 1; i >= 0; i--)
+                {
+                    if (count >= TierThresholds[i]) { newTier = i + 1; break; }
+                }
+
+                if (newTier > currentTier)
+                {
+                    ApplyTierChange(currentTier, newTier);
+                    currentTier = newTier;
+                }
+                else if (newTier < currentTier)
+                {
+                    RemoveOldBuffs(currentTier);
+                    ApplyNewBuffs(newTier);
+                    currentTier = newTier;
+                }
+            }
+
+            if (currentTier > 0)
+            {
+                EnsureAllHaveBuff(currentTier);
             }
         }
 
@@ -68,15 +71,7 @@ namespace ProjectTITAN
         {
             return Find.Maps
                 .SelectMany(m => m.mapPawns.SpawnedColonyAnimals)
-                .Count(IsThrumbo);
-        }
-
-        private bool IsThrumbo(Pawn p)
-        {
-            string race = p.kindDef?.race?.defName ?? (p.kindDef?.defName ?? "");
-            if (ThrumbokindRaces.Contains(race)) return true;
-            if (TITAN_CodexMod.IsNewThrumboLoaded() && NTThrumbokindRaces.Contains(race)) return true;
-            return false;
+                .Count(p => TitanImplantUtils.IsThrumboKind(p));
         }
 
         private void ApplyTierChange(int oldTier, int newTier)
@@ -97,13 +92,13 @@ namespace ProjectTITAN
 
         private void RemoveOldBuffs(int oldTier)
         {
-            for (int i = 0; i < oldTier && i < TierHediffs.Length; i++)
+            for (int i = 0; i < TierHediffs.Length; i++)
             {
                 HediffDef buffDef = DefDatabase<HediffDef>.GetNamedSilentFail(TierHediffs[i]);
                 ThoughtDef thoughtDef = DefDatabase<ThoughtDef>.GetNamedSilentFail(TierThoughts[i]);
                 if (buffDef != null)
                 {
-                    foreach (var pawn in Find.Maps.SelectMany(m => m.mapPawns.SpawnedColonyAnimals).Where(IsThrumbo))
+                    foreach (var pawn in Find.Maps.SelectMany(m => m.mapPawns.SpawnedColonyAnimals).Where(p => TitanImplantUtils.IsThrumboKind(p)))
                         RemoveHediff(pawn, buffDef);
                 }
                 if (thoughtDef != null)
@@ -124,7 +119,7 @@ namespace ProjectTITAN
 
             if (buffDef != null)
             {
-                foreach (var pawn in Find.Maps.SelectMany(m => m.mapPawns.SpawnedColonyAnimals).Where(IsThrumbo))
+                foreach (var pawn in Find.Maps.SelectMany(m => m.mapPawns.SpawnedColonyAnimals).Where(p => TitanImplantUtils.IsThrumboKind(p)))
                     pawn.health.GetOrAddHediff(buffDef).Severity = 1.0f;
             }
             if (thoughtDef != null)
@@ -157,6 +152,28 @@ namespace ProjectTITAN
                 descKey.Translate(),
                 LetterDefOf.PositiveEvent
             );
+        }
+
+        private void EnsureAllHaveBuff(int tier)
+        {
+            int idx = tier - 1;
+            HediffDef buffDef = DefDatabase<HediffDef>.GetNamedSilentFail(TierHediffs[idx]);
+            if (buffDef != null)
+            {
+                foreach (var pawn in Find.Maps.SelectMany(m => m.mapPawns.SpawnedColonyAnimals).Where(p => TitanImplantUtils.IsThrumboKind(p)))
+                {
+                    if (!pawn.health.hediffSet.HasHediff(buffDef))
+                        pawn.health.GetOrAddHediff(buffDef).Severity = 1.0f;
+                }
+            }
+            ThoughtDef thoughtDef = DefDatabase<ThoughtDef>.GetNamedSilentFail(TierThoughts[idx]);
+            if (thoughtDef != null)
+            {
+                foreach (var pawn in Find.Maps.SelectMany(m => m.mapPawns.FreeColonists))
+                {
+                    pawn.needs.mood.thoughts.memories.TryGainMemory(thoughtDef);
+                }
+            }
         }
     }
 }

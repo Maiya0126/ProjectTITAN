@@ -144,7 +144,7 @@ namespace ProjectTITAN
 
         private string GetProperName(string kindDefName)
         {
-            if (kindDefName == "TITAN_ThrumboPrototype") return "0号原型体·曙光";
+            if (kindDefName == "TITAN_ThrumboPrototype") return "TITAN_Name_Prototype".Translate();
             PawnKindDef kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(kindDefName);
             return kind != null ? kind.label : kindDefName;
         }

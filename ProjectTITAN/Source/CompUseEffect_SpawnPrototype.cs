@@ -46,7 +46,7 @@ namespace ProjectTITAN
                 bool foundEdge = RCellFinder.TryFindRandomPawnEntryCell(out spawnLoc, map, CellFinder.EdgeRoadChance_Animal);
                 if (!foundEdge) spawnLoc = usedBy.Position;
 
-                // --- 准备数据 ---
+                // --- 生成并投放 ---
                 PawnKindDef pawnKind = PawnKindDef.Named("TITAN_ThrumboPrototype");
                 PawnGenerationRequest request = new PawnGenerationRequest(
                     kind: pawnKind,
@@ -58,8 +58,9 @@ namespace ProjectTITAN
                     fixedGender: Gender.Female
                 );
 
-                // --- 生成并投放 ---
+                TitanPawnGuard.BeginAllowed();
                 Pawn newPawn = PawnGenerator.GeneratePawn(request);
+                TitanPawnGuard.EndAllowed();
                 if (newPawn.Name is NameSingle ns && ns.Numerical)
                     newPawn.Name = new NameSingle("0号原型体·曙光");
                 GenSpawn.Spawn(newPawn, spawnLoc, map, WipeMode.Vanish);
@@ -71,14 +72,20 @@ namespace ProjectTITAN
                     newPawn.health.AddHediff(dragonBloodDef);
                 }
 
+                // --- 队列：26号短期内必触发 ---
+                IncidentDef no26Incident = IncidentDef.Named("TITAN_Incident_No26_FirstEncounter");
+                if (no26Incident != null)
+                {
+                    int delayTicks = Mathf.RoundToInt(Rand.Range(2f, 5f) * 60000f);
+                    var parms = new IncidentParms { target = map, forced = true };
+                    Find.Storyteller.incidentQueue.Add(no26Incident, Find.TickManager.TicksGame + delayTicks, parms);
+                }
+
                 // --- 销毁香薰 ---
                 this.parent.Destroy();
 
                 // --- 发信 ---
-                string title = "迷雾中的回应";
-                string text = "香薰燃尽，一股能够安抚狂暴基因的宁静气息飘向了荒野深处。\n\n不久后，地图边缘出现了一个金色的身影——那是帝国丢失的实验体“0号”。\n\n她看起来疲惫不堪，长期忍受着基因改造带来的剧痛。但此刻，你的香薰让她第一次感受到了久违的安宁。\n\n她怯生生地向殖民地走来，不是作为兵器，而是作为一个寻求庇护的流浪者。\n\n(已获得：【0号原型体】 - 她信任你，并加入了殖民地)";
-
-                Find.LetterStack.ReceiveLetter(title, text, LetterDefOf.PositiveEvent, newPawn);
+                Find.LetterStack.ReceiveLetter("TITAN_Letter_SpawnPrototype_Title".Translate(), "TITAN_Letter_SpawnPrototype_Desc".Translate(), LetterDefOf.PositiveEvent, newPawn);
                 Find.CameraDriver.JumpToCurrentMapLoc(spawnLoc);
             }
             catch (Exception ex)

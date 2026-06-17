@@ -41,7 +41,7 @@ namespace ProjectTITAN
             {
                 Pawn p = mapPawns[i];
                 // 必须是目标种类，且活着，且属于玩家
-                if (p.kindDef.defName == Props.targetPawnKind && !p.Dead && p.Faction == Faction.OfPlayer)
+                if (p.kindDef?.defName == Props.targetPawnKind && !p.Dead && p.Faction == Faction.OfPlayer)
                 {
                     // 检查距离
                     if (p.Position.InHorDistOf(me.Position, Props.range))

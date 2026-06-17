@@ -52,17 +52,16 @@ namespace ProjectTITAN
                     fixedGender: Gender.Male
                 );
 
+                TitanPawnGuard.BeginAllowed();
                 Pawn newPawn = PawnGenerator.GeneratePawn(request);
+                TitanPawnGuard.EndAllowed();
                 newPawn.Name = new NameTriple("花火", "花火", "Spark");
 
                 GenSpawn.Spawn(newPawn, spawnLoc, map, WipeMode.Vanish);
                 this.parent.Destroy();
 
                 // 【修复】修正信件文案，符合鳞片设定
-                string title = "不灭的火种";
-                string text = "随着鳞片散发出特殊的费洛蒙信号，一只浑身散发着高热的变异爆炸鼠冲进了地图。\n\n它就是“花火”，0号原型体的挚友。它闻到了那熟悉的、只有它能识别的气味，义无反顾地追随而来。\n\n(已获得：花火 - 能够无限重生的爆炸专家)";
-
-                Find.LetterStack.ReceiveLetter(title, text, LetterDefOf.PositiveEvent, newPawn);
+                Find.LetterStack.ReceiveLetter("TITAN_Letter_SpawnSpark_Title".Translate(), "TITAN_Letter_SpawnSpark_Desc".Translate(), LetterDefOf.PositiveEvent, newPawn);
                 Find.CameraDriver.JumpToCurrentMapLoc(spawnLoc);
             }
             catch (Exception ex)

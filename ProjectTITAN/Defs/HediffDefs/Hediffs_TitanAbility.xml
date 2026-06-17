@@ -71,4 +71,45 @@
 		</stages>
 	</ThoughtDef>
 
+	<HediffDef>
+		<defName>TITAN_TitanReinforcementBuff</defName>
+		<label>泰坦庇护</label>
+		<description>泰坦神兽的力量暂时注入体内，生命与攻击大幅强化。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1.0, 0.85, 0.3)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>150000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDamageFactor>2.0</MeleeDamageFactor>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TITAN_RoyalMark</defName>
+		<label>王权印记</label>
+		<description>0号原型体以皇室血脉标记的臣属，全属性获得强化。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1.0, 0.84, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.15</MoveSpeed>
+					<MeleeDamageFactor>1.15</MeleeDamageFactor>
+					<IncomingDamageFactor>0.85</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
 </Defs>

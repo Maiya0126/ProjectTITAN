@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ==================== CREATURES ==================== -->
+  
+  <!-- Titans (PawnKindDef) -->
+  <TITAN_Warlord>戦蹟</TITAN_Warlord>
+  <TITAN_VoidWalker>虚空の歩行者</TITAN_VoidWalker>
+  <TITAN_Matriarch>生命の母</TITAN_Matriarch>
+  <TITAN_Spark>花火</TITAN_Spark>
+  <TITAN_Hunter>帝国ハンター</TITAN_Hunter>
+  <TITAN_ThrumboPrototype>0号プロトタイプ</TITAN_ThrumboPrototype>
+
+  <!-- Titans (ThingDef) -->
+  <TITAN_Warlord_label>戦蹟</TITAN_Warlord_label>
+  <TITAN_Warlord_desc>三体の伝説の獣の一つ。年齢：不明（古代）。特徴：- 不死 - オーラ：血の狂瀾</TITAN_Warlord_desc>
+  <TITAN_VoidWalker_label>虚空の歩行者</TITAN_VoidWalker_label>
+  <TITAN_VoidWalker_desc>三体の伝説の獣の一つ。年齢：不明（古代）。特徴：- 不死 - 極限の回避とシールド - オーラ：虚空の帷</TITAN_VoidWalker_desc>
+  <TITAN_Matriarch_label>生命の母</TITAN_Matriarch_label>
+  <TITAN_Matriarch_desc>三体の伝説の獣の一つ。年齢：不明（古代）。特徴：- 不死 - オーラ：生命の開花</TITAN_Matriarch_desc>
+  <TITAN_Spark_label>花火</TITAN_Spark_label>
+  <TITAN_Spark_desc>奇妙に変異したボムラット。0号プロトタイプの研究所での唯一の友達。特徴：[不死鳥プロトコル] 致命傷を受けても死なず、大爆発を引き起こし強制休眠リブートに入る。[絆] 0号プロトタイプの近くで戦闘強化を得る。</TITAN_Spark_desc>
+  <TITAN_Hunter_label>帝国ハンター</TITAN_Hunter_label>
+  <TITAN_Hunter_desc>「プロジェクトTITAN」の実験体を回収するため、帝国が育成した生物兵器。ワーグの遺伝子を改造して生み出され、痛覚と恐怖を除去、筋肉は常に狂戦状態に固定されている。唯一の指令：0号を狩れ。</TITAN_Hunter_desc>
+  <TITAN_ThrumboPrototype_label>0号プロトタイプ</TITAN_ThrumboPrototype_label>
+  <TITAN_ThrumboPrototype_desc>帝国の「プロジェクトTITAN」の最終成果。毛皮は淡い金色に輝き、王家の血統の証。強力な自己修復能力を持ち、真に殺すことはできない（昏倒のみ）。特徴：- 定期的に[黄金の鱗]を脱皮 - 成体時、野生のスラムボを誘引 - アクティブアビリティ：タイタン共鳴</TITAN_ThrumboPrototype_desc>
+
+  <!-- Tools -->
+  <shattering_horn>粉砕の角</shattering_horn>
+  <void_horn>虚空の角</void_horn>
+  <life_horn>生命の角</life_horn>
+
+  <!-- ==================== ITEMS ==================== -->
+
+  <TITAN_MutatedGland_label>変異腺</TITAN_MutatedGland_label>
+  <TITAN_MutatedGland_desc>ハンターから摘出された不安定な生体腺。通常の合成には無用だが、その生体エネルギーは闇市場で高値がつく。</TITAN_MutatedGland_desc>
+
+  <TITAN_Incense_label>遺伝香</TITAN_Incense_label>
+  <TITAN_Incense_desc>特殊な草花と化学物質の束。火を灯すと、人間には感知できないが特定の王者の獣だけが検出できるフェロモンを放つ。「プロジェクトTITAN」の起点。使い方：入植者を選択 → 香を右クリック → 「香を焚く」を選択。</TITAN_Incense_desc>
+
+  <TITAN_PrototypeScale_label>プロトタイプの脱皮鱗</TITAN_PrototypeScale_label>
+  <TITAN_PrototypeScale_desc>0号プロトタイプが脱皮した鱗。まだ淡い金色の特別なフェロモンを放っている。このフェロモンは通常の生物には作用しないが、永遠の伴侶を誘引するらしい。使い方：入植者を選択 → 鱗を右クリック → 「信号を起動」を選択。</TITAN_PrototypeScale_desc>
+
+  <TITAN_CrimsonKeratin_label>真紅のケラチン（データコア）</TITAN_CrimsonKeratin_label>
+  <TITAN_CrimsonKeratin_desc>戦蹟が去り際に残したケラチン。その分子配列には生物兵器の究極の秘密が刻まれている。研究卓で解析すると[破壊モジュール]の設計図を解除。</TITAN_CrimsonKeratin_desc>
+
+  <TITAN_VoidDust_label>虚空の塵（位相データ）</TITAN_VoidDust_label>
+  <TITAN_VoidDust_desc>虚空の歩行者が残した結晶状の粉末。位相シールドの周波数データを含む。研究卓で解析すると[要塞モジュール]の設計図を解除。</TITAN_VoidDust_desc>
+
+  <TITAN_LifeResin_label>生命の樹脂（生体サンプル）</TITAN_LifeResin_label>
+  <TITAN_LifeResin_desc>生命の母が残した活性樹脂。急速な細胞再生の秘密を含む。研究卓で解析すると[歩行モジュール]の設計図を解除。</TITAN_LifeResin_desc>
+
+  <TITAN_Tuber_label>タイタンイモ</TITAN_Tuber_label>
+  <TITAN_Tuber_desc>絶対に腐らない超配給食。</TITAN_Tuber_desc>
+
+  <TITAN_Tree_label>タイタンツリー</TITAN_Tree_label>
+  <TITAN_Tree_desc>タイタンの木。</TITAN_Tree_desc>
+
+  <!-- Implant Items -->
+  <TITAN_Implant_CrimsonHeart_label>真紅の変異薬</TITAN_Implant_CrimsonHeart_label>
+  <TITAN_Implant_CrimsonHeart_desc>戦蹟の遺伝子で作られた真紅の薬液。[使い方]：スラムボを選択 → 健康 → 手術 → 「真紅の変異薬を摂取」。効果：無痛、近接ダメージ大幅増。</TITAN_Implant_CrimsonHeart_desc>
+
+  <TITAN_Implant_VoidMembrane_label>虚空の変異薬</TITAN_Implant_VoidMembrane_label>
+  <TITAN_Implant_VoidMembrane_desc>虚空の歩行者の遺伝子で作られた紺碧の薬液。[使い方]：スラムボを選択 → 健康 → 手術 → 「虚空の変異薬を摂取」。効果：高装甲、高回避。</TITAN_Implant_VoidMembrane_desc>
+
+  <TITAN_Implant_VerdantSpine_label>翠緑の変異薬</TITAN_Implant_VerdantSpine_label>
+  <TITAN_Implant_VerdantSpine_desc>生命の母の遺伝子で作られた翠緑の薬液。[使い方]：スラムボを選択 → 健康 → 手術 → 「翠緑の変異薬を摂取」。効果：極めて高い搬送力、急速再生。</TITAN_Implant_VerdantSpine_desc>
+
+  <!-- ==================== RESEARCH ==================== -->
+
+  <ResearchProject_TITAN_GeneEngineering_label>タイタン遺伝子工学</ResearchProject_TITAN_GeneEngineering_label>
+  <ResearchProject_TITAN_GeneEngineering_desc>タイタン生物の基本構造を理解し、さらなる研究の基盤を築く。</ResearchProject_TITAN_GeneEngineering_desc>
+
+  <ResearchProject_TITAN_PlantTech_label>タイタン植物</ResearchProject_TITAN_PlantTech_label>
+  <ResearchProject_TITAN_PlantTech_desc>0号プロトタイプの毛皮に付着していた種子を研究し、タイタンツリーの栽培と超配給食タイタンイモの収穫技術を獲得する。</ResearchProject_TITAN_PlantTech_desc>
+
+  <ResearchProject_TITAN_Crimson_label>真紅の変異薬</ResearchProject_TITAN_Crimson_label>
+  <ResearchProject_TITAN_Crimson_desc>戦蹟の遺伝子データを解析し、筋肉と痛覚神経を大幅に強化する変異薬を開発する。</ResearchProject_TITAN_Crimson_desc>
+
+  <ResearchProject_TITAN_Void_label>虚空の変異薬</ResearchProject_TITAN_Void_label>
+  <ResearchProject_TITAN_Void_desc>虚空の歩行者の位相データを解析し、皮膚下に微小位相偏向場を生成する変異薬を開発する。</ResearchProject_TITAN_Void_desc>
+
+  <ResearchProject_TITAN_Verdant_label>翠緑の変異薬</ResearchProject_TITAN_Verdant_label>
+  <ResearchProject_TITAN_Verdant_desc>生命の母の生体データを解析し、代謝と再生能力を大幅に強化する変異薬を開発する。</ResearchProject_TITAN_Verdant_desc>
+
+  <!-- ==================== INCIDENTS ==================== -->
+
+  <Incident_Titan_Matriarch>タイタン伝説：生命の母</Incident_Titan_Matriarch>
+  <Incident_Titan_Warlord>タイタン伝説：戦蹟</Incident_Titan_Warlord>
+  <Incident_Titan_VoidWalker>タイタン伝説：虚空の歩行者</Incident_Titan_VoidWalker>
+  <Incident_TitanHunterAttack>帝国ハンター襲来</Incident_TitanHunterAttack>
+
+  <!-- ==================== HEDIFFS (Health Conditions) ==================== -->
+
+  <!-- Implants -->
+  <Hediff_TITAN_Implant_CrimsonHeart_label>真紅の心臓（変異）</Hediff_TITAN_Implant_CrimsonHeart_label>
+  <Hediff_TITAN_Implant_CrimsonHeart_desc>遺伝子変異による心機能増強。</Hediff_TITAN_Implant_CrimsonHeart_desc>
+
+  <Hediff_TITAN_Implant_VoidMembrane_label>虚空の膜（変異）</Hediff_TITAN_Implant_VoidMembrane_label>
+  <Hediff_TITAN_Implant_VoidMembrane_desc>遺伝子変異による皮膚下位相場。</Hediff_TITAN_Implant_VoidMembrane_desc>
+
+  <Hediff_TITAN_Implant_VerdantSpine_label>翠緑の棘（変異）</Hediff_TITAN_Implant_VerdantSpine_label>
+  <Hediff_TITAN_Implant_VerdantSpine_desc>遺伝子変異による脊髄神経増強。</Hediff_TITAN_Implant_VerdantSpine_desc>
+
+  <!-- Kings Blood -->
+  <Hediff_TITAN_KingsBloodline_label>王者の血統</Hediff_TITAN_KingsBloodline_label>
+  <Hediff_TITAN_KingsBloodline_desc>0号プロトタイプの完全覚醒状態。</Hediff_TITAN_KingsBloodline_desc>
+
+  <!-- Buffs -->
+  <Hediff_TITAN_Buff_KingsGrace_label>王者の祝福</Hediff_TITAN_Buff_KingsGrace_label>
+  <Hediff_TITAN_Buff_KingsGrace_desc>0号プロトタイプの覚醒オーラに鼓舞される。</Hediff_TITAN_Buff_KingsGrace_desc>
+
+  <!-- Bond -->
+  <Hediff_TITAN_Bond_Spark_label>花火の共鳴</Hediff_TITAN_Bond_Spark_label>
+  <Hediff_TITAN_Bond_Spark_desc>愛する友「花火」が近くにいるのを感じる。その温かい核心放射により荒ぶる遺伝子が鎮まる。</Hediff_TITAN_Bond_Spark_desc>
+
+  <Hediff_TITAN_Bond_Thrumbo_label>守護者の共鳴</Hediff_TITAN_Bond_Thrumbo_label>
+  <Hediff_TITAN_Bond_Thrumbo_desc>0号プロトタイプとの魂の絆。0号が近くにいる限り、花火は超自然的な反応速度と再生を得る。</Hediff_TITAN_Bond_Thrumbo_desc>
+
+  <!-- Auras -->
+  <Hediff_TITAN_Aura_Warlord_label>血の狂瀾</Hediff_TITAN_Aura_Warlord_label>
+  <Hediff_TITAN_Aura_Warlord_desc>戦蹟の狂戦オーラの影響下。</Hediff_TITAN_Aura_Warlord_desc>
+
+  <Hediff_TITAN_Aura_Warlord_Source_label>戦蹟オーラ</Hediff_TITAN_Aura_Warlord_Source_label>
+  <Hediff_TITAN_Aura_Warlord_Source_desc>狂戦のサイオニック波を放射中。</Hediff_TITAN_Aura_Warlord_Source_desc>
+
+  <Hediff_TITAN_Aura_VoidWalker_label>虚空の帷</Hediff_TITAN_Aura_VoidWalker_label>
+  <Hediff_TITAN_Aura_VoidWalker_desc>虚空の歩行者の位相シールドに守られている。</Hediff_TITAN_Aura_VoidWalker_desc>
+
+  <Hediff_TITAN_Aura_VoidWalker_Source_label>虚空の歩行者オーラ</Hediff_TITAN_Aura_VoidWalker_Source_label>
+  <Hediff_TITAN_Aura_VoidWalker_Source_desc>位相歪曲サイオニックエネルギーを放射中。</Hediff_TITAN_Aura_VoidWalker_Source_desc>
+
+  <Hediff_TITAN_Aura_Matriarch_label>生命の開花</Hediff_TITAN_Aura_Matriarch_label>
+  <Hediff_TITAN_Aura_Matriarch_desc>放射状の生命エネルギーに包まれている。</Hediff_TITAN_Aura_Matriarch_desc>
+
+  <Hediff_TITAN_Aura_Matriarch_Source_label>生命の母オーラ</Hediff_TITAN_Aura_Matriarch_Source_label>
+  <Hediff_TITAN_Aura_Matriarch_Source_desc>生命エネルギーを放射中。</Hediff_TITAN_Aura_Matriarch_Source_desc>
+
+  <!-- Special Conditions -->
+  <Hediff_TITAN_GeneticCollapse_label>遺伝子崩壊</Hediff_TITAN_GeneticCollapse_label>
+  <Hediff_TITAN_GeneticCollapse_desc>ゲノムが崩壊しつつある。</Hediff_TITAN_GeneticCollapse_desc>
+  <Hediff_TITAN_GeneticCollapse_stage1_label>初期段階</Hediff_TITAN_GeneticCollapse_stage1_label>
+  <Hediff_TITAN_GeneticCollapse_stage2_label>危険域</Hediff_TITAN_GeneticCollapse_stage2_label>
+
+  <Hediff_TITAN_VoidAnchor_label>位相の錨</Hediff_TITAN_VoidAnchor_label>
+
+  <Hediff_TITAN_WarlordSoothing_label>タイタン共鳴（鎮静）</Hediff_TITAN_WarlordSoothing_label>
+  <Hediff_TITAN_WarlordSoothing_desc>0号プロトタイプのサイオニクスがその怒りを鎮めようとしている。共鳴が3層に達すると攻撃を停止する。</Hediff_TITAN_WarlordSoothing_desc>
+  <Hediff_TITAN_WarlordSoothing_stage1_label>共鳴 I</Hediff_TITAN_WarlordSoothing_stage1_label>
+  <Hediff_TITAN_WarlordSoothing_stage2_label>共鳴 II</Hediff_TITAN_WarlordSoothing_stage2_label>
+  <Hediff_TITAN_WarlordSoothing_stage3_label>共鳴完了</Hediff_TITAN_WarlordSoothing_stage3_label>
+
+  <!-- Spark Reboot -->
+  <Hediff_TITAN_SparkReboot_label>不死鳥リブート</Hediff_TITAN_SparkReboot_label>
+  <Hediff_TITAN_SparkReboot_desc>不死鳥プロトコル起動。緊急再編成シーケンス開始。</Hediff_TITAN_SparkReboot_desc>
+
+  <!-- ==================== C# CODE MESSAGES ==================== -->
+
+  <Message_TITAN_CannotHandleGenes>{0}はタイタン遺伝子に耐えられず、薬液を吐き出した。</Message_TITAN_CannotHandleGenes>
+  <Message_TITAN_AlreadyHasAbility>{0}はすでにこの能力を所持している。</Message_TITAN_AlreadyHasAbility>
+  <Message_TITAN_GenomeSaturated>{0}のゲノムは飽和状態。融合を拒否された。</Message_TITAN_GenomeSaturated>
+  <Message_TITAN_FusionSuccess>{0}は{1}との融合に成功！</Message_TITAN_FusionSuccess>
+  <Message_TITAN_KingsAwakening>[王者の覚醒] 0号プロトタイプが完全に覚醒した！</Message_TITAN_KingsAwakening>
+
+  <!-- Ability Button -->
+  <Command_TitanResonance_label>タイタン共鳴</Command_TitanResonance_label>
+  <Command_TitanResonance_desc>0号プロトタイプの王者遺伝子で共鳴波を放つ。[クールダウン：1時間] - クエストの獣：特定の治療/鎮静を行い、報酬を得て去る。- 味方支援：感謝を伝え、帰路を導く。- 通常の味方：傷を治癒する。</Command_TitanResonance_desc>
+
+  <Message_TITAN_TargetTooFar>目標が遠すぎる！</Message_TITAN_TargetTooFar>
+  <Message_TITAN_MatriarchHealed>生命の母が完全回復！</Message_TITAN_MatriarchHealed>
+  <Message_TITAN_MatriarchHealing>治療中... 残り：{0}</Message_TITAN_MatriarchHealing>
+  <Message_TITAN_WarlordCalmed>戦蹟の怒りが鎮まった！</Message_TITAN_WarlordCalmed>
+  <Message_TITAN_WarlordSoothing>鎮静中...</Message_TITAN_WarlordSoothing>
+  <Message_TITAN_VoidWalkerThreat>付近に脅威あり、転移不可！</Message_TITAN_VoidWalkerThreat>
+  <Message_TITAN_VoidWalkerSafe>虚空の歩行者が安全を確認。虚空へ帰還する。</Message_TITAN_VoidWalkerSafe>
+  <Message_TITAN_Healed>{0}を治療した</Message_TITAN_Healed>
+  <Message_TITAN_SubjectRecruited>{0}が0号プロトタイプの共鳴を感じ取り、自ら入植に加わった！</Message_TITAN_SubjectRecruited>
+  <Message_TITAN_Leaving>{0}が去ろうとしている。</Message_TITAN_Leaving>
+
+  <!-- Spark Immortality -->
+  <Message_Spark_LethalStrikeDetected>花火の核心が致命傷を検出！緊急再編成プロトコルを起動。</Message_Spark_LethalStrikeDetected>
+  <Message_Spark_CoreDamaged>0号プロトタイプの核心が損傷、強制休眠！</Message_Spark_CoreDamaged>
+  <Message_Prototype_HibernationStarted>0号プロトタイプが致命的なダメージを受けた！自己保存プロトコル起動 — 強制休眠に入る...</Message_Prototype_HibernationStarted>
+  <Message_Warlord_LeftData>戦蹟はあなたを認め、データを残した。</Message_Warlord_LeftData>
+  <Message_Hunter_EntityCollapsed>{0}の実体が崩壊し、帰還した。</Message_Hunter_EntityCollapsed>
+
+  <!-- Thrumbo Magnet -->
+  <Message_ThrumboMagnet_Attracted>0号プロトタイプの幼体共鳴が遠くの群れを引き寄せた。</Message_ThrumboMagnet_Attracted>
+  <Message_ThrumboMagnet_AlphaAttracted>0号プロトタイプの血統共鳴がアルファスラムボを呼び覚ました — 入植地へ向かっている。</Message_ThrumboMagnet_AlphaAttracted>
+
+  <!-- Spawn Effects -->
+  <Message_SpawnSpark_AlreadyHas>信号無効：その生物のそばにはすでに仲間がいるようだ。</Message_SpawnSpark_AlreadyHas>
+  <Message_SpawnPrototype_AlreadyExists>信号干渉：0号プロトタイプを検出。唯一の生物兵器として、同時に共鳴できるのは一体のみ。</Message_SpawnPrototype_AlreadyExists>
+
+  <!-- Gene Fusion -->
+  <Message_GeneFusion>遺伝子融合</Message_GeneFusion>
+  <Message_KingsAwakeningMote>王者の覚醒！！！</Message_KingsAwakeningMote>
+  <Message_LifeDrain>生命吸収</Message_LifeDrain>
+
+  <!-- Letter -->
+  <Letter_TitanReinforcement>タイタン増援</Letter_TitanReinforcement>
+  <Letter_TitanReinforcement_Body>{0}が危機を感知し、救援に駆けつけた！</Letter_TitanReinforcement_Body>
+
+  <!-- Motes (short floating text) -->
+  <Mote_GeneFusion>遺伝子融合</Mote_GeneFusion>
+  <Mote_KingsAwakening>王者の覚醒！！！</Mote_KingsAwakening>
+  <Mote_LifeDrain>生命吸収</Mote_LifeDrain>
+
+  <!-- UI -->
+  <Cooldown>クールダウン（{0}時間）</Cooldown>
+  <ReturnToVoid>虚空へ帰還</ReturnToVoid>
+
+  <!-- Letters -->
+  <Letter_SparkSpawn_Title>不滅の花火</Letter_SparkSpawn_Title>
+  <Letter_SparkSpawn_Body>鱗が特別なフェロモン信号を放つと、激しい熱を纏った変異ボムラットがマップへ降り立った。「花火」—0号プロトタイプの最も親しい友だ。自分にだけわかる匂いを嗅ぎつけ、ためらうことなく駆けつけた。（獲得：花火 — 不滅の爆発専門家）</Letter_SparkSpawn_Body>
+
+  <Letter_PrototypeSpawn_Title>霧からの応答</Letter_PrototypeSpawn_Title>
+  <Letter_PrototypeSpawn_Body>香が燃え尽き、狂暴な遺伝子を鎮める静かな香りが荒野へ漂う。やがて、マップの端に金色の影が現れた — 帝国が失った実験体「0号」。彼女は疲れ果て、遺伝子改変による絶え間ない痛みに耐えている。だが、あなたの香が長い時の中で初めての安らぎを与えた。彼女は入植地へと慎重に近づく — 武器としてではなく、庇護を求める放浪者として。（獲得：[0号プロトタイプ] — 彼女はあなたを信じ、入植に加わる）</Letter_PrototypeSpawn_Body>
+
+  <!-- Research Tab -->
+  <ResearchTab_ProjectTITAN>プロジェクトT.I.T.A.N.</ResearchTab_ProjectTITAN>
+
+  <!-- Codex UI -->
+  <TITAN_Codex_Title>プロジェクトT.I.T.A.N.・実験アーカイブ</TITAN_Codex_Title>
+  <TITAN_Codex_Undiscovered>データ未解読</TITAN_Codex_Undiscovered>
+  <TITAN_Codex_EventHint>微弱な共鳴を検知…初回接触イベントを待機中。</TITAN_Codex_EventHint>
+  <TITAN_Codex_DataUndecrypted>データ未解読</TITAN_Codex_DataUndecrypted>
+  <TITAN_Codex_Status_Alive>状態：生存</TITAN_Codex_Status_Alive>
+  <TITAN_Codex_Status_Deceased>状態：死亡</TITAN_Codex_Status_Deceased>
+  <TITAN_Codex_Status_Classified>状態：機密指定</TITAN_Codex_Status_Classified>
+
+  <!-- Codex Entry Labels & Descriptions -->
+  <TITAN_Codex_No0_label>0号プロトタイプ</TITAN_Codex_No0_label>
+  <TITAN_Codex_No0_desc>0号はプロジェクトTITANの始まりであり、終わりでもある。唯一「オフセットモジュール」を持たない実験体であり、その遺伝子アーキテクチャはオリジナル設計の完全な体現。後の全ての派生体は0号のテンプレートからの修正オフセットに過ぎない。\n\n帝国の異星生物学研究部門は当初、量産可能な生物兵器の創造を構想していた。0号の成功は技術の実現可能性を証明したが、その後のあらゆる「改良」の試みは失敗に終わった — 1号は0号の安定性アンカーを解体し、9号は0号の金色の毛皮の神経絶縁タンパク質を除去し、19号は0号の終了信号をバイパスし、37号は0号のアーキテクチャに未検証のモジュールを積層した。失敗記録の全てが同じ物語を語っていた — 0号は分解・再組み立てできる道具箱ではなく、有機的な全体である。\n\n0号は実験室で穏やかで知的な性質を示した。餌を与えに来る研究員の顔を全員覚え、落ち込んでいるように見える人には優しく触れた。ある研究員は0号に「より良くなりたいと思わせるオーラ」があると言った — もちろん、このような観察は厳格な科学報告書には記録されなかったが、真実だった。\n\n0号の唯一の「友達」は花火だった — 奇妙に変異したボムラット。花火は番号付き実験体ではなく、0号が実験室で自発的に「養子」にした存在。誰も彼らを一緒にするよう手配せず、高レベル遺伝子改変スラムボと変異ネズミがなぜ離れられないのか説明できなかった。しかし0号は花火の毛並みを手入れし、花火は0号のそばに丸まって静かに眠った。これがプロジェクトTITANにおいて実験プロトコルによって定義されなかった唯一の関係だった。\n\n実験室爆発の夜、0号は混乱の中で消息を絶った。花火は0号の匂いを追って散り散りになった。その後の物語は、ある入植地の一筋の香から始まる…\n\n特徴：定期的に黄金の鱗を脱皮 | 成体時、野生スラムボを誘引（20%確率） | アクティブアビリティ：タイタン共鳴 | 不死（昏倒のみ） | 王者の血統覚醒</TITAN_Codex_No0_desc>
+
+  <TITAN_Codex_Spark_label>花火</TITAN_Codex_Spark_label>
+  <TITAN_Codex_Spark_desc>花火はプロジェクトTITANの公式な番号付き実験体ではない。元はただの一般実験動物 — 毒性試験用のありふれたボムラットだった。だが、0号の隔離室にあまりにも長く、あまりにも近く居すぎた。\n\n花火の変異がどのように発生したか、誰も決定的に説明できない。最も有力な説明は、0号の覚醒時に放たれたサイオニックパルスが偶然花火の遺伝子発現を書き換えたというもの — この種の「放射覚醒」は理論上モデル化されていたが、実証観察されたことはなかった。結果として花火は信じがたい能力を得た：不死。致命傷を受けると化学燃料腺が制御された爆発を引き起こし、近距離の脅威を全て破壊、その後花火は約6時間の休眠に入り、その間に細胞が極速度で再編成される。目覚めた時、花火は完全に元通りのボムラットだ。\n\n花火の0号への執着は生物学的説明を超えている。防火壁、電気フェンス、密閉鋼鉄ドアが立ち塞がろうと、花火は0号へ辿り着くために一切の障害を顧みない。研究者は0号の脱皮鱗に特別なフェロモンを発見 — 花火の嗅覚系だけが検出できる周波数。0号はこの信号を能動的に放っているようだ、まるで花火のために灯した灯台のように。\n\n実験室爆発後、花火は脱出が確認された最初の個体だった — その脱出方法は単純だった：自爆して瓦礫を爆破、6時間休眠、また自爆、出口を見つけるまで。花火は廃墟で4回自爆し、ようやく脱出した。その時の焼け跡は今も完全には消えていない。\n\n花火が今どこにいるか、誰も知らない。だが0号がまだ生きていれば、花火は必ず見つける。必要なのは鱗一つの信号だけ。\n\n特徴：[不死鳥プロトコル] 致命傷時に大爆発を引き起こし強制休眠リブート | 0号プロトタイプとの魂の絆 | 化学燃料を産出\n\n[勧誘方法] 0号プロトタイプの脱皮鱗を入手し、信号を起動。花火が追跡してくる。</TITAN_Codex_Spark_desc>
+
+  <TITAN_Codex_No7_label>7号 — 腐蝕</TITAN_Codex_No7_label>
+  <TITAN_Codex_No7_desc>7号は「漸進単一モジュールオフセット」プロトコル下の第二バッチの産物。そのオフセット方向は軍事要件から来た — 帝国は環境毒素を無視できる生物兵器を熱帯の毒霧惑星に配備したかった。研究者は0号の標準代謝経路をサンショウウオの毒素中和タンパク質に基づく代替経路で置き換えた。この経路により7号は環境毒素を直接代謝エネルギーに変換できるが、消化系は極めて攻撃的となり — 体液、唾液、さらには角の表面までが致命的な混合毒素で覆われている。\n\n7号は覚醒を完了し生存した最初の毒系実験体だった。精神状態は安定していた — 相対的に言えば。0号の穏やかな性質とは異なり、7号は顕著な縄張り意識と攻撃性を示し、感覚範囲に入るあらゆる生物に低い唸りで警告した。研究者はこれを「防衛的攻撃性」と分類し、毒素代謝経路の神経系への副作用と見なした — 7号の体内を循環する毒素が常に「生理レベルの警戒」状態を維持させていた。\n\n注目すべきは、7号の0号に対する態度が全く異なったこと。0号が隣接観察エリアに連れて来られるたび、7号は静かになり、普段張り詰めた筋肉が徐々に緩んだ。研究者はこれを0号の「安定化錨効果」の可能性と推測した — 0号の遺伝子アーキテクチャには変異体を鎮めるバイパス信号が含まれているかもしれず、7号はこの信号に特に敏感だった。\n\n実験室爆発の夜、7号は脱出が確認された3番目の個体だった。砕けた隔離室から強化ガラスの壁3枚を素通りして突き抜けた — 毒素がガラスのケイ素-酸素結合を腐食していた。最後に捉えられた映像では、7号が森の奥深くへ消えていくところで、足跡に沿って植生が枯れ黒変していた。\n\n特徴：全ての毒を完全に無効化 | 角と体液は致命的な混合毒素 | 0号の近くで徐々に警戒を解く\n\n[勧誘方法] 人狩りとしてマップに現れる。重傷を負うか0号プロトタイプの近くにいると鎮静化する。</TITAN_Codex_No7_desc>
+
+  <TITAN_Codex_No13_label>13号 — 深淵</TITAN_Codex_No13_label>
+  <TITAN_Codex_No13_desc>13号はプロジェクトTITAN全体で最も危険な派生体 — これは評価ではなく、事実だ。\n\nそのオフセットモジュールは37号の惨事から唯一生き残ったデータ遺産。37号の「戦闘本能強化」モジュールはスタック崩壊で粉々になったが、研究者は残存する遺伝子断片からコア強化配列を抽出し、37号の実験チームがしなかったことを行った — この一つのモジュールだけをインストールし、0号の終了信号保護プロトコルを厳格に遵守した。\n\n結果は興奮すると同時に恐怖的だった。13号の攻撃性は全ての期待を超えた — 角は鋸歯状の貫通構造に変異し、尾は斧のような骨刃を進化させ、攻撃速度は0号の2.4倍。免疫系も戦闘のために極限まで強化され — 既知の病原体はほぼ12時間以上体内で生存できない。その代償として13号の装甲は0号を遥かに下回った — 体は全資源を攻撃に傾け、スラムボの体の中に純粋な殺戮エンジンを組み込んだかのようだった。\n\nしかし研究者を最も不安にさせたのは13号の「眼差し」だった。他の実験体の行動は遺伝子改変の副作用で説明できた — 7号の警戒、50号の無関心、26号の愛着 — しかし13号は違った。攻撃しながら相手の弱点を観察し、地形を利用し、偽退却から奇襲を仕掛けた。これは本能ではない。戦術だ。\n\n研究責任者は13号のファイルに個人的な注記を書いた：「我々が創ったのが獣なのか戦士なのか確信がない。後者なら、13号が我々も『敵』と判断する日に何が起こるか知りたくない。」\n\n実験室爆発の夜、13号の監視映像は全ての閲覧者の背筋を凍らせた — 爆発の23分前、13号は何ヶ月も維持していた往復運動を止め、観察窓の方を向き、静かに立ち上がった。まるで何かを待っていたかのように。\n\n特徴：全実験体中最高の近接ダメージ | 鋸歯状貫通角 + 斧状骨刃尾 | 免疫系極限強化 | 装甲は極めて薄い | 0号の近くで戦術本能が防御へ転換\n\n[勧誘方法] 13号は0号の位置へ直接歩いてくる。敵意はなく、明確な目的地がある。自動的に味方陣営に加わる。</TITAN_Codex_No13_desc>
+
+  <TITAN_Codex_No26_label>26号 — 親衛</TITAN_Codex_No26_label>
+  <TITAN_Codex_No26_desc>26号の誕生は非軍事プロジェクトから生まれた — 帝国の研究者の中のメンタルヘルスカウンセラーが、0号との長期接触が研究員の情緒状態を著しく改善するという報告書を提出し、0号が何らかの「心理的鎮静メカニズム」を持つかもしれないと仮定した。上層部は鼻で笑ったが、資源要求は承認した — 関心からではなく、「情緒的に安定した研究員の方が効率的だから」。\n\n26号のオフセット方向は0号の遺伝子プールで最も地味な配列 — 社会行動と親子愛着に関わるセグメント。研究者はこれは些細な改変と見なしたが、結果として26号はプロジェクトTITAN全体で最も予想外の産物となった。\n\n発育過程で成長が止まり、成体でも大型犬サイズにしかならなかった — これは社会行動遺伝子と0号の成長調節配列の予期せぬ相互作用で、成長ホルモンが早期に抑制されたため。戦闘力はハスキー程度、装甲は事実上なく、角は小さな突起に過ぎない。軍事評価では26号は「戦場価値なし」と分類された。\n\nしかし26号には他の実験体が持たない能力があった — 接触する全ての生き物をリラックスさせる。人間だけでなく — 7号でさえ26号の近くでは警戒姿勢を止め、13号でさえ26号を攻撃しなかった。汚物率はゼロ — 体は汚れが付着するのを自然に拒絶し、まるで大地でさえ汚すに忍びないかのよう。野生度指数もゼロ — どんな生き物にも攻撃を仕掛けず、殴られても反撃しない。\n\nそして研究者は26号の0号への態度に気づいた。7号の「0号の近くで緩む」でも、42号の「0号への敬意」でもない。26号の0号への感情は純粋で、留保なき愛着 — 0号の後ろをどこまでもついて行き、0号に押し付けるように眠り、0号が視界から消えると不安げに鳴いた。\n\n特徴：大型犬サイズ | 汚物ゼロ | 野生度ゼロ | 絶対反撃しない | 0号への純粋な献身 | 全ての生物をリラックスさせる\n\n[勧誘方法] 26号は最初の接触イベントで0号の匂いを追って現れる。自動的に味方に加わる。</TITAN_Codex_No26_desc>
+
+  <TITAN_Codex_No42_label>42号 — 極光</TITAN_Codex_No42_label>
+  <TITAN_Codex_No42_desc>42号のオフセット方向は帝国のもう一つの戦略的要求 — 凍結惑星での先遣偵察。0号は卓越した適応力を持っていたが、耐寒限界は約-65℃で、深凍惑星での長期行動は不可能だった。研究者は0号の毛皮遺伝子から基礎断熱配列を抽出し、極地微生物の不凍タンパク質エンコーディングを重ね合わせた。\n\n効果は期待を遥かに超えた。42号の毛皮は多層システムに再構成された — 外層は密な防風防水シェル、内層はナノスケールのエアロゲル断熱層、その間は極地不凍タンパク質で満たされている。-150℃でも安らかに眠れ、0号でさえ及ばない耐寒限界。さらに驚くべきは、暗闇で毛皮が淡いオーロラ光を放つこと — 研究者は当初これを遺伝子の副産物と思っていたが、42号の能動的行動だと発見した。発光の周波数と色を制御でき、何らかの未知の形の通信に使っているようだ。\n\n42号は実験体の中で最も「静謐」な存在 — 無言という意味ではなく、深く、ほとんど哲学的な静けさを持つ。研究者を攻撃することもなく、機嫌を取ろうともしない。ただそこに立ち、見つめ、聴いていた — 実験室の評価基準を遥かに超える何かを理解しようとしているかのように。ある研究者は42号の近くにいると無意識に宇宙の境界と時間の本質について思いを馳せ、そのような思考に恐怖を感じてすぐに立ち去ったと言った。\n\n注目すべきは、42号が唯一樹木を食べることを拒否する実験体だということ。0号は時折樹皮を齧る — スラムボの自然な本能。しかし42号は全ての木を慎重に迂回し、誤って幹に触れると鼻先でそっと触れ、謝るかのようだった。研究者はこの行動を説明できない — 極地適応モジュールに関連する指示は含まれていなかった。\n\n特徴：氷点下150℃で活動可能 | オーロラ発光 | 樹木を一切食べない | 0号の共鳴で「星の導き」効果\n\n[勧誘方法] 42号は0号の位置に近づいて現れる。遺伝子ドリフトに苦しむ — タイタン共鳴で治療可能（1回ごとに重症度35%減少）。</TITAN_Codex_No42_desc>
+
+  <TITAN_Codex_No45_label>45号 — 熔爐</TITAN_Codex_No45_label>
+  <TITAN_Codex_No45_desc>45号のオフセット方向は予期せぬ発見から生まれた — 0号の日常のサーマルイメージングスキャンで、0号の体温が睡眠中に一時的に平常値の3倍に急上昇し、約45秒間続いてから低下することが観察された。これは0号の自己修復メカニズムの一部と確認された — 局所的な高温が細胞分裂とタンパク質折りたたみを加速する。しかし、この熱代謝を持続的に維持できれば、修復期間に限定されないのでは？\n\n45号の研究チームは0号の熱パルス配列から調節遺伝子を抽出し、パルスではなく持続発現するマスタープロモーターに連結した。結果は生きた熱エンジン — 45号の核心温度は約230℃で安定し、表面温度すら80℃に達する。毛皮にはアスベスト様の鉱化繊維が含まれ、ほぼ不燃。角は高温下で淡い暗赤色に輝き、赤熱した鉄串のようだ。\n\nしかし最も予想外の副産物は化学燃料だった。45号の高温代謝は摂取した有機物を不完全分解し、乳腺から液状炭化水素を排出 — これが化学燃料生産の源。3日間に約18単位は同種の実験体の倍であり、燃料産出と同時に戦闘能力も考慮すれば、「費用対効果」は軍事承認を得た。\n\n19号の教訓は厳格に遵守された — 45号の再生系は0号の完全な終了信号を保持し、さらに「過熱遮断器」メカニズムを組み込んだ：体温が安全閾値を超えると代謝は自動的に冷却モードにダウンシフトする。この設計は成功した — 45号が19号のような再生暴走を経験することは遂になかった。\n\n45号の性格は驚くほど穏やか — 研究者は「炉辺の性格」と呼んだ。攻撃的でも気難しくもなく、ただ穏やかで温暖な存在だった。\n\n特徴：核心温度230℃ | ほぼ不燃 | 3日毎に化学燃料18個産出 | 周囲の味方の傷治癒を加速\n\n[勧誘方法] 45号は炎の中から歩いて現れる。自動的に味方に加わる。</TITAN_Codex_No45_desc>
+
+  <TITAN_Codex_No50_label>50号 — 荒魂</TITAN_Codex_No50_label>
+  <TITAN_Codex_No50_desc>50号のオフセット方向は一見単純な軍事要件 — 兵站の自給自足。帝国の生物兵器は戦場で補給なしに長期間単独行動する必要があり、0号の摂取量（通常のスラムボの1.75倍）は資源不足地域では明らかな不利だった。研究者は0号の代謝調節配列をラクダ式スロットリングモードに置き換え、空腹率を0.25に抑制 — 0号の3分の1以下。\n\nこの改変は生理学的には成功したが、研究者が予期しなかった行動上の副作用を生んだ。50号の「頑固さ」は強い野生度のためではない — むしろ逆だ。ただひたすらに強情なのだ。通常のスラムボは馴致失敗時に10%の確率で反撃するが、50号はこれを17%に引き上げた — 怒りからではなく、自分がしていることを止めるのを拒否するからだ。放牧中は呼んでも来ないし、歩いている時は止まらないし、休んでいる時は起こせない。あなたと戦っているのではない — あなたのことなど気にしていないだけ。\n\nこの頑固さは生存への態度にも及んだ。研究者はかつて極限飢餓実験を行った — 30日間連続で50号に餌を与えなかった。同じ条件下の0号は8日目には衰弱し始めたが、50号は30日目でも体重の7%しか減少しておらず、全ての生理指標は正常。研究者がついに餌を与えると、50号は自分のペースでゆっくり歩み寄り、急がずに几口かじり、そして場所を見つけて眠りを続けた — 過去30日間もいつもの午後だったかのように。\n\n特徴：空腹率わずか0.25 | 30日間無食でも体重7%減のみ | 馴致時の反撃率17% | 0号の近くで自分のペースでついてくる\n\n[勧誘方法] 50号はゆっくりと入植地に歩いてくる。あらゆる騒ぎを無視し、0号のそばに直行して横たわる。</TITAN_Codex_No50_desc>
+
+  <TITAN_Codex_No64_label>64号 — 鉄壁</TITAN_Codex_No64_label>
+  <TITAN_Codex_No64_desc>64号のオフセット方向は「0号をより殺しにくくする」という問いに対するもう一つの答えだった。19号は再生強化を選んだ — 0号の終了信号を侵害して失敗した。64号のチームは根本的に異なる経路を選んだ：早く治すのではなく — 傷を受けなければいい。\n\n0号の骨とケラチン鉱化遺伝子から硬化配列を抽出し、発現量を4倍に増加。結果、64号の骨格全系と表面被覆が急激な鉱化再構成を受けた — 角は巨大な骨穹となり、皮下骨板は0号の3.2倍の密度に達し、鋭器防衛は驚異の0.95（鋼鉄板に匹敵）。頭蓋骨前端に半球状の骨穹まで形成 — 研究者は当初腫瘍と思ったが、後に鈍的衝撃を頭蓋全体に分散する完璧な吸収構造だと発見した。\n\n代償は明らかだった。64号は存命実験体の中で最も遅い — 移動速度4.6、人間よりわずかに速い程度。また唯一0号のベースラインを下回る健康係数を持つ実験体（0号の6.0に対し） — 超鉱化骨格が体重配分を占有しすぎ、臓器冗長性を削るしかなかった。だが64号はほぼ冗長性を必要としなかった — 怪我が必要な度合いに達することがほぼないからだ。痛覚閾値は0.87に調整 — 致命的に近いダメージを受けてようやく痛みで機能不全に陥る。傷つくことのほぼできない獣にとって、これは大した欠点ではない。\n\n特徴：鋭器防衛0.95（鋼鉄板級） | 痛覚閾値0.87 | 移動速度4.6 | 頭部骨穹で衝撃分散 | 13号と表裏一体\n\n[勧誘方法] 64号は海賊に追われている！攻撃は雨のように弾かれる。海賊撤退後、安全を確認して味方に加わる。</TITAN_Codex_No64_desc>
+
+  <TITAN_Codex_No88_label>88号 — 繁花</TITAN_Codex_No88_label>
+  <TITAN_Codex_No88_desc>88号のオフセット方向はプロジェクトTITANで最も議論を呼んだ — スラムボの代謝系に植物遺伝子を導入する。提案者は承認会議で対峙された：「獣を作っているのか、木を作っているのか？」彼の答え：「入植地を養える獣を作っている。」\n\n88号の改変は0号の毛皮で発見された共生微生物の遺伝子群に基づく — 0号が定期的に脱皮する黄金の鱗には特殊な微小生態系があり、これらの微生物は0号と相利共生関係を形成していた。88号のチームはこの概念を極限に推し進めた：毛皮上で微生物を培養するのではなく、遺伝子編集された共生菌株を88号の皮下組織に直接埋め込んだ。\n\nこれらの菌は88号の循環系に接続し、血液から基礎栄養素を取り込みながら、合成産物 — 薬草の活性化合物 — をリンパ系を通じて88号の体表に届ける。約4日ごとに、88号の特定の腺からハーブ薬4単位が分泌 — 研究者は冗談交じりに88号を「歩く薬園」と呼んだ。88号自身も恩恵を受けた：共生菌が免疫強化を提供し、13号の極限レベルには及ばないが、88号が病気の蔓延するジャングル環境で健康を維持するには十分だった。\n\n代償は88号が植物の致死弱点を得たこと — 炎への恐怖。0号の可燃性は正常に近いが、88号は1.2に達する — 通常の生物より燃えやすい。共生菌の菌糸ネットワークは高温下で急速に死滅しながら燃焼促進性の揮発性物質を放出し、88号の上で炎がますます激しく燃え広がる。これはチームが実験初期から発見していた問題だったが、共生菌を除去すれば88号の生産能力も同時に失われるため、この弱点を保持することを選んだ。\n\n特徴：4日毎にハーブ薬4個産出 | 可燃性1.2 — 炎が致命的な弱点 | 0号の近くでより活発に | 26号で愛嬌が増す\n\n[勧誘方法] 88号は火傷を負いながら入植地へ逃げ込んでくる。水場を求めている — 炎に怯えている。回復後に味方に加わる。</TITAN_Codex_No88_desc>
+
+  <!-- Deceased -->
+  <TITAN_Codex_No1_label>1号（死亡）</TITAN_Codex_No1_label>
+  <TITAN_Codex_No1_desc>0号の成功は研究部全体を危険な熱狂に陥れた。帝国の指導部はついに希望を見た — 安定した再現可能な遺伝子改変スラムボの生体。だが0号は特殊すぎ、遺伝子モジュールの積層が多すぎ、どのモジュールがどのモジュールと決定的な役割を果たしているか特定できなかった。そこで「分解・再構築」計画が始動した。\n\n1号は最初の「簡略設計図」。研究者は0号の遺伝子アーキテクチャから核心骨格と見なしたもの以外を全て剥ぎ取り、全ての「余剰」モジュールを除去した。1号は培養液で72時間目まで完璧に発育した — その細胞分裂曲線は0号より滑らかですらあり、「干渉項」の負担がなかった。\n\n4日目の夜明け、1号の細胞は制御不能に分化し始めた。癌ではなく、研究者の根本的誤りの暴露 — 「余剰」とラベルされた遺伝子断片は実際には0号の遺伝子アーキテクチャの安定性アンカーだった。0号に積層された全モジュールは互いに結合し互いに拘束し、自己安定系の精密な均衡を共に形成していた。1号はこの均衡の決定的な支点を取り除いていた。\n\n異種の遺伝子がそれぞれ1号の中で「覚醒」し、独立して別々の器官系を構築しようとした。6時間で、不完全な蹄・爪・鱗が同時に生長し、骨は三方向に折れては再編成された。最後は混濁した組織液の水たまりに溶解した。\n\n研究責任者は報告書の末尾に記した：「0号は分解・再組み立てできる道具箱ではなく、有機的な全体である。0号の遺伝子アーキテクチャのいかなる簡略化もカスケード効果を再評価しなければならない。」以後、「漸進単一モジュールオフセット」が「分解・再構築」に代わる新研究方針となった。</TITAN_Codex_No1_desc>
+  <TITAN_Codex_No9_label>9号（死亡）</TITAN_Codex_No9_label>
+  <TITAN_Codex_No9_desc>0号の長期観察に基づき、研究者は奇妙な現象に気づいた — 覚醒後、0号は期待を超える神経活動を示したが、その皮質信号パターンは既知のいかなる生物とも一致しなかった。研究チームはこの異常を「サイオニック閾値」と分類した：発育過程で0号は何らかの全脳シナプス再配線を完了し、繭から出る蝶に似ていた。\n\n9号は非プロトタイプ個体でこの再配線を再現する最初の試み。研究者は発育段階が0号に最も近い胚を選択 — 遺伝子スキャンはほぼ同一で、唯一の違いは金色の毛皮関連発現遺伝子の除去。理論上、9号は0号の覚醒経路を完璧に再現するはずだった。\n\n再配線は87%で停止した。\n\n監視記録は、再配線が中断された瞬間、9号が目を開けたことを示していた。瞳孔は急速に拡張し収縮し、口から低いリズミカルな振動が発せられた — 音響分析はこれがスラムボの悲鳴周波数だと確認したが、かつて聞かれたことのない歪曲バリエーション。脳波は意識が一時的に「点灯」したことを示した — 自分がどこにいるか知り、自分が何か知り、何が間違ったか知った — そして永遠に暗転した。\n\n事後分析によれば、0号の再配線が成功したのは、金色の毛皮遺伝子 — 9号から除去されたあの「余剰」 — が実際には特殊な神経絶縁タンパク質をエンコードしていたからだった。この絶縁層がなければ、9号のサイオニック信号は再配線過程で壊滅的な短絡を起こした。\n\n9号の体はさらに11日間生きた。臓器機能は完全に正常。だがその目から二度と信号は来なかった。診断は「不可逆性脳死」だったが、密かにはこれはむしろ一種の「自発的シャットダウン」に見えると認める者もいた — 最後の瞬間に何かがこの実験室の本性を見抜き、戻らないことを選んだかのように。</TITAN_Codex_No9_desc>
+  <TITAN_Codex_No19_label>19号（安楽死）</TITAN_Codex_No19_label>
+  <TITAN_Codex_No19_desc>0号の最大の軍事価値はそのほぼ不死の自己修復能力にあった。帝国は他の実験体でこの能力を複製し、さらに増強することを急いだ — 自己治癒する兵器は良い兵器だが、瞬時に自己治癒する兵器こそ完璧な兵器。\n\n研究チームは0号の修復メカニズムからコア配列を抽出し、サンショウウオの再生遺伝子から適応した強化モジュールを重ねた。理論上、19号は0号より速くより完全に修復するはず。遺伝子アーキテクチャ審査は通過 — 全モジュールに前例検証があり、1号のような分解リスクはなかった。\n\n19号は「サイオニック閾値」を超え覚醒を完了した最初の派生実験体。初期結果は驚異的 — 定期サンプリングの皮膚傷が4分で完全治癒し傷跡なし。0号の同等の傷は22分かかった。データは興奮を呼んだ。\n\nしかし再生メカニズムは「過剰解釈」を生んだ。0号の自己修復系には精密な「終了信号」がある — 組織が原状に回復すると修復過程は自動停止する。19号の強化モジュールはこの終了信号をバイパスした。体は「完璧でない」組織を全て修復が必要な損傷として扱い始めた — 古い傷跡は溶解され再成長し、新組織は「成熟度不足」と判断されて再溶解 — 無限の再構築サイクル。\n\n23日目までに再生ホットスポットは体表面の40%に拡大。組織は目に見えて腫れ、溶解し、再び腫れた。骨は反復再モデリングで変形し脆くなった。しかし19号は全過程を通じて意識があった — 自身の中で何が起きているか感知し、その目には純粋な理解と沈黙の耐忍が宿っていた。\n\n安楽死の決定は24日目に下された。執行時、19号は抵抗せず、むしろ自ら注射器の方へ頭を向けた。\n\n以後、0号遺伝子アーキテクチャの「終了信号」は絶対不可侵の原則となった。</TITAN_Codex_No19_desc>
+  <TITAN_Codex_No37_label>37号（死亡）</TITAN_Codex_No37_label>
+  <TITAN_Codex_No37_desc>37号はプロジェクトTITANが最も焦燥した時期に生まれた。帝国の忍耐は尽きていた — 0号という完璧な試料を持ちながら、実用可能な派生体を一つも量産できていない。0号のテンプレートからの逸脱は全て失敗に終わった。指導部は最後通牒を突きつけた：3ヶ月以内に配備可能な変種体を生み出せ、さもなくばプロジェクト全体を再編する。\n\n研究チームは前例のない圧力に晒された。1号の教訓はまだ濃く残っていた — 分解・再構築は確実な死。漸進単一モジュールオフセットは遅すぎる、3ヶ月では到底足りない。最終的に誰かが妥協案を提案した：0号を分解もせず、段階的オフセットもせず、同時に複数の検証済みモジュールを0号の完全なアーキテクチャに積層する。\n\n37号は3つのモジュールが同時積層された：毒素中和、極限気候適応、そして未だ生体で検証されていない「戦闘本能強化」。最初の2つは単体試験で完璧に機能し、3番目はペトリ皿での検証のみを通過。3つの相互作用効果は評価されたことがなかった — 時間がなかった。\n\n37号は正常に発育した — 正常すぎた。スキャンでは遺伝子鎖が教科書通りに安定、3モジュールが調和して共存し拒絶反応なし。研究者は安堵し、実戦配備計画の起草を始めた。\n\n301日目、前触れなく、37号の第7染色体短腕領域4で断裂が発生。遺伝子鎖は目に見えない手で引き裂かれたジッパーのように断裂点から両端へ向かってカスケードした。3モジュールの遺伝子断片が混入し、0号のテンプレートゲノムと壊滅的な無秩序再結合を起こした。\n\n最初の断裂から37号の全遺伝情報が無秩序な塩基断片となるまで — 全過程はわずか47秒だった。\n\n37号の遺骸は生前の姿と全く同じだった — 艶やかな毛皮、美しい体格、ただ安らかに眠っているかのよう。しかし皮膚の下では最早細胞という細胞が存在しなかった。</TITAN_Codex_No37_desc>
+
+  <!-- Classified -->
+  <TITAN_Codex_No3_label>3号</TITAN_Codex_No3_label>
+  <TITAN_Codex_No3_desc>データ未解読</TITAN_Codex_No3_desc>
+  <TITAN_Codex_No11_label>11号</TITAN_Codex_No11_label>
+  <TITAN_Codex_No11_desc>データ未解読</TITAN_Codex_No11_desc>
+  <TITAN_Codex_No15_label>15号</TITAN_Codex_No15_label>
+  <TITAN_Codex_No15_desc>データ未解読</TITAN_Codex_No15_desc>
+  <TITAN_Codex_No33_label>33号</TITAN_Codex_No33_label>
+  <TITAN_Codex_No33_desc>データ未解読</TITAN_Codex_No33_desc>
+  <TITAN_Codex_No55_label>55号</TITAN_Codex_No55_label>
+  <TITAN_Codex_No55_desc>データ未解読</TITAN_Codex_No55_desc>
+  <TITAN_Codex_No77_label>77号</TITAN_Codex_No77_label>
+  <TITAN_Codex_No77_desc>データ未解読</TITAN_Codex_No77_desc>
+  <TITAN_Codex_No99_label>99号</TITAN_Codex_No99_label>
+  <TITAN_Codex_No99_desc>データ未解読</TITAN_Codex_No99_desc>
+
+  <!-- Arrival event letters -->
+  <TITAN_Letter_No7_Title>狂える腐蝕獣</TITAN_Letter_No7_Title>
+  <TITAN_Letter_No7_Desc>腐蝕毒に覆われたスラムボが人狩りとしてマップに侵入！しかし重傷を負うか0号プロトタイプの近くにいると、鎮静化するようだ…</TITAN_Letter_No7_Desc>
+  <TITAN_Letter_No13_Title>深淵が歩み来る</TITAN_Letter_No13_Title>
+  <TITAN_Letter_No13_Desc>戦傷を負ったスラムボが0号プロトタイプの方へまっすぐ歩いてくる。その目に敵意はない — 明確な目的地だけがある。即座に味方陣営に加わる。</TITAN_Letter_No13_Desc>
+  <TITAN_Letter_No26_Title>忠実な随行者</TITAN_Letter_No26_Title>
+  <TITAN_Letter_No26_Desc>犬ほどの大きさのスラムボがマップ端に現れた。全てを無視して0号へ走り、静かに0号のそばに横たわる。26号が入植に加わった。</TITAN_Letter_No26_Desc>
+  <TITAN_Letter_No42_Title>極光降臨</TITAN_Letter_No42_Title>
+  <TITAN_Letter_No42_Desc>オーロラ光を放つスラムボが0号の位置へゆっくり近づく。遺伝子ドリフトに苦しむ — タイタン共鳴で治療可能（1回ごとに重症度35%減少）。</TITAN_Letter_No42_Desc>
+  <TITAN_Letter_No45_Title>炎の中より来たれり</TITAN_Letter_No45_Title>
+  <TITAN_Letter_No45_Desc>マップ端で小さな火災が発生 — するとスラムボが炎の中から歩き出た、無傷！45号が入植に加わった。</TITAN_Letter_No45_Desc>
+  <TITAN_Letter_No50_Title>頑固な来客</TITAN_Letter_No50_Title>
+  <TITAN_Letter_No50_Desc>スラムボがゆっくり入植地に歩いてくる、あらゆる騒ぎを無視。0号のそばに直行して横たわる。50号が入植に加わった。</TITAN_Letter_No50_Desc>
+  <TITAN_Letter_No64_Title>追跡される鉄壁</TITAN_Letter_No64_Title>
+  <TITAN_Letter_No64_Desc>巨大なスラムボが海賊に追われている！攻撃は石に降る雨のように弾かれる。海賊撤退後、64号は安全を確認して味方陣営に加わる。</TITAN_Letter_No64_Desc>
+  <TITAN_Letter_No88_Title>炎より逃れて</TITAN_Letter_No88_Title>
+  <TITAN_Letter_No88_Desc>火傷を負ったスラムボが必死に入植地へ逃げ込む！最寄りの水場へ向かう — 炎に怯えている。88号は回復後に味方に加わる。</TITAN_Letter_No88_Desc>
+
+  <!-- Mutagen restriction -->
+  <TITAN_Message_ExperimentIncompatibleMutagen>{0}の遺伝子アーキテクチャはこの変異薬タイプを受け付けない。</TITAN_Message_ExperimentIncompatibleMutagen>
+  <TITAN_Message_No42_DriftHealed>42号の遺伝子ドリフトが完全に治癒！</TITAN_Message_No42_DriftHealed>
+  <TITAN_Message_No42_DriftHealing>42号の遺伝子ドリフトを治療中... 現在の重症度：{0}</TITAN_Message_No42_DriftHealing>
+
+  <!-- No7 self-tame -->
+  <TITAN_Message_No7_SelfTamed>{0}が0号の共鳴で鎮静化し、入植に加わった！</TITAN_Message_No7_SelfTamed>
+
+  <!-- Settings -->
+  <TITAN_Settings_Category>プロジェクトT.I.T.A.N.</TITAN_Settings_Category>
+  <TITAN_Settings_General>一般設定</TITAN_Settings_General>
+  <TITAN_Settings_ShowCodexButton>アーカイブボタンを表示</TITAN_Settings_ShowCodexButton>
+  <TITAN_Settings_CompanionChance>同伴スポーン確率：{0}（New Thrumbos!導入必須）</TITAN_Settings_CompanionChance>
+  <TITAN_Settings_CompanionChance_NTRequired>同伴スポーン確率：New Thrumbos!導入必須</TITAN_Settings_CompanionChance_NTRequired>
+  <TITAN_Settings_ThrumboAttractChance>0号プロトタイプの野生スラムボ誘引確率：{0}</TITAN_Settings_ThrumboAttractChance>
+  <TITAN_Settings_AlphaReplaceChance>アルファスラムボ置換確率：{0}（Odyssey DLC必須）</TITAN_Settings_AlphaReplaceChance>
+  <TITAN_Settings_AlphaReplaceChance_OdysseyRequired>アルファスラムボ置換確率：Odyssey DLC必須</TITAN_Settings_AlphaReplaceChance_OdysseyRequired>
+  <TITAN_Settings_Events>イベント設定</TITAN_Settings_Events>
+  <TITAN_Settings_EventChance>{0} 発生確率：{1}</TITAN_Settings_EventChance>
+  <TITAN_Settings_EventCooldown>{0} クールダウン（日）：{1}</TITAN_Settings_EventCooldown>
+  <TITAN_Settings_DevMode>開発者モード</TITAN_Settings_DevMode>
+  <TITAN_Settings_TriggerMatriarch>生命の母イベントを発動</TITAN_Settings_TriggerMatriarch>
+  <TITAN_Settings_TriggerWarlord>戦蹟イベントを発動</TITAN_Settings_TriggerWarlord>
+  <TITAN_Settings_TriggerVoidWalker>虚空の歩行者イベントを発動</TITAN_Settings_TriggerVoidWalker>
+  <TITAN_Settings_TriggerExperiment>実験体イベントを発動</TITAN_Settings_TriggerExperiment>
+  <TITAN_Settings_TriggerHunter>ハンター襲来を発動</TITAN_Settings_TriggerHunter>
+  <TITAN_Settings_TriggerNo26>26号イベントを発動</TITAN_Settings_TriggerNo26>
+  <TITAN_Settings_CodexManagement>アーカイブ管理</TITAN_Settings_CodexManagement>
+  <TITAN_Settings_UnlockAllCodex>全アーカイブ解除</TITAN_Settings_UnlockAllCodex>
+  <TITAN_Settings_ResetAllCodex>全アーカイブリセット</TITAN_Settings_ResetAllCodex>
+  <TITAN_Codex_AllUnlocked>全アーカイブエントリーを解除！</TITAN_Codex_AllUnlocked>
+  <TITAN_Codex_AllReset>全アーカイブエントリーをリセット。</TITAN_Codex_AllReset>
+
+  <!-- Event names -->
+  <Matriarch>生命の母</Matriarch>
+  <Warlord>戦蹟</Warlord>
+  <VoidWalker>虚空の歩行者</VoidWalker>
+  <ExperimentSubject>実験体</ExperimentSubject>
+  <HunterAttack>ハンター襲来</HunterAttack>
+
+  <!-- Settings table -->
+  <TITAN_Codex_ResetWarning>警告：リセットは全発見記録を消去します。この操作は取り消せません。</TITAN_Codex_ResetWarning>
+  <TITAN_Settings_EventName>イベント</TITAN_Settings_EventName>
+  <TITAN_Settings_Probability>確率</TITAN_Settings_Probability>
+  <TITAN_Settings_CooldownDays>クールダウン（日）</TITAN_Settings_CooldownDays>
+  <TITAN_Settings_Trigger>発動</TITAN_Settings_Trigger>
+  <TITAN_Settings_No26Note>26号初回遭遇（確定発動、調整不可）</TITAN_Settings_No26Note>
+
+  <!-- Codex hints for undiscovered entries -->
+  <TITAN_Codex_No0_hint>プロジェクトTITANの究極の成果、純粋な王者の血統を持つ。\n\n[勧誘方法] 遺伝香を作成・使用し、0号プロトタイプを入植地に誘引する。</TITAN_Codex_No0_hint>
+  <TITAN_Codex_Spark_hint>0号プロトタイプの唯一の友 — 不死を持つ変異ボムラット。\n\n[勧誘方法] 0号プロトタイプの脱皮鱗を入手し、信号を起動。花火が追跡してくる。</TITAN_Codex_Spark_hint>
+  <TITAN_Codex_Warlord_hint>伝説の古代の獣、狂戦の近接覇者。\n\n[勧誘方法] 戦蹟イベント発動時、タイタン共鳴で怒りを鎮める。鎮静後、真紅のケラチンデータコアを獲得。</TITAN_Codex_Warlord_hint>
+  <TITAN_Codex_VoidWalker_hint>伝説の古代の獣、追われる位相転移の達者。\n\n[勧誘方法] 虚空の歩行者イベント発動時、全敵対ユニットを排除後、タイタン共鳴で安全を案内。虚空の塵位相データを獲得。</TITAN_Codex_VoidWalker_hint>
+  <TITAN_Codex_Matriarch_hint>伝説の古代の獣、遺伝子崩壊に苦しむ。\n\n[勧誘方法] 生命の母イベント発動時、タイタン共鳴を繰り返し使用し遺伝子崩壊を治療。生命の樹脂生体サンプルを獲得。</TITAN_Codex_Matriarch_hint>
+
+  <!-- Three Titans codex descriptions -->
+  <TITAN_Codex_Warlord_label>戦蹟</TITAN_Codex_Warlord_label>
+  <TITAN_Codex_Warlord_desc>三体のタイタンの一つ。古代のプロジェクトTITAN「プロトタイプ時代」の半完成品 — 後の番号付き実験体とは異なり、戦蹟は帝国の厳格な規制以前の産物であり、その遺伝子アーキテクチャは0号創造以前の生の暴力配列を保持している。\n\n体躯は巨大。動きは俊敏ではないが、一撃の一撃が壊滅的な力を帯びる。「血の狂瀾」サイオニック波を放射し、近くの全生物を狂戦状態に駆り立てる。毛皮には暗紅の文様、まるで決して洗い流せない血痕のよう。\n\n戦蹟は0号を能動的に攻撃しない — 0号に何らかの古代の権威を認めるようだ。しかしそれ以外は全て、入植者を含め、その怒りに巻き込まれる可能性がある。\n\n研究者の推測では、戦蹟は0号の覚醒と同バッチで生み出された「廃棄体」 — サイオニック回路が粗雑すぎて0号のような精密調節ができず、代わりに無制御に放射され続ける。これにより戦場で歩くバフ塔となる — 味方も敵も強化を受ける。\n\n[友好化方法] 0号プロトタイプの[タイタン共鳴]アビリティを使用。各鎮静で共鳴1層蓄積、3層到達で怒りが鎮まる。認められ、平和的に真紅のケラチンを残して去る。\n\n[ドロップ] 真紅のケラチン（データコア）— 解析で真紅の変異薬設計図を解除。\n\n[特殊] 入植地襲撃時に空投増援する可能性あり。</TITAN_Codex_Warlord_desc>
+
+  <TITAN_Codex_VoidWalker_label>虚空の歩行者</TITAN_Codex_VoidWalker_label>
+  <TITAN_Codex_VoidWalker_desc>三体のタイタンの一つ。何者かに追われる位相転移の達者 — その遺伝子アーキテクチャには帝国が数十年を費やして解読した位相転移技術が含まれ、追跡者は明らかにそれが誰かの手に渡ることを望んでいない。\n\n虚空の歩行者の体は半透明の位相場で覆われ、その輪郭には常に「現実に完全には存在しない」ぼやけがかかる。回避能力は極めて高く、近接・遠距離攻撃の大半を予測し逸らせる。「虚空の帷」サイオニック波を放射し、近くの味方に回避ボーナスを与える。\n\n長居はしたくない — 脅威が近くに現れると位相転移で逃亡を試み、絶対的な安全を確認して初めて0号と通信する。\n\n虚空の歩行者は三体のタイタンで最も「理性的」。戦蹟のような狂戦でも、生命の母のような優しさでもない。ただ冷静に状況を評価し、最適な選択をする。その位相能力により「見るべきでないもの」を見てしまったことが、逃亡の原因だと推測する者もいる。\n\n[友好化方法] マップ上の全敵対ユニットを排除し、0号プロトタイプの[タイタン共鳴]で通信。安全を確認後、虚空の塵を残して虚空へ帰還。\n\n[ドロップ] 虚空の塵（位相データ）— 解析で虚空の変異薬設計図を解除。\n\n[特殊] 入植地襲撃時に空投増援する可能性あり。</TITAN_Codex_VoidWalker_desc>
+
+  <TITAN_Codex_Matriarch_label>生命の母</TITAN_Codex_Matriarch_label>
+  <TITAN_Codex_Matriarch_desc>三体のタイタンの一つ。遺伝子崩壊に蝕まれる巨獣 — 三体のタイタンで最も古く、プロジェクトTITANの後遺症に最も深く苦しめられている。自己修復系は強力だが完全崩壊の瀕戸際にあり、体は再生と崩壊の間で常に循環している。\n\n生命の母は「生命の開花」サイオニック波を放射し、近くの全生物の傷治癒を加速 — これは暴走した再生エネルギーが放射形で外部に漏出する副作用。体は通常のスラムボの3倍、毛皮には枯渇と繁栄が織り交じる奇妙な質感 — 半分は新芽の鮮緑、半分は枯死の萎黄。\n\n三体のタイタンで最も優しい。激痛に苦しみながらも、いかなる生物にも攻撃を仕掛けない。入植地に近づくと、入植者は奇妙な安らぎを感じる — そのサイオニクスが無意識に周囲の全てを治癒する。崩壊の中にあっても、なお与え続ける。\n\n0号は生命の母に特別な反応を示す — 戦蹟への警戒、虚空の歩行者への好奇心と比べ、0号は明確な「心配」を示す。研究者は、生命の母が0号の覚醒期における最も初期の「伴侶」であり、その存在が0号が初めて知る温もりを与えたという仮説を立てている。\n\n[友好化方法] 0号プロトタイプの[タイタン共鳴]を複数回使用して治療。各共鳴で遺伝子崩壊の一部を治療、完全回復まで繰り返しが必要。治癒後、生命の樹脂を残し平和的に去る。\n\n[ドロップ] 生命の樹脂（生体サンプル）— 解析で翠緑の変異薬設計図を解除。\n\n[特殊] 入植地襲撃時に空投増援する可能性あり。</TITAN_Codex_Matriarch_desc>
+
+  <TITAN_Gizmo_ViewCodex>アーカイブ閲覧</TITAN_Gizmo_ViewCodex>
+  <TITAN_Gizmo_ViewCodexDesc>この実験体のタイタンアーカイブ詳細情報を閲覧</TITAN_Gizmo_ViewCodexDesc>
+  <TITAN_Settings_ResetTrigger>リセット＋発動</TITAN_Settings_ResetTrigger>
+  <TITAN_Settings_CodexResetForReentry>アーカイブエントリーリセット、再発動可能</TITAN_Settings_CodexResetForReentry>
+  <No7>7号 — 腐蝕</No7>
+  <No13>13号 — 深淵</No13>
+  <No26>26号 — 親衛</No26>
+  <No42>42号 — 極光</No42>
+  <No45>45号 — 熔爐</No45>
+  <No50>50号 — 荒魂</No50>
+  <No64>64号 — 鉄壁</No64>
+  <No88>88号 — 繁花</No88>
+
+  <!-- Herd Achievement -->
+  <TITAN_Letter_HerdAchievement_Title>聖域実績解除</TITAN_Letter_HerdAchievement_Title>
+  <TITAN_HerdAchievement_Tier1>10頭目のスラムボが入植地に入った時、0号プロトタイプが長く響く呼び声を上げた。全ての仲間がより警戒し自信を持ったように見える。\n\n[効果] 全スラムボ種が「群れの共鳴 — 予兆」を獲得：近接ダメージ+10%、移動速度+5%。全入植者がムードバフ「百獣来たる — 黎明」を獲得。</TITAN_HerdAchievement_Tier1>
+  <TITAN_HerdAchievement_Tier2>20頭目のスラムボが到着。0号プロトタイプの呼び声はより深く力強くなる。仲間たちの間に目に見えない警戒ネットワークが形成されたようだ。\n\n[効果] 「群れの共鳴 — 火花」に強化：近接ダメージ+20%、移動速度+10%、装甲+10%。全入植者がムードバフ「百獣来たる — 頂点」を獲得。</TITAN_HerdAchievement_Tier2>
+  <TITAN_HerdAchievement_Tier3>50頭のスラムボ — 入植地は真のスラムボ聖域となった。0号プロトタイプが天地を揺るがす咆哮を放ち、入植地全体にその古代の威厳を感じさせる。\n\n[効果] 「群れの共鳴 — 黎明」に強化：近接ダメージ+30%、移動速度+15%、装甲+20%、再生+0.5/日。全入植者がムードバフ「百獣来たる — 極致」を獲得。</TITAN_HerdAchievement_Tier3>
+
+  <!-- Hardcoded string fixes -->
+  <TITAN_Ability_Resonance>タイタン共鳴</TITAN_Ability_Resonance>
+  <TITAN_Ability_ResonanceDesc>0号プロトタイプの王者遺伝子で共鳴波を放つ。\n- クエストの獣：特定の治療/鎮静を行い、報酬を得て去る。\n- 味方支援：感謝を伝え、帰路を導く。\n- 通常の味方：傷を治癒する。</TITAN_Ability_ResonanceDesc>
+  <TITAN_Ability_CurrentStats>【現在のステータス】範囲：{0}タイル | 治癒量：{1} | クールダウン：{2}時間</TITAN_Ability_CurrentStats>
+  <TITAN_Ability_Tier1Bonus>[共鳴增幅] 範囲+50%、治癒量+50%、クールダウン-25%。パッシブ：共鳴パルス（8タイル内の味方ユニットを徐々に治癒）</TITAN_Ability_Tier1Bonus>
+  <TITAN_Ability_Tier2Bonus>[同期脈動] パッシブ共鳴パルスの範囲が12タイルに拡大</TITAN_Ability_Tier2Bonus>
+  <TITAN_Ability_Tier3Bonus>[始祖の残響] パッシブ共鳴パルスの範囲が15タイルに拡大、アクティブ共鳴も範囲内の全味方ユニットを治癒</TITAN_Ability_Tier3Bonus>
+  <TITAN_Ability_Tier4Bonus>[王者覚醒] パッシブ共鳴パルスの範囲が20タイルに拡大、王者の刻印を解放</TITAN_Ability_Tier4Bonus>
+  <TITAN_Ability_RoyalMark>王者の刻印</TITAN_Ability_RoyalMark>
+  <TITAN_Ability_RoyalMarkDesc>0号の王者血統で目標に刻印を押す、全ステータス永続+15%。スラムボ種にのみ有効。</TITAN_Ability_RoyalMarkDesc>
+  <TITAN_Message_ProgenitorEcho>始祖の残響：{0}体の味方ユニットが共鳴治癒を受けた</TITAN_Message_ProgenitorEcho>
+  <TITAN_Message_RoyalMark_NotThrumboKind>目標はスラムボ種ではない — 王者の刻印は適用不可</TITAN_Message_RoyalMark_NotThrumboKind>
+  <TITAN_Message_RoyalMark_AlreadyMarked>目標はすでに王者の刻印を持っている</TITAN_Message_RoyalMark_AlreadyMarked>
+  <TITAN_Message_RoyalMark_Applied>{0}に王者の刻印が押された — 全ステータス+15%</TITAN_Message_RoyalMark_Applied>
+
+  <!-- Resonance tier unlock notifications -->
+  <TITAN_Resonance_Tier1Unlocked>[共鳴增幅] 0号プロトタイプが5匹のスラムボ種族と共鳴リンクを形成！タイタン共鳴の範囲・治癒・クールダウンが強化。パッシブ共鳴パルスが発動（8タイル範囲内の味方ユニットを徐々に治癒）。</TITAN_Resonance_Tier1Unlocked>
+  <TITAN_Resonance_Tier2Unlocked>[同期脈動] 0号プロトタイプと15匹のスラムボ種族の共鳴が深化！パッシブ共鳴パルスの範囲が12タイルに拡大。</TITAN_Resonance_Tier2Unlocked>
+  <TITAN_Resonance_Tier3Unlocked>[始祖の残響] 0号プロトタイプと30匹のスラムボ種族の共鳴が頂点に！パッシブ共鳴パルスの範囲が15タイルに拡大、アクティブ共鳴も範囲内の全味方ユニットを治癒。</TITAN_Resonance_Tier3Unlocked>
+  <TITAN_Mote_ReturnToVoid>虚空へ帰還</TITAN_Mote_ReturnToVoid>
+  <TITAN_Letter_HunterAttack_Title>プロジェクトTITAN：狩猟プロトコル</TITAN_Letter_HunterAttack_Title>
+  <TITAN_Letter_HunterAttack_Desc>帝国の探知機が0号プロトタイプのエネルギー信号をロックオンした。\n\n遺伝子改変「ハンター」の一群がエリアに到着。彼らの脳には絶対指令が植え込まれている — 目標とその間に立つ全てを引き裂く。\n\n0号を守れ！</TITAN_Letter_HunterAttack_Desc>
+
+  <!-- Hint keys for undiscovered codex entries -->
+  <TITAN_Codex_No7_hint>空気が強酸性の腐食臭に満ちる。0号プロトタイプの共鳴システムが不安定な高酸代謝信号を検知…</TITAN_Codex_No7_hint>
+  <TITAN_Codex_No13_hint>沼地から低い唸りが響く。深傷を負った生物が0号の位置へ近づいている…</TITAN_Codex_No13_hint>
+  <TITAN_Codex_No26_hint>共鳴レーダーが微弱だが極めて近い信号を捉えた — 何か小さなものが0号の匂いを追跡している…</TITAN_Codex_No26_hint>
+  <TITAN_Codex_No42_hint>遠くにオーロラ状の明滅。極めて不安定な遺伝子配列を持つ個体がどこかを漂流している…</TITAN_Codex_No42_hint>
+  <TITAN_Codex_No45_hint>異常熱源を検出。核心温度が正常値を遥かに超過…</TITAN_Codex_No45_hint>
+  <TITAN_Codex_No50_hint>砂漠からの共鳴信号は異常に弱いが消えない。長期間無食で活動できる個体が流浪している…</TITAN_Codex_No50_hint>
+  <TITAN_Codex_No64_hint>超鉱化生体シェル信号を検出。骨硬度が純鋼板に匹敵…</TITAN_Codex_No64_hint>
+  <TITAN_Codex_No88_hint>火の方向から苦痛の叫びが聞こえる。火傷を負った個体が水を求めている…</TITAN_Codex_No88_hint>
+  <TITAN_Codex_No1_hint>アーカイブに初期実験記録の断片が残存…終了済み。</TITAN_Codex_No1_hint>
+  <TITAN_Codex_No9_hint>残留脳波信号は、この個体の意識が完全に散逸したことを示している…</TITAN_Codex_No9_hint>
+  <TITAN_Codex_No19_hint>凍結サンプルバイアルに19の番号…もう目覚めることはない。</TITAN_Codex_No19_hint>
+  <TITAN_Codex_No37_hint>培養ポッドの最終ログは計測不能…</TITAN_Codex_No37_hint>
+  <TITAN_Codex_No3_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：深淵…</TITAN_Codex_No3_hint>
+  <TITAN_Codex_No11_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：裂け目…</TITAN_Codex_No11_hint>
+  <TITAN_Codex_No15_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：破片…</TITAN_Codex_No15_hint>
+  <TITAN_Codex_No33_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：残響…</TITAN_Codex_No33_hint>
+  <TITAN_Codex_No55_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：遺物…</TITAN_Codex_No55_hint>
+  <TITAN_Codex_No77_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：残火…</TITAN_Codex_No77_hint>
+  <TITAN_Codex_No99_hint>帝国セキュリティプロトコルによる部分データ暗号化。認証コード：オメガ…</TITAN_Codex_No99_hint>
+
+  <!-- === 名前訳キー === -->
+  <TITAN_Name_Warlord>戦争の傷</TITAN_Name_Warlord>
+  <TITAN_Name_VoidWalker>虚空行者</TITAN_Name_VoidWalker>
+  <TITAN_Name_Prototype>0号プロトタイプ・曙光</TITAN_Name_Prototype>
+
+  <!-- === 手紙訳キー === -->
+  <TITAN_Letter_VoidWalkerRescue_Title>虚空行者の救難</TITAN_Letter_VoidWalkerRescue_Title>
+  <TITAN_Letter_VoidWalkerRescue_Desc>負傷した「虚空行者」がこの区域に逃げ込んできた。体には帝国制式武器による傷が無数にある。\n\n【帝国部隊に偽装した違法傭兵】が追跡していることを検知。\n\n虚空行者は拠点に避難を求めている！守れ！</TITAN_Letter_VoidWalkerRescue_Desc>
+  <TITAN_Letter_SpawnSpark_Title>不滅の火種</TITAN_Letter_SpawnSpark_Title>
+  <TITAN_Letter_Spark_Desc>鱗が特殊なフェロモン信号を発すると、高熱を纏った変異ボムラットがマップに突入してきた。\n\nそれは「花火」、0号プロトタイプの唯一の友だ。嗅ぎ慣れた、ただ一つ識别できる匂いを頼りに、迷わず駆けつけたのだ。\n\n（獲得：花火 - 無限リスポーン可能な爆破の達人）</TITAN_Letter_Spark_Desc>
+  <TITAN_Letter_SpawnPrototype_Title>霧の中の応答</TITAN_Letter_SpawnPrototype_Title>
+  <TITAN_Letter_SpawnPrototype_Desc>線香が燃え尽き、暴れた遺伝子を鎮める静寂の香りが荒野の奥へ漂う。\n\n間もなく、マップ端に金色の影が現れた——それは帝国が失った実験体「0号」だ。\n\n彼女は疲弊し、遺伝子改造の激痛に長く耐えてきた。だが今、この線香の香りが彼女に久々の安らぎをもたらした。\n\n彼女はおずおずと拠点に近づいてくる——兵器としてではなく、避難を求める放浪者として。\n\n（獲得：【0号プロトタイプ】 - 彼女はあなたを信じ、入植地に加わった）</TITAN_Letter_SpawnPrototype_Desc>  <Message_Titan_Vanished>{0}の力は虚空へと帰り、残影のみを残した。</Message_Titan_Vanished>
+  <TITAN_Gizmo_DismissTitan>虚空へ帰還</TITAN_Gizmo_DismissTitan>
+  <TITAN_Gizmo_DismissTitanDesc>この神獣を虚空へ帰還させる。</TITAN_Gizmo_DismissTitanDesc>
+  <Message_Titan_Dismissed>{0}はあなたの意志に応え、残影となり虚空へ帰った。</Message_Titan_Dismissed>
+</LanguageData>

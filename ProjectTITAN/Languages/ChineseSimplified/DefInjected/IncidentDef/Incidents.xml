@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <TITAN_Incident_No26_FirstEncounter.label>26号追踪0号</TITAN_Incident_No26_FirstEncounter.label>
+  <TITAN_Incident_No7.label>7号·腐蚀来袭</TITAN_Incident_No7.label>
+  <TITAN_Incident_No13.label>13号·猎杀余波</TITAN_Incident_No13.label>
+  <TITAN_Incident_No42.label>42号·基因漂移</TITAN_Incident_No42.label>
+  <TITAN_Incident_No45.label>45号·火中行</TITAN_Incident_No45.label>
+  <TITAN_Incident_No50.label>50号·不速之客</TITAN_Incident_No50.label>
+  <TITAN_Incident_No64.label>64号·海盗猎杀</TITAN_Incident_No64.label>
+  <TITAN_Incident_No88.label>88号·火海逃难</TITAN_Incident_No88.label>
+
+  <TITAN_Incident_MatriarchCrash.label>泰坦传说：繁盛之母</TITAN_Incident_MatriarchCrash.label>
+  <TITAN_Incident_WarlordRaid.label>泰坦传说：战争之痕</TITAN_Incident_WarlordRaid.label>
+  <TITAN_Incident_VoidWalkerRescue.label>泰坦传说：虚空行者</TITAN_Incident_VoidWalkerRescue.label>
+  <TITAN_Incident_HunterAttack.label>猎杀者突袭</TITAN_Incident_HunterAttack.label>
+
+</LanguageData>

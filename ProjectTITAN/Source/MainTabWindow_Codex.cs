@@ -429,16 +429,16 @@ namespace ProjectTITAN
                 float h = Text.CalcHeight(line, width);
                 Rect lineRect = new Rect(x, y, width, h);
 
-                string trimmed = line.TrimStart();
+                string trimmed = raw.TrimStart();
                 if (trimmed.StartsWith(">"))
                 {
                     GUI.color = ColorQuote;
                 }
-                else if (trimmed.Contains("特性：") || trimmed.Contains("特性:") || trimmed.Contains("Features:") || trimmed.Contains("特征："))
+                else if (trimmed.Contains("特性：") || trimmed.Contains("特性:") || trimmed.Contains("Features:") || trimmed.Contains("特徴：") || trimmed.Contains("特徴:") || trimmed.Contains("特殊："))
                 {
                     GUI.color = ColorFeature;
                 }
-                else if (trimmed.Contains("【加入方式】") || trimmed.Contains("[How to recruit]"))
+                else if (trimmed.Contains("【加入方式】") || trimmed.Contains("[How to recruit]") || trimmed.Contains("[勧誘方法]"))
                 {
                     GUI.color = ColorRecruit;
                 }

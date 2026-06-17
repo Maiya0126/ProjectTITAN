@@ -37,7 +37,9 @@ namespace ProjectTITAN
             PawnGenerationRequest req = new PawnGenerationRequest(no26Kind, Faction.OfPlayer,
                 fixedBiologicalAge: 0.5f, fixedChronologicalAge: 0.5f,
                 developmentalStages: DevelopmentalStage.Adult, allowDowned: true);
+            TitanPawnGuard.BeginAllowed();
             Pawn no26 = PawnGenerator.GeneratePawn(req);
+            TitanPawnGuard.EndAllowed();
             no26.Name = new NameSingle(no26Kind.label);
             GenSpawn.Spawn(no26, spawnCell, map, Rot4.Random);
 

@@ -28,7 +28,9 @@ namespace ProjectTITAN
             PawnKindDef kind = PawnKindDef.Named("TITAN_Matriarch");
             PawnGenerationRequest req = new PawnGenerationRequest(kind, null,
                 fixedBiologicalAge: 50f, fixedChronologicalAge: 500f, allowDowned: true);
+            TitanPawnGuard.BeginAllowed();
             Pawn matriarch = PawnGenerator.GeneratePawn(req);
+            TitanPawnGuard.EndAllowed();
             matriarch.Name = new Verse.NameSingle(kind.label);
             GenSpawn.Spawn(matriarch, spawnLoc, map, Rot4.Random);
 
@@ -65,10 +67,12 @@ namespace ProjectTITAN
             IntVec3 spawnCenter;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnCenter, map, CellFinder.EdgeRoadChance_Animal)) return false;
 
+            TitanPawnGuard.BeginAllowed();
             Pawn warlord = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
                 PawnKindDef.Named("TITAN_Warlord"), null,
                 fixedBiologicalAge: 50f, fixedChronologicalAge: 500f, allowDowned: true));
-            warlord.Name = new Verse.NameSingle("战争之痕");
+            TitanPawnGuard.EndAllowed();
+            warlord.Name = new Verse.NameSingle("TITAN_Name_Warlord".Translate());
             GenSpawn.Spawn(warlord, spawnCenter, map, Rot4.Random);
 
             float points = parms.points;
@@ -120,9 +124,11 @@ namespace ProjectTITAN
             if (!RCellFinder.TryFindRandomPawnEntryCell(out walkerLoc, map, CellFinder.EdgeRoadChance_Friendly)) return false;
 
             PawnKindDef walkerKind = PawnKindDef.Named("TITAN_VoidWalker");
+            TitanPawnGuard.BeginAllowed();
             Pawn walker = PawnGenerator.GeneratePawn(new PawnGenerationRequest(walkerKind, null,
                 fixedBiologicalAge: 50f, fixedChronologicalAge: 500f, allowDowned: true));
-            walker.Name = new Verse.NameSingle("虚空行者");
+            TitanPawnGuard.EndAllowed();
+            walker.Name = new Verse.NameSingle("TITAN_Name_VoidWalker".Translate());
             GenSpawn.Spawn(walker, walkerLoc, map, Rot4.Random);
 
             if (Find.FactionManager.FirstFactionOfDef(FactionDefOf.Ancients) != null)
@@ -175,10 +181,7 @@ namespace ProjectTITAN
             LordJob_AssaultThings lordJob = new LordJob_AssaultThings(enemyFaction, new List<Thing> { walker });
             LordMaker.MakeNewLord(enemyFaction, lordJob, map, enemies);
 
-            string label = "虚空行者求救";
-            string text = "一只受伤的“虚空行者”逃入了该区域，它身上布满了帝国制式武器造成的伤痕。\n\n侦测到一支【伪装成帝国部队的非法佣兵】正在追杀它。\n\n虚空行者正在向你的基地寻求庇护！保护它！";
-
-            Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.ThreatBig, new LookTargets(walker, enemies.FirstOrDefault()));
+            Find.LetterStack.ReceiveLetter("TITAN_Letter_VoidWalkerRescue_Title".Translate(), "TITAN_Letter_VoidWalkerRescue_Desc".Translate(), LetterDefOf.ThreatBig, new LookTargets(walker, enemies.FirstOrDefault()));
             TitanEvents.FireTitanEventTriggered(def.defName);
             return true;
         }

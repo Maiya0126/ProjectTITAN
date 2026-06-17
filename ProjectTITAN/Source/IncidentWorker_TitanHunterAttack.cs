@@ -55,7 +55,9 @@ namespace ProjectTITAN
             for (int i = 0; i < count; i++)
             {
                 IntVec3 loc = CellFinder.RandomClosewalkCellNear(spawnCenter, map, 5, null);
+                TitanPawnGuard.BeginAllowed();
                 Pawn hunter = PawnGenerator.GeneratePawn(hunterDef, null);
+                TitanPawnGuard.EndAllowed();
                 GenSpawn.Spawn(hunter, loc, map, Rot4.Random);
 
                 // 【关键】赋予永久猎杀人类状态 (红名敌对)
@@ -65,10 +67,7 @@ namespace ProjectTITAN
             }
 
             // 5. 发送事件信件
-            string label = "泰坦计划：猎杀协议";
-            string text = "帝国的侦测器锁定了0号原型体的能量信号。\n\n一群基因改造的“猎杀者”已经抵达该地区。它们的脑中被植入了绝对指令，会撕碎阻挡在它们和目标之间的一切生物。\n\n保护0号！";
-
-            Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.ThreatBig, hunters, null, null);
+            Find.LetterStack.ReceiveLetter("TITAN_Letter_HunterAttack_Title".Translate(), "TITAN_Letter_HunterAttack_Desc".Translate(), LetterDefOf.ThreatBig, hunters, null, null);
             TitanEvents.FireTitanEventTriggered(def.defName);
 
             return true;

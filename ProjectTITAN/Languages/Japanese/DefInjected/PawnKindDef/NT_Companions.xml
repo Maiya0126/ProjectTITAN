@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <NT_ToyThrumbo.label>ドワーフスラムボ</NT_ToyThrumbo.label>
+  <NT_ToyThrumbo.labelPlural>ドワーフスラムボ</NT_ToyThrumbo.labelPlural>
+  <NT_AcidThrumbo.label>アシッドスラムボ</NT_AcidThrumbo.label>
+  <NT_AcidThrumbo.labelPlural>アシッドスラムボ</NT_AcidThrumbo.labelPlural>
+  <NT_SwampThrumbo.label>スワンプスラムボ</NT_SwampThrumbo.label>
+  <NT_SwampThrumbo.labelPlural>スワンプスラムボ</NT_SwampThrumbo.labelPlural>
+  <NT_AuroraThrumbo.label>オーロラスラムボ</NT_AuroraThrumbo.label>
+  <NT_AuroraThrumbo.labelPlural>オーロラスラムボ</NT_AuroraThrumbo.labelPlural>
+  <NT_FireThrumbo.label>ファイアスラムボ</NT_FireThrumbo.label>
+  <NT_FireThrumbo.labelPlural>ファイアスラムボ</NT_FireThrumbo.labelPlural>
+  <NT_DesertThrumbo.label>デザートスラムボ</NT_DesertThrumbo.label>
+  <NT_DesertThrumbo.labelPlural>デザートスラムボ</NT_DesertThrumbo.labelPlural>
+  <NT_PrairieThrumbo.label>プレーリースラムボ</NT_PrairieThrumbo.label>
+  <NT_PrairieThrumbo.labelPlural>プレーリースラムボ</NT_PrairieThrumbo.labelPlural>
+  <NT_JungleThrumbo.label>ジャングルスラムボ</NT_JungleThrumbo.label>
+  <NT_JungleThrumbo.labelPlural>ジャングルスラムボ</NT_JungleThrumbo.labelPlural>
+</LanguageData>

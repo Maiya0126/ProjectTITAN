@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- ==================== CREATURES ==================== -->
@@ -382,4 +382,69 @@
   <No64>No.64 — Bastion</No64>
   <No88>No.88 — Bloom</No88>
 
+  <!-- Herd Achievement -->
+  <TITAN_Letter_HerdAchievement_Title>Sanctuary Achievement Unlocked</TITAN_Letter_HerdAchievement_Title>
+  <TITAN_HerdAchievement_Tier1>When the 10th thrumbo entered the colony, Prototype #0 let out a long, resonant call. All companions seemed to become more alert and confident.\n\n[Effect] All thrumbo-kind gain "Herd Resonance — Glimmer": melee damage +10%, move speed +5%. All colonists gain mood buff "All Creatures Come — Dawn".</TITAN_HerdAchievement_Tier1>
+  <TITAN_HerdAchievement_Tier2>The 20th thrumbo has arrived. Prototype #0's call grows deeper and more powerful. Companions seem to have formed an invisible network of awareness.\n\n[Effect] Upgraded to "Herd Resonance — Spark": melee damage +20%, move speed +10%, armor +10%. All colonists gain mood buff "All Creatures Come — Zenith".</TITAN_HerdAchievement_Tier2>
+  <TITAN_HerdAchievement_Tier3>50 thrumbos — the colony has become a true thrumbo sanctuary. Prototype #0 unleashes an earth-shaking roar, and the entire colony feels that ancient majesty.\n\n[Effect] Upgraded to "Herd Resonance — Dawn": melee damage +30%, move speed +15%, armor +20%, regeneration +0.5/day. All colonists gain mood buff "All Creatures Come — Apex".</TITAN_HerdAchievement_Tier3>
+
+  <!-- Hardcoded string fixes -->
+  <TITAN_Ability_Resonance>Titan Resonance</TITAN_Ability_Resonance>
+  <TITAN_Ability_ResonanceDesc>Channel Prototype #0's royal genes to release a resonance wave.\n- Quest Titans: Perform specific healing/soothing operations, then receive reward and depart.\n- Allied units: Thank them for support and guide them away.\n- Normal allies: Heal wounds.</TITAN_Ability_ResonanceDesc>
+  <TITAN_Ability_CurrentStats>[Current Stats] Range: {0} tiles | Heal: {1} | Cooldown: {2}h</TITAN_Ability_CurrentStats>
+  <TITAN_Ability_Tier1Bonus>[Resonance Amplification] Range +50%, heal amount +50%, cooldown -25%. Passive: resonance pulse (8-tile range, slowly heals all friendly units)</TITAN_Ability_Tier1Bonus>
+  <TITAN_Ability_Tier2Bonus>[Sync Pulse] Passive resonance pulse range expands to 12 tiles</TITAN_Ability_Tier2Bonus>
+  <TITAN_Ability_Tier3Bonus>[Progenitor Echo] Passive resonance pulse range expands to 15 tiles; active resonance also heals all friendly units within range</TITAN_Ability_Tier3Bonus>
+  <TITAN_Ability_Tier4Bonus>[Royal Awakening] Passive resonance pulse range expands to 20 tiles; unlocks Royal Mark</TITAN_Ability_Tier4Bonus>
+  <TITAN_Ability_RoyalMark>Royal Mark</TITAN_Ability_RoyalMark>
+  <TITAN_Ability_RoyalMarkDesc>Brand a target with #0's royal bloodline, permanently +15% all stats. Only works on thrumbo-kind.</TITAN_Ability_RoyalMarkDesc>
+  <TITAN_Message_ProgenitorEcho>Progenitor Echo: {0} friendly units received resonance healing</TITAN_Message_ProgenitorEcho>
+  <TITAN_Message_RoyalMark_NotThrumboKind>Target is not thrumbo-kind — Royal Mark cannot be applied</TITAN_Message_RoyalMark_NotThrumboKind>
+  <TITAN_Message_RoyalMark_AlreadyMarked>Target already has a Royal Mark</TITAN_Message_RoyalMark_AlreadyMarked>
+  <TITAN_Message_RoyalMark_Applied>{0} has been marked with the Royal Mark — all stats +15%</TITAN_Message_RoyalMark_Applied>
+
+  <!-- Resonance tier unlock notifications -->
+  <TITAN_Resonance_Tier1Unlocked>[Resonance Amplification] Prototype #0 has formed resonance links with 5 thrumbo-kind! Titan Resonance range, healing, and cooldown are enhanced. Passive resonance pulse activates (8-tile range, slowly heals all friendly units).</TITAN_Resonance_Tier1Unlocked>
+  <TITAN_Resonance_Tier2Unlocked>[Sync Pulse] Prototype #0's resonance with 15 thrumbo-kind deepens! Passive resonance pulse range expands to 12 tiles.</TITAN_Resonance_Tier2Unlocked>
+  <TITAN_Resonance_Tier3Unlocked>[Progenitor Echo] Prototype #0's resonance with 30 thrumbo-kind reaches its peak! Passive resonance pulse range expands to 15 tiles; active resonance also heals all friendly units within range.</TITAN_Resonance_Tier3Unlocked>
+  <TITAN_Mote_ReturnToVoid>Returning to the Void</TITAN_Mote_ReturnToVoid>
+  <TITAN_Letter_HunterAttack_Title>Project TITAN: Hunt Protocol</TITAN_Letter_HunterAttack_Title>
+  <TITAN_Letter_HunterAttack_Desc>The Empire's detectors have locked onto Prototype #0's energy signal.\n\nA pack of gene-modified "Hunters" has arrived in the area. Their brains have been implanted with absolute directives — they will tear through anything standing between them and their target.\n\nProtect #0!</TITAN_Letter_HunterAttack_Desc>
+
+  <!-- Hint keys for undiscovered codex entries -->
+  <TITAN_Codex_No7_hint>The air reeks of strong acidic corrosion. Prototype #0's resonance system has detected an unstable high-acid metabolism signal...</TITAN_Codex_No7_hint>
+  <TITAN_Codex_No13_hint>Deep growls echo from the swamp. A creature bearing deep wounds is approaching #0's location...</TITAN_Codex_No13_hint>
+  <TITAN_Codex_No26_hint>The resonance radar captures a faint but very close signal — something small is tracking Prototype #0's scent...</TITAN_Codex_No26_hint>
+  <TITAN_Codex_No42_hint>Aurora-like flickers in the distance. An individual with extremely unstable gene sequences is drifting somewhere...</TITAN_Codex_No42_hint>
+  <TITAN_Codex_No45_hint>Anomalous heat source detected. Core temperature far exceeds normal values...</TITAN_Codex_No45_hint>
+  <TITAN_Codex_No50_hint>The resonance signal from the desert is unusually weak yet persistent. An individual that seems capable of going long periods without food is wandering...</TITAN_Codex_No50_hint>
+  <TITAN_Codex_No64_hint>Super-mineralized bio-shell signal detected. Its bone hardness approaches pure steel plate...</TITAN_Codex_No64_hint>
+  <TITAN_Codex_No88_hint>Painful cries come from the direction of the fire. A burn-wounded individual is searching for water...</TITAN_Codex_No88_hint>
+  <TITAN_Codex_No1_hint>Fragments of early experiment records remain in the archive... Terminated.</TITAN_Codex_No1_hint>
+  <TITAN_Codex_No9_hint>Residual brainwave signals indicate this individual's consciousness has completely dissipated...</TITAN_Codex_No9_hint>
+  <TITAN_Codex_No19_hint>The frozen sample vial bears the number 19... Long beyond waking.</TITAN_Codex_No19_hint>
+  <TITAN_Codex_No37_hint>The cultivation pod's last log entry is beyond reckoning...</TITAN_Codex_No37_hint>
+  <TITAN_Codex_No3_hint>Partial data encrypted by Imperial security protocol. Clearance code: Abyss...</TITAN_Codex_No3_hint>
+  <TITAN_Codex_No11_hint>Partial data encrypted by Imperial security protocol. Clearance code: Rift...</TITAN_Codex_No11_hint>
+  <TITAN_Codex_No15_hint>Partial data encrypted by Imperial security protocol. Clearance code: Shard...</TITAN_Codex_No15_hint>
+  <TITAN_Codex_No33_hint>Partial data encrypted by Imperial security protocol. Clearance code: Echo...</TITAN_Codex_No33_hint>
+  <TITAN_Codex_No55_hint>Partial data encrypted by Imperial security protocol. Clearance code: Relic...</TITAN_Codex_No55_hint>
+  <TITAN_Codex_No77_hint>Partial data encrypted by Imperial security protocol. Clearance code: Ember...</TITAN_Codex_No77_hint>
+  <TITAN_Codex_No99_hint>Partial data encrypted by Imperial security protocol. Clearance code: Omega...</TITAN_Codex_No99_hint>
+
+  <!-- === Name translation keys === -->
+  <TITAN_Name_Warlord>Warlord</TITAN_Name_Warlord>
+  <TITAN_Name_VoidWalker>Void Walker</TITAN_Name_VoidWalker>
+  <TITAN_Name_Prototype>Prototype #0 - Dawn</TITAN_Name_Prototype>
+
+  <!-- === Letter translation keys === -->
+  <TITAN_Letter_VoidWalkerRescue_Title>Void Walker SOS</TITAN_Letter_VoidWalkerRescue_Title>
+  <TITAN_Letter_VoidWalkerRescue_Desc>An injured "Void Walker" has fled into the area. Its body is covered with wounds caused by Imperial-standard weapons.\n\nA group of [mercenaries disguised as Imperial troops] has been detected hunting it.\n\nThe Void Walker is heading toward your base for shelter! Protect it!</TITAN_Letter_VoidWalkerRescue_Desc>
+  <TITAN_Letter_SpawnSpark_Title>Immortal Spark</TITAN_Letter_SpawnSpark_Title>
+  <TITAN_Letter_SpawnSpark_Desc>The scale emits a special pheromone signal, and a heavily heated mutated boomrat charges into the map.\n\nIt is "Spark", Prototype #0's only friend. It smelled the familiar scent that only it can identify, and came without hesitation.\n\n(Obtained: Spark - The infinitely respawning explosive expert)</TITAN_Letter_SpawnSpark_Desc>
+  <TITAN_Letter_SpawnPrototype_Title>Answer in the Mist</TITAN_Letter_SpawnPrototype_Title>
+  <TITAN_Letter_SpawnPrototype_Desc>The incense burns out, and a calming scent that soothes violent genes drifts into the wilderness.\n\nSoon, a golden figure appears at the map edge — it is the Empire's lost experiment subject "Prototype #0".\n\nShe looks exhausted, long suffering from the pain of genetic modification. But now, your incense has given her a long-overdue sense of peace.\n\nShe timidly approaches the colony — not as a weapon, but as a wanderer seeking shelter.\n\n(Obtained: [Prototype #0] - She trusts you and has joined the colony)</TITAN_Letter_Prototype_Desc>  <Message_Titan_Vanished>{0}'s power has returned to the void, leaving only a fading silhouette.</Message_Titan_Vanished>
+  <TITAN_Gizmo_DismissTitan>Return to Void</TITAN_Gizmo_DismissTitan>
+  <TITAN_Gizmo_DismissTitanDesc>Send this titan back to the void early.</TITAN_Gizmo_DismissTitanDesc>
+  <Message_Titan_Dismissed>{0} honors your wish and returns to the void.</Message_Titan_Dismissed>
 </LanguageData>

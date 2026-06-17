@@ -107,6 +107,7 @@ namespace ProjectTITAN
         public override void PostExposeData()
         {
             base.PostExposeData();
+            Scribe_Collections.Look(ref activeBonds, "activeBonds", LookMode.Value, LookMode.Value);
             if (activeBonds == null) activeBonds = new Dictionary<string, bool>();
         }
     }

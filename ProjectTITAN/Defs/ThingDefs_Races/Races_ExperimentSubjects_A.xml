@@ -42,7 +42,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No7_AcidThrumbo</defName><label>7号实验体·腐蚀</label><race>TITAN_No7_AcidThrumbo</race><combatPower>650</combatPower><wildGroupSize>1~2</wildGroupSize>
+		<defName>TITAN_No7_AcidThrumbo</defName><label>7号实验体·腐蚀</label><race>TITAN_No7_AcidThrumbo</race><combatPower>650</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No7_AcidThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No7_AcidThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
@@ -90,7 +90,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No13_SwampThrumbo</defName><label>13号实验体·深渊</label><race>TITAN_No13_SwampThrumbo</race><combatPower>600</combatPower><wildGroupSize>1~2</wildGroupSize>
+		<defName>TITAN_No13_SwampThrumbo</defName><label>13号实验体·深渊</label><race>TITAN_No13_SwampThrumbo</race><combatPower>600</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No13_SwampThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No13_SwampThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
@@ -127,7 +127,7 @@
 			<li><label>left foot</label><labelNoLocation>foot</labelNoLocation><capacities><li>Blunt</li></capacities><power>9.7</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor></li>
 			<li><label>head</label><capacities><li>Blunt</li></capacities><power>6</power><cooldownTime>2.0</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
 		</tools>
-		<tradeTags><li>AnimalPet</li><li>AnimalExotic</li></tradeTags>
+		<tradeTags/>
 		<comps>
 			<li Class="ProjectTITAN.CompProperties_TitanBond"><targetPawnKind>TITAN_ThrumboPrototype</targetPawnKind><bondHediff>TITAN_Bond_No26_Guardian</bondHediff><range>50</range></li>
 		</comps>
@@ -180,7 +180,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No42_AuroraThrumbo</defName><label>42号实验体·星辉</label><race>TITAN_No42_AuroraThrumbo</race><combatPower>550</combatPower><wildGroupSize>1~2</wildGroupSize>
+		<defName>TITAN_No42_AuroraThrumbo</defName><label>42号实验体·星辉</label><race>TITAN_No42_AuroraThrumbo</race><combatPower>550</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No42_AuroraThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No42_AuroraThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>

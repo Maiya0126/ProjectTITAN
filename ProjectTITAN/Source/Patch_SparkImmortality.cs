@@ -13,15 +13,7 @@ namespace ProjectTITAN
     {
         static TITAN_Main()
         {
-            try
-            {
-                var harmony = new Harmony("com.maiya.projecttitan");
-                harmony.PatchAll();
-            }
-            catch (Exception ex)
-            {
-                Log.Error("[ProjectTITAN] Harmony init failed: " + ex.ToString());
-            }
+            Log.Message("[Project T.I.T.A.N.] Attribute patches will be applied by ProjectTitanMod.PatchAll.");
         }
     }
 
@@ -122,7 +114,7 @@ namespace ProjectTITAN
             {
                 if (pawn.Map != null)
                 {
-                    MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "回归虚空", Color.cyan);
+                    MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "TITAN_Mote_ReturnToVoid".Translate(), Color.cyan);
                 }
 
                 if (pawn.def.defName == "TITAN_Warlord")
@@ -134,9 +126,9 @@ namespace ProjectTITAN
                     }
                     Messages.Message("Message_Warlord_LeftData".Translate(), MessageTypeDefOf.PositiveEvent);
                 }
-                else
+                else if (pawn.def.defName == "TITAN_VoidWalker" || pawn.def.defName == "TITAN_Matriarch")
                 {
-                    Messages.Message(string.Format("Message_Hunter_EntityCollapsed".Translate(), pawn.LabelShort), MessageTypeDefOf.NegativeEvent);
+                    Messages.Message("Message_Titan_Vanished".Translate(pawn.LabelShort), MessageTypeDefOf.NegativeEvent);
                 }
 
                 if (!pawn.Destroyed)

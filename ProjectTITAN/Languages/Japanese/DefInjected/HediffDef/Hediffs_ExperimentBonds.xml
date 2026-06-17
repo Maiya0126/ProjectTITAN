@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_Bond_No7_Anchor.label>錨の共鳴</TITAN_Bond_No7_Anchor.label>
+  <TITAN_Bond_No7_Anchor.description>0号の安定化錨効果が7号の毒神経回路を鎮静化する。</TITAN_Bond_No7_Anchor.description>
+  <TITAN_Bond_No7_Softened.label>緩和</TITAN_Bond_No7_Softened.label>
+  <TITAN_Bond_No7_Softened.description>26号の存在により7号が警戒を解く。</TITAN_Bond_No7_Softened.description>
+  <TITAN_Bond_No13_Calculated.label>計算された冷静</TITAN_Bond_No13_Calculated.label>
+  <TITAN_Bond_No13_Calculated.description>0号の存在が13号の戦術本能を攻撃から防御へと転換させる。</TITAN_Bond_No13_Calculated.description>
+  <TITAN_Bond_CoinFaces.label>硬貨の共鳴</TITAN_Bond_CoinFaces.label>
+  <TITAN_Bond_CoinFaces.description>殺戮本能と生存本能は互いに鏡像であり、両極の共鳴が双方を強化する。</TITAN_Bond_CoinFaces.description>
+  <TITAN_Bond_No13_Restraint.label>抑制</TITAN_Bond_No13_Restraint.label>
+  <TITAN_Bond_No13_Restraint.description>26号により13号の攻撃衝動が抑えられる。</TITAN_Bond_No13_Restraint.description>
+  <TITAN_Bond_No42_StarGuidance.label>星の導き</TITAN_Bond_No42_StarGuidance.label>
+  <TITAN_Bond_No42_StarGuidance.description>0号の共鳴が42号に道を示す。</TITAN_Bond_No42_StarGuidance.description>
+  <TITAN_Bond_No88_SweetNuzzle.label>甘い鼻ずり</TITAN_Bond_No88_SweetNuzzle.label>
+  <TITAN_Bond_No88_SweetNuzzle.description>26号の存在が88号をより遊び好きで人懐っこくする。</TITAN_Bond_No88_SweetNuzzle.description>
+  <TITAN_Bond_No45_HearthWarmth.label>炉辺の温もり</TITAN_Bond_No45_HearthWarmth.label>
+  <TITAN_Bond_No45_HearthWarmth.description>45号の安定した体温が近くの味方の傷の治癒を加速する。</TITAN_Bond_No45_HearthWarmth.description>
+  <TITAN_Bond_No88_FirePhobia.label>炎の恐怖</TITAN_Bond_No88_FirePhobia.label>
+  <TITAN_Bond_No88_FirePhobia.description>45号の強烈な熱が88号を恐怖させる。</TITAN_Bond_No88_FirePhobia.description>
+  <TITAN_Bond_No26_Guardian.label>親衛の誓い</TITAN_Bond_No26_Guardian.label>
+  <TITAN_Bond_No26_Guardian.description>0号を守る際、26号の防衛本能が完全に覚醒する。</TITAN_Bond_No26_Guardian.description>
+  <TITAN_Bond_No26_Protected.label>守護</TITAN_Bond_No26_Protected.label>
+  <TITAN_Bond_No26_Protected.description>0号は26号の純粋な献身を感じ、身心が安らぐ。</TITAN_Bond_No26_Protected.description>
+</LanguageData>

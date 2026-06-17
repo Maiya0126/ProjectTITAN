@@ -42,7 +42,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No45_FireThrumbo</defName><label>45号实验体·熔炉</label><race>TITAN_No45_FireThrumbo</race><combatPower>600</combatPower><wildGroupSize>1~2</wildGroupSize>
+	<defName>TITAN_No45_FireThrumbo</defName><label>45号实验体·熔炉</label><race>TITAN_No45_FireThrumbo</race><combatPower>600</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No45_FireThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No45_FireThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
@@ -80,7 +80,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No50_DesertThrumbo</defName><label>50号实验体·荒魂</label><race>TITAN_No50_DesertThrumbo</race><combatPower>290</combatPower><wildGroupSize>1~2</wildGroupSize>
+	<defName>TITAN_No50_DesertThrumbo</defName><label>50号实验体·荒魂</label><race>TITAN_No50_DesertThrumbo</race><combatPower>290</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No50_DesertThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No50_DesertThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
@@ -125,7 +125,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No64_PrairieThrumbo</defName><label>64号实验体·铁壁</label><race>TITAN_No64_PrairieThrumbo</race><combatPower>290</combatPower><wildGroupSize>1~2</wildGroupSize>
+	<defName>TITAN_No64_PrairieThrumbo</defName><label>64号实验体·铁壁</label><race>TITAN_No64_PrairieThrumbo</race><combatPower>290</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No64_PrairieThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No64_PrairieThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
@@ -173,7 +173,7 @@
 		</tools>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TITAN_No88_JungleThrumbo</defName><label>88号实验体·繁花</label><race>TITAN_No88_JungleThrumbo</race><combatPower>290</combatPower><wildGroupSize>1~2</wildGroupSize>
+	<defName>TITAN_No88_JungleThrumbo</defName><label>88号实验体·繁花</label><race>TITAN_No88_JungleThrumbo</race><combatPower>290</combatPower>
 		<lifeStages>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No88_JungleThrumbo</texPath><drawSize>2.5</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>
 			<li><bodyGraphicData><texPath>Things/Animal/TITAN_No88_JungleThrumbo</texPath><drawSize>4.0</drawSize><shaderType>Cutout</shaderType></bodyGraphicData></li>

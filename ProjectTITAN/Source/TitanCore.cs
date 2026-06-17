@@ -18,6 +18,10 @@ namespace ProjectTITAN
         public bool hasBefriendedWarlord = false;
         public bool hasBefriendedVoidWalker = false;
         public bool hasBefriendedMatriarch = false;
+        public int peakExperimentCount = 0;
+        public bool resonanceTier1Notified = false;
+        public bool resonanceTier2Notified = false;
+        public bool resonanceTier3Notified = false;
 
         public TitanGameComponent(Game game) { }
 
@@ -27,6 +31,55 @@ namespace ProjectTITAN
             Scribe_Values.Look(ref hasBefriendedWarlord, "hasBefriendedWarlord", false);
             Scribe_Values.Look(ref hasBefriendedVoidWalker, "hasBefriendedVoidWalker", false);
             Scribe_Values.Look(ref hasBefriendedMatriarch, "hasBefriendedMatriarch", false);
+            Scribe_Values.Look(ref peakExperimentCount, "peakExperimentCount", 0);
+            Scribe_Values.Look(ref resonanceTier1Notified, "resonanceTier1Notified", false);
+            Scribe_Values.Look(ref resonanceTier2Notified, "resonanceTier2Notified", false);
+            Scribe_Values.Look(ref resonanceTier3Notified, "resonanceTier3Notified", false);
+        }
+
+        public void UpdatePeakExperimentCount()
+        {
+            int current = CountColonyExperimentSubjects();
+            if (current > peakExperimentCount)
+            {
+                int oldPeak = peakExperimentCount;
+                peakExperimentCount = current;
+                CheckResonanceTierNotification(oldPeak, peakExperimentCount);
+            }
+        }
+
+        private void CheckResonanceTierNotification(int oldPeak, int newPeak)
+        {
+            int[] thresholds = { 5, 15, 30 };
+            string[] notifyFields = { "resonanceTier1Notified", "resonanceTier2Notified", "resonanceTier3Notified" };
+            string[] messageKeys = { "TITAN_Resonance_Tier1Unlocked", "TITAN_Resonance_Tier2Unlocked", "TITAN_Resonance_Tier3Unlocked" };
+            bool[] notified = { resonanceTier1Notified, resonanceTier2Notified, resonanceTier3Notified };
+
+            for (int i = 0; i < thresholds.Length; i++)
+            {
+                if (!notified[i] && newPeak >= thresholds[i])
+                {
+                    notified[i] = true;
+                    Messages.Message(messageKeys[i].Translate(), MessageTypeDefOf.PositiveEvent);
+                }
+            }
+            resonanceTier1Notified = notified[0];
+            resonanceTier2Notified = notified[1];
+            resonanceTier3Notified = notified[2];
+        }
+
+        private int CountColonyExperimentSubjects()
+        {
+            int count = 0;
+            foreach (Map map in Find.Maps)
+            {
+                foreach (Pawn p in map.mapPawns.SpawnedColonyAnimals)
+                {
+                    if (TitanImplantUtils.CountsTowardResonance(p))
+                        count++;
+                }
+            }
+            return count;
         }
     }
 
@@ -126,7 +179,99 @@ namespace ProjectTITAN
     {
         public CompProperties_TitanAbility Props => (CompProperties_TitanAbility)this.props;
         private int lastUsedTick = -999999;
-        public bool OnCooldown => Find.TickManager.TicksGame < lastUsedTick + (Props.cooldownDays * 60000);
+        public bool OnCooldown => Find.TickManager.TicksGame < lastUsedTick + (AdjustedCooldownDays * 60000);
+        private int pulseTick = 0;
+        private bool peakInitialized = false;
+        private int herdCheckTick = 2501;
+
+        public int CurrentResonanceTier
+        {
+            get
+            {
+                var comp = Current.Game?.GetComponent<TitanGameComponent>();
+                if (comp == null) return 0;
+                int peak = comp.peakExperimentCount;
+                bool hasKing = (this.parent as Pawn)?.health?.hediffSet?.HasHediff(HediffDef.Named("TITAN_KingsBloodline")) == true;
+                if (hasKing) return 4;
+                if (peak >= 30) return 3;
+                if (peak >= 15) return 2;
+                if (peak >= 5) return 1;
+                return 0;
+            }
+        }
+
+        public float AdjustedRange => Props.range * (CurrentResonanceTier >= 1 ? 1.5f : 1f);
+        public int AdjustedHealAmount => (int)(Props.healAmount * (CurrentResonanceTier >= 1 ? 1.5f : 1f));
+        public float AdjustedCooldownDays => Props.cooldownDays * (CurrentResonanceTier >= 1 ? 0.75f : 1f);
+        public float AdjustedPulseRange
+        {
+            get
+            {
+                switch (CurrentResonanceTier)
+                {
+                    case 1: return 8f;
+                    case 2: return 12f;
+                    case 3: return 15f;
+                    case 4: return 20f;
+                    default: return 0f;
+                }
+            }
+        }
+
+        public override void CompTick()
+        {
+            base.CompTick();
+            if (this.parent?.Map == null || this.parent.DestroyedOrNull()) return;
+
+            if (!peakInitialized)
+            {
+                peakInitialized = true;
+                var titanComp = Current.Game?.GetComponent<TitanGameComponent>();
+                if (titanComp != null) titanComp.UpdatePeakExperimentCount();
+                var herdTracker = Current.Game?.GetComponent<GameComponent_ThrumboHerdTracker>();
+                if (herdTracker != null) herdTracker.TickHerd();
+            }
+
+            if (herdCheckTick++ >= 2500)
+            {
+                herdCheckTick = 0;
+                var herdTracker = Current.Game?.GetComponent<GameComponent_ThrumboHerdTracker>();
+                if (herdTracker != null) herdTracker.TickHerd();
+            }
+            if (CurrentResonanceTier >= 1 && pulseTick++ >= 3000)
+            {
+                pulseTick = 0;
+                DoSyncPulse();
+            }
+        }
+
+        private void DoSyncPulse()
+        {
+            Pawn me = this.parent as Pawn;
+            if (me == null || me.Dead || me.Downed || me.Map == null) return;
+
+            float pulseRange = AdjustedPulseRange;
+            if (pulseRange <= 0f) return;
+
+            IReadOnlyList<Pawn> pawns = me.Map.mapPawns.AllPawnsSpawned;
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                Pawn p = pawns[i];
+                if (p == me || p.Dead || p.Downed) continue;
+                if (p.Faction != Faction.OfPlayer) continue;
+                if (!p.Position.InHorDistOf(me.Position, pulseRange)) continue;
+                List<Hediff_Injury> injuries = new List<Hediff_Injury>();
+                p.health.hediffSet.GetHediffs(ref injuries);
+                foreach (var injury in injuries)
+                {
+                    if (injury.Severity > 0)
+                    {
+                        injury.Heal(1);
+                        break;
+                    }
+                }
+            }
+        }
 
         private Texture2D cachedIcon;
         private Texture2D GetIcon()
@@ -146,8 +291,8 @@ namespace ProjectTITAN
 
             Command_Target cmd = new Command_Target
             {
-                defaultLabel = "泰坦共鸣",
-                defaultDesc = "利用0号的皇室基因释放共鸣波。【冷却：1小时】- 任务神兽：执行特定的治疗/安抚操作，完成后给予奖励并离开。- 支援友军：感谢支援并指引离开。- 普通友军：治疗伤口。",
+                defaultLabel = "TITAN_Ability_Resonance".Translate(),
+                defaultDesc = GetResonanceDesc(),
                 icon = GetIcon(),
                 targetingParams = new TargetingParameters { canTargetPawns = true, validator = (TargetInfo x) => x.Thing is Pawn },
                 action = (LocalTargetInfo target) => UseAbility(target.Pawn)
@@ -155,16 +300,42 @@ namespace ProjectTITAN
 
             if (OnCooldown)
             {
-                float ticksLeft = (lastUsedTick + (Props.cooldownDays * 60000)) - Find.TickManager.TicksGame;
+                float ticksLeft = (lastUsedTick + (AdjustedCooldownDays * 60000)) - Find.TickManager.TicksGame;
                 cmd.Disable("Cooldown".Translate(ticksLeft / 2500f));
             }
             yield return cmd;
+
+            if (CurrentResonanceTier >= 4)
+            {
+                Command_Target royalCmd = new Command_Target
+                {
+                    defaultLabel = "TITAN_Ability_RoyalMark".Translate(),
+                    defaultDesc = "TITAN_Ability_RoyalMarkDesc".Translate(),
+                    icon = GetIcon(),
+                    targetingParams = new TargetingParameters { canTargetPawns = true, validator = (TargetInfo x) => x.Thing is Pawn },
+                    action = (LocalTargetInfo target) => ApplyRoyalMark(target.Pawn)
+                };
+                yield return royalCmd;
+            }
+        }
+
+        private string GetResonanceDesc()
+        {
+            int tier = CurrentResonanceTier;
+            string desc = "TITAN_Ability_ResonanceDesc".Translate();
+            desc += "\n\n" + string.Format("TITAN_Ability_CurrentStats".Translate(),
+                (int)AdjustedRange, AdjustedHealAmount, (AdjustedCooldownDays * 60000f / 2500f).ToString("F1"));
+            if (tier >= 1) desc += "\n" + "TITAN_Ability_Tier1Bonus".Translate();
+            if (tier >= 2) desc += "\n" + "TITAN_Ability_Tier2Bonus".Translate();
+            if (tier >= 3) desc += "\n" + "TITAN_Ability_Tier3Bonus".Translate();
+            if (tier >= 4) desc += "\n" + "TITAN_Ability_Tier4Bonus".Translate();
+            return desc;
         }
 
         private void UseAbility(Pawn target)
         {
             if (target == null) return;
-            if (!target.Position.InHorDistOf(this.parent.Position, Props.range))
+            if (!target.Position.InHorDistOf(this.parent.Position, AdjustedRange))
             {
                 Messages.Message("Message_TITAN_TargetTooFar".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -256,13 +427,18 @@ namespace ProjectTITAN
             {
                 HealInjuries(target);
             }
+
+            if (CurrentResonanceTier >= 3)
+            {
+                DoProgenitorEcho(target);
+            }
         }
 
         private void HealInjuries(Pawn target)
         {
             List<Hediff_Injury> injuries = new List<Hediff_Injury>();
             target.health.hediffSet.GetHediffs(ref injuries);
-            int healLeft = Props.healAmount;
+            int healLeft = AdjustedHealAmount;
             foreach (var injury in injuries)
             {
                 if (healLeft <= 0) break;
@@ -271,6 +447,57 @@ namespace ProjectTITAN
                 healLeft -= heal;
             }
             Messages.Message(string.Format("Message_TITAN_Healed".Translate(), target.LabelShort), target, MessageTypeDefOf.PositiveEvent);
+        }
+
+        private void DoProgenitorEcho(Pawn primaryTarget)
+        {
+            Pawn me = this.parent as Pawn;
+            if (me == null || me.Map == null) return;
+
+            int healedCount = 0;
+            IReadOnlyList<Pawn> pawns = me.Map.mapPawns.AllPawnsSpawned;
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                Pawn p = pawns[i];
+                if (p == primaryTarget || p == me) continue;
+                if (p.Dead || p.Downed) continue;
+                if (p.Faction != Faction.OfPlayer && p.Faction != me.Faction) continue;
+                if (!TitanImplantUtils.IsThrumboKind(p)) continue;
+                if (!p.Position.InHorDistOf(me.Position, 10f)) continue;
+
+                List<Hediff_Injury> injuries = new List<Hediff_Injury>();
+                p.health.hediffSet.GetHediffs(ref injuries);
+                foreach (var injury in injuries)
+                {
+                    if (injury.Severity > 0)
+                    {
+                        injury.Heal(Mathf.Min(5, (int)injury.Severity));
+                        healedCount++;
+                        break;
+                    }
+                }
+            }
+            if (healedCount > 0)
+                Messages.Message(string.Format("TITAN_Message_ProgenitorEcho".Translate(), healedCount), me, MessageTypeDefOf.PositiveEvent);
+        }
+
+        private void ApplyRoyalMark(Pawn target)
+        {
+            if (target == null) return;
+            if (!TitanImplantUtils.IsThrumboKind(target))
+            {
+                Messages.Message("TITAN_Message_RoyalMark_NotThrumboKind".Translate(), target, MessageTypeDefOf.RejectInput);
+                return;
+            }
+            HediffDef markDef = DefDatabase<HediffDef>.GetNamedSilentFail("TITAN_RoyalMark");
+            if (markDef == null) return;
+            if (target.health.hediffSet.HasHediff(markDef))
+            {
+                Messages.Message("TITAN_Message_RoyalMark_AlreadyMarked".Translate(), target, MessageTypeDefOf.RejectInput);
+                return;
+            }
+            target.health.AddHediff(markDef);
+            Messages.Message(string.Format("TITAN_Message_RoyalMark_Applied".Translate(), target.LabelShort), target, MessageTypeDefOf.PositiveEvent);
         }
 
         private void TryRecruitExperimentSubject(Pawn target)
@@ -282,6 +509,10 @@ namespace ProjectTITAN
                 target.Name = new NameSingle(target.kindDef.label);
             Lord lord = target.GetLord();
             if (lord != null) target.Map.lordManager.RemoveLord(lord);
+            var titanComp = Current.Game?.GetComponent<TitanGameComponent>();
+            if (titanComp != null) titanComp.UpdatePeakExperimentCount();
+            var herdTracker = Current.Game?.GetComponent<GameComponent_ThrumboHerdTracker>();
+            if (herdTracker != null) herdTracker.TickHerd();
             Messages.Message(string.Format("Message_TITAN_SubjectRecruited".Translate(), target.LabelShort), target, MessageTypeDefOf.PositiveEvent);
         }
 
@@ -332,50 +563,39 @@ namespace ProjectTITAN
 
             if (candidates.Count == 0) return;
 
-            int spawnCount = Rand.Range(1, 4);
-            List<Pawn> spawnedAllies = new List<Pawn>();
+            bool titanAlreadyOnMap = map.mapPawns.AllPawnsSpawned.Any(p =>
+                !p.Dead && (p.def.defName == "TITAN_Warlord"
+                         || p.def.defName == "TITAN_VoidWalker"
+                         || p.def.defName == "TITAN_Matriarch"));
+            if (titanAlreadyOnMap) return;
+
             Faction allyFaction = Find.FactionManager.FirstFactionOfDef(FactionDefOf.Ancients);
 
-            for (int i = 0; i < spawnCount; i++)
+            PawnKindDef leaderKind = candidates.RandomElement();
+            IntVec3 spawnLoc;
+            if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnLoc, map, CellFinder.EdgeRoadChance_Friendly)) return;
+
+            TitanPawnGuard.BeginAllowed();
+            Pawn ally = PawnGenerator.GeneratePawn(leaderKind, null);
+            TitanPawnGuard.EndAllowed();
+            if (allyFaction != null) ally.SetFaction(allyFaction); else ally.SetFaction(null);
+
+            HediffDef buffDef = DefDatabase<HediffDef>.GetNamedSilentFail("TITAN_TitanReinforcementBuff");
+            if (buffDef != null)
             {
-                PawnKindDef leaderKind = candidates.RandomElement();
-                IntVec3 spawnLoc;
-                if (!RCellFinder.TryFindRandomPawnEntryCell(out spawnLoc, map, CellFinder.EdgeRoadChance_Friendly)) continue;
-
-                Pawn ally = PawnGenerator.GeneratePawn(leaderKind, null);
-                if (allyFaction != null) ally.SetFaction(allyFaction); else ally.SetFaction(null);
-
-                // 3倍血量和攻击力
-                if (ally.def.race != null)
-                {
-                    ally.def.race.baseHealthScale *= 3f;
-                    ally.def.race.baseBodySize *= 3f;
-                }
-                // 增强工具攻击力
-                var tools = ally.def.tools;
-                if (tools != null)
-                {
-                    for (int t = 0; t < tools.Count; t++)
-                    {
-                        tools[t].power *= 3f;
-                    }
-                }
-
-                GenSpawn.Spawn(ally, spawnLoc, map, Rot4.Random);
-                spawnedAllies.Add(ally);
+                Hediff buff = ally.health.GetOrAddHediff(buffDef);
+                buff.Severity = 1.0f;
             }
 
-            if (spawnedAllies.Count == 0) return;
+            GenSpawn.Spawn(ally, spawnLoc, map, Rot4.Random);
 
             List<Thing> enemies = map.mapPawns.AllPawnsSpawned.Where(p => p.HostileTo(Faction.OfPlayer) && !p.Downed).Cast<Thing>().ToList();
-            if (enemies.Count > 0 && spawnedAllies[0].Faction != null)
+            if (enemies.Count > 0 && ally.Faction != null)
             {
-                LordMaker.MakeNewLord(spawnedAllies[0].Faction, new LordJob_AssaultThings(Faction.OfPlayer, enemies), map, spawnedAllies);
+                LordMaker.MakeNewLord(ally.Faction, new LordJob_AssaultThings(Faction.OfPlayer, enemies), map, new List<Pawn> { ally });
             }
 
-            Pawn mainAlly = spawnedAllies[0];
-            string beastNames = string.Join("、", spawnedAllies.Select(p => p.LabelShort));
-            Find.LetterStack.ReceiveLetter("Letter_TitanReinforcement".Translate(), string.Format("Letter_TitanReinforcement_Body".Translate(), beastNames), LetterDefOf.PositiveEvent, mainAlly);
+            Find.LetterStack.ReceiveLetter("Letter_TitanReinforcement".Translate(), string.Format("Letter_TitanReinforcement_Body".Translate(), ally.LabelShort), LetterDefOf.PositiveEvent, ally);
         }
     }
 
@@ -418,6 +638,30 @@ namespace ProjectTITAN
             HediffDef d = DefDatabase<HediffDef>.GetNamedSilentFail(name);
             return d != null && set.HasHediff(d);
         }
+
+        public static bool CountsTowardResonance(Pawn p)
+        {
+            string kindDef = p.kindDef?.defName;
+            if (string.IsNullOrEmpty(kindDef)) return false;
+            if (kindDef == "TITAN_Spark" || kindDef == "TITAN_Warlord"
+             || kindDef == "TITAN_VoidWalker" || kindDef == "TITAN_Matriarch"
+             || kindDef == "TITAN_Hunter") return false;
+            if (kindDef == "TITAN_ThrumboPrototype" || kindDef.StartsWith("TITAN_No")) return true;
+            if (kindDef == "Thrumbo") return true;
+            if (kindDef.StartsWith("NT_") || kindDef == "AlphaThrumbo") return true;
+            return false;
+        }
+
+        public static bool IsThrumboKind(Pawn p)
+        {
+            string kindDef = p.kindDef?.defName;
+            if (string.IsNullOrEmpty(kindDef)) return false;
+            if (kindDef == "Thrumbo" || kindDef == "TITAN_ThrumboPrototype" || kindDef == "TITAN_Spark") return true;
+            if (kindDef == "TITAN_Warlord" || kindDef == "TITAN_VoidWalker" || kindDef == "TITAN_Matriarch") return true;
+            if (kindDef.StartsWith("TITAN_No")) return true;
+            if (kindDef.StartsWith("NT_") || kindDef == "AlphaThrumbo") return true;
+            return false;
+        }
     }
 
     public class HediffCompProperties_KingsAura : HediffCompProperties
@@ -433,16 +677,28 @@ namespace ProjectTITAN
         {
             Pawn pawn = this.Pawn;
             if (pawn.Map == null || !pawn.Spawned) return;
-            if (tickCounter++ % 180 == 0)
+            if (tickCounter++ % 300 == 0)
             {
                 HediffDef buff = DefDatabase<HediffDef>.GetNamedSilentFail("TITAN_Buff_KingsGrace");
                 if (buff != null)
                 {
-                    IReadOnlyList<Pawn> allies = pawn.Map.mapPawns.AllPawnsSpawned;
-                    foreach (Pawn p in allies)
+                    int radiusInt = (int)Props.radius;
+                    CellRect rect = CellRect.CenteredOn(pawn.Position, radiusInt);
+                    rect.ClipInsideMap(pawn.Map);
+                    for (int z = rect.minZ; z <= rect.maxZ; z++)
                     {
-                        if (p != pawn && !p.Dead && p.Faction == pawn.Faction && p.Position.InHorDistOf(pawn.Position, Props.radius))
-                            p.health.GetOrAddHediff(buff).Severity = 1.0f;
+                        for (int x = rect.minX; x <= rect.maxX; x++)
+                        {
+                            IntVec3 c = new IntVec3(x, 0, z);
+                            if (!c.InHorDistOf(pawn.Position, Props.radius)) continue;
+                            List<Thing> things = c.GetThingList(pawn.Map);
+                            for (int i = 0; i < things.Count; i++)
+                            {
+                                Pawn p = things[i] as Pawn;
+                                if (p != null && p != pawn && !p.Dead && p.Faction == pawn.Faction)
+                                    p.health.GetOrAddHediff(buff).Severity = 1.0f;
+                            }
+                        }
                     }
                 }
             }
@@ -465,17 +721,27 @@ namespace ProjectTITAN
         {
             Pawn owner = this.parent as Pawn;
             if (owner == null || owner.Map == null || owner.Dead || owner.Downed) return;
-            if (tickCounter++ % 60 == 0)
+            if (tickCounter++ % 300 == 0)
             {
                 if (Props.selfBuffDef != null) owner.health.GetOrAddHediff(Props.selfBuffDef).Severity = 1.0f;
                 if (Props.buffDef != null)
                 {
-                    IReadOnlyList<Pawn> allies = owner.Map.mapPawns.AllPawnsSpawned;
-                    foreach (Pawn p in allies)
+                    int radiusInt = (int)Props.radius;
+                    CellRect rect = CellRect.CenteredOn(owner.Position, radiusInt);
+                    rect.ClipInsideMap(owner.Map);
+                    for (int z = rect.minZ; z <= rect.maxZ; z++)
                     {
-                        if (p != owner && !p.Dead && p.Faction == owner.Faction && p.Position.InHorDistOf(owner.Position, Props.radius))
+                        for (int x = rect.minX; x <= rect.maxX; x++)
                         {
-                            p.health.GetOrAddHediff(Props.buffDef).Severity = 1.0f;
+                            IntVec3 c = new IntVec3(x, 0, z);
+                            if (!c.InHorDistOf(owner.Position, Props.radius)) continue;
+                            List<Thing> things = c.GetThingList(owner.Map);
+                            for (int i = 0; i < things.Count; i++)
+                            {
+                                Pawn p = things[i] as Pawn;
+                                if (p != null && p != owner && !p.Dead && p.Faction == owner.Faction)
+                                    p.health.GetOrAddHediff(Props.buffDef).Severity = 1.0f;
+                            }
                         }
                     }
                 }

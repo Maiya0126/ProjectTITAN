@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_GeneticDrift.label>遺伝子ドリフト</TITAN_GeneticDrift.label>
+  <TITAN_GeneticDrift.description>遺伝子構造のドリフトによる不調。0号の共鳴による修正が必要。</TITAN_GeneticDrift.description>
+  <TITAN_No88_BurnTrauma.label>火傷のトラウマ</TITAN_No88_BurnTrauma.label>
+  <TITAN_No88_BurnTrauma.description>火災からの脱出時の火傷記憶。時間とともに徐々に薄れる。</TITAN_No88_BurnTrauma.description>
+</LanguageData>

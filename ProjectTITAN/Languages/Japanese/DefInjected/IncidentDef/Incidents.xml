@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <TITAN_Incident_No26_FirstEncounter.label>26号が0号を追跡</TITAN_Incident_No26_FirstEncounter.label>
+  <TITAN_Incident_No7.label>7号・腐蝕の襲来</TITAN_Incident_No7.label>
+  <TITAN_Incident_No13.label>13号・狩りの余波</TITAN_Incident_No13.label>
+  <TITAN_Incident_No42.label>42号・遺伝子ドリフト</TITAN_Incident_No42.label>
+  <TITAN_Incident_No45.label>45号・火を越えて</TITAN_Incident_No45.label>
+  <TITAN_Incident_No50.label>50号・招かれざる客</TITAN_Incident_No50.label>
+  <TITAN_Incident_No64.label>64号・海賊の狩猟</TITAN_Incident_No64.label>
+  <TITAN_Incident_No88.label>88号・炎からの逃走</TITAN_Incident_No88.label>
+
+  <TITAN_Incident_MatriarchCrash.label>タイタン伝説：生命の母</TITAN_Incident_MatriarchCrash.label>
+  <TITAN_Incident_MatriarchCrash.letterLabel>生命の母墜落</TITAN_Incident_MatriarchCrash.letterLabel>
+  <TITAN_Incident_MatriarchCrash.letterText>巨大な生命エネルギー反応が近くに墜落した。伝説の「生命の母」だ。\n\n極めて衰弱しており、遺伝子崩壊の瀕戸際にある。0号プロトタイプで治療すれば、生命の贈り物を得られるかもしれない。\n\n警告：速やかに治療できなければ、彼女は虚空へ帰還する。</TITAN_Incident_MatriarchCrash.letterText>
+
+  <TITAN_Incident_WarlordRaid.label>タイタン伝説：戦蹟</TITAN_Incident_WarlordRaid.label>
+  <TITAN_Incident_WarlordRaid.letterLabel>戦蹟の侵攻</TITAN_Incident_WarlordRaid.letterLabel>
+  <TITAN_Incident_WarlordRaid.letterText>空気が血の匂いに満ちる。伝説の覇者「戦蹟」が狂獣の群れと共に現れた！\n\n極度の激怒状態にある。撃退するか、0号プロトタイプでその怒りを鎮めるか選べる。\n\nいずれにせよ、力を証明すれば認められ、証の品を得られるだろう。</TITAN_Incident_WarlordRaid.letterText>
+
+  <TITAN_Incident_VoidWalkerRescue.label>タイタン伝説：虚空の歩行者</TITAN_Incident_VoidWalkerRescue.label>
+  <TITAN_Incident_VoidWalkerRescue.letterLabel>虚空の歩行者の救難</TITAN_Incident_VoidWalkerRescue.letterLabel>
+  <TITAN_Incident_VoidWalkerRescue.letterText>空間が不自然に歪み、半透明の姿が位相裂け目から転がり落ちた — 伝説の「虚空の歩行者」だ。明らかに追跡されており、位相場は箇所が損傷している。\n\n警戒度は最高レベルで、容易には誰にも近づかない。マップ上の全ての敵対ユニットを排除した後、0号プロトタイプのタイタン共鳴で通信を試みよ。信頼を得られるかもしれない。\n\n警告：脅威が近くに残っていれば、再び位相転移して逃亡を試みる。</TITAN_Incident_VoidWalkerRescue.letterText>
+
+  <TITAN_Incident_HunterAttack.label>ハンター襲来</TITAN_Incident_HunterAttack.label>
+
+</LanguageData>

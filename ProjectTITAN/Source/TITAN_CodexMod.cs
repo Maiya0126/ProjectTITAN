@@ -30,14 +30,14 @@ namespace ProjectTITAN
         public int incidentCooldown_Matriarch = 30;
         public int incidentCooldown_Warlord = 30;
         public int incidentCooldown_VoidWalker = 30;
-        public int incidentCooldown_No7 = 40;
-        public int incidentCooldown_No13 = 40;
-        public int incidentCooldown_No26 = 40;
-        public int incidentCooldown_No42 = 40;
-        public int incidentCooldown_No45 = 40;
-        public int incidentCooldown_No50 = 40;
-        public int incidentCooldown_No64 = 40;
-        public int incidentCooldown_No88 = 40;
+        public int incidentCooldown_No7 = 15;
+        public int incidentCooldown_No13 = 15;
+        public int incidentCooldown_No26 = 5;
+        public int incidentCooldown_No42 = 15;
+        public int incidentCooldown_No45 = 15;
+        public int incidentCooldown_No50 = 15;
+        public int incidentCooldown_No64 = 15;
+        public int incidentCooldown_No88 = 15;
         public int incidentCooldown_HunterAttack = 25;
 
         public override void ExposeData()
@@ -62,14 +62,14 @@ namespace ProjectTITAN
             Scribe_Values.Look(ref incidentCooldown_Matriarch, "incidentCooldown_Matriarch", 30);
             Scribe_Values.Look(ref incidentCooldown_Warlord, "incidentCooldown_Warlord", 30);
             Scribe_Values.Look(ref incidentCooldown_VoidWalker, "incidentCooldown_VoidWalker", 30);
-            Scribe_Values.Look(ref incidentCooldown_No7, "incidentCooldown_No7", 40);
-            Scribe_Values.Look(ref incidentCooldown_No13, "incidentCooldown_No13", 40);
-            Scribe_Values.Look(ref incidentCooldown_No26, "incidentCooldown_No26", 40);
-            Scribe_Values.Look(ref incidentCooldown_No42, "incidentCooldown_No42", 40);
-            Scribe_Values.Look(ref incidentCooldown_No45, "incidentCooldown_No45", 40);
-            Scribe_Values.Look(ref incidentCooldown_No50, "incidentCooldown_No50", 40);
-            Scribe_Values.Look(ref incidentCooldown_No64, "incidentCooldown_No64", 40);
-            Scribe_Values.Look(ref incidentCooldown_No88, "incidentCooldown_No88", 40);
+            Scribe_Values.Look(ref incidentCooldown_No7, "incidentCooldown_No7", 15);
+            Scribe_Values.Look(ref incidentCooldown_No13, "incidentCooldown_No13", 15);
+            Scribe_Values.Look(ref incidentCooldown_No26, "incidentCooldown_No26", 5);
+            Scribe_Values.Look(ref incidentCooldown_No42, "incidentCooldown_No42", 15);
+            Scribe_Values.Look(ref incidentCooldown_No45, "incidentCooldown_No45", 15);
+            Scribe_Values.Look(ref incidentCooldown_No50, "incidentCooldown_No50", 15);
+            Scribe_Values.Look(ref incidentCooldown_No64, "incidentCooldown_No64", 15);
+            Scribe_Values.Look(ref incidentCooldown_No88, "incidentCooldown_No88", 15);
             Scribe_Values.Look(ref incidentCooldown_HunterAttack, "incidentCooldown_HunterAttack", 25);
         }
     }
@@ -211,6 +211,7 @@ namespace ProjectTITAN
 
             listing.End();
             Settings.Write();
+            ApplySettingsToIncidentDefs();
             Widgets.EndScrollView();
         }
 
@@ -228,7 +229,7 @@ namespace ProjectTITAN
             Text.Anchor = TextAnchor.UpperLeft;
 
             Rect coolRect = new Rect(x + col0 + col1, y + 2f, col2, rowH * 0.45f);
-            cooldown = (int)Widgets.HorizontalSlider(coolRect, cooldown, 10, 120);
+            cooldown = (int)Widgets.HorizontalSlider(coolRect, cooldown, 5, 120);
             Text.Anchor = TextAnchor.MiddleCenter;
             Widgets.Label(new Rect(x + col0 + col1, y + rowH * 0.5f, col2, rowH * 0.5f), cooldown + " d");
             Text.Anchor = TextAnchor.UpperLeft;
@@ -302,6 +303,53 @@ namespace ProjectTITAN
         public static bool IsNewThrumboLoaded()
         {
             return LoadedModManager.RunningMods.Any(m => m.PackageIdPlayerFacing == "BeckeSteamID.NewThrumbo");
+        }
+
+        private static readonly Dictionary<string, Func<float>> IncidentChanceMap = new Dictionary<string, Func<float>>
+        {
+            { "TITAN_Incident_MatriarchCrash", () => Settings.incidentChance_Matriarch },
+            { "TITAN_Incident_WarlordRaid", () => Settings.incidentChance_Warlord },
+            { "TITAN_Incident_VoidWalkerRescue", () => Settings.incidentChance_VoidWalker },
+            { "TITAN_Incident_No7", () => Settings.incidentChance_No7 },
+            { "TITAN_Incident_No13", () => Settings.incidentChance_No13 },
+            { "TITAN_Incident_No26_FirstEncounter", () => Settings.incidentChance_No26 },
+            { "TITAN_Incident_No42", () => Settings.incidentChance_No42 },
+            { "TITAN_Incident_No45", () => Settings.incidentChance_No45 },
+            { "TITAN_Incident_No50", () => Settings.incidentChance_No50 },
+            { "TITAN_Incident_No64", () => Settings.incidentChance_No64 },
+            { "TITAN_Incident_No88", () => Settings.incidentChance_No88 },
+            { "TITAN_Incident_HunterAttack", () => Settings.incidentChance_HunterAttack },
+        };
+
+        private static readonly Dictionary<string, Func<int>> IncidentCooldownMap = new Dictionary<string, Func<int>>
+        {
+            { "TITAN_Incident_MatriarchCrash", () => Settings.incidentCooldown_Matriarch },
+            { "TITAN_Incident_WarlordRaid", () => Settings.incidentCooldown_Warlord },
+            { "TITAN_Incident_VoidWalkerRescue", () => Settings.incidentCooldown_VoidWalker },
+            { "TITAN_Incident_No7", () => Settings.incidentCooldown_No7 },
+            { "TITAN_Incident_No13", () => Settings.incidentCooldown_No13 },
+            { "TITAN_Incident_No26_FirstEncounter", () => Settings.incidentCooldown_No26 },
+            { "TITAN_Incident_No42", () => Settings.incidentCooldown_No42 },
+            { "TITAN_Incident_No45", () => Settings.incidentCooldown_No45 },
+            { "TITAN_Incident_No50", () => Settings.incidentCooldown_No50 },
+            { "TITAN_Incident_No64", () => Settings.incidentCooldown_No64 },
+            { "TITAN_Incident_No88", () => Settings.incidentCooldown_No88 },
+            { "TITAN_Incident_HunterAttack", () => Settings.incidentCooldown_HunterAttack },
+        };
+
+        public static void ApplySettingsToIncidentDefs()
+        {
+            if (Settings == null) return;
+            foreach (var kv in IncidentChanceMap)
+            {
+                IncidentDef def = DefDatabase<IncidentDef>.GetNamedSilentFail(kv.Key);
+                if (def != null) def.baseChance = kv.Value();
+            }
+            foreach (var kv in IncidentCooldownMap)
+            {
+                IncidentDef def = DefDatabase<IncidentDef>.GetNamedSilentFail(kv.Key);
+                if (def != null) def.minRefireDays = kv.Value();
+            }
         }
     }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <TITAN_Incident_No26_FirstEncounter.label>No.26 Tracks #0</TITAN_Incident_No26_FirstEncounter.label>
+  <TITAN_Incident_No7.label>No.7 — Corrosive Assault</TITAN_Incident_No7.label>
+  <TITAN_Incident_No13.label>No.13 — Hunt Aftermath</TITAN_Incident_No13.label>
+  <TITAN_Incident_No42.label>No.42 — Genetic Drift</TITAN_Incident_No42.label>
+  <TITAN_Incident_No45.label>No.45 — Through Fire</TITAN_Incident_No45.label>
+  <TITAN_Incident_No50.label>No.50 — Uninvited Guest</TITAN_Incident_No50.label>
+  <TITAN_Incident_No64.label>No.64 — Pirate Hunt</TITAN_Incident_No64.label>
+  <TITAN_Incident_No88.label>No.88 — Fleeing the Flames</TITAN_Incident_No88.label>
+
+  <TITAN_Incident_MatriarchCrash.label>Titan Legend: Matriarch of Life</TITAN_Incident_MatriarchCrash.label>
+  <TITAN_Incident_MatriarchCrash.letterLabel>Matriarch of Life Falls</TITAN_Incident_MatriarchCrash.letterLabel>
+  <TITAN_Incident_MatriarchCrash.letterText>A massive life energy signature has crashed nearby. It is the legendary "Matriarch of Life".\n\nIt appears extremely weak, on the verge of genetic collapse. Use Prototype #0 to cure it, and you may receive life's gift.\n\nWarning: If you cannot cure it in time, it will return to the void.</TITAN_Incident_MatriarchCrash.letterText>
+
+  <TITAN_Incident_WarlordRaid.label>Titan Legend: War Trace</TITAN_Incident_WarlordRaid.label>
+  <TITAN_Incident_WarlordRaid.letterLabel>War Trace Invasion</TITAN_Incident_WarlordRaid.letterLabel>
+  <TITAN_Incident_WarlordRaid.letterText>The air reeks of blood. The legendary tyrant "War Trace" has appeared with its berserk beast pack!\n\nIt is in an extreme rage. You can choose to defeat it, or use Prototype #0 to soothe its fury.\n\nEither way, proving your strength will earn its recognition and a token of acknowledgment.</TITAN_Incident_WarlordRaid.letterText>
+
+  <TITAN_Incident_VoidWalkerRescue.label>Titan Legend: Void Walker</TITAN_Incident_VoidWalkerRescue.label>
+  <TITAN_Incident_VoidWalkerRescue.letterLabel>Void Walker's Distress</TITAN_Incident_VoidWalkerRescue.letterLabel>
+  <TITAN_Incident_VoidWalkerRescue.letterText>Space warps unnaturally as a semi-transparent figure tumbles from a phase rift — it is the legendary "Void Walker". It is clearly being hunted; its phase field is damaged in multiple places.\n\nIt is on high alert and will not approach anyone easily. Clear all hostile units from the map, then use Prototype #0's Titan Resonance to communicate with it. You may earn its trust.\n\nWarning: If threats remain nearby, it will attempt to phase-shift away again.</TITAN_Incident_VoidWalkerRescue.letterText>
+
+  <TITAN_Incident_HunterAttack.label>Hunter Assault</TITAN_Incident_HunterAttack.label>
+
+</LanguageData>

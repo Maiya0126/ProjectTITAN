@@ -71,10 +71,12 @@ namespace ProjectTITAN
                 return null;
             PawnKindDef kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(PawnKindDefName);
             if (kind == null) return null;
+            TitanPawnGuard.BeginAllowed();
             PawnGenerationRequest request = new PawnGenerationRequest(kind, faction,
                 fixedBiologicalAge: fixedAge, fixedChronologicalAge: fixedAge,
                 developmentalStages: DevelopmentalStage.Adult, allowDowned: true);
             Pawn pawn = PawnGenerator.GeneratePawn(request);
+            TitanPawnGuard.EndAllowed();
             pawn.Name = new NameSingle(kind.label);
             GenSpawn.Spawn(pawn, spawnCell, map, Rot4.Random);
             return pawn;
@@ -168,8 +170,8 @@ namespace ProjectTITAN
 
             Pawn prototype0 = map.mapPawns.SpawnedColonyAnimals.FirstOrDefault(p => p.kindDef?.defName == "TITAN_ThrumboPrototype");
             IntVec3 targetPos = prototype0 != null ? prototype0.Position : map.Center;
-            LordMaker.MakeNewLord(Faction.OfPlayer, new LordJob_DefendPoint(targetPos), map, new List<Pawn> { no13 });
             no13.SetFaction(Faction.OfPlayer);
+            LordMaker.MakeNewLord(Faction.OfPlayer, new LordJob_DefendPoint(targetPos), map, new List<Pawn> { no13 });
 
             TrySpawnCompanion(no13, map);
 
