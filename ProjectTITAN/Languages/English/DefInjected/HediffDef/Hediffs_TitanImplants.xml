@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_Implant_CrimsonHeart.label>Crimson Heart (Mutated)</TITAN_Implant_CrimsonHeart.label>
+  <TITAN_Implant_CrimsonHeart.description>Enhanced cardiac function granted by gene mutation.</TITAN_Implant_CrimsonHeart.description>
+  <TITAN_Implant_VoidMembrane.label>Void Membrane (Mutated)</TITAN_Implant_VoidMembrane.label>
+  <TITAN_Implant_VoidMembrane.description>Subdermal phase-shift field granted by gene mutation.</TITAN_Implant_VoidMembrane.description>
+  <TITAN_Implant_VerdantSpine.label>Verdant Spine (Mutated)</TITAN_Implant_VerdantSpine.label>
+  <TITAN_Implant_VerdantSpine.description>Enhanced spinal nerves granted by gene mutation.</TITAN_Implant_VerdantSpine.description>
+  <TITAN_KingsBloodline.label>King's Bloodline</TITAN_KingsBloodline.label>
+  <TITAN_KingsBloodline.description>Prototype #0's fully awakened state.</TITAN_KingsBloodline.description>
+  <TITAN_Buff_KingsGrace.label>King's Grace</TITAN_Buff_KingsGrace.label>
+  <TITAN_Buff_KingsGrace.description>Inspired by #0's awakening aura.</TITAN_Buff_KingsGrace.description>
+</LanguageData>

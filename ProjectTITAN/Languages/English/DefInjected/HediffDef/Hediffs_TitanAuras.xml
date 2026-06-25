@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_Aura_Warlord.label>Blood Frenzy</TITAN_Aura_Warlord.label>
+  <TITAN_Aura_Warlord.description>Under Warlord's berserk influence.</TITAN_Aura_Warlord.description>
+  <TITAN_Aura_Warlord_Source.label>Warlord Aura</TITAN_Aura_Warlord_Source.label>
+  <TITAN_Aura_Warlord_Source.description>Emitting berserk psychic waves.</TITAN_Aura_Warlord_Source.description>
+  <TITAN_Aura_VoidWalker.label>Void Veil</TITAN_Aura_VoidWalker.label>
+  <TITAN_Aura_VoidWalker.description>Protected by Void Walker's phase field.</TITAN_Aura_VoidWalker.description>
+  <TITAN_Aura_VoidWalker_Source.label>Void Walker Aura</TITAN_Aura_VoidWalker_Source.label>
+  <TITAN_Aura_VoidWalker_Source.description>Emitting phase-warping psychic energy.</TITAN_Aura_VoidWalker_Source.description>
+  <TITAN_Aura_Matriarch.label>Life Bloom</TITAN_Aura_Matriarch.label>
+  <TITAN_Aura_Matriarch.description>Bathed in life radiance.</TITAN_Aura_Matriarch.description>
+  <TITAN_Aura_Matriarch_Source.label>Matriarch Aura</TITAN_Aura_Matriarch_Source.label>
+  <TITAN_Aura_Matriarch_Source.description>Emitting life energy.</TITAN_Aura_Matriarch_Source.description>
+  <TITAN_WarlordSoothing.label>Titan Resonance (Soothing)</TITAN_WarlordSoothing.label>
+  <TITAN_WarlordSoothing.description>Prototype #0's psychic power is trying to calm its rage. When resonance reaches 3 stacks, it will stop attacking.</TITAN_WarlordSoothing.description>
+  <TITAN_WarlordSoothing.stages.0.label>Resonance I</TITAN_WarlordSoothing.stages.0.label>
+  <TITAN_WarlordSoothing.stages.1.label>Resonance II</TITAN_WarlordSoothing.stages.1.label>
+  <TITAN_WarlordSoothing.stages.2.label>Resonance Complete</TITAN_WarlordSoothing.stages.2.label>
+</LanguageData>

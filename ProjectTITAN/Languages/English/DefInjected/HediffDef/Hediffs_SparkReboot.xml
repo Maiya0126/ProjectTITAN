@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_SparkReboot.label>Core Rebooting</TITAN_SparkReboot.label>
+  <TITAN_SparkReboot.description>This creature has suffered lethal damage. Its internal reactor core is undergoing emergency overload reboot.
+Status:
+- Forced hibernation (cannot be woken)
+- Rapid self-repair
+- Immune to most damage</TITAN_SparkReboot.description>
+</LanguageData>

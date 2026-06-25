@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_GeneticCollapse.label>Gene Collapse</TITAN_GeneticCollapse.label>
+  <TITAN_GeneticCollapse.description>Genome is dissociating.</TITAN_GeneticCollapse.description>
+  <TITAN_VoidAnchor.label>Phase Anchor</TITAN_VoidAnchor.label>
+  <TITAN_VoidAnchor.description>Temporarily unable to dodge.</TITAN_VoidAnchor.description>
+  <TITAN_ResonanceMood.stages.0.label>Titan Resonance</TITAN_ResonanceMood.stages.0.label>
+  <TITAN_ResonanceMood.stages.0.description>Prototype #0's psychic waves fill me with profound peace.</TITAN_ResonanceMood.stages.0.description>
+  <TITAN_TitanReinforcementBuff.label>Titan Protection</TITAN_TitanReinforcementBuff.label>
+  <TITAN_TitanReinforcementBuff.description>A Titan beast's power has temporarily infused this body — life and attack greatly enhanced.</TITAN_TitanReinforcementBuff.description>
+  <TITAN_RoyalMark.label>Royal Mark</TITAN_RoyalMark.label>
+  <TITAN_RoyalMark.description>A vassal branded by Prototype #0's royal bloodline. All stats enhanced.</TITAN_RoyalMark.description>
+</LanguageData>

@@ -8,4 +8,10 @@
   <TITAN_No50_DesertThrumbo.label>No.50 — Wasteland</TITAN_No50_DesertThrumbo.label>
   <TITAN_No64_PrairieThrumbo.label>No.64 — Bastion</TITAN_No64_PrairieThrumbo.label>
   <TITAN_No88_JungleThrumbo.label>No.88 — Bloom</TITAN_No88_JungleThrumbo.label>
+  <TITAN_ThrumboPrototype.label>Prototype #0</TITAN_ThrumboPrototype.label>
+  <TITAN_Spark.label>Spark</TITAN_Spark.label>
+  <TITAN_Hunter.label>Imperial Hunter</TITAN_Hunter.label>
+  <TITAN_Warlord.label>Warlord</TITAN_Warlord.label>
+  <TITAN_VoidWalker.label>Void Walker</TITAN_VoidWalker.label>
+  <TITAN_Matriarch.label>Matriarch</TITAN_Matriarch.label>
 </LanguageData>

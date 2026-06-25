@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_TitanTechBase.label>Titan Gene Engineering</TITAN_TitanTechBase.label>
+  <TITAN_TitanTechBase.description>Understand the basic structure of Titan organisms, laying the foundation for further research.</TITAN_TitanTechBase.description>
+  <TITAN_PlantTech.label>Titan Flora</TITAN_PlantTech.label>
+  <TITAN_PlantTech.description>Study the seeds found on Prototype #0's fur to unlock Titan Tree cultivation and harvest Titan Tubers — a super ration.</TITAN_PlantTech.description>
+  <TITAN_Tech_Destroyer.label>Crimson Mutagen</TITAN_Tech_Destroyer.label>
+  <TITAN_Tech_Destroyer.description>Analyze the genetic data of Warlord to develop a mutagen that greatly enhances muscle and pain thresholds.</TITAN_Tech_Destroyer.description>
+  <TITAN_Tech_Bastion.label>Void Mutagen</TITAN_Tech_Bastion.label>
+  <TITAN_Tech_Bastion.description>Analyze the phase-shift data of Void Walker to develop a mutagen capable of generating micro phase-deflection fields under the skin.</TITAN_Tech_Bastion.description>
+  <TITAN_Tech_Strider.label>Verdant Mutagen</TITAN_Tech_Strider.label>
+  <TITAN_Tech_Strider.description>Analyze the vital data of Matriarch to develop a mutagen that greatly enhances metabolism and regeneration.</TITAN_Tech_Strider.description>
+</LanguageData>

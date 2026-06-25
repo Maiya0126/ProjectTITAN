@@ -16,4 +16,24 @@
   <TITAN_No64_PrairieThrumbo.description>Project TITAN No.64 — Bone-Keratin Super-mineralization. Sharp armor 0.95 near pure steel plate, pain threshold 0.95. Two sides of the same coin as No.13.</TITAN_No64_PrairieThrumbo.description>
   <TITAN_No88_JungleThrumbo.label>No.88 — Bloom</TITAN_No88_JungleThrumbo.label>
   <TITAN_No88_JungleThrumbo.description>Project TITAN No.88 — Symbiotic Fungal Implantation + Plant Metabolic Bypass. Produces 4 herbal medicine every 4 days. Flammability 1.2 — a fatal fire weakness.</TITAN_No88_JungleThrumbo.description>
+  <TITAN_ThrumboPrototype.label>Prototype #0</TITAN_ThrumboPrototype.label>
+  <TITAN_ThrumboPrototype.description>The ultimate product of the Empire's Xenobiology Department "Project TITAN." Her fur shimmers with a faint golden hue — the mark of royal genes.\n\nShe possesses powerful self-regeneration and cannot be truly killed (only incapacitated).\n\nFeatures:\n- Periodically sheds [Golden Scales]\n- Attracts wild thrumbos upon reaching adulthood\n- Active ability: Titan Resonance</TITAN_ThrumboPrototype.description>
+  <TITAN_Spark.label>Spark</TITAN_Spark.label>
+  <TITAN_Spark.description>A strangely mutated boomrat. She was Prototype #0's only friend back in the laboratory.\n\nFeatures:\n[Phoenix Protocol] Upon receiving lethal damage, instead of dying, she triggers a massive explosion and enters forced hibernation reboot.\n[Bond] Gains combat bonuses when near Prototype #0.</TITAN_Spark.description>
+  <TITAN_Hunter.label>Imperial Hunter</TITAN_Hunter.label>
+  <TITAN_Hunter.description>A bioweapon bred by the Empire specifically to recover "Project TITAN" experiment subjects.\n\nEngineered from warg genes, with pain and fear removed and muscles perpetually in a blood-rage state. Their brain contains only one directive: hunt #0.</TITAN_Hunter.description>
+  <TITAN_Warlord.label>Warlord</TITAN_Warlord.label>
+  <TITAN_Warlord.description>One of the Three Legendary Beasts. Age: Unknown (ancient).\n\nFeatures:\n- Immortal\n- Aura: Blood Frenzy</TITAN_Warlord.description>
+  <TITAN_VoidWalker.label>Void Walker</TITAN_VoidWalker.label>
+  <TITAN_VoidWalker.description>One of the Three Legendary Beasts. Age: Unknown (ancient).\n\nFeatures:\n- Immortal\n- Extremely high dodge + shield\n- Aura: Void Veil</TITAN_VoidWalker.description>
+  <TITAN_Matriarch.label>Matriarch</TITAN_Matriarch.label>
+  <TITAN_Matriarch.description>One of the Three Legendary Beasts. Age: Unknown (ancient).\n\nFeatures:\n- Immortal\n- Aura: Life Bloom</TITAN_Matriarch.description>
+  <TITAN_PrototypeScale.label>Prototype #0's Shed Scale</TITAN_PrototypeScale.label>
+  <TITAN_PrototypeScale.description>A scale shed from Prototype #0, still emitting a faint golden glow and special pheromones.\n\nThese pheromones have no effect on ordinary creatures, but seem to attract the one who has always guarded her.\n\nUsage:\nSelect a colonist -> Right-click the scale -> "Activate Signal."</TITAN_PrototypeScale.description>
+  <TITAN_HunterGland.label>Mutant Gland</TITAN_HunterGland.label>
+  <TITAN_HunterGland.description>An unstable biological gland extracted from a Hunter. Though unsuitable for conventional synthesis, its stored bio-energy is highly valuable on the black market; many collectors pay premium prices.</TITAN_HunterGland.description>
+  <TITAN_Incense.label>Gene Incense</TITAN_Incense.label>
+  <TITAN_Incense.description>A bundle of incense sticks blended from special herbs and chemicals. When burned, it releases pheromone smoke undetectable to humans but irresistible to certain imperial creatures.\n\nThis is where "Project TITAN" begins.\n\nUsage:\nSelect a colonist -> Right-click the incense -> "Burn Incense."</TITAN_Incense.description>
+  <TITAN_GrowthPaste.label>Gene Compensation Paste</TITAN_GrowthPaste.label>
+  <TITAN_GrowthPaste.description>A gene-compensating nutritional paste.</TITAN_GrowthPaste.description>
 </LanguageData>

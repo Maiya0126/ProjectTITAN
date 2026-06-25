@@ -16,4 +16,22 @@
   <TITAN_No64_Dome.description>No.64's thick bone dome. Extremely heavy but provides top-tier protection.</TITAN_No64_Dome.description>
   <TITAN_No88_Horn.label>No.88 Bloom Horn</TITAN_No88_Horn.label>
   <TITAN_No88_Horn.description>No.88's horn. Surface covered in living symbiotic fungal rootlets.</TITAN_No88_Horn.description>
+  <TITAN_Implant_CrimsonHeart.label>Crimson Mutagen</TITAN_Implant_CrimsonHeart.label>
+  <TITAN_Implant_CrimsonHeart.description>A crimson formula manufactured using Warlord's genes.
+[Usage]: Select "Administer Crimson Mutagen" in the thrumbo's Health -> Operations menu.
+Effect: No pain sensation, greatly enhanced melee damage.</TITAN_Implant_CrimsonHeart.description>
+  <TITAN_Implant_VoidMembrane.label>Void Mutagen</TITAN_Implant_VoidMembrane.label>
+  <TITAN_Implant_VoidMembrane.description>A deep-blue formula manufactured using Void Walker's genes.
+[Usage]: Select "Administer Void Mutagen" in the thrumbo's Health -> Operations menu.
+Effect: High armor, high dodge chance.</TITAN_Implant_VoidMembrane.description>
+  <TITAN_Implant_VerdantSpine.label>Verdant Mutagen</TITAN_Implant_VerdantSpine.label>
+  <TITAN_Implant_VerdantSpine.description>A verdant-green formula manufactured using Matriarch's genes.
+[Usage]: Select "Administer Verdant Mutagen" in the thrumbo's Health -> Operations menu.
+Effect: Extremely high carrying capacity, rapid regeneration.</TITAN_Implant_VerdantSpine.description>
+  <TITAN_Techprint_Warlord.label>Crimson Horn Plate (Data Core)</TITAN_Techprint_Warlord.label>
+  <TITAN_Techprint_Warlord.description>Contains Warlord's genetic combat data.</TITAN_Techprint_Warlord.description>
+  <TITAN_Techprint_VoidWalker.label>Void Dust (Phase Data)</TITAN_Techprint_VoidWalker.label>
+  <TITAN_Techprint_VoidWalker.description>Contains Void Walker's phase-shift research data.</TITAN_Techprint_VoidWalker.description>
+  <TITAN_Techprint_Matriarch.label>Living Resin (Biological Sample)</TITAN_Techprint_Matriarch.label>
+  <TITAN_Techprint_Matriarch.description>Contains Matriarch's vital biological data.</TITAN_Techprint_Matriarch.description>
 </LanguageData>

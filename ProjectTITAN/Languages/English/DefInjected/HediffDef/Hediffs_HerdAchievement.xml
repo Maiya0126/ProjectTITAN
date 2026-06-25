@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_HerdBuff_Tier1.label>Herd Resonance I</TITAN_HerdBuff_Tier1.label>
+  <TITAN_HerdBuff_Tier1.description>The leader's aura resonates, making kin more agile.</TITAN_HerdBuff_Tier1.description>
+  <TITAN_HerdBuff_Tier2.label>Herd Resonance II</TITAN_HerdBuff_Tier2.label>
+  <TITAN_HerdBuff_Tier2.description>The leader's aura resonates, making kin swifter and tougher.</TITAN_HerdBuff_Tier2.description>
+  <TITAN_HerdBuff_Tier3.label>Herd Resonance III</TITAN_HerdBuff_Tier3.label>
+  <TITAN_HerdBuff_Tier3.description>The leader's aura reaches its peak — kin gain all-round enhancement.</TITAN_HerdBuff_Tier3.description>
+  <TITAN_HerdMood_Tier1.stages.0.label>Ten Thousand Beasts Gather</TITAN_HerdMood_Tier1.stages.0.label>
+  <TITAN_HerdMood_Tier1.stages.0.description>Our colony has become a sanctuary for legendary beasts.</TITAN_HerdMood_Tier1.stages.0.description>
+  <TITAN_HerdMood_Tier2.stages.0.label>Court of Titans</TITAN_HerdMood_Tier2.stages.0.label>
+  <TITAN_HerdMood_Tier2.stages.0.description>This is the Court of Titans — domain of the beast kings.</TITAN_HerdMood_Tier2.stages.0.description>
+  <TITAN_HerdMood_Tier3.stages.0.label>Golden Dawn</TITAN_HerdMood_Tier3.stages.0.label>
+  <TITAN_HerdMood_Tier3.stages.0.description>This is the Golden Dawn — the true endgame of Project TITAN. Not a weapon, but a home.</TITAN_HerdMood_Tier3.stages.0.description>
+</LanguageData>

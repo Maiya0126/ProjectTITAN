@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_PrototypeHibernation.label>Forced Hibernation</TITAN_PrototypeHibernation.label>
+  <TITAN_PrototypeHibernation.description>Prototype #0 has suffered fatal damage. Self-preservation protocol has activated forced hibernation.
+Status:
+- Forced hibernation (cannot be woken)
+- Rapid self-repair
+- Immune to most damage
+- Auto-awakening in 60 seconds</TITAN_PrototypeHibernation.description>
+</LanguageData>
