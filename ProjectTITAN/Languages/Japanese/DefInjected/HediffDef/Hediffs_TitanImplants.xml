@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_Implant_CrimsonHeart.label>クリムゾンハート（変異）</TITAN_Implant_CrimsonHeart.label>
+  <TITAN_Implant_CrimsonHeart.description>遺伝子変異により強化された心臓機能。</TITAN_Implant_CrimsonHeart.description>
+  <TITAN_Implant_VoidMembrane.label>ヴォイド薄膜（変異）</TITAN_Implant_VoidMembrane.label>
+  <TITAN_Implant_VoidMembrane.description>遺伝子変異により生成された皮下位相場。</TITAN_Implant_VoidMembrane.description>
+  <TITAN_Implant_VerdantSpine.label>ヴァーダント脊索（変異）</TITAN_Implant_VerdantSpine.label>
+  <TITAN_Implant_VerdantSpine.description>遺伝子変異により強化された脊椎神経。</TITAN_Implant_VerdantSpine.description>
+  <TITAN_KingsBloodline.label>王者の血脈</TITAN_KingsBloodline.label>
+  <TITAN_KingsBloodline.description>0号プロトタイプの完全覚醒状態。</TITAN_KingsBloodline.description>
+  <TITAN_Buff_KingsGrace.label>王者の恩恵</TITAN_Buff_KingsGrace.label>
+  <TITAN_Buff_KingsGrace.description>0号の覚醒オーラに鼓舞される。</TITAN_Buff_KingsGrace.description>
+  <TITAN_RapidGrowth.label>代謝過剰</TITAN_RapidGrowth.label>
+  <TITAN_RapidGrowth.description>新陳代謝が猛烈に加速している。</TITAN_RapidGrowth.description>
+</LanguageData>

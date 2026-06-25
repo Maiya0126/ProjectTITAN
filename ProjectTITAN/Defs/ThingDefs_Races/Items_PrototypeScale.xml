@@ -19,7 +19,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>释放信息素 (召唤花火)</useLabel>
+				<useLabel>Release Pheromone (Summon Spark)</useLabel>
 				<useDuration>100</useDuration>
 			</li>
 			<li Class="CompProperties_UseEffect">

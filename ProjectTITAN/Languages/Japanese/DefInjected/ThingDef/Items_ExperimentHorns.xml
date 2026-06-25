@@ -16,4 +16,16 @@
   <TITAN_No64_Dome.description>64号の分厚い骨穹。非常に重いが最上位の防護を提供する。</TITAN_No64_Dome.description>
   <TITAN_No88_Horn.label>88号 繁花の角</TITAN_No88_Horn.label>
   <TITAN_No88_Horn.description>88号の角。表面は生きた共生菌の根で覆われている。</TITAN_No88_Horn.description>
+  <TITAN_Implant_CrimsonHeart.label>クリムゾン変異原</TITAN_Implant_CrimsonHeart.label>
+  <TITAN_Implant_CrimsonHeart.description>戦争の痕の遺伝子で製造された深紅の薬剤。\\n【用法】：スラムボの「健康 → 手術」から「クリムゾン変異原を投与」を選択。\\n効果：無痛覚、近接ダメージ大幅向上。</TITAN_Implant_CrimsonHeart.description>
+  <TITAN_Implant_VoidMembrane.label>ヴォイド変異原</TITAN_Implant_VoidMembrane.label>
+  <TITAN_Implant_VoidMembrane.description>虚空の歩き手の遺伝子で製造された蒼藍の薬剤。\\n【用法】：スラムボの「健康 → 手術」から「ヴォイド変異原を投与」を選択。\\n効果：高防衛、高回避。</TITAN_Implant_VoidMembrane.description>
+  <TITAN_Implant_VerdantSpine.label>ヴァーダント変異原</TITAN_Implant_VerdantSpine.label>
+  <TITAN_Implant_VerdantSpine.description>繁盛の母の遺伝子で製造された翠緑の薬剤。\\n【用法】：スラムボの「健康 → 手術」から「ヴァーダント変異原を投与」を選択。\\n効果：超高積載量、高速再生。</TITAN_Implant_VerdantSpine.description>
+  <TITAN_Techprint_Warlord.label>クリムゾンの角板（データコア）</TITAN_Techprint_Warlord.label>
+  <TITAN_Techprint_Warlord.description>戦争の痕の戦闘遺伝子データを内蔵。</TITAN_Techprint_Warlord.description>
+  <TITAN_Techprint_VoidWalker.label>虚空の塵（位相データ）</TITAN_Techprint_VoidWalker.label>
+  <TITAN_Techprint_VoidWalker.description>虚空の歩き手の位相研究データを内蔵。</TITAN_Techprint_VoidWalker.description>
+  <TITAN_Techprint_Matriarch.label>生命樹脂（生体サンプル）</TITAN_Techprint_Matriarch.label>
+  <TITAN_Techprint_Matriarch.description>繁盛の母の生命遺伝子データを内蔵。</TITAN_Techprint_Matriarch.description>
 </LanguageData>

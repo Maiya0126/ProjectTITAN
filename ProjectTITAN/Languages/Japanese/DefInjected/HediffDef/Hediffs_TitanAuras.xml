@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_Aura_Warlord.label>血の狂乱</TITAN_Aura_Warlord.label>
+  <TITAN_Aura_Warlord.description>戦争の痕の狂乱の影響下にある。</TITAN_Aura_Warlord.description>
+  <TITAN_Aura_Warlord_Source.label>戦争の痕のオーラ</TITAN_Aura_Warlord_Source.label>
+  <TITAN_Aura_Warlord_Source.description>狂乱の霊能波動を放っている。</TITAN_Aura_Warlord_Source.description>
+  <TITAN_Aura_VoidWalker.label>虚空の帷幕</TITAN_Aura_VoidWalker.label>
+  <TITAN_Aura_VoidWalker.description>虚空の歩き手の位相保護を受けている。</TITAN_Aura_VoidWalker.description>
+  <TITAN_Aura_VoidWalker_Source.label>虚空の歩き手のオーラ</TITAN_Aura_VoidWalker_Source.label>
+  <TITAN_Aura_VoidWalker_Source.description>位相を歪める霊能を放っている。</TITAN_Aura_VoidWalker_Source.description>
+  <TITAN_Aura_Matriarch.label>生命の開花</TITAN_Aura_Matriarch.label>
+  <TITAN_Aura_Matriarch.description>生命の輝きを浴びている。</TITAN_Aura_Matriarch.description>
+  <TITAN_Aura_Matriarch_Source.label>繁盛の母のオーラ</TITAN_Aura_Matriarch_Source.label>
+  <TITAN_Aura_Matriarch_Source.description>生命エネルギーを放っている。</TITAN_Aura_Matriarch_Source.description>
+  <TITAN_WarlordSoothing.label>タイタン共鳴（鎮静中）</TITAN_WarlordSoothing.label>
+  <TITAN_WarlordSoothing.description>0号プロトタイプの霊能がその怒りを鎮めようとしている。共鳴が3スタックに達すると攻撃を停止する。</TITAN_WarlordSoothing.description>
+  <TITAN_WarlordSoothing.stages.0.label>共鳴 I</TITAN_WarlordSoothing.stages.0.label>
+  <TITAN_WarlordSoothing.stages.1.label>共鳴 II</TITAN_WarlordSoothing.stages.1.label>
+  <TITAN_WarlordSoothing.stages.2.label>共鳴完了</TITAN_WarlordSoothing.stages.2.label>
+</LanguageData>

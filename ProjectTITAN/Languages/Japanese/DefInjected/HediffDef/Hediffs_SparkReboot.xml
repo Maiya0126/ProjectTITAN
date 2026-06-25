@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_SparkReboot.label>コア再起動中</TITAN_SparkReboot.label>
+  <TITAN_SparkReboot.description>この生物は致命的損傷を受けた。体内の炉心が緊急過負荷再起動を行っている。\n状態：\n- 強制休眠（覚醒不可）\n- 高速自己修復\n- ほぼ全ての攻撃を無効化</TITAN_SparkReboot.description>
+</LanguageData>

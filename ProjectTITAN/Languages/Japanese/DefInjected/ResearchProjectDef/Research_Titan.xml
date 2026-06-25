@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_TitanTechBase.label>タイタン遺伝子工学</TITAN_TitanTechBase.label>
+  <TITAN_TitanTechBase.description>タイタン生物の基本構造を理解し、後続研究の基礎を築く。</TITAN_TitanTechBase.description>
+  <TITAN_PlantTech.label>タイタン植物</TITAN_PlantTech.label>
+  <TITAN_PlantTech.description>0号プロトタイプの毛皮に付着していた種子を研究し、タイタンの樹の栽培と超食料タイタン塊茎の収穫を可能にする。</TITAN_PlantTech.description>
+  <TITAN_Tech_Destroyer.label>クリムゾン変異原</TITAN_Tech_Destroyer.label>
+  <TITAN_Tech_Destroyer.description>戦争の痕の遺伝子データを解析し、筋肉と痛覚を大幅に強化する変異原を開発する。</TITAN_Tech_Destroyer.description>
+  <TITAN_Tech_Bastion.label>ヴォイド変異原</TITAN_Tech_Bastion.label>
+  <TITAN_Tech_Bastion.description>虚空の歩き手の位相データを解析し、皮下に微小位相偏向場を生成する変異原を開発する。</TITAN_Tech_Bastion.description>
+  <TITAN_Tech_Strider.label>ヴァーダント変異原</TITAN_Tech_Strider.label>
+  <TITAN_Tech_Strider.description>繁盛の母の生命データを解析し、代謝と再生能力を大幅に強化する変異原を開発する。</TITAN_Tech_Strider.description>
+</LanguageData>

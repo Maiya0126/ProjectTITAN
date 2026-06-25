@@ -29,6 +29,13 @@
   <shattering_horn>粉砕の角</shattering_horn>
   <void_horn>虚空の角</void_horn>
   <life_horn>生命の角</life_horn>
+  <claw>爪</claw>
+  <bite>噛みつき</bite>
+  <head>頭</head>
+  <horn>角</horn>
+  <teeth>歯</teeth>
+  <razor_fangs>剃刀の牙</razor_fangs>
+  <claws>鉤爪</claws>
 
   <!-- ==================== ITEMS ==================== -->
 
@@ -441,7 +448,7 @@
   <TITAN_Letter_VoidWalkerRescue_Title>虚空行者の救難</TITAN_Letter_VoidWalkerRescue_Title>
   <TITAN_Letter_VoidWalkerRescue_Desc>負傷した「虚空行者」がこの区域に逃げ込んできた。体には帝国制式武器による傷が無数にある。\n\n【帝国部隊に偽装した違法傭兵】が追跡していることを検知。\n\n虚空行者は拠点に避難を求めている！守れ！</TITAN_Letter_VoidWalkerRescue_Desc>
   <TITAN_Letter_SpawnSpark_Title>不滅の火種</TITAN_Letter_SpawnSpark_Title>
-  <TITAN_Letter_Spark_Desc>鱗が特殊なフェロモン信号を発すると、高熱を纏った変異ボムラットがマップに突入してきた。\n\nそれは「花火」、0号プロトタイプの唯一の友だ。嗅ぎ慣れた、ただ一つ識别できる匂いを頼りに、迷わず駆けつけたのだ。\n\n（獲得：花火 - 無限リスポーン可能な爆破の達人）</TITAN_Letter_Spark_Desc>
+  <TITAN_Letter_SpawnSpark_Desc>鱗が特殊なフェロモン信号を発すると、高熱を纏った変異ボムラットがマップに突入してきた。\n\nそれは「花火」、0号プロトタイプの唯一の友だ。嗅ぎ慣れた、ただ一つ識别できる匂いを頼りに、迷わず駆けつけたのだ。\n\n（獲得：花火 - 無限リスポーン可能な爆破の達人）</TITAN_Letter_SpawnSpark_Desc>
   <TITAN_Letter_SpawnPrototype_Title>霧の中の応答</TITAN_Letter_SpawnPrototype_Title>
   <TITAN_Letter_SpawnPrototype_Desc>線香が燃え尽き、暴れた遺伝子を鎮める静寂の香りが荒野の奥へ漂う。\n\n間もなく、マップ端に金色の影が現れた——それは帝国が失った実験体「0号」だ。\n\n彼女は疲弊し、遺伝子改造の激痛に長く耐えてきた。だが今、この線香の香りが彼女に久々の安らぎをもたらした。\n\n彼女はおずおずと拠点に近づいてくる——兵器としてではなく、避難を求める放浪者として。\n\n（獲得：【0号プロトタイプ】 - 彼女はあなたを信じ、入植地に加わった）</TITAN_Letter_SpawnPrototype_Desc>  <Message_Titan_Vanished>{0}の力は虚空へと帰り、残影のみを残した。</Message_Titan_Vanished>
   <TITAN_Gizmo_DismissTitan>虚空へ帰還</TITAN_Gizmo_DismissTitan>

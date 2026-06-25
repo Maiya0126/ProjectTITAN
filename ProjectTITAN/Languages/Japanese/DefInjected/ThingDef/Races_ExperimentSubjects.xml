@@ -16,4 +16,24 @@
   <TITAN_No64_PrairieThrumbo.description>プロジェクトTITAN 64号 — 骨ケラチン超硬化。鋭器防衛0.95は鋼鉄板に匹敵、痛覚閾値0.95。13号と表裏一体の存在。</TITAN_No64_PrairieThrumbo.description>
   <TITAN_No88_JungleThrumbo.label>88号・繁花</TITAN_No88_JungleThrumbo.label>
   <TITAN_No88_JungleThrumbo.description>プロジェクトTITAN 88号 — 共生菌植え込み＋植物代謝バイパス。4日ごとにハーブ薬を4個産出。可燃性1.2 — 炎が致命的な弱点。</TITAN_No88_JungleThrumbo.description>
+  <TITAN_ThrumboPrototype.label>0号プロトタイプ</TITAN_ThrumboPrototype.label>
+  <TITAN_ThrumboPrototype.description>帝国異種生物研究部「プロジェクトTITAN」の最終成果物。彼女の毛皮は淡い金色に輝く — それは皇室遺伝子の象徴。\\n\\n彼女は強力な自己修復能力を持ち、完全には死ぬことができない（昏倒するのみ）。\\n\\n特性：\\n- 定期的に【金色の鱗】を脱落させる\\n- 成体になると野生のスラムボを引き寄せる\\n- 能動スキル：タイタン共鳴</TITAN_ThrumboPrototype.description>
+  <TITAN_Spark.label>花火</TITAN_Spark.label>
+  <TITAN_Spark.description>奇妙な突然変異を起こしたボムラット。彼女は実験室での0号プロトタイプの唯一の友だった。\\n\\n特性：\\n【フェニックスプロトコル】致命的損傷を受けると、死亡する代わりに大爆発を起こし、強制休眠再起動状態に入る。\\n【絆】0号プロトタイプの近くにいると、戦闘力ボーナスを得る。</TITAN_Spark.description>
+  <TITAN_Hunter.label>帝国ハンター</TITAN_Hunter.label>
+  <TITAN_Hunter.description>「プロジェクトTITAN」実験体を回収するために帝国が特別に育成した生物兵器。\\n\\nワーグの遺伝子を強引に改造し、痛覚と恐怖を取り除き、筋肉を常時充血した狂乱状態に保っている。彼らの脳に刻まれた指令はただ一つ：0号を狩れ。</TITAN_Hunter.description>
+  <TITAN_Warlord.label>戦争の痕</TITAN_Warlord.label>
+  <TITAN_Warlord.description>三大伝説神獣の一柱。年齢：不詳（太古）。\\n\\n特性：\\n- 不死の体\\n- オーラ：血の狂乱</TITAN_Warlord.description>
+  <TITAN_VoidWalker.label>虚空の歩き手</TITAN_VoidWalker.label>
+  <TITAN_VoidWalker.description>三大伝説神獣の一柱。年齢：不詳（太古）。\\n\\n特性：\\n- 不死の体\\n- 極めて高い回避＋盾\\n- オーラ：虚空の帷幕</TITAN_VoidWalker.description>
+  <TITAN_Matriarch.label>繁盛の母</TITAN_Matriarch.label>
+  <TITAN_Matriarch.description>三大伝説神獣の一柱。年齢：不詳（太古）。\\n\\n特性：\\n- 不死の体\\n- オーラ：生命の開花</TITAN_Matriarch.description>
+  <TITAN_PrototypeScale.label>0号の脱落鱗片</TITAN_PrototypeScale.label>
+  <TITAN_PrototypeScale.description>0号プロトタイプから脱落した一枚の鱗。今もなお微かな金色の輝きと特殊なフェロモンを放っている。\\n\\nこれらのフェロモンは通常の生物には効果がないが、彼女を守り続けてきた存在を引き寄せるようだ。\\n\\n使用方法：\\n入植者を選択 → 鱗を右クリック →「信号を発信」。</TITAN_PrototypeScale.description>
+  <TITAN_HunterGland.label>突然変異腺</TITAN_HunterGland.label>
+  <TITAN_HunterGland.description>ハンターから抽出された不安定な生物腺体。従来の合成には使用できないが、その貯蔵された生体エネルギーは闇市場で非常に高く評価され、多くのコレクターが高額で購入する。</TITAN_HunterGland.description>
+  <TITAN_Incense.label>遺伝子香薫</TITAN_Incense.label>
+  <TITAN_Incense.description>特殊なハーブと化学物質を混合した香薫の束。火をつけると、人間には感じ取れないが特定の皇室生物を引き寄せるフェロモン煙を放つ。\\n\\nここから「プロジェクトTITAN」が始まる。\\n\\n使用方法：\\n入植者を選択 → 香薫を右クリック →「香薫を焚く」。</TITAN_Incense.description>
+  <TITAN_GrowthPaste.label>遺伝子代償ペースト</TITAN_GrowthPaste.label>
+  <TITAN_GrowthPaste.description>遺伝子代償栄養ペースト。</TITAN_GrowthPaste.description>
 </LanguageData>

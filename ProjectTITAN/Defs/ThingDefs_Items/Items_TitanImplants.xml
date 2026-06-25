@@ -28,8 +28,8 @@
 			<drugCategory>Medical</drugCategory>
 			<baseIngestTicks>120</baseIngestTicks>
 			<ingestSound>Ingest_Pill</ingestSound>
-			<ingestCommandString>融合 {0}</ingestCommandString>
-			<ingestReportString>正在融合 {0}...</ingestReportString>
+			<ingestCommandString>Fuse {0}</ingestCommandString>
+			<ingestReportString>Fusing {0}...</ingestReportString>
 		</ingestible>
 
 		<recipeMaker>

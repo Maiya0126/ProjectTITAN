@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_GeneticCollapse.label>遺伝子崩壊</TITAN_GeneticCollapse.label>
+  <TITAN_GeneticCollapse.description>遺伝子構造が解離している。</TITAN_GeneticCollapse.description>
+  <TITAN_VoidAnchor.label>位相錨</TITAN_VoidAnchor.label>
+  <TITAN_VoidAnchor.description>一時的に回避不能。</TITAN_VoidAnchor.description>
+  <TITAN_ResonanceMood.stages.0.label>タイタン共鳴</TITAN_ResonanceMood.stages.0.label>
+  <TITAN_ResonanceMood.stages.0.description>0号プロトタイプの霊能波が深い安らぎをもたらす。</TITAN_ResonanceMood.stages.0.description>
+  <TITAN_TitanReinforcementBuff.label>タイタン加護</TITAN_TitanReinforcementBuff.label>
+  <TITAN_TitanReinforcementBuff.description>タイタン神獣の力が一時的に注入され、生命力と攻撃力が大幅に強化されている。</TITAN_TitanReinforcementBuff.description>
+  <TITAN_RoyalMark.label>王者の刻印</TITAN_RoyalMark.label>
+  <TITAN_RoyalMark.description>0号プロトタイプが王者の血脈で烙印した臣下。全ステータスが強化される。</TITAN_RoyalMark.description>
+</LanguageData>

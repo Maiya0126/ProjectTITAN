@@ -10,4 +10,6 @@
   <TITAN_KingsBloodline.description>Prototype #0's fully awakened state.</TITAN_KingsBloodline.description>
   <TITAN_Buff_KingsGrace.label>King's Grace</TITAN_Buff_KingsGrace.label>
   <TITAN_Buff_KingsGrace.description>Inspired by #0's awakening aura.</TITAN_Buff_KingsGrace.description>
+  <TITAN_RapidGrowth.label>Metabolism Overload</TITAN_RapidGrowth.label>
+  <TITAN_RapidGrowth.description>Metabolism is violently accelerated.</TITAN_RapidGrowth.description>
 </LanguageData>

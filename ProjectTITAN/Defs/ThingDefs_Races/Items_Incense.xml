@@ -43,7 +43,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>点燃香薰 (召唤0号)</useLabel>
+				<useLabel>Light Incense (Summon #0)</useLabel>
 				<useDuration>300</useDuration>
 			</li>
 			<li Class="CompProperties_UseEffect">

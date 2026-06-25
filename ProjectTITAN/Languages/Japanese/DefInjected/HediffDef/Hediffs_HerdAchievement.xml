@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TITAN_HerdBuff_Tier1.label>群共鳴 I</TITAN_HerdBuff_Tier1.label>
+  <TITAN_HerdBuff_Tier1.description>統率者のオーラが共鳴し、同族がより俊敏になる。</TITAN_HerdBuff_Tier1.description>
+  <TITAN_HerdBuff_Tier2.label>群共鳴 II</TITAN_HerdBuff_Tier2.label>
+  <TITAN_HerdBuff_Tier2.description>統率者のオーラが共鳴し、同族がより素早く逞しくなる。</TITAN_HerdBuff_Tier2.description>
+  <TITAN_HerdBuff_Tier3.label>群共鳴 III</TITAN_HerdBuff_Tier3.label>
+  <TITAN_HerdBuff_Tier3.description>統率者のオーラが頂点に達し、同族に全方位の強化をもたらす。</TITAN_HerdBuff_Tier3.description>
+  <TITAN_HerdMood_Tier1.stages.0.label>万獣来朝</TITAN_HerdMood_Tier1.stages.0.label>
+  <TITAN_HerdMood_Tier1.stages.0.description>我々の入植地は伝説の生物たちの聖域となった。</TITAN_HerdMood_Tier1.stages.0.description>
+  <TITAN_HerdMood_Tier2.stages.0.label>タイタンの庭</TITAN_HerdMood_Tier2.stages.0.label>
+  <TITAN_HerdMood_Tier2.stages.0.description>ここはタイタンの庭 ― 万獣の王たちの領域。</TITAN_HerdMood_Tier2.stages.0.description>
+  <TITAN_HerdMood_Tier3.stages.0.label>黄金の夜明け</TITAN_HerdMood_Tier3.stages.0.label>
+  <TITAN_HerdMood_Tier3.stages.0.description>これこそが黄金の夜明け ― プロジェクトTITANの真の終着点。兵器ではなく、故郷である。</TITAN_HerdMood_Tier3.stages.0.description>
+</LanguageData>

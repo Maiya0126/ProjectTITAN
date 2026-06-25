@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_Kibble_From_TitanTuber.label>タイタン塊茎からキブルを作る (x200)</Make_Kibble_From_TitanTuber.label>
+  <Make_Kibble_From_TitanTuber.description>高密度のタイタン塊茎を粉砕し、干し草と混合して大量の普通キブルを製造する。\\n\\n食欲の小さい家畜・家禽の飼育に適する。</Make_Kibble_From_TitanTuber.description>
+  <Make_Kibble_From_TitanTuber.jobString>キブルを製造中。</Make_Kibble_From_TitanTuber.jobString>
+</LanguageData>
