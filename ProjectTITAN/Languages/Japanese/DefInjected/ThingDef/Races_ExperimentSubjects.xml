@@ -35,5 +35,5 @@
   <TITAN_Incense.label>遺伝子香薫</TITAN_Incense.label>
   <TITAN_Incense.description>特殊なハーブと化学物質を混合した香薫の束。火をつけると、人間には感じ取れないが特定の皇室生物を引き寄せるフェロモン煙を放つ。\\n\\nここから「プロジェクトTITAN」が始まる。\\n\\n使用方法：\\n入植者を選択 → 香薫を右クリック →「香薫を焚く」。</TITAN_Incense.description>
   <TITAN_GrowthPaste.label>遺伝子代償ペースト</TITAN_GrowthPaste.label>
-  <TITAN_GrowthPaste.description>遺伝子代償栄養ペースト。</TITAN_GrowthPaste.description>
+  <TITAN_GrowthPaste.description>遺伝子代償栄養ペースト。\\n\\n【使用方法】\\n動物が到達可能なエリアに置く — 空腹の未成体スラムボが自動的に食べる。\\n\\n【効果】\\n- 生体年齢を約30日進め、幼体の成体への成長を加速する\\n- 同時に一時的な代謝過剰状態（疲労速度+20%）を付与\\n- 未成体のスラムボ種にのみ有効、成体には成長加速効果なし\\n- タイタン塊茎＋ハーブ薬で合成</TITAN_GrowthPaste.description>
 </LanguageData>

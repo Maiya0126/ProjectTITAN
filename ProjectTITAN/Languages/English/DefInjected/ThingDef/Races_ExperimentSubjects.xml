@@ -35,5 +35,5 @@
   <TITAN_Incense.label>Gene Incense</TITAN_Incense.label>
   <TITAN_Incense.description>A bundle of incense sticks blended from special herbs and chemicals. When burned, it releases pheromone smoke undetectable to humans but irresistible to certain imperial creatures.\n\nThis is where "Project TITAN" begins.\n\nUsage:\nSelect a colonist -> Right-click the incense -> "Burn Incense."</TITAN_Incense.description>
   <TITAN_GrowthPaste.label>Gene Compensation Paste</TITAN_GrowthPaste.label>
-  <TITAN_GrowthPaste.description>A gene-compensating nutritional paste.</TITAN_GrowthPaste.description>
+  <TITAN_GrowthPaste.description>A gene-compensating nutritional paste.\n\n[Usage]\nPlace the paste in an area accessible to animals — hungry juvenile thrumbos will consume it automatically.\n\n[Effect]\n- Advances biological age by approx. 30 days, accelerating juvenile growth toward adulthood\n- Also inflicts a temporary metabolism overload (fatigue rate +20%)\n- Only effective on juvenile thrumbo-kind; no age effect on adults\n- Crafted from Titan Tuber + Herbal Medicine</TITAN_GrowthPaste.description>
 </LanguageData>
