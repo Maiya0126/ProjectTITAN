@@ -409,6 +409,8 @@
   <TITAN_Message_RoyalMark_NotThrumboKind>Target is not thrumbo-kind — Royal Mark cannot be applied</TITAN_Message_RoyalMark_NotThrumboKind>
   <TITAN_Message_RoyalMark_AlreadyMarked>Target already has a Royal Mark</TITAN_Message_RoyalMark_AlreadyMarked>
   <TITAN_Message_RoyalMark_Applied>{0} has been marked with the Royal Mark — all stats +15%</TITAN_Message_RoyalMark_Applied>
+  <TITAN_Message_GrowthPaste_AlreadyAdult>{0} is already an adult — the Growth Paste cannot accelerate further.</TITAN_Message_GrowthPaste_AlreadyAdult>
+  <TITAN_Message_GrowthPaste_Applied>{0} consumed the Growth Paste — biological age advanced by ~30 days.</TITAN_Message_GrowthPaste_Applied>
 
   <!-- Resonance tier unlock notifications -->
   <TITAN_Resonance_Tier1Unlocked>[Resonance Amplification] Prototype #0 has formed resonance links with 5 thrumbo-kind! Titan Resonance range, healing, and cooldown are enhanced. Passive resonance pulse activates (8-tile range, slowly heals all friendly units).</TITAN_Resonance_Tier1Unlocked>

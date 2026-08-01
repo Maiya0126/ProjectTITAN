@@ -412,6 +412,8 @@
   <TITAN_Message_RoyalMark_NotThrumboKind>目标不是敲击兽族类，无法施加王权印记</TITAN_Message_RoyalMark_NotThrumboKind>
   <TITAN_Message_RoyalMark_AlreadyMarked>目标已拥有王权印记</TITAN_Message_RoyalMark_AlreadyMarked>
   <TITAN_Message_RoyalMark_Applied>{0}被赋予了王权印记，全属性+15%</TITAN_Message_RoyalMark_Applied>
+  <TITAN_Message_GrowthPaste_AlreadyAdult>{0}已是成年体，基因代偿合剂无法再加速成长。</TITAN_Message_GrowthPaste_AlreadyAdult>
+  <TITAN_Message_GrowthPaste_Applied>{0}食用了基因代偿合剂，生物钟被推动约30天。</TITAN_Message_GrowthPaste_Applied>
 
   <!-- Resonance tier unlock notifications -->
   <TITAN_Resonance_Tier1Unlocked>【共鸣增幅】0号原型体与5只敲击兽族类建立了共鸣连接！泰坦共鸣的范围、治疗量和冷却均获得强化。被动共鸣脉冲开始生效（8格内所有友方单位缓慢恢复伤势）。</TITAN_Resonance_Tier1Unlocked>

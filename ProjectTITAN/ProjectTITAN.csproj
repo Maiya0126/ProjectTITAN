@@ -88,6 +88,7 @@
     <Compile Include="Source\Patch_TitanPawnInfo.cs" />
     <Compile Include="Source\TitanCore.cs" />
     <Compile Include="Source\TitanPawnGuard.cs" />
+    <Compile Include="Source\IngestionOutcomeDoer_GrowthAccelerator.cs" />
     <Compile Include="Source\TitanModInit.cs" />
     <Compile Include="Source\TITAN_CodexMod.cs" />
     <Compile Include="Source\TITAN_GameComponentRegistration.cs" />

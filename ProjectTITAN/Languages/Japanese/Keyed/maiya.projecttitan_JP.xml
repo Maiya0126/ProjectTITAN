@@ -409,6 +409,8 @@
   <TITAN_Message_RoyalMark_NotThrumboKind>目標はスラムボ種ではない — 王者の刻印は適用不可</TITAN_Message_RoyalMark_NotThrumboKind>
   <TITAN_Message_RoyalMark_AlreadyMarked>目標はすでに王者の刻印を持っている</TITAN_Message_RoyalMark_AlreadyMarked>
   <TITAN_Message_RoyalMark_Applied>{0}に王者の刻印が押された — 全ステータス+15%</TITAN_Message_RoyalMark_Applied>
+  <TITAN_Message_GrowthPaste_AlreadyAdult>{0}は既に成体であり、遺伝子代償ペーストでの成長加速は効果がない。</TITAN_Message_GrowthPaste_AlreadyAdult>
+  <TITAN_Message_GrowthPaste_Applied>{0}が遺伝子代償ペーストを摂食 — 生体時計が約30日進んだ。</TITAN_Message_GrowthPaste_Applied>
 
   <!-- Resonance tier unlock notifications -->
   <TITAN_Resonance_Tier1Unlocked>[共鳴增幅] 0号プロトタイプが5匹のスラムボ種族と共鳴リンクを形成！タイタン共鳴の範囲・治癒・クールダウンが強化。パッシブ共鳴パルスが発動（8タイル範囲内の味方ユニットを徐々に治癒）。</TITAN_Resonance_Tier1Unlocked>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>TITAN_GrowthPaste</defName>
 		<label>基因代偿合剂</label>
-		<description>基因代偿合剂。</description>
+		<description>基因代偿合剂。\n\n【使用方法】\n将合剂存入动物可及区域，饥饿的未成体敲击兽会自动进食。\n\n【效果】\n- 立即增加生物年龄约30天，加速幼年体进入成年阶段\n- 同时赋予短暂代谢过载状态（疲劳速度+20%）\n- 仅对未成体的敲击兽族类生效，成年体食用无加速效果\n- 由泰坦块茎与草药合成</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/NutrientPaste</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -19,17 +19,14 @@
 			<li>AnimalProductRaw</li>
 		</thingCategories>
 		<ingestible>
-			<foodType>Kibble, AnimalProduct</foodType>
+			<foodType>Kibble, AnimalProduct, VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<preferability>DesperateOnly</preferability>
 			<optimalityOffsetHumanlikes>-9999</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>1000</optimalityOffsetFeedingAnimals>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>TITAN_RapidGrowth</hediffDef>
-					<severity>1.0</severity>
-				</li>
+				<li Class="ProjectTITAN.IngestionOutcomeDoer_GrowthAccelerator" />
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
@@ -45,7 +42,7 @@
 			<TITAN_RawTitanTuber>1</TITAN_RawTitanTuber>
 			<MedicineHerbal>1</MedicineHerbal>
 		</costList>
-	</ThingDef>
+		</ThingDef>
 
 	<HediffDef>
 		<defName>TITAN_RapidGrowth</defName>
