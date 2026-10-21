@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!-- Giddy-Up 2: Take Flight 兼容补丁：0号原型体获得飞行能力 -->
-	<!-- 守卫：仅在安装了 Giddy-Up 2: Take Flight (Phonicmas.GiddyUp.TakeFlight) 时生效，零硬依赖 -->
+	<!-- 守卫：仅在安装了 Giddy-Up 2: Take Flight 时生效，零硬依赖 -->
+	<!-- 注意：match 是单字段，Class 属性必须直接写在 match 元素上，不能用 Operation 包裹 -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Giddy-Up 2: Take Flight</li>
 		</mods>
-		<match>
-			<Operation Class="PatchOperationAddModExtension">
-				<success>Always</success>
-				<xpath>Defs/ThingDef[defName="TITAN_ThrumboPrototype"]</xpath>
-				<value>
-					<li Class="GiddyUpTakeFlight.FlyingMount">
-						<canFly>true</canFly>
-						<rangeFactor>1.2</rangeFactor>
-						<cooldownFactor>0.8</cooldownFactor>
-						<worldFlightRange>15</worldFlightRange>
-						<maxRangeMultiplier>3</maxRangeMultiplier>
-						<worldFlightSpeed>150</worldFlightSpeed>
-					</li>
-				</value>
-			</Operation>
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="TITAN_ThrumboPrototype"]</xpath>
+			<value>
+				<li Class="GiddyUpTakeFlight.FlyingMount">
+					<canFly>true</canFly>
+					<rangeFactor>1.2</rangeFactor>
+					<cooldownFactor>0.8</cooldownFactor>
+					<worldFlightRange>15</worldFlightRange>
+					<maxRangeMultiplier>3</maxRangeMultiplier>
+					<worldFlightSpeed>150</worldFlightSpeed>
+				</li>
+			</value>
 		</match>
 	</Operation>
 </Patch>
